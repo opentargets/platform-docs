@@ -2,33 +2,33 @@
 
 ## 21.11
 
-## 21.09
-
 ### Release date
 
-25 November 2021
+29 November 2021
 
 ### Highlights
 
-* TBC
+* New Cancer Biomarkers evidence data from the Cancer Genome Interpreter
+* Updated genetic association evidence from Open Targets Genetics
+* Embedded GraphQL API playground for each data table and query
 
-Check out our 21.11 release blog post for more information on the new features and datasets introduced in this release.&#x20;
+Check out [our 21.11 release blog post](https://blog.opentargets.org/open-targets-platform-21-11-release/) for more information on the new features and datasets introduced in this release.&#x20;
 
 ### Overall data metrics
 
-* x targets
-* x diseases and phenotypes
-* x drugs and compounds
-* x evidence strings
-* x target-disease associations
+* 60,636 targets
+* 18,706 diseases and phenotypes
+* 12,594 drugs and compounds
+* 10,481,189 evidence strings
+* 9,927,066 target-disease associations
 
-Visit the Open Targets Community 21.11 release thread for more data metrics for this release, including a per datasource breakdown of evidence strings.
+Visit [the Open Targets Community 21.11 release thread](https://community.opentargets.org/t/open-targets-platform-21-11-has-been-released/413) for more data metrics for this release, including a per datasource breakdown of evidence strings.
 
 ## 21.09
 
 ### Release date
 
-29 September 2021
+30 September 2021
 
 ### Highlights
 

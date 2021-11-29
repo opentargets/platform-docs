@@ -1,16 +1,14 @@
 # Change log
 
-## 21.11
-
 ## 21.09
 
 ### Release date
 
-25 November 2021
+29 November 2021
 
 ### Data version
 
-21.11
+[21.11](http://ftp.ebi.ac.uk/pub/databases/opentargets/platform/)
 
 ### &#x20;Technical infrastructure
 
