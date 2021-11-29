@@ -1,5 +1,26 @@
 # Change log
 
+## 21.11
+
+## 21.09
+
+### Release date
+
+25 November 2021
+
+### Data version
+
+21.11
+
+### &#x20;Technical infrastructure
+
+* json\_schema: [2.1.0](https://github.com/opentargets/json\_schema/releases)
+* platform-input-support: [21.09.5](https://github.com/opentargets/platform-input-support/tree/21.09.5)
+* platform-etl-backend: [21.11.1](https://github.com/opentargets/platform-etl-backend/releases)
+* terraform-google-opentargets-platform: [21.11.1](https://github.com/opentargets/terraform-google-opentargets-platform/blob/main/profiles/deployment\_context.2111\_1)
+* platform-api-beta: [21.11.4](https://github.com/opentargets/platform-api-beta/releases)
+* platform-app: [21.11.2](https://github.com/opentargets/platform-app/releases)
+
 ## 21.09
 
 ### Release date
@@ -19,6 +40,44 @@
 * platform-api-beta: [21.09.5](https://github.com/opentargets/platform-api-beta/tree/21.09.5)
 * platform-app: [21.09.6](https://github.com/opentargets/platform-app/releases/tag/21.09.6)
 
+## 21.09
+
+### Release date
+
+30 September 2021
+
+### Data version
+
+[21.09](http://ftp.ebi.ac.uk/pub/databases/opentargets/platform/21.09/)
+
+### &#x20;Technical infrastructure
+
+* json\_schema: [2.0.10](https://github.com/opentargets/json\_schema/releases/tag/2.0.10)
+* platform-input-support: [21.09.5](https://github.com/opentargets/platform-input-support/tree/21.09.5)
+* platform-etl-backend: [21.09.5](https://github.com/opentargets/platform-etl-backend/tree/21.09.5)
+* terraform-google-opentargets-platform: [21.09.5](https://github.com/opentargets/terraform-google-opentargets-platform/blob/main/profiles/deployment\_context.2109\_5)
+* platform-api-beta: [21.09.5](https://github.com/opentargets/platform-api-beta/tree/21.09.5)
+* platform-app: [21.09.6](https://github.com/opentargets/platform-app/releases/tag/21.09.6)
+
+## 21.09
+
+### Release date
+
+30 September 2021
+
+### Data version
+
+[21.09](http://ftp.ebi.ac.uk/pub/databases/opentargets/platform/21.09/)
+
+### Technical infrastructure
+
+* json\_schema: [2.0.10](https://github.com/opentargets/json\_schema/releases/tag/2.0.10)
+* platform-input-support: [21.09.5](https://github.com/opentargets/platform-input-support/tree/21.09.5)
+* platform-etl-backend: [21.09.5](https://github.com/opentargets/platform-etl-backend/tree/21.09.5)
+* terraform-google-opentargets-platform: [21.09.5](https://github.com/opentargets/terraform-google-opentargets-platform/blob/main/profiles/deployment\_context.2109\_5)
+* platform-api-beta: [21.09.5](https://github.com/opentargets/platform-api-beta/tree/21.09.5)
+* platform-app: [21.09.6](https://github.com/opentargets/platform-app/releases/tag/21.09.6)
+
 ## 21.06
 
 ### Release date
@@ -29,7 +88,7 @@
 
 [21.06](http://ftp.ebi.ac.uk/pub/databases/opentargets/platform/21.06)
 
-### &#x20;Technical infrastructure
+### Technical infrastructure
 
 * json\_schema: [2.0.9](https://github.com/opentargets/json\_schema/releases/tag/2.0.9)
 * platform-input-support: [21.06.2](https://github.com/opentargets/platform-input-support/releases)

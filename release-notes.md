@@ -1,5 +1,29 @@
 # Release notes
 
+## 21.11
+
+## 21.09
+
+### Release date
+
+25 November 2021
+
+### Highlights
+
+* TBC
+
+Check out our 21.11 release blog post for more information on the new features and datasets introduced in this release.&#x20;
+
+### Overall data metrics
+
+* x targets
+* x diseases and phenotypes
+* x drugs and compounds
+* x evidence strings
+* x target-disease associations
+
+Visit the Open Targets Community 21.11 release thread for more data metrics for this release, including a per datasource breakdown of evidence strings.
+
 ## 21.09
 
 ### Release date
@@ -13,7 +37,7 @@
 * Data updates from EFO, ChEMBL, and Mouse Genome Informatics
 * Other improvements and bug fixes
 
-Check out our [21.09 release blog post](https://blog.opentargets.org/open-targets-platform-21-09-release/) for more information on the new features and datasets introduced in this release.&#x20;
+Check out our [21.09 release blog post](https://blog.opentargets.org/open-targets-platform-21-09-release/) for more information on the new features and datasets introduced in this release.
 
 ### Overall data metrics
 
@@ -25,7 +49,7 @@ Check out our [21.09 release blog post](https://blog.opentargets.org/open-target
 
 Visit the [Open Targets Community 21.09 release thread](https://community.opentargets.org/t/21-09-platform-release-now-live/364) for more data metrics for this release, including a per datasource breakdown of evidence strings.
 
-## 21.06&#x20;
+## 21.06
 
 ### Release date
 
@@ -38,7 +62,7 @@ Visit the [Open Targets Community 21.09 release thread](https://community.openta
 * Improvements to the user interface (e.g. datatype chips on evidence page)
 * Bug fixes (e.g. users can download Known Drugs table, association scores in datasets match values returned by API)
 
-Check out our [21.06 release blog post](https://blog.opentargets.org/open-targets-platform-21-06-release/) for more information on the new features and datasets introduced in this release.&#x20;
+Check out our [21.06 release blog post](https://blog.opentargets.org/open-targets-platform-21-06-release/) for more information on the new features and datasets introduced in this release.
 
 ### Overall data metrics
 
