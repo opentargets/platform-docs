@@ -12,7 +12,7 @@
 * Updated genetic association evidence from Open Targets Genetics
 * Embedded GraphQL API playground for each data table and query
 
-Check out [our 21.11 release blog post](https://blog.opentargets.org/open-targets-platform-21-11-release/) for more information on the new features and datasets introduced in this release.&#x20;
+Check out the [21.11 release blog post](https://blog.opentargets.org/open-targets-platform-21-11-release/) for more information on the new features and datasets introduced in this release.&#x20;
 
 ### Overall data metrics
 
@@ -22,7 +22,7 @@ Check out [our 21.11 release blog post](https://blog.opentargets.org/open-target
 * 10,481,189 evidence strings
 * 9,927,066 target-disease associations
 
-Visit [the Open Targets Community 21.11 release thread](https://community.opentargets.org/t/open-targets-platform-21-11-has-been-released/413) for more data metrics for this release, including a per datasource breakdown of evidence strings.
+Visit the[ Open Targets Community 21.11 release thread](https://community.opentargets.org/t/open-targets-platform-21-11-has-been-released/413) for more data metrics for this release, including a per datasource breakdown of evidence strings.
 
 ## 21.09
 
