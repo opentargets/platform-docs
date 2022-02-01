@@ -6,15 +6,15 @@ Baseline RNA and protein expression data helps us to ascertain whether the targe
 
 We combine baseline expression information from three sources:
 
-* Expression Atlas:** **RNA expression meta-analysis from RNA- sequencing experiments
-* Human Protein Atlas:  immunohistochemistry-based proteomics data for normal tissues
-* Genotype-Tissue Expression (GTEx) Program:** **RNA baseline expression variation data per tissue
+* **Expression Atlas**: RNA expression meta-analysis from RNA- sequencing experiments
+* **Human Protein Atlas**: immunohistochemistry-based proteomics data for normal tissues
+* **Genotype-Tissue Expression (GTEx) Program**: RNA baseline expression variation data per tissue
 
 ## Data sources
 
 ### Expression Atlas
 
-Expression Atlas - [https://www.ebi.ac.uk/gxa/home](https://www.ebi.ac.uk/gxa/home) -  is a manually-curated,  freely available data analysis and visualisation resource that provides information about gene and protein expression in  more than 3,000 experiments.
+Expression Atlas - [https://www.ebi.ac.uk/gxa/home](https://www.ebi.ac.uk/gxa/home) - is a manually-curated, freely available data analysis and visualisation resource that provides information about gene and protein expression in more than 3,000 experiments.
 
 ### Human Protein Atlas
 
@@ -28,7 +28,7 @@ The Genotype-Tissue Expression (GTEx) Portal - [https://gtexportal.org/home/](ht
 
 #### RNA expression meta-analysis
 
-Open Targets in collaboration with Expression Atlas has performed a meta-analysis of over 18,000 samples from 50 different tissues and more than 30 cell types from the following experiments:&#x20;
+Open Targets in collaboration with Expression Atlas has performed a meta-analysis of over 18,000 samples from 50 different tissues and more than 30 cell types from the following experiments:
 
 * RNA-seq of 53 human tissue samples from GTEx ([E-MTAB-5214](https://www.ebi.ac.uk/gxa/experiments/E-MTAB-5214/Results))
 * RNA-seq of 16 human tissues from the Illumina Body Map project ([E-MTAB-513](https://www.ebi.ac.uk/gxa/experiments/E-MTAB-513/Results))
@@ -36,7 +36,7 @@ Open Targets in collaboration with Expression Atlas has performed a meta-analysi
 * RNA-seq of 6 human tissues from Kaessmann Lab ([E-MTAB-3716](https://www.ebi.ac.uk/gxa/experiments/E-MTAB-3716/Results))
 * mRNA-seq of 32 human tissues from Human Protein Atlas ([E-MTAB-2836](https://www.ebi.ac.uk/gxa/experiments/E-MTAB-2836/Results))
 * mRNA-seq of rare types of cells of different haemopoietic lineages from healthy individuals in the BLUEPRINT project ([E-MTAB-3819](https://www.ebi.ac.uk/gxa/experiments/E-MTAB-3819/Results))
-* RNA-seq of common types of cells of different haemopoietic lineages from healthy individuals in the BLUEPRINT project ([E-MTAB-3827](https://www.ebi.ac.uk/gxa/experiments/E-MTAB-3827/Results))&#x20;
+* RNA-seq of common types of cells of different haemopoietic lineages from healthy individuals in the BLUEPRINT project ([E-MTAB-3827](https://www.ebi.ac.uk/gxa/experiments/E-MTAB-3827/Results))
 * mRNA-seq of plasma cells of tonsil from healthy individuals from the BLUEPRINT project ([E-MTAB-4754](https://www.ebi.ac.uk/gxa/experiments/E-MTAB-4754/Results))
 
 The tissue- and cell-based samples in these experiments are processed separately to avoid batch effects during normalisation. The samples of each group are then processed together to generate an expression table of normalised Transcripts Per Million (TPMs) units for every gene in each tissue or cell type according to the following steps:
@@ -53,7 +53,7 @@ The tissue- and cell-based samples in these experiments are processed separately
 We analyse this expression file further to compute two values for each gene:
 
 * **Binned value of expression:** The normalised expression values are divided into 10 bins of the same width. Note that this is not the same as the deciles, which all contain the same number of items in them
-* **Tissue specificity: **Z-scores are calculated for each gene and each tissue and then they are binned based on quantiles of a perfect normal distribution. This allows to extract the tissues for which a gene is specific, defined as the expression value being above the 75th z-score percentile - in practice, anything in bin 2 or above (more information in the [FAQ section](https://docs.targetvalidation.org/faq/tissue-specificity))
+* **Tissue specificity**: Z-scores are calculated for each gene and each tissue and then they are binned based on quantiles of a perfect normal distribution. This allows to extract the tissues for which a gene is specific, defined as the expression value being above the 75th z-score percentile - in practice, anything in bin 2 or above (more information in the [FAQ section](https://docs.targetvalidation.org/faq/tissue-specificity))
 
 Normalised files with binned value of expression and tissue specificity values for each target are available from [our data download page](https://platform.opentargets.org/downloads).
 
