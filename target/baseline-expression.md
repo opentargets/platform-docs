@@ -53,7 +53,7 @@ The tissue- and cell-based samples in these experiments are processed separately
 We analyse this expression file further to compute two values for each gene:
 
 * **Binned value of expression:** The normalised expression values are divided into 10 bins of the same width. Note that this is not the same as the deciles, which all contain the same number of items in them
-* **Tissue specificity**: Z-scores are calculated for each gene and each tissue and then they are binned based on quantiles of a perfect normal distribution. This allows to extract the tissues for which a gene is specific, defined as the expression value being above the 75th z-score percentile - in practice, anything in bin 2 or above (more information in the [FAQ section](https://docs.targetvalidation.org/faq/tissue-specificity))
+* **Tissue specificity**: Z-scores are calculated for each gene and each tissue and then they are binned based on quantiles of a perfect normal distribution. This allows us to extract the tissues for which a gene is specific, defined as the expression value being above the 75th z-score percentile - in practice, anything in bin 2 or above.
 
 Normalised files with binned value of expression and tissue specificity values for each target are available from [our data download page](https://platform.opentargets.org/downloads).
 
