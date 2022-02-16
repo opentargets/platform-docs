@@ -20,9 +20,9 @@ https://api.platform.opentargets.org/api/v4/graphql
 
 You can then access relevant data from the following endpoints:
 
-\*\*/target: \*\*contains annotation information for targets including tractability assessments, mouse phenotype models, and baseline expression; also contains data on diseases and phenotypes association with the given target
+**/target:** contains annotation information for targets including tractability assessments, mouse phenotype models, and baseline expression; also contains data on diseases and phenotypes association with the given target
 
-\*\*/disease: \*\*contains annotation information for diseases and phenotypes including ontology, known drugs, and clinical signs and symptoms; also contains data on targets associated with the given disease or phenotype
+**/disease:** contains annotation information for diseases and phenotypes including ontology, known drugs, and clinical signs and symptoms; also contains data on targets associated with the given disease or phenotype
 
 **/drug:** contains annotation information for compounds and drugs including mechanisms of action, indications, and pharmacovigilance data
 
