@@ -4,11 +4,11 @@ The Open Targets Platform GraphQL — available at [http://api.platform.opentarg
 
 1. You can construct a query that returns only the fields that you need
 2. You can build graphical queries that traverse a data graph through resolvable entities and this reduces the need for multiple queries
-3. You can access the [GraphQL API playground](http://api.platform.opentargets.org/api/v4/graphql/browser) with built-in documentation and schema showing required and optional parameters&#x20;
-4. You can view the [schema](http://api.platform.opentargets.org/api/v4/graphql/schema) that shows the available fields for each object along with a description and data type attribute&#x20;
+3. You can access the [GraphQL API playground](http://api.platform.opentargets.org/api/v4/graphql/browser) with built-in documentation and schema showing required and optional parameters
+4. You can view the [schema](http://api.platform.opentargets.org/api/v4/graphql/schema) that shows the available fields for each object along with a description and data type attribute
 5. You only have to use `POST` requests with a simple query string and variables object
 
-Our GraphQL API supports queries for a single target, disease/phenotype, drug, or target-disease association. For more systematic queries (e.g. for multiple targets), please use [our data downloads](datasets.md) or [our Google BigQuery instance](google-bigquery.md).  &#x20;
+Our GraphQL API supports queries for a single target, disease/phenotype, drug, or target-disease association. For more systematic queries (e.g. for multiple targets), please use [our data downloads](datasets.md) or [our Google BigQuery instance](google-bigquery.md).
 
 ## Available endpoints
 
@@ -20,11 +20,11 @@ https://api.platform.opentargets.org/api/v4/graphql
 
 You can then access relevant data from the following endpoints:
 
-**/target: **contains annotation information for targets including tractability assessments, mouse phenotype models, and baseline expression; also contains data on diseases and phenotypes association with the given target
+\*\*/target: \*\*contains annotation information for targets including tractability assessments, mouse phenotype models, and baseline expression; also contains data on diseases and phenotypes association with the given target
 
-**/disease: **contains annotation information for diseases and phenotypes including ontology, known drugs, and clinical signs and symptoms; also contains data on targets associated with the given disease or phenotype
+\*\*/disease: \*\*contains annotation information for diseases and phenotypes including ontology, known drugs, and clinical signs and symptoms; also contains data on targets associated with the given disease or phenotype
 
-**/drug:** contains annotation information for compounds and drugs including mechanisms of action, indications, and pharmacovigilance data&#x20;
+**/drug:** contains annotation information for compounds and drugs including mechanisms of action, indications, and pharmacovigilance data
 
 **/search**: contains index of all entities contained within the Platform
 
@@ -54,7 +54,6 @@ query targetInfo {
     }
   }
 }
-
 ```
 
 [Run this query in our GraphQL API playground](https://api.platform.opentargets.org/api/v4/graphql/browser?query=query%20targetInfo%20%7B%0A%20%20target%28ensemblId%3A%20%22ENSG00000169083%22%29%20%7B%0A%20%20%20%20id%0A%20%20%20%20approvedSymbol%0A%20%20%20%20biotype%0A%20%20%20%20geneticConstraint%20%7B%0A%20%20%20%20%20%20constraintType%0A%20%20%20%20%20%20exp%0A%20%20%20%20%20%20obs%0A%20%20%20%20%20%20score%0A%20%20%20%20%20%20oe%0A%20%20%20%20%20%20oeLower%0A%20%20%20%20%20%20oeUpper%0A%20%20%20%20%7D%0A%20%20%20%20tractability%20%7B%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20modality%0A%20%20%20%20%20%20value%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A)
@@ -70,14 +69,14 @@ Below is an example script using the same AR query above, but written for Python
 ```python
 #!/usr/bin/env python3
 
-# Import relevant libraries for HTTP request and JSON formatting
+# Import relevant libraries to make HTTP requests and parse JSON response
 import requests
 import json
 
-# Set gene_id variable
+# Set gene_id variable for AR (androgen receptor)
 gene_id = "ENSG00000169083"
 
-# Build query string
+# Build query string to get general information about AR and genetic constraint and tractability assessments 
 query_string = """
   query target($ensemblId: String!){
     target(ensemblId: $ensemblId){
@@ -112,11 +111,9 @@ base_url = "https://api.platform.opentargets.org/api/v4/graphql"
 r = requests.post(base_url, json={"query": query_string, "variables": variables})
 print(r.status_code)
 
-# Transform API response into JSON 
-api_response_as_json = json.loads(r.text)
-
-# Print API response to terminal
-print(api_response_as_json)
+# Transform API response from JSON into Python dictionary and print in console
+api_response = json.loads(r.text)
+print(api_response)
 ```
 {% endtab %}
 
@@ -125,10 +122,10 @@ print(api_response_as_json)
 # Install relevant library for HTTP requests
 library(httr)
 
-# Set gene_id variable
+# Set gene_id variable for AR (androgen receptor)
 gene_id <- "ENSG00000169083"
 
-# Build query string
+# Build query string to get general information about AR and genetic constraint and tractability assessments 
 query_string = "
   query target($ensemblId: String!){
     target(ensemblId: $ensemblId){
