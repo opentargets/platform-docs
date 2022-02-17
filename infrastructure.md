@@ -11,34 +11,34 @@ description: >-
 The Open Targets Platform infrastructure stack is composed of multiple elements:
 
 1. Data and evidence generation pipelines
-2. Evidence processing and scoring ETL pipelines&#x20;
+2. Evidence processing and scoring ETL pipelines
 3. Globally-distributed GraphQL API
-4. Terraform deployment&#x20;
+4. Terraform deployment
 5. Robust, optimised front-end user interface
 
-## GitHub repositories&#x20;
+## GitHub repositories
 
 ### Data and evidence
 
-* [evidence\_datasource\_parsers](https://github.com/opentargets/evidence\_datasource\_parsers): internal pipelines used to generate evidence&#x20;
+* [evidence\_datasource\_parsers](https://github.com/opentargets/evidence\_datasource\_parsers): internal pipelines used to generate evidence
 * [json\_schema](https://github.com/opentargets/json\_schema): evidence object schema used for evidence and association scoring
-* [OnToma](https://github.com/opentargets/OnToma): Python module to map disease or phenotype terms to EFO&#x20;
+* [OnToma](https://github.com/opentargets/OnToma): Python module to map disease or phenotype terms to EFO
 
 ### Extract, transform, load (ETL)
 
-* [platform-input-support](https://github.com/opentargets/platform-input-support): scripts that process and prepare data for our ETL pipelines&#x20;
+* [platform-input-support](https://github.com/opentargets/platform-input-support): scripts that process and prepare data for our ETL pipelines
 * [platform-etl-backend](https://github.com/opentargets/platform-etl-backend): ETL pipelines to generate associations, evidence, and entity indices
 * [platform-etl-openfda-faers](https://github.com/opentargets/platform-etl-openfda-faers): ETL pipeline to process Open FDA adverse events data
-* [platform-etl-literature](https://github.com/opentargets/platform-etl-literature): ETL pipeline to generate similar entities and publications&#x20;
-* [platform-output-support](https://github.com/opentargets/platform-output-support): scripts for infrastructure tasks and generating a Platform release&#x20;
+* [platform-etl-literature](https://github.com/opentargets/platform-etl-literature): ETL pipeline to generate similar entities and publications
+* [platform-output-support](https://github.com/opentargets/platform-output-support): scripts for infrastructure tasks and generating a Platform release
 
 ### API
 
-* [platform-api-beta](https://github.com/opentargets/platform-api-beta): GraphQL API
+* [platform-api](https://github.com/opentargets/platform-api): GraphQL API
 
 ### Deployment
 
-* [terraform-google-opentargets-platform](https://github.com/opentargets/terraform-google-opentargets-platform): scripts to deploy the public version of the Platform&#x20;
+* [terraform-google-opentargets-platform](https://github.com/opentargets/terraform-google-opentargets-platform): scripts to deploy the public version of the Platform
 
 ### Front-end
 
@@ -46,8 +46,8 @@ The Open Targets Platform infrastructure stack is composed of multiple elements:
 
 ## Open source contributions
 
-As a consortium committed to developing open-source, freely available tools that support systematic drug target identification and prioritisation, we actively encourage and accept open source contributions to our various repositories.&#x20;
+As a consortium committed to developing open-source, freely available tools that support systematic drug target identification and prioritisation, we actively encourage and accept open source contributions to our various repositories.
 
-Please review [our contribution guidelines](https://github.com/opentargets/platform/blob/master/Contribution%20Guidelines.md) and check out the [Open Targets Community](https://community.opentargets.org) to get started.&#x20;
+Please review [our contribution guidelines](https://github.com/opentargets/platform/blob/master/Contribution%20Guidelines.md) and check out the [Open Targets Community](https://community.opentargets.org) to get started.
 
-If you have further questions, please email us at [helpdesk@opentargets.org](mailto:helpdesk@opentargets.org).&#x20;
+If you have further questions, please email us at [helpdesk@opentargets.org](mailto:helpdesk@opentargets.org).
