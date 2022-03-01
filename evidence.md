@@ -107,25 +107,25 @@ The Open Targets Platform includes "green" and "amber" genes from version 1+ pan
 
 ### Gene2Phenotype
 
-The data in Gene2Phenotype (G2P) is produced and curated from the literature by different sets of panels formed by consultant clinical geneticists. This data is comprised of both short scale (i.e. sequence variants such as The Genomics England PanelApp is a knowledge base that combines crowdsourced expertise with curation to provide gene-disease relationships. Virtual gene panels related to human disorders are reviewed by experts within the clinical and scientific community to support interpretation of genomes within the 100,000 Genomes Project. Within a panel, genes are rated based on the level of evidence supporting the association with the phenotypes identified by the panel. Genes are then classified according to a traffic light system with red/stop, amber/pause, and green/go classifications. To receive a green rating (diagnostic-grade) on a version 1+ panel, the gene requires "evidence from 3 or more unrelated families or from 2 - 3 unrelated families where there is strong additional functional data" and "genes that do not meet these criteria are rated as Amber (borderline) or Red (low level of evidence)."SNPs) and large structural variants (e.g. copy number variants), and can allow targeted filtering of genome-wide data for diagnostic purposes. The variants were provided by [DECIPHER](https://decipher.sanger.ac.uk/index), a database of genomic variants and phenotypes in patients with developmental disorders.
+The data in Gene2Phenotype (G2P) is produced and curated from the literature by different sets of panels formed by consultant clinical geneticists. The G2P data is designed to facilitate the development, validation, curation, and distribution of large-scale, evidence-based datasets for use in diagnostic variant filtering. Each G2P entry associates an allelic requirement and a mutational consequence at a defined locus with a disease entity. A confidence level and evidence link are assigned to each entry. This confidence level follows the terminology described by [GenCC](https://thegencc.org/about.html) for describing gene-disease validity.
 
-Gene2Phenotype evidence in the Platform is the result of any target-disease curation by any of the expert panels.
+G2P evidence in the Platform is the result of any target-disease curation by any of the expert panels.
 
-\*\*Data type: \*\*Genetic associations
+**Data type:** Genetic associations
 
-Evidence scoring:&#x20;
+**Evidence scoring:**
 
 | **Gene2Phenotype confidence** | Evidence score |
 | ----------------------------- | -------------- |
-| Possible                      | 0.25           |
-| Probable                      | 0.5            |
-| Confirmed                     | 1              |
+| Limited                       | 0.01           |
+| Moderate                      | 0.5            |
+| Strong                        | 1              |
 | Both RD and IF                | 1              |
-| Child IF                      | 1              |
+| Definitive                    | 1              |
 
 **Source**: [Gene2Phenotype](https://www.ebi.ac.uk/gene2phenotype)
 
-A Gene2Phenotype evidence in the Platform is the result of any target-disease curation by any of the expert panels.**References**: [Thormann, A. et al, 2019](https://doi.org/10.1038/s41467-019-10016-3)
+**References**: [Thormann, A. et al, 2019](https://doi.org/10.1038/s41467-019-10016-3)
 
 ### UniProt literature
 
@@ -210,7 +210,7 @@ Orphanet is an international network that offers a range of resources to improve
 
 The EMBL-EBI ChEMBL is a manually curated database of bioactive molecules with drug-like properties, either approved for marketing by the U.S Food and Drug Administration (FDA), or clinical candidates. ChEMBL also captures information regarding the drug molecule indications, as well as their curated pharmacological target.
 
-In the Platform, a ChEMBL evidence represents any target-disease relationship that can be explained by an approved or clinical candidate drug, targeting the gene product and indicated for the disease. Independent studies are treated as individual evidence.
+In the Platform, a ChEMBL evidence represents any target-disease relationship that can be explained by an approved or clinical candidate drug, targeting the gene product and indicated for the disease. Independent studies are treated as individual evidence. For those studies that have been stopped due to negative outcomes or safety concerns, less importance is attributed to this evidence by halving its score.
 
 **Data type**: Drugs
 
