@@ -210,11 +210,11 @@ Orphanet is an international network that offers a range of resources to improve
 
 The EMBL-EBI ChEMBL is a manually curated database of bioactive molecules with drug-like properties, either approved for marketing by the U.S Food and Drug Administration (FDA), or clinical candidates. ChEMBL also captures information regarding the drug molecule indications, as well as their curated pharmacological target.
 
-In the Platform, a ChEMBL evidence represents any target-disease relationship that can be explained by an approved or clinical candidate drug, targeting the gene product and indicated for the disease. Independent studies are treated as individual evidence. For those studies that have been stopped due to negative outcomes or safety concerns, less importance is attributed to this evidence by halving its score.
+In the Platform, ChEMBL evidence represents any target-disease relationship that can be explained by an approved or clinical candidate drug, targeting the gene product and indicated for the disease. Independent studies are treated as individual evidence.
 
 **Data type**: Drugs
 
-**Evidence scoring:**
+**Evidence scoring:** ChEMBL evidence is scored in a 2-step process. In step 1, a score is assigned to every piece of evidence based on the clinical precedence:
 
 | Clinical Precedence | Evidence score |
 | ------------------- | -------------- |
@@ -223,6 +223,13 @@ In the Platform, a ChEMBL evidence represents any target-disease relationship th
 | Phase II            | 0.2            |
 | Phase III           | 0.7            |
 | Phase IV            | 1              |
+
+In Step 2, for those clinical trials that have stopped early, the score is down-weighted based on the classification of the reason to stop. In this way, less importance is attributed to evidence of studies that have been stopped due to negative outcomes or safety concerns:
+
+| Reason to stop class   | Score weight |
+| ---------------------- | ------------ |
+| Negative               | 0,5          |
+| Safety or side effects | 0,5          |
 
 **Source**: [ChEMBL](https://www.ebi.ac.uk/chembl/)
 
