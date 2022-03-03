@@ -1,5 +1,26 @@
 # Change log
 
+##
+
+## 22.02
+
+### Release date
+
+28 February 2022
+
+### Data version
+
+[22.02](http://ftp.ebi.ac.uk/pub/databases/opentargets/platform/latest/)
+
+### &#x20;Technical infrastructure
+
+* json\_schema: [2.1.0](https://github.com/opentargets/json\_schema/releases)
+* platform-input-support: [21.09.5](https://github.com/opentargets/platform-input-support/tree/21.09.5)
+* platform-etl-backend: [21.11.1](https://github.com/opentargets/platform-etl-backend/releases)
+* terraform-google-opentargets-platform: [22.02.04](https://github.com/opentargets/terraform-google-opentargets-platform/blob/main/profiles/deployment\_context.2202\_4)
+* platform-api-beta: [21.11.4](https://github.com/opentargets/platform-api-beta/releases)
+* platform-app: [21.02.2](https://github.com/opentargets/platform-app/releases)
+
 ## 21.11
 
 ### Release date
