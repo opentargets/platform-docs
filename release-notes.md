@@ -1,5 +1,28 @@
 # Release notes
 
+## 22.02
+
+### Release date
+
+28 February 2022
+
+### Highlights
+
+* Gene2Phenotype terminology updated in line with the Gene Curation Coalition (GenCC)
+* Data updates from a range of providers including Open Targets Genetics and ChEMBL
+
+Check out the [22.02 release blog post](https://blog.opentargets.org/open-targets-platform-22-02-release/) for more information on the new features and datasets introduced in this release.&#x20;
+
+### Overall data metrics
+
+* 61,524 targets
+* 18,468 diseases and phenotypes
+* 12,594 drugs and compounds
+* 10,880,832 evidence strings
+* 7,980,448 target-disease associations
+
+Visit the [Open Targets Community 22.02 release thread](https://community.opentargets.org/t/open-targets-platform-22-02-has-been-released/476) for more data metrics for this release, including a per datasource breakdown of evidence strings.
+
 ## 21.11
 
 ### Release date
@@ -20,7 +43,7 @@ Check out the [21.11 release blog post](https://blog.opentargets.org/open-target
 * 18,706 diseases and phenotypes
 * 12,594 drugs and compounds
 * 10,481,189 evidence strings
-* 9,927,066 target-disease associations
+* 7,787,231 target-disease associations
 
 Visit the[ Open Targets Community 21.11 release thread](https://community.opentargets.org/t/open-targets-platform-21-11-has-been-released/413) for more data metrics for this release, including a per datasource breakdown of evidence strings.
 
@@ -45,7 +68,7 @@ Check out our [21.09 release blog post](https://blog.opentargets.org/open-target
 * 18,663 diseases and phenotypes
 * 12,594 drugs and compounds
 * 11,071,233 evidence strings
-* 10,102,184 target-disease associations
+* 7,927,820 target-disease associations
 
 Visit the [Open Targets Community 21.09 release thread](https://community.opentargets.org/t/21-09-platform-release-now-live/364) for more data metrics for this release, including a per datasource breakdown of evidence strings.
 
@@ -70,7 +93,7 @@ Check out our [21.06 release blog post](https://blog.opentargets.org/open-target
 * 18,507 diseases and phenotypes
 * 13,185 drugs and compounds
 * 13,267,236 evidence strings
-* 11,755,362 target-disease associations
+* 9,216,710 target-disease associations
 
 Visit the [Open Targets Community](https://community.opentargets.org/t/21-06-platform-release-now-live/244) for more data metrics for this release, including a per datasource breakdown of evidence strings.
 
