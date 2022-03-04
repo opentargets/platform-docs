@@ -1,7 +1,5 @@
 # Change log
 
-##
-
 ## 22.02
 
 ### Release date
