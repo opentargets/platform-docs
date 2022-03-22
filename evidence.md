@@ -414,7 +414,7 @@ In the Platform, a piece of Europe PMC evidence is the result of aggregating all
 
 **Data type**: Text mining
 
-**Evidence scoring**: Score based on weighted document sections, sentence locations, and title for full text articles and abstracts as described in [Kafkas et al., 2017](https://doi.org/10.1186/s13326-017-0131-3).
+**Evidence scoring**: Score based on weighted document sections, sentence locations, and title for full text articles and abstracts as described in [Kafkas et al., 2017](https://doi.org/10.1186/s13326-017-0131-3). The aggregated scores of each gene/disease co-occurrence in the publication are further normalised between 0 and 1.
 
 **Source**: [Europe PMC](http://europepmc.org)
 
