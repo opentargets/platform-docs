@@ -28,23 +28,11 @@ A Genetics Portal evidence in the Platform is defined as any GWAS-significant le
 
 **Reference**: [Ghoussaini M, et al. 2021](http://doi.org/10.1093/nar/gkaa840)
 
-### PheWAS Catalog
-
-The PheWAS Catalog provides a comprehensive analysis of significant phenome-wide associated loci. The list of phenotypes is derived from electronic medical records (EMR) represented in the DNA biobank BioVU produced by the Center for Precision Medicine at the Vanderbilt University Medical Centre. The EMR-based PheWAS uses ICD9 (International Classification of Disease, 9th edition), which were mapped to EFO using OLS and Zooma.
-
-PheWAS Catalog evidence in the Platform is defined as any variant associated with a PheWAS-significant trait (uncorrected p-value < 0.05).
-
-**Data type**: Genetic associations
-
-**Evidence scoring**: Product of sample size scaled from 0 (n = 0) to 1 (n = 8,800) and scaled p-value from 0 (p = 0.5) to 1 (p = 1e-25)
-
-**Source**: [PheWAS Catalog](https://phewascatalog.org)
-
-**References**: [Denny, J. et al, 2013](https://doi.org/10.1038/nbt.2749)
-
 ### ClinVar
 
 ClinVar is a NIH public archive of reports of the relationships among human variations and phenotypes, with supporting evidence. The ClinVar data source in the Open Targets Platform captures the subset of ClinVar that refers to germline variants (as opposed to somatic variants). Each evidence in the platform aims to capture an individual RCV record in ClinVar.
+
+Information on variants is covered extensively for both single point and structural variants. When available, genomic coordinates are reported with RS numbers, or by following the CHROM\_POS\_REF\_ALT and HGVS notations.
 
 **Datatype**: Genetic associations
 
@@ -85,6 +73,20 @@ In Step 2, the score is modulated based on the ClinVar review status:
 **Source**: [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) (via [European Variation Archive](https://www.ebi.ac.uk/eva/))
 
 **References**: [Cook, C. et al, 2016](https://doi.org/10.1093/nar/gkv1352); [Landrum, M. et al, 2017](http://doi.org/10.1093/nar/gkx1153)
+
+### Gene Burden
+
+Gene burden data comprises gene–phenotype relationships observed in gene-level association tests using rare variant collapsing analyses from UK Biobank exome sequence data. The Platform integrates burden tests carried out by REGENERON (Wang, Q. et al, 2021), and the gene-level PheWAS maintained by the AstraZeneca PheWAS Portal and described in Backman, J.D. et al, 2021.
+
+These associations are a result of collapsing rare variants in a a gene into a single burden statistic and regress the phenotype on the burden statistic to test for the combined effects of all rare variants in that gene. There are 20 different collapsing models described in the Platform (9 from REGENERON and 11 from AstraZeneca); these inform about the different filters used to select the set of qualifying variants and are based on their pathogenicity and frequency in the population.
+
+**Datatype**: Genetic associations
+
+**Evidence scoring:** Scaled p-value from 0.25 (p = 1e-7) to 1 (p < 1e-17).
+
+**Source:** [AstraZeneca PheWAS Portal](https://azphewas.com), [GWAS Catalog](https://www.ebi.ac.uk/gwas/)
+
+**References:** [Wang, Q. et al, 2021](https://doi.org/10.1038/s41586-021-03855-y); [Backman, J.D. et al, 2021](https://doi.org/10.1038/s41586-021-04103-z)
 
 ### Genomics England PanelApp
 
@@ -212,6 +214,8 @@ The EMBL-EBI ChEMBL is a manually curated database of bioactive molecules with d
 
 In the Platform, ChEMBL evidence represents any target-disease relationship that can be explained by an approved or clinical candidate drug, targeting the gene product and indicated for the disease. Independent studies are treated as individual evidence.
 
+To provide additional context, we integrate a machine learning-based analysis of the reasons why a clinical trial has ended earlier than scheduled. This sorts the stop reasons into a set of 17 classes which include negative, neutral, and positive reasons. This information is available when hovering on the tooltip of the Source column.
+
 **Data type**: Drugs
 
 **Evidence scoring:** ChEMBL evidence is scored in a 2-step process. In step 1, a score is assigned to every piece of evidence based on the clinical precedence:
@@ -278,8 +282,6 @@ In the Platform, each pathway significantly enriched in tumor-occurring mutation
 **References**: [Iorio, F. et al, 2018](https://doi.org/10.1038/s41598-018-25076-6)
 
 ### Gene signatures
-
-
 
 Data type: The platform also provides information about key driver genes for specific diseases that have been curated from Systems Biology analysis. These publications present different disease gene signatures as potential key drivers or key regulators causing disease.\*Pathways & systems biology
 
@@ -366,6 +368,8 @@ In the Platform, independent target - disease evidence are defined as any signif
 
 ClinVar is a NIH public archive of reports of the relationships among human variations and phenotypes, with supporting evidence. The ClinVar (somatic) data source in the Open Targets Platform captures the subset of ClinVar that refers to somatic variants (as opposed to germline variants).
 
+Information on variants is covered extensively for both single point and structural variants. When available, genomic coordinates are reported with RS numbers, or by following the CHROM\_POS\_REF\_ALT and HGVS notations. &#x20;
+
 Each evidence in the Platform aims to capture an individual RCV record in ClinVar.
 
 **Datatype**: Somatic mutations
@@ -420,17 +424,19 @@ In the Platform, a piece of Europe PMC evidence is the result of aggregating all
 
 **References**: [The Europe PMC Consortium, 2015](https://doi.org/10.1093/nar/gku1061); [Kafkas et al., 2017](https://doi.org/10.1186/s13326-017-0131-3)
 
-### **PhenoDigm**
+### **IMPC**
 
-The Wellcome Sanger Institute PhenoDigm is an algorithm aimed to prioritise disease causing genes based on phenotype information. By leveraging the information from the International Mouse Phenotypes Consortium (IMPC) on mouse knock-out phenotypes, PhenoDigm aims to systematically map the phenotypes observed in mouse to potentially equivalent human diseases. The premise is that if a gene knock-out causes an equivalent phenotype in mouse, the human counterpart is likely to be related with the cause of the disease.
+The genotype-phenotype associations made available by the International Mouse Phenotypes Consortium (IMPC) are used to identify models of human disease based on phenotypic similarity scores.
 
-It uses a semantic approach to map between clinical features observed in humans and mouse phenotype annotations. The phenotypic effects in mice are then mapped to phenotypes associated with human diseases. The matches are identified and a similarity score between a mouse model and a human disease is computed. Details on the scoring are described elsewhere ([Smedley et al 2013](https://europepmc.org/abstract/MED/23660285)).
+The Wellcome Sanger Institute PhenoDigm is an algorithm aimed at capturing the similiarity between a knockout mouse and the clinical manifestations (phenotype) of a human disease. The premise is that if a gene knock-out causes an equivalent phenotype in mouse, the human counterpart is likely to be related with the cause of the disease.
+
+It uses a semantic approach to map between clinical features observed in humans and mouse phenotype annotations. The phenotypic effects in mice are then mapped to phenotypes associated with human diseases. The matches are identified and a similarity score between a mouse model and a human disease is computed.
 
 **Data type**: Animal models
 
-**Evidence scoring**: Similarity score between a mouse model and a human disease described by [Smedley et al 2013](https://europepmc.org/abstract/MED/23660285).
+**Evidence scoring**: The evidence score indicates the degree of concordance between the mouse and disease phenotypes, as described by [Smedley et al 2013](https://europepmc.org/abstract/MED/23660285).
 
-**Source**: [PhenoDigm](https://www.sanger.ac.uk/tool/phenodigm/)
+**Source**: [IMPC](https://www.mousephenotype.org)
 
 **References**: [Smedley, D. et al, 2013](https://doi.org/10.1093/database/bat025)
 
