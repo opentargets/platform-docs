@@ -1,5 +1,31 @@
 # Release notes
 
+## 22.04
+
+### Release date
+
+28 April 2022
+
+### Highlights
+
+* New datasource: gene burden analyses from Regeneron and the AstraZeneca
+* Integration of structural variants from ClinVar
+* Additional information from DailyMed drug label text-mining
+* NLP classification of why clinical trials stopped
+* New data: Gene2phenotype cardiac panel
+
+Check out the[ 22.04 release blog post](https://blog.opentargets.org/open-targets-platform-22-04-release/) for more information on the new features and datasets introduced in this release.&#x20;
+
+### Overall data metrics
+
+* 61,524 targets
+* 18,520 diseases and phenotypes
+* 12,854 drugs and compounds
+* 13,829,174 evidence strings
+* 7,541,360 target-disease associations
+
+Visit the [Open Targets Community 22.04 release thread](https://community.opentargets.org/t/open-targets-platform-22-04-is-out-now/555) for more data metrics for this release, including a per datasource breakdown of evidence strings.
+
 ## 22.02
 
 ### Release date
