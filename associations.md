@@ -53,4 +53,4 @@ There are few important considerations regarding association scores. As describe
 
 Similarly, not all associations with available target - disease evidence should be considered as legitimate target - disease associations. Some or our data sources rely on predictions to assess the relationship between a target and a disease. Thus, they should be considered with caution and always take their relative support in consideration.
 
-![](<.gitbook/assets/Association score (documentation image) - July 2021.png>)
+![](<.gitbook/assets/Association score (documentation image) — April 2022.png>)
