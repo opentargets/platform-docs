@@ -19,7 +19,7 @@
 * platform-etl-backend: [21.11.1](https://github.com/opentargets/platform-etl-backend/releases)
 * terraform-google-opentargets-platform: [22.02.04](https://github.com/opentargets/terraform-google-opentargets-platform/blob/main/profiles/deployment\_context.2202\_4)
 * platform-api-beta: [22.04](https://github.com/opentargets/platform-api/releases/tag/22.04)
-* platform-app: [21.04.2](https://github.com/opentargets/platform-app/releases)
+* platform-app: [22.04.2](https://github.com/opentargets/platform-app/releases)
 
 ## 22.02
 
