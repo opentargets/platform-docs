@@ -20,7 +20,7 @@ The tractability assessments displayed on the Platform's target profile pages is
 
 Data sources used in the pipeline include UniProt, HPA, PDBe, DrugEBIlity, ChEMBL, Pfam, InterPro, Complex Portal, DrugBank, Gene Ontology, and BioModels.
 
-Assessments common to all modalities, ingested from ChEBML, are:&#x20;
+Assessments common to all modalities, ingested from ChEMBL, are:&#x20;
 
 * **Approved Drug**: the target has clinical precedence with Phase IV drugs;&#x20;
 * **Advanced Clinical**: the target has clinical precedence with Phase II or III drugs;
