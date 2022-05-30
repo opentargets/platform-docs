@@ -216,6 +216,8 @@ In the Platform, ChEMBL evidence represents any target-disease relationship that
 
 To provide additional context, we integrate a machine learning-based analysis of the reasons why a clinical trial has ended earlier than scheduled. This sorts the stop reasons into a set of 17 classes which include negative, neutral, and positive reasons. This information is available when hovering on the tooltip of the Source column.
 
+The 17 classes are: Another Study, Business or Administrative, Negative, Study Design, Invalid Reason, Ethical Reason, Insufficient Data, Insufficient Enrolment, Study Staff Moved, Endpoint Met, Regulatory, Logistics or Resources, Safety and Side Effects, No Context, Success, Interim Analysis and Covid 19.&#x20;
+
 **Data type**: Drugs
 
 **Evidence scoring:** ChEMBL evidence is scored in a 2-step process. In step 1, a score is assigned to every piece of evidence based on the clinical precedence:
