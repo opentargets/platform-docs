@@ -10,6 +10,6 @@ For queries about a **single entity or target-disease association**, we recommen
 For more **complex, systematic queries**, we recommend that you use:
 
 * Our comprehensive set of [data downloads](https://platform.opentargets.org/downloads/data) available via FTP or Google Cloud
-* Our [Google BigQuery](google-bigquery.md) instance that supports SQL-like queries and allows you to export data to your own Google Cloud Storage bucket
+* Our [Google BigQuery](google-bigquery.md) instance that supports SQL-like queries and allows you to export data to your own Google Cloud Storage bucket. This data is available as a [BigQuery Public Dataset](https://cloud.google.com/bigquery/public-data).
 
 If you use our data in your research or commercial product, please [cite our latest publication](../citation.md).

@@ -2,7 +2,7 @@
 
 To support more complex and systematic queries, we provide all datasets as data downloads.
 
-A list of all datasets is available in the [Platform Data Downloads](https://platform.opentargets.org/downloads) page.&#x20;
+A list of all datasets is available in the [Platform Data Downloads](https://platform.opentargets.org/downloads) page.
 
 All Platform **datasets** are available as a distributed collection of data. This implies that for each dataset, there will be a directory with a list of partitioned files. Currently, we produce our datasets in either Parquet or JSON format. Both of these formats allow us to expose nested information in a machine-readable way. Next we describe how to download, access and query this information in a step-by-step guide.
 
@@ -11,6 +11,8 @@ Archive datasets, as well as input files and other secondary products are also m
 ## Download
 
 Below is a walkthrough on how to download the `diseases` dataset from the `21.04` release in Parquet format using different approaches.
+
+We recommend using **lftp** with a command line client, and when using tools like _wget_, _curl_, etc., use _https://_ rather than _ftp://_
 
 #### Using rsync
 
@@ -26,10 +28,10 @@ rsync -rpltvz --delete rsync.ebi.ac.uk::pub/databases/opentargets/platform/21.04
 
 ```bash
 wget --recursive --no-parent --no-host-directories --cut-dirs 8 \
-ftp://ftp.ebi.ac.uk/pub/databases/opentargets/platform/21.04/output/etl/parquet/diseases
+https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/21.04/output/etl/parquet/diseases
 ```
 
-#### Using Google Cloud Platform (paywalled)
+#### Using Google Cloud Platform (paywalled after 1TB)
 
 Users with Google Cloud Platform account can download the datasets through the Google Cloud Console or using `gsutil` command-line tool.
 
@@ -58,7 +60,7 @@ First of all the dataset needs to be downloaded as described in the previous sec
 gsutil -m cp -r gs://open-targets-data-releases/21.04/output/etl/parquet/evidence/sourceId=eva .
 ```
 
-The next scripts make use of Apache Spark ([PySpark](https://spark.apache.org/docs/latest/api/python/index.html) or [Sparklyr](https://spark.rstudio.com)) to read and query the dataset using modern functional programming approaches. These packages need to be installed in their respective environments.&#x20;
+The next scripts make use of Apache Spark ([PySpark](https://spark.apache.org/docs/latest/api/python/index.html) or [Sparklyr](https://spark.rstudio.com)) to read and query the dataset using modern functional programming approaches. These packages need to be installed in their respective environments.
 
 The next query only displays 6 fields of the ClinVar evidence but there are other non-null values available. The **schema** is the best way to explore what's available and query the most relevant information. All Platform evidence share the same schema, so there will be a long list of fields that might not be informative for ClinVar but will be relevant if trying to query other data sources.
 

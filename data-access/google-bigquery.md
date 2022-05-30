@@ -1,10 +1,12 @@
 # Google BigQuery
 
-To support more complex queries and advanced informatics workflows that use Google Cloud services, the Open Targets Platform data is also available via our Google BigQuery instance - [open-targets-prod](https://console.cloud.google.com/bigquery?p=open-targets-prod\&d=platform\_21\_06).
+To support more complex queries and advanced informatics workflows that use Google Cloud services, the Open Targets Platform data is also available as a Google Cloud public dataset via our Google BigQuery instance — [open-targets-prod](https://console.cloud.google.com/bigquery?p=open-targets-prod\&d=platform\_21\_06).
 
 ## What is Google BigQuery?
 
 Google BigQuery is a data warehouse that enables researchers to run super-fast, asynchronous SQL queries using Google's cloud infrastructure. After running your query, you can either export into various formats or copy into a Google Cloud bucket for further downstream analyses.
+
+Open Targets Platform data is publicly accessible as a [Google Cloud public dataset](https://cloud.google.com/public-datasets). Users only pay for the queries they perform on the data, and through this program, the first 1 TB per month is free.
 
 ## BigQuery access points
 
@@ -18,7 +20,7 @@ For more information on BiqQuery, please review the [BigQuery documentation](htt
 
 ## Example BigQuery SQL queries
 
-Below is a sample query that uses our `associationByOverallDirect` dataset to return a list of targets associated with psoriasis (EFO\_0000676) and the overall association score.&#x20;
+Below is a sample query that uses our `associationByOverallDirect` dataset to return a list of targets associated with psoriasis (EFO\_0000676) and the overall association score.
 
 ```sql
 SELECT
@@ -75,4 +77,4 @@ WHERE
 
 ## Tutorials and how-to guides
 
-For more information on how to use BigQuery to access Platform data and example queries based on actual use cases and research questions, check out the [Open Targets Community](https://community.opentargets.org).
+For more information on how to use BigQuery to access Platform data and example queries based on actual use cases and research questions, check out the [Open Targets Community](https://community.opentargets.org) and [our Google Cloud dataset homepage](https://console.cloud.google.com/marketplace/product/bigquery-public-data/open-targets-platform?project=open-targets-prod).&#x20;
