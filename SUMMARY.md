@@ -23,6 +23,5 @@
 * [Platform infrastructure](infrastructure.md)
 * [Licence](licence.md)
 * [Release notes](release-notes.md)
-* [Change log](change-log.md)
 * [Terms of use](terms-of-use.md)
 * [Citation](citation.md)
