@@ -36,16 +36,17 @@ The **overall association scores** aim to summarise all the aggregated evidence 
 
 To calculate both data type and overall association scores, evidence is weighted using a factor that aims to calibrate the relevance of each data source relative to others. The default weights used in the web application can be modified by the user in the API, to adjust to different prioritisation strategies.
 
-| Data source       | Weight factor |
-| ----------------- | ------------- |
-| Europe PMC        | 0.2           |
-| Expression Atlas  | 0.2           |
-| PhenoDigm         | 0.2           |
-| PROGENy           | 0.5           |
-| SLAPenrich        | 0.5           |
-| Cancer Biomarkers | 0.5           |
-| SysBio            | 0.5           |
-| Others            | 1             |
+| Data source                          | Weight factor |
+| ------------------------------------ | ------------- |
+| Europe PMC                           | 0.2           |
+| Expression Atlas                     | 0.2           |
+| PhenoDigm                            | 0.2           |
+| PROGENy                              | 0.5           |
+| SLAPenrich                           | 0.5           |
+| Cancer Biomarkers                    | 0.5           |
+| SysBio                               | 0.5           |
+| OTAR Projects (partner preview only) | 0.5           |
+| Others                               | 1             |
 
 ### Interpreting association scores
 
