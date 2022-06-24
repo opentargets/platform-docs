@@ -1,5 +1,31 @@
 # Release notes
 
+## 22.06
+
+### Release date
+
+24 June 2022
+
+### Highlights
+
+* New data: five additional gene burden analyses from Genebass
+* New feature: new visualisation of subcellular locations of targets now available to users
+*   New ontology term: “medical procedure”&#x20;
+
+
+
+Check out the [22.06 release blog post](https://blog.opentargets.org/open-targets-platform-22-06-release/) for more information on the new features and datasets introduced in this release.&#x20;
+
+### Overall data metrics
+
+* 61,524 targets
+* 23,074 diseases and phenotypes
+* 12,854 drugs and compounds
+* 14,455,104 evidence strings
+* 7,247,865 target-disease associations
+
+Visit the [Open Targets Community 22.06 release thread](https://community.opentargets.org/t/the-latest-release-22-06-is-now-live/675) for more data metrics for this release, including a per datasource breakdown of evidence strings.
+
 ## 22.04
 
 ### Release date
