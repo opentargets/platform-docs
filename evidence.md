@@ -76,17 +76,25 @@ In Step 2, the score is modulated based on the ClinVar review status:
 
 ### Gene Burden
 
-Gene burden data comprises gene–phenotype relationships observed in gene-level association tests using rare variant collapsing analyses from UK Biobank exome sequence data. The Platform integrates burden tests carried out by REGENERON (Wang, Q. et al, 2021), and the gene-level PheWAS maintained by the AstraZeneca PheWAS Portal and described in Backman, J.D. et al, 2021.
+Gene burden data comprises gene–phenotype relationships observed in gene-level association tests using rare variant collapsing analyses. The Platform integrates burden tests carried out by several sources:
 
-These associations are a result of collapsing rare variants in a a gene into a single burden statistic and regress the phenotype on the burden statistic to test for the combined effects of all rare variants in that gene. There are 20 different collapsing models described in the Platform (9 from REGENERON and 11 from AstraZeneca); these inform about the different filters used to select the set of qualifying variants and are based on their pathogenicity and frequency in the population.
+* **REGENERON** (Wang et al., 2021), a whole-exome sequencing analysis of individuals from the UK Biobank.
+* **AstraZeneca PheWAS Portal** (Backman et al., 2021), a whole-exome sequencing analysis of individuals from the UK Biobank.
+* **Genebass** (Karczewski et al., 2022): Gene-based Association Summary Statistics (Genebass),  a whole-exome sequencing analysis of individuals from the UK Biobank.
+* **The SCHEMA consortium** (Singh et al., 2022), a whole-exome sequencing analysis of individuals with schizophrenia.
+* **The Epi25 collaborative** (Epi25 Collaborative, 2019), a whole-exome sequencing analysis of individuals with epilepsy.
+* **The Autism Sequencing Consortium** (Satterstrom et al., 2020), a whole-exome sequencing analysis of individuals with autism spectrum disorder.
+* The results of an **Open Targets project, (Bomba et al., 2022)**, a whole-exome sequencing analysis of individuals from the INTERVAL cohort testing for associations between rare coding variants and blood metabolites.
+
+These associations are a result of collapsing rare variants in a gene into a single burden statistic and regress the phenotype on the burden statistic to test for the combined effects of all rare variants in that gene. The different collapsing methods inform about the filters used to select the set of qualifying variants, mostly based on their pathogenicity and frequency in the population.
 
 **Datatype**: Genetic associations
 
 **Evidence scoring:** Scaled p-value from 0.25 (p = 1e-7) to 1 (p < 1e-17).
 
-**Source:** [AstraZeneca PheWAS Portal](https://azphewas.com), [GWAS Catalog](https://www.ebi.ac.uk/gwas/)
+**Source:** [AstraZeneca PheWAS Portal](https://azphewas.com), [GWAS Catalog](https://www.ebi.ac.uk/gwas/), [Genebass](https://app.genebass.org)
 
-**References:** [Wang, Q. et al, 2021](https://doi.org/10.1038/s41586-021-03855-y); [Backman, J.D. et al, 2021](https://doi.org/10.1038/s41586-021-04103-z)
+**References:** [Wang, Q. et al, 2021](https://doi.org/10.1038/s41586-021-03855-y); [Backman, J.D. et al, 2021](https://doi.org/10.1038/s41586-021-04103-z); [K.K., Karczewski et al., 2022](https://www.medrxiv.org/content/10.1101/2021.06.19.21259117v4); [Singh et al., 2022](https://rdcu.be/cPZP3); [Epi25 Collaborative, 2019](https://www.cell.com/ajhg/fulltext/S0002-9297\(19\)30207-1); [Satterstrom et al., 2020](https://www.sciencedirect.com/science/article/pii/S0092867419313984); [Bomba et al., 2022](https://www.cell.com/ajhg/fulltext/S0002-9297\(22\)00157-4)
 
 ### Genomics England PanelApp
 
