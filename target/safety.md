@@ -6,21 +6,21 @@ description: Manually-curated safety data to support target prioritisation
 
 ## Overview
 
-Throughout the drug discovery and development process, target safety assessments help with understanding the role of the drug target in normal physiology and potential unintended adverse consequences and safety liabilities when modulating the target with a chemical compound or drug (Brennan, 2017).&#x20;
+Throughout the drug discovery and development process, target safety assessments help with understanding the role of the drug target in normal physiology and potential unintended adverse consequences and safety liabilities when modulating the target with a chemical compound or drug (Brennan, 2017).
 
 To support target prioritisation, we have manually curated experimental data and insights from publications and other well-known sources of target safety and toxicity data, including the [ToxCast](https://www.epa.gov/chemical-research/toxicity-forecasting) database.
 
-Safety data is available on the target profile page and can be accessed to provide a systematic view of potentially relevant target safety liabilities.&#x20;
+Safety data is available on the target profile page and can be accessed to provide a systematic view of potentially relevant target safety liabilities.
 
 ## **Computational pipelines and datasets**
 
-Target safety datasets are mapped to the correct Ensembl gene ID and ingested during our initial pipeline steps. The files are available for download from [our data download page](https://platform.opentargets.org/downloads).
+Target safety datasets are mapped to the correct Ensembl gene ID and ingested during our initial pipeline steps to enrich the target annotation object. The data is available for download as part of the target core annotation from [our data download page](https://platform.opentargets.org/downloads).
 
 ## Publications
 
 Bowes J, Brown AJ, Hamon J, Jarolimek W, Sridhar A, Waldron G, Whitebread S. **Reducing safety-related drug attrition: the use of in vitro pharmacological profiling**. Nat Rev Drug Discov. 2012 Dec;11(12):909-22. doi: [10.1038/nrd3845](https://doi.org/10.1038/nrd3845). PMID: [23197038](https://pubmed.ncbi.nlm.nih.gov/23197038/).
 
-Brennan R.J. (2017) **Target Safety Assessment: Strategies and Resources**. In: Gautier JC. (eds) Drug Safety Evaluation. Methods in Molecular Biology, vol 1641. Humana Press, New York, NY.  doi: [10.1007/978-1-4939-7172-5\_12](https://doi.org/10.1007/978-1-4939-7172-5\_12)
+Brennan R.J. (2017) **Target Safety Assessment: Strategies and Resources**. In: Gautier JC. (eds) Drug Safety Evaluation. Methods in Molecular Biology, vol 1641. Humana Press, New York, NY. doi: [10.1007/978-1-4939-7172-5\_12](https://doi.org/10.1007/978-1-4939-7172-5\_12)
 
 Force T, Kolaja KL. **Cardiotoxicity of kinase inhibitors: the prediction and translation of preclinical models to clinical outcomes**. Nat Rev Drug Discov. 2011 Feb;10(2):111-26. doi: [10.1038/nrd3252](https://doi.org/10.1038/nrd3252). PMID: [21283106](https://pubmed.ncbi.nlm.nih.gov/21283106/).
 

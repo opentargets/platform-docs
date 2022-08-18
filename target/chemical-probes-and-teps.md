@@ -37,4 +37,4 @@ The Structural Genomics Consortium (SGC) - [https://www.thesgc.org/](https://www
 
 ## Computational pipelines and datasets
 
-Chemical probes datasets are downloaded from each data source listed above, mapped to the correct Ensembl gene ID, and ingested during our initial pipeline steps. The files are available for download from [our data download page](https://platform.opentargets.org/downloads).
+Chemical probes datasets are downloaded from each data source listed above, mapped to the correct Ensembl gene ID, and ingested during our initial pipeline steps. The data is available for download as part of the target core annotation from [our data download page](https://platform.opentargets.org/downloads).
