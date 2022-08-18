@@ -452,8 +452,6 @@ It uses a semantic approach to map between clinical features observed in humans 
 
 ### Cancer Biomarkers
 
-The Cancer Biomarkers database features biomarkers of drug sensitivity, resistance, and toxicity for drugs targeting specific targets in cancer, curated by clinical and scientific experts in precision oncology, and classified by cancer type.
-
 One of the aims of the Cancer Genome Interpreter is to identify how variations in the tumour genome may influence its response to anti-cancer therapies. The Cancer Biomarkers database features biomarkers of drug sensitivity, resistance, and toxicity for drugs targeting specific targets in cancer, curated by clinical and scientific experts in precision oncology, and classified by cancer type.
 
 **Data type:** Pathways & systems biology
