@@ -46,8 +46,11 @@ Information on variants is covered extensively for both single point and structu
 | likely benign                                | 0              |
 | conflicting data from submitters             | 0.3            |
 | conflicting interpretations of pathogenicity | 0.3            |
+| low penetrance                               | 0.3            |
 | other                                        | 0.3            |
+| uncertain risk allele                        | 0.3            |
 | uncertain significance                       | 0.3            |
+| established risk allele                      | 0.5            |
 | risk factor                                  | 0.5            |
 | affects                                      | 0.5            |
 | likely pathogenic                            | 0.7            |
