@@ -298,7 +298,9 @@ In the Platform, each pathway significantly enriched in tumor-occurring mutation
 
 ### Gene signatures
 
-Data type: The platform also provides information about key driver genes for specific diseases that have been curated from Systems Biology analysis. These publications present different disease gene signatures as potential key drivers or key regulators causing disease.\*Pathways & systems biology
+The Platform also provides information about key driver genes for specific diseases that have been curated from Systems Biology analysis. These publications present different disease gene signatures as potential key drivers or key regulators causing disease.
+
+**Data type**: Pathways & systems biology
 
 **Evidence scoring**: Scoring depends on whether the original data contains or not a score:
 
@@ -343,7 +345,11 @@ In the Platform, each contrast from independent studies capturing differentially
 
 **Source**: [Expression Atlas](https://www.ebi.ac.uk/gxa/home)
 
-. All evidence has a base score of 0.5. Whereas tier 2 genes score is always 0.5, tier 1 scores can be modulated as follows:**References**: [Papatheodorou, I. et al, 2020](https://doi.org/10.1093/nar/gkz947)
+**References**: [Papatheodorou, I. et al, 2020](https://doi.org/10.1093/nar/gkz947)
+
+
+
+\#All evidence has a base score of 0.5. Whereas tier 2 genes score is always 0.5, tier 1 scores can be modulated as follows
 
 ### **Cancer Gene Census**
 
@@ -353,7 +359,7 @@ In the Platform, CGC evidence is aggregated at the target - disease level to pro
 
 **Data type**: Somatic mutations
 
-**Evidence scoring**: Scoring is based on [Cancer Gene Census tier sys](https://cancer.sanger.ac.uk/census)
+**Evidence scoring**: Scoring is based on [Cancer Gene Census tier sys](https://cancer.sanger.ac.uk/census)tem
 
 | Modulator | Condition                                                                                         |
 | --------- | ------------------------------------------------------------------------------------------------- |
