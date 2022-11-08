@@ -17,8 +17,9 @@ You can also join the [Open Targets Community](https://community.opentargets.org
 * Twitter: [@opentargets](https://twitter.com/opentargets)
 * YouTube: [Open Targets](https://www.youtube.com/opentargets)
 * LinkedIn: [Open Targets](https://www.linkedin.com/company/open-targets/)
-* Facebook: [Open Targets](https://www.facebook.com/OpenTargets)
 
-To report any bugs or data issues, please email us at [helpdesk@opentargets.org](mailto:helpdesk@opentargets.org).
+To report any bugs or data issues, please post a message on the [Open Targets Community](https://community.opentargets.org/).
+
+
 
 {% embed url="https://www.youtube.com/watch?v=cuutCYPiYuw" %}

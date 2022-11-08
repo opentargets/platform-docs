@@ -28,10 +28,6 @@ Check out the[ 22.09 release blog post](https://blog.opentargets.org/open-target
 
 Visit the [Open Targets Community 22.09 release thread](https://community.opentargets.org/t/22-09-platform-release-now-live/783) for more data metrics for this release, including a per datasource breakdown of evidence strings.
 
-
-
-
-
 ## 22.06
 
 ### Release date
@@ -183,4 +179,4 @@ Visit the [Open Targets Community](https://community.opentargets.org/t/21-06-pla
 
 ## Archive
 
-For release notes for previous releases, please contact [helpdesk@opentargets.org](mailto:helpdesk@opentargets.org) or check out the [Open Targets Community News & Announcement section](https://community.opentargets.org/c/news-and-announcements/5).
+For release notes for previous releases, check out the [Open Targets Community News & Announcement section](https://community.opentargets.org/c/news-and-announcements/5).

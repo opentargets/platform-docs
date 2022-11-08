@@ -50,4 +50,4 @@ As a consortium committed to developing open-source, freely available tools that
 
 Please review [our contribution guidelines](https://github.com/opentargets/platform/blob/master/Contribution%20Guidelines.md) and check out the [Open Targets Community](https://community.opentargets.org) to get started.
 
-If you have further questions, please email us at [helpdesk@opentargets.org](mailto:helpdesk@opentargets.org).
+If you have further questions, please get in touch with us on the [Open Targets Community](https://community.opentargets.org/).
