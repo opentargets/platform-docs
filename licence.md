@@ -35,7 +35,7 @@ Please contact us on [the Open Targets Community](https://community.opentargets.
 | [Gene Ontology](http://geneontology.org/)                                                                       | CC-BY 4.0                                                                         |
 | [Gene Signature](https://www.hsls.pitt.edu/obrc/index.php?page=URL1268854187)                                   | Apache 2.0                                                                        |
 | [Gene2Phenotype](https://www.ebi.ac.uk/gene2phenotype)                                                          | EMBL-EBI terms of use                                                             |
-| [Genomics England PanelApp](https://panelapp.genomicsengland.co.uk/)                                            | Non commercial (internal agreement)                                               |
+| [Genomics England PanelApp](https://panelapp.genomicsengland.co.uk/)                                            | Commercial use for Open Targets                                                   |
 | [gnomAD](https://gnomad.broadinstitute.org/)                                                                    | CC0 1.0                                                                           |
 | [GTEx](https://www.gtexportal.org)                                                                              | CC-BY 4.0                                                                         |
 | [HeCaTos](https://cordis.europa.eu/project/id/602156/results)                                                   | CC-BY 4.0                                                                         |
@@ -50,7 +50,7 @@ Please contact us on [the Open Targets Community](https://community.opentargets.
 | [PhenoDigm](https://www.sanger.ac.uk/tool/phenodigm/)                                                           | CC-BY 4.0                                                                         |
 | [Probes and Drugs](https://www.probes-drugs.org/home/)                                                          | CC-BY 4.0                                                                         |
 | [PROGENy](https://saezlab.github.io/progeny/)                                                                   | Apache 2.0                                                                        |
-| [Project Score](https://score.depmap.sanger.ac.uk/)                                                             | Non commercial (internal agreement)                                               |
+| [Project Score](https://score.depmap.sanger.ac.uk/)                                                             | Commercial use for Open Targets                                                   |
 | [Reactome](https://reactome.org/)                                                                               | CC-BY 4.0                                                                         |
 | [Sequence Ontology](http://www.sequenceontology.org/)                                                           | CC-BY 4.0                                                                         |
 | [Signor](https://signor.uniroma2.it/) (via [Intact](https://www.ebi.ac.uk/intact/home))                         | EMBL-EBI terms of use                                                             |
