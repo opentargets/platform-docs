@@ -15,7 +15,7 @@ In addition to continuous updates from our data providers, we have introduced th
 * Variant functional consequences, available to browse in the Gene2Phenotype and Orphanet widgets
 * Other improvements and bug fixes
 
-Check out the 22.11 release blog post for more information on the new features and datasets introduced in this release.
+Check out the [22.11 release blog post](https://blog.opentargets.org/open-targets-platform-22-11-release/) for more information on the new features and datasets introduced in this release.
 
 ### Overall data metrics
 
@@ -25,7 +25,7 @@ Check out the 22.11 release blog post for more information on the new features a
 * 14,611,717 evidence strings
 * 6,960,486 target-disease associations
 
-Visit the Open Targets Community 22.11 release thread for more data metrics for this release, including a per datasource breakdown of evidence strings.
+Visit the [Open Targets Community 22.11 release thread](https://community.opentargets.org/t/22-11-platform-release-now-live/870) for more data metrics for this release, including a per datasource breakdown of evidence strings.
 
 
 
