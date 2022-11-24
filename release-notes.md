@@ -1,5 +1,34 @@
 # Release notes
 
+## 22.11
+
+### Release date
+
+24 November 2022
+
+### Highlights
+
+In addition to continuous updates from our data providers, we have introduced the following new features:&#x20;
+
+* Gene burden data for Parkinson’s disease
+* Updated classifications for clinical trial stop reasons
+* Variant functional consequences, available to browse in the Gene2Phenotype and Orphanet widgets
+* Other improvements and bug fixes
+
+Check out the 22.11 release blog post for more information on the new features and datasets introduced in this release.
+
+### Overall data metrics
+
+* 62,678 targets
+* 22,274 diseases and phenotypes
+* 12,854 drugs and compounds
+* 14,611,717 evidence strings
+* 6,960,486 target-disease associations
+
+Visit the Open Targets Community 22.11 release thread for more data metrics for this release, including a per datasource breakdown of evidence strings.
+
+
+
 ## 22.09
 
 ### Release date
@@ -8,11 +37,12 @@
 
 ### Highlights
 
-* New data, in particular:
-  * Open Targets Genetics
-  * Genomics England PanelApp
-  * Gene burden
-  * Probes and drugs
+New data, in particular:
+
+* Open Targets Genetics
+* Genomics England PanelApp
+* Gene burden
+* Probes and drugs
 * New data integrity file, in line with FAIR principles
 
 Check out the[ 22.09 release blog post](https://blog.opentargets.org/open-targets-platform-22-09-release/) for more information on the new features and datasets introduced in this release.\
