@@ -46,8 +46,11 @@ Information on variants is covered extensively for both single point and structu
 | likely benign                                | 0              |
 | conflicting data from submitters             | 0.3            |
 | conflicting interpretations of pathogenicity | 0.3            |
+| low penetrance                               | 0.3            |
 | other                                        | 0.3            |
+| uncertain risk allele                        | 0.3            |
 | uncertain significance                       | 0.3            |
+| established risk allele                      | 0.5            |
 | risk factor                                  | 0.5            |
 | affects                                      | 0.5            |
 | likely pathogenic                            | 0.7            |
@@ -81,10 +84,13 @@ Gene burden data comprises gene–phenotype relationships observed in gene-level
 * **REGENERON** (Wang et al., 2021), a whole-exome sequencing analysis of individuals from the UK Biobank.
 * **AstraZeneca PheWAS Portal** (Backman et al., 2021), a whole-exome sequencing analysis of individuals from the UK Biobank.
 * **Genebass** (Karczewski et al., 2022): Gene-based Association Summary Statistics (Genebass),  a whole-exome sequencing analysis of individuals from the UK Biobank.
+* The results of whole-exome and whole-genome sequencing analysis based on the **SPARK cohort** bring evidence of novel targets implicated in **autism spectrum disorder** (Zhou et al., 2022).
 * **The SCHEMA consortium** (Singh et al., 2022), a whole-exome sequencing analysis of individuals with schizophrenia.
 * **The Epi25 collaborative** (Epi25 Collaborative, 2019), a whole-exome sequencing analysis of individuals with epilepsy.
 * **The Autism Sequencing Consortium** (Satterstrom et al., 2020), a whole-exome sequencing analysis of individuals with autism spectrum disorder.
 * The results of an **Open Targets project, (Bomba et al., 2022)**, a whole-exome sequencing analysis of individuals from the INTERVAL cohort testing for associations between rare coding variants and blood metabolites.
+* The results of a pan-ancestry whole-exome sequencing analysis identify relevant genes associated with **fat distribution** (Akbari et al., 2022).
+* The results of whole-exome and whole-genome sequencing analysis on **Parkinson disease** and promoted by the AMP-PD initiative, and other collaborators (Makarious et al., 2022).
 
 These associations are a result of collapsing rare variants in a gene into a single burden statistic and regress the phenotype on the burden statistic to test for the combined effects of all rare variants in that gene. The different collapsing methods inform about the filters used to select the set of qualifying variants, mostly based on their pathogenicity and frequency in the population.
 
@@ -94,7 +100,7 @@ These associations are a result of collapsing rare variants in a gene into a sin
 
 **Source:** [AstraZeneca PheWAS Portal](https://azphewas.com), [GWAS Catalog](https://www.ebi.ac.uk/gwas/), [Genebass](https://app.genebass.org)
 
-**References:** [Wang, Q. et al, 2021](https://doi.org/10.1038/s41586-021-03855-y); [Backman, J.D. et al, 2021](https://doi.org/10.1038/s41586-021-04103-z); [K.K., Karczewski et al., 2022](https://www.medrxiv.org/content/10.1101/2021.06.19.21259117v4); [Singh et al., 2022](https://rdcu.be/cPZP3); [Epi25 Collaborative, 2019](https://www.cell.com/ajhg/fulltext/S0002-9297\(19\)30207-1); [Satterstrom et al., 2020](https://www.sciencedirect.com/science/article/pii/S0092867419313984); [Bomba et al., 2022](https://www.cell.com/ajhg/fulltext/S0002-9297\(22\)00157-4)
+**References:** [Wang, Q. et al, 2021](https://doi.org/10.1038/s41586-021-03855-y); [Backman, J.D. et al, 2021](https://doi.org/10.1038/s41586-021-04103-z); [K.K., Karczewski et al., 2022](https://www.medrxiv.org/content/10.1101/2021.06.19.21259117v4); [Zhou X. et al, 2022](https://www.nature.com/articles/s41588-022-01148-2), [Singh et al., 2022](https://rdcu.be/cPZP3); [Epi25 Collaborative, 2019](https://www.cell.com/ajhg/fulltext/S0002-9297\(19\)30207-1); [Satterstrom et al., 2020](https://www.sciencedirect.com/science/article/pii/S0092867419313984); [Bomba et al., 2022](https://www.cell.com/ajhg/fulltext/S0002-9297\(22\)00157-4); [Akbari, P., 2022](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9399235/); [Makarious et al., 2022](https://www.medrxiv.org/content/10.1101/2022.11.08.22280168v1.full.pdf)
 
 ### Genomics England PanelApp
 
@@ -293,7 +299,9 @@ In the Platform, each pathway significantly enriched in tumor-occurring mutation
 
 ### Gene signatures
 
-Data type: The platform also provides information about key driver genes for specific diseases that have been curated from Systems Biology analysis. These publications present different disease gene signatures as potential key drivers or key regulators causing disease.\*Pathways & systems biology
+The Platform also provides information about key driver genes for specific diseases that have been curated from Systems Biology analysis. These publications present different disease gene signatures as potential key drivers or key regulators causing disease.
+
+**Data type**: Pathways & systems biology
 
 **Evidence scoring**: Scoring depends on whether the original data contains or not a score:
 
@@ -338,7 +346,11 @@ In the Platform, each contrast from independent studies capturing differentially
 
 **Source**: [Expression Atlas](https://www.ebi.ac.uk/gxa/home)
 
-. All evidence has a base score of 0.5. Whereas tier 2 genes score is always 0.5, tier 1 scores can be modulated as follows:**References**: [Papatheodorou, I. et al, 2020](https://doi.org/10.1093/nar/gkz947)
+**References**: [Papatheodorou, I. et al, 2020](https://doi.org/10.1093/nar/gkz947)
+
+
+
+\#All evidence has a base score of 0.5. Whereas tier 2 genes score is always 0.5, tier 1 scores can be modulated as follows
 
 ### **Cancer Gene Census**
 
@@ -348,7 +360,7 @@ In the Platform, CGC evidence is aggregated at the target - disease level to pro
 
 **Data type**: Somatic mutations
 
-**Evidence scoring**: Scoring is based on [Cancer Gene Census tier sys](https://cancer.sanger.ac.uk/census)
+**Evidence scoring**: Scoring is based on [Cancer Gene Census tier sys](https://cancer.sanger.ac.uk/census)tem
 
 | Modulator | Condition                                                                                         |
 | --------- | ------------------------------------------------------------------------------------------------- |
