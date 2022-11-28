@@ -22,7 +22,7 @@ Please contact us on [the Open Targets Community](https://community.opentargets.
 
 | Data source                                                                                                     | Licence                                                                           |
 | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| [Cancer Gene Census](https://cancer.sanger.ac.uk/census)                                                        | Commercial use for Open Targets (licence agreement required)                      |
+| [Cancer Gene Census](https://cancer.sanger.ac.uk/census)                                                        | Commercial use for Open Targets                                                   |
 | [Cancer Genome Interpreter](https://www.cancergenomeinterpreter.org/biomarkers)                                 | CC-BY 4.0                                                                         |
 | [ChEMBL](https://www.ebi.ac.uk/chembl/)                                                                         | CC BY-SA 3.0                                                                      |
 | [ClinGen](https://clinicalgenome.org/)                                                                          | CC0 1.0                                                                           |
