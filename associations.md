@@ -40,7 +40,7 @@ To calculate both data type and overall association scores, evidence is weighted
 | ------------------------------------ | ------------- |
 | Europe PMC                           | 0.2           |
 | Expression Atlas                     | 0.2           |
-| PhenoDigm                            | 0.2           |
+| IMPC                                 | 0.2           |
 | PROGENy                              | 0.5           |
 | SLAPenrich                           | 0.5           |
 | Cancer Biomarkers                    | 0.5           |
