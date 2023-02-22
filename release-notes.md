@@ -34,14 +34,14 @@ Check out the [23.02 release blog post](https://blog.opentargets.org/open-target
 ### Overall data metrics
 
 * 62,678 targets
-* 24,713 diseases
-* 12,854 drugs
-* 10,446,771 evidence
-* 6,656,559 associations
+* 24,713 diseases and phenotypes
+* 12,854 drugs and compounds
+* 10,446,771 evidence strings
+* 6,656,559 target-disease associations
 
 Visit the [Open Targets Community 23.02 release thread](https://community.opentargets.org/t/23-02-platform-release-now-live/962) for more data metrics for this release, including a per datasource breakdown of evidence strings.
 
-##
+
 
 ## 22.11
 
@@ -69,8 +69,6 @@ Check out the [22.11 release blog post](https://blog.opentargets.org/open-target
 * 6,960,486 target-disease associations
 
 Visit the [Open Targets Community 22.11 release thread](https://community.opentargets.org/t/22-11-platform-release-now-live/870) for more data metrics for this release, including a per datasource breakdown of evidence strings.
-
-
 
 ## 22.09
 
