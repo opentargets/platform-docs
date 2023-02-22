@@ -16,9 +16,11 @@ In order to contextualise the relative importance of each piece of evidence, the
 
 Open Targets Genetics focuses on the identification of trait-causal genes from significant loci in genome-wide association studies (GWAS).
 
-Whereas GWAS identifies significantly-associated alleles (lead variants), these variants might not necessarily be the causal (or the only causal) ones. Moreover, the causal genes are not necessarily the closest to the lead variant. Due to these reasons, identifying target-disease associations based on GWAS data is extremely challenging. Open Targets Genetics tackles this and other challenges by applying cutting-edge statistical genetics methodologies into large-scale human genetics data. Moreover, Open Targets Genetics uses a machine learning method to identify the most likely causal genes by integrating and summarising the effect of tag variants based on genetic and functional genomic data. This method is referred as the [Locus2Gene model](https://genetics-docs.opentargets.org/our-approach/prioritising-causal-genes-at-gwas-loci-l2g).
+Whereas GWAS identifies significantly-associated alleles (lead variants), these variants might not necessarily be the causal (or the only causal) ones. Moreover, the causal genes are not necessarily the closest to the lead variant. Due to these reasons, identifying target-disease associations based on GWAS data is extremely challenging. Open Targets Genetics tackles this and other challenges by applying cutting-edge statistical genetics methodologies into large-scale human genetics data. Moreover, Open Targets Genetics uses a machine learning method to identify the most likely causal genes by integrating and summarising the effect of tag variants based on genetic and functional genomic data. This method is referred to as the [Locus2Gene model](https://genetics-docs.opentargets.org/our-approach/prioritising-causal-genes-at-gwas-loci-l2g).
 
-A Genetics portal evidence in the Platform is defined as any GWAS-significant lead variant (p-value < 1e-8) identified in a study with a predicted causal gene for the given trait with a Locus2gene score greater than 0.05.
+A Genetics portal evidence in the Platform is defined as any GWAS-significant lead variant (p-value < 1e-8) identified in a study with a predicted causal gene for the given trait with a Locus2Gene (L2G) score greater than 0.05.
+
+When available, L2G predictions incorporate a new column ‘QTL effect’ containing a Sequence Ontology term representing whether the observed allele is expected to cause an increased/decreased abundance of the gene product. In cases in which multiple variants with opposite effects are available only the strongest effect is considered.
 
 **Datatype**: Genetic associations
 
