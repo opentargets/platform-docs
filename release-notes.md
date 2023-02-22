@@ -10,21 +10,21 @@
 
 In addition to regular updates from our data providers, we have a number of new features in this release:
 
-New evidence for target-disease associations:
+**New evidence for target-disease associations**
 
 * Additional data for metabolic biomarkers added to our Gene Burden widget
 * QTL-based direction of effect included in evidence from Open Targets Genetics
 
-Improved target annotation data:
+**Improved target annotation data**
 
 * Integration of Target safety evidence from AOPWiki
 * New data from Probes and Drugs’ 04.2022 release
 
-Literature updates
+**Literature updates**
 
 * Preprints and patents now included in our bibliography
 
-Development updates
+**Development updates**
 
 * Redesigned search
 * Provenance metadata
@@ -40,8 +40,6 @@ Check out the [23.02 release blog post](https://blog.opentargets.org/open-target
 * 6,656,559 associations
 
 Visit the [Open Targets Community 23.02 release thread](https://community.opentargets.org/t/23-02-platform-release-now-live/962) for more data metrics for this release, including a per datasource breakdown of evidence strings.
-
-##
 
 ##
 
