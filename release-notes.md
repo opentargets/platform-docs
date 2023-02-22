@@ -29,17 +29,17 @@ Development updates
 * Redesigned search
 * Provenance metadata
 
-Check out the 23.02 release blog post for more information on the new features and datasets introduced in this release.
+Check out the [23.02 release blog post](https://blog.opentargets.org/open-targets-platform-23-02-release/) for more information on the new features and datasets introduced in this release.
 
 ### Overall data metrics
 
 * 62,678 targets
-* 22,274 diseases and phenotypes
-* 12,854 drugs and compounds
-* 14,611,717 evidence strings
-* 6,960,486 target-disease associations
+* 24,713 diseases
+* 12,854 drugs
+* 10,446,771 evidence
+* 6,656,559 associations
 
-Visit the [Open Targets Community 22.11 release thread](https://community.opentargets.org/t/22-11-platform-release-now-live/870) for more data metrics for this release, including a per datasource breakdown of evidence strings.
+Visit the [Open Targets Community 23.02 release thread](https://community.opentargets.org/t/23-02-platform-release-now-live/962) for more data metrics for this release, including a per datasource breakdown of evidence strings.
 
 ##
 
