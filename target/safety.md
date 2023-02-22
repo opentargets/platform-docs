@@ -8,7 +8,7 @@ description: Manually-curated safety data to support target prioritisation
 
 Throughout the drug discovery and development process, target safety assessments help with understanding the role of the drug target in normal physiology and potential unintended adverse consequences and safety liabilities when modulating the target with a chemical compound or drug (Brennan, 2017).
 
-To support target prioritisation, we have manually curated experimental data and insights from publications and other well-known sources of target safety and toxicity data, including the [ToxCast](https://www.epa.gov/chemical-research/toxicity-forecasting) and [AOPWiki](https://aopwiki.org) databases.
+To support target prioritisation, we have manually curated experimental data and insights from publications and other well-known sources of target safety and toxicity data, including the [ToxCast](https://www.epa.gov/chemical-research/toxicity-forecasting) database.
 
 Safety data is available on the target profile page and can be accessed to provide a systematic view of potentially relevant target safety liabilities.
 
@@ -31,5 +31,3 @@ Lamore SD, Ahlberg E, Boyer S, Lamb ML, Hortigon-Vinagre MP, Rodriguez V, Smith 
 Lynch JJ 3rd, Van Vleet TR, Mittelstadt SW, Blomme EAG. **Potential functional and pathological side effects related to off-target pharmacological activity**. J Pharmacol Toxicol Methods. 2017 Sep;87:108-126. doi: [10.1016/j.vascn.2017.02.020](https://doi.org/10.1016/j.vascn.2017.02.020). PMID: [28216264](https://pubmed.ncbi.nlm.nih.gov/28216264/).
 
 Urban L, Whitebread S, Hamon J et al. **Screening for safety-relevant off-target affinities.** In: Polypharmacology in Drug Discovery. Peters JU (Ed.). John Wiley and Sons, NJ, USA (2012). doi: [10.1002/9781118098141.ch2](https://onlinelibrary.wiley.com/doi/abs/10.1002/9781118098141.ch2).
-
-Society for Advancement of AOPs. **AOP-Wiki.** 2023. Available from http://aopwiki.org.
