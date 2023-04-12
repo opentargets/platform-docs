@@ -18,7 +18,7 @@ You can also join the [Open Targets Community](https://community.opentargets.org
 * YouTube: [Open Targets](https://www.youtube.com/opentargets)
 * LinkedIn: [Open Targets](https://www.linkedin.com/company/open-targets/)
 
-To report any bugs or data issues, please post a message on the [Open Targets Community](https://community.opentargets.org/).
+For additional help with the Open Targets Platform, or to report bugs, data issues, or submit a feature request, please post on the [Open Targets Community](https://community.opentargets.org/t/welcome-to-the-open-targets-community-forum/838), using the relevant categories and tags. If the request you would like to make has already been posted, please like the post to indicate you would like this to be prioritised.
 
 
 
