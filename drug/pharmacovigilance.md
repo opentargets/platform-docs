@@ -2,13 +2,13 @@
 
 ## Overview
 
-Before approval, new therapeutic drug treatments are extensively tested in clinical trials. However, some of the side effects are only identified when prescribed to larger cohorts of patients, with one or more medical conditions, for a sustained period of time or in combination with other treatments.&#x20;
+Before approval, new therapeutic drug treatments are extensively tested in clinical trials. However, some of the side effects are only identified when prescribed to larger cohorts of patients, with one or more medical conditions, for a sustained period of time or in combination with other treatments.
 
-For this reason, regulatory agencies - for example, the Food & Drug Administration or the European Medicines Agency - provide pharmacovigilance programs to monitor and survey Adverse Drug Reactions (ADRs).&#x20;
+For this reason, regulatory agencies - for example, the Food & Drug Administration or the European Medicines Agency - provide pharmacovigilance programs to monitor and survey Adverse Drug Reactions (ADRs).
 
 ## Data sources
 
-### FDA Adverse Event Reporting System (FAERS) <a href="hero-title" id="hero-title"></a>
+### FDA Adverse Event Reporting System (FAERS) <a href="#hero-title" id="hero-title"></a>
 
 The FDA Adverse Event Reporting System (FAERS) - [https://open.fda.gov/data/faers](https://open.fda.gov/data/faers/) - is a database that contains millions of public reports with information on adverse event and medication error reports submitted to FDA. The database is designed to support the FDA's post-marketing safety surveillance program for drug and therapeutic biologic products. Adverse events and medication errors are mapped to terms in the Medical Dictionary for Regulatory Activities (MedDRA) terminology.
 
@@ -21,7 +21,7 @@ First we apply a set of filters to the reports as described below:
 * Only reports submitted by health professionals (_primarysource.qualification in (1,2,3)_).
 * Exclude reports that resulted in death (no entries with _seriousnessdeath=1_).
 * Only drugs that were considered by the reporter to be the cause of the event _(drugcharacterization=1)_
-* Remove [blacklisted](https://github.com/opentargets/platform-etl-openfda-faers/blob/master/blacklisted\_events.txt) events curated manually to exclude uninformative events
+* Remove [blacklisted](https://github.com/opentargets/platform-etl-openfda-faers/blob/master/src/main/resources/blacklisted\_events.txt) events curated manually to exclude uninformative events
 
 Next, we sought to map the drugs in the FAERS reports to the drugs in the Open Targets Platform (ChEMBL IDs). Any of the above listed fields were used when exact matches were available:
 
