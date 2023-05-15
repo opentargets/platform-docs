@@ -6,7 +6,9 @@ A drug in the platform is understood as any bioactive molecule with drug-like pr
 
 A drug in the Platform might belong to different modalities, including small molecules, antibodies or oligonucleotides among others. However, some biologic therapies such as vaccines, blood products or cell therapies are not represented in our drug set. Moreover, the molecule-centric definition implies multi-ingredient drugs won't be represented and only their individual active moieties might be available on the site.
 
-The ChEMBL representation of drugs distinguishes **parent** bioactive molecules from the **child** molecule, which contain a modified (e.g. salt) version of the same active ingredient. Both parent and child molecules are included in the Platform.
+In the ChEMBL representation of drugs, a clear distinction is made between parent bioactive molecules and their corresponding child molecules. **Parent molecules** encompass the original, unmodified form of the active ingredient, while **child molecules** refer to modified versions, such as salts. In our Platform, both parent and child molecules are included, ensuring comprehensive coverage of the drug landscape.
+
+When it comes to data propagation, parent molecules retain their own distinct information, as well as aggregate the specific details from all their child molecules. On the other hand, child molecules solely capture their own individual information, without incorporating any data from other molecules. This consistent approach extends to various aspects, including indications, mechanism of action, and drug warnings. By adopting this systematic framework, our Platform facilitates accurate representation and analysis of the diverse molecular entities and their associated properties.
 
 {% embed url="https://www.youtube.com/watch?v=2cHctti3aIQ" %}
 
@@ -14,6 +16,6 @@ The ChEMBL representation of drugs distinguishes **parent** bioactive molecules 
 
 | Annotation data                                                                                           | Data source                                                                                                     |
 | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| Molecule information, Indications, Mechanisms of action, Drug warnings (black box and withdrawn warnings) | [ChEMBL ](https://www.ebi.ac.uk/chembl/)                                                                        |
+| Molecule information, Indications, Mechanisms of action, Drug warnings (black box and withdrawn warnings) | [ChEMBL](https://www.ebi.ac.uk/chembl/)                                                                         |
 | [Pharmacovigilance](pharmacovigilance.md)                                                                 | [FAERS](https://www.fda.gov/drugs/surveillance/questions-and-answers-fdas-adverse-event-reporting-system-faers) |
 | [Bibliography](../bibliography.md)                                                                        | [Open Targets](../bibliography.md)                                                                              |
