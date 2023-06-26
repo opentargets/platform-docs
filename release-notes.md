@@ -1,5 +1,47 @@
 # Release notes
 
+## 23.06
+
+### Release date
+
+26 June 2023
+
+### Highlights
+
+**New features**
+
+* Addition of a CRISPR Screens widget featuring data from [CRISPRBrain](https://crisprbrain.org/)
+* Introduction of a Cancer DepMap widget showcasing gene essentiality data from the [Cancer DepMap Portal](https://depmap.org/portal/)
+
+**Data updates**
+
+* Updated data from ChEMBL, including adverse event drug warning data and more granular information on clinical phases
+* New data from IntoGEN, Europe PMC, and EVA (through ClinVar) increasing our coverage of data
+
+**Product features**
+
+* Missense variants in the OT Genetics, UniProt variants and ClinVar widgets now link to [ProtVar](https://www.ebi.ac.uk/ProtVar/), a new tool to interpret the functional consequences of human missense variants
+
+**Product enhancements and bug fixes**
+
+* Fixes - homology widget, fixes to the data
+* More meaningful 404 error message
+* Fixed bugs in the API Playground
+
+Check out the [23.06 release blog post](https://blog.opentargets.org/open-targets-platform-23-06-release/) for more information on the new features and datasets introduced in this release.
+
+### Overall data metrics
+
+* 62,685 targets
+* 24,713 diseases and phenotypes
+* 13,210 drugs and compounds
+* 15,117,741 evidence strings
+* 7,835,247 target-disease associations
+
+Visit the [Open Targets Community 23.06 release thread](https://community.opentargets.org/t/23-06-platform-release-now-live/1125) for more data metrics for this release, including a per datasource breakdown of evidence strings.
+
+
+
 ## 23.02
 
 ### Release date
