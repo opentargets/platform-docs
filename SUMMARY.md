@@ -12,6 +12,7 @@
 * [Disease or Phenotype](disease-or-phenotype/README.md)
   * [Clinical signs and symptoms](disease-or-phenotype/clinical-signs-and-symptoms.md)
 * [Drug](drug/README.md)
+  * [Clinical Precedence](drug/clinical-precedence.md)
   * [Pharmacovigilance](drug/pharmacovigilance.md)
 * [Target - disease evidence](evidence.md)
 * [Target - disease associations](associations.md)

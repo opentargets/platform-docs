@@ -241,7 +241,7 @@ The 17 classes are: Another Study, Business or Administrative, Negative, Study D
 
 | Clinical Precedence | Evidence score |
 | ------------------- | -------------- |
-| Phase 0             | 0              |
+| Phase I (Early)     | 0.05           |
 | Phase I             | 0.1            |
 | Phase II            | 0.2            |
 | Phase III           | 0.7            |
@@ -251,8 +251,8 @@ In Step 2, for those clinical trials that have stopped early, the score is down-
 
 | Reason to stop class   | Score weight |
 | ---------------------- | ------------ |
-| Negative               | 0,5          |
-| Safety or side effects | 0,5          |
+| Negative               | 0.5          |
+| Safety or side effects | 0.5          |
 
 **Source**: [ChEMBL](https://www.ebi.ac.uk/chembl/)
 
