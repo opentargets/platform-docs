@@ -8,6 +8,7 @@
   * [Chemical probes & TEPs](target/chemical-probes-and-teps.md)
   * [Baseline expression](target/baseline-expression.md)
   * [Molecular interactions](target/molecular-interactions.md)
+  * [Core Gene Essentiality](target/core-gene-essentiality.md)
 * [Disease or Phenotype](disease-or-phenotype/README.md)
   * [Clinical signs and symptoms](disease-or-phenotype/clinical-signs-and-symptoms.md)
 * [Drug](drug/README.md)

@@ -272,6 +272,20 @@ In the Platform, any mutation or altered expression event affecting a different 
 
 **References**: [Jassal, B. et al, 2020](http://doi.org/10.1093/nar/gkz1031)
 
+### CRISPR screens
+
+One of the most powerful approaches to uncover gene function is the experimental perturbation of genes followed by the observation of related phenotypes. The perturbation of gene function in human cells has been greatly facilitated by developments in CRISPR technology.
+
+CRISPRbrain is a database for functional genomics screens in differentiated human brain cell types. We have prioritised genome-wide [CRISPRi/a/KO screens](https://crisprbrain.org/background/) (healthy vs KO) for integration in the Platform to generate target disease evidence.
+
+**Data Type**: Pathways & systems biology
+
+**Evidence Scoring**: The Platform uses the linearized CRISPRbrain's assessment of statistical significance to assign a score, including hits from both the upper and lower end of the distribution
+
+**Source**: [CRISPRbrain](https://crisprbrain.org/)&#x20;
+
+**Reference**: [Tian, R et al, 2021](https://www.nature.com/articles/s41593-021-00862-0)
+
 ### Project Score
 
 Project Score is a Wellcome Sanger Institute resource that aims to combine gene fitness effects derived from CRISPR-Cas9 synthetic-lethality screenings, with tractability data and genomic biomarkers for a systematic prioritisation of targets. The resulting inferences are then mapped from the cancer cell lines in which the experiment is performed to their corresponding tumors.
