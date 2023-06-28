@@ -2,7 +2,7 @@
 
 ## Target - disease evidence
 
-Every event or set of events pinpointing a target as a potential causal gene or protein for a disease, represent the unit of information, most often referred as **evidence**. Within Open Targets, a series of pipelines ensure information is retrieved from their sources and standardised in a way that can be immediately applied to answer drug development queries.
+Every event or set of events pinpointing a target as a potential causal gene or protein for a disease, represents the unit of information, most often referred as **evidence**. Within Open Targets, a series of pipelines ensure information is retrieved from their sources and standardised in a way that can be immediately applied to answer drug development queries.
 
 All evidence is mapped to the reference target entity identifier (Ensembl gene) and disease or phenotype identifier (experimental factor ontology, EFO), as well as other reference controlled vocabularies and ontologies when appropriate. Evidence is also reviewed to minimise the presence of duplicates within the same data source.
 
