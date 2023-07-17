@@ -48,7 +48,7 @@ We also include additional assessments specific to each modality.
 ### PROTAC
 
 * **Literature**: Target mentioned in a set of manually curated PROTAC-related publications (source: [Europe PMC](http://europepmc.org/))
-* **UniProt Ubiquitination:** Target tagged with the Uniprot keyword “Ubl conjugation \[KW-0832]”, which indicates that the protein has a ubiquitination site, based on evidence from the literature **** (source: [Uniprot](https://www.uniprot.org/))
+* **UniProt Ubiquitination:** Target tagged with the Uniprot keyword “Ubl conjugation \[KW-0832]”, which indicates that the protein has a ubiquitination site, based on evidence from the literature (source: [Uniprot](https://www.uniprot.org/))
 * **Database Ubiquitination:** Target has reported ubiquitination sites in [PhosphoSitePlus](https://www.phosphosite.org/homeAction.action), [mUbiSiDa](http://reprod.njmu.edu.cn/cgi-bin/mubisida/mUbiSiDa.php) (2013), or [Kim et al. 2011](https://www.sciencedirect.com/science/article/pii/S1097276511006757)
 * **Half-life Data:** Target has available half-life data (source: [Mathieson et al. 2018](https://www.nature.com/articles/s41467-018-03106-1))
 * **Small Molecule Binder:** Target has a reported small-molecule ligand in ChEMBL with a measured activity of at least 10 μM in a target-based assay (source: [ChEMBL](https://www.ebi.ac.uk/chembl/))
