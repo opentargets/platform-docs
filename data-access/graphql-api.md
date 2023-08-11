@@ -48,7 +48,7 @@ query targetInfo {
       oeUpper
     }
     tractability{
-      id
+      label
       modality
       value
     }
@@ -93,7 +93,7 @@ query_string = """
         oeUpper
       }
       tractability {
-        id
+        label
         modality
         value
       }
@@ -142,7 +142,7 @@ query_string = "
         oeUpper
       }
       tractability {
-        id
+        label
         modality
         value
       }
