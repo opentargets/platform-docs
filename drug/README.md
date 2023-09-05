@@ -4,6 +4,13 @@
 
 A drug in the platform is understood as any bioactive molecule with drug-like properties as defined in the EMBL-EBI [ChEMBL](https://www.ebi.ac.uk/chembl/) database.
 
+To further refine how we define a drug in the platform, we subset ChEMBL's drugbase to capture molecules that meet the following criteria:
+
+* Drugs for which the indication is known
+* Drugs for which the target they modulate is identified
+* Drugs that are listed in DrugBank
+* Drugs that are acknowledged as chemical probes
+
 A drug in the Platform might belong to different modalities, including small molecules, antibodies or oligonucleotides among others. However, some biologic therapies such as vaccines, blood products or cell therapies are not represented in our drug set. Moreover, the molecule-centric definition implies multi-ingredient drugs won't be represented and only their individual active moieties might be available on the site.
 
 In the ChEMBL representation of drugs, a clear distinction is made between parent bioactive molecules and their corresponding child molecules. **Parent molecules** encompass the original, unmodified form of the active ingredient, while **child molecules** refer to modified versions, such as salts. In our Platform, both parent and child molecules are included, ensuring comprehensive coverage of the drug landscape.
