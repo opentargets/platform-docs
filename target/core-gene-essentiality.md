@@ -10,7 +10,7 @@ Core essential target genes are unlikely to tolerate inhibition and susceptible 
 
 To support target prioritisation with an extra focus on target safety, the Open Targets Platform includes key information on target core essentiality in the context of 28 tissues assayed in the [DepMap portal](https://depmap.org/portal/). In this project and its ancillary projects (e.g. [Achilles](https://depmap.org/portal/achilles/)), cell fitness is measured after the inhibition of individual genes across a number of cell lines. As a result, a gene is catalogued as core essential If the majority of cell lines die after inhibition/knockout. Although in cancer, this experiment represents a good proxy of whether loss-of-functions are tolerated across a diverse set of tissues.
 
-**Essentiality assessment:** The Chronos dependency score is based on data from a cell depletion assay. A lower Chronos score indicates a higher likelihood hat the gene of interest is essential in a given cell line. A score of 0 indicates a gene is not essential; correspondingly -1 is comparable to the median of all pan-essential genes.&#x20;
+**Essentiality assessment:** The [Chronos dependency score](https://depmap.org/portal/gene/KIT?tab=dependency) is based on data from a cell depletion assay. A lower Chronos score indicates a higher likelihood hat the gene of interest is essential in a given cell line. A score of 0 indicates a gene is not essential; correspondingly -1 is comparable to the median of all pan-essential genes.&#x20;
 
 Together with a DepMap target annotation widget, essential target genes are annotated with a \`Core essential gene\` chip on the target page.
 
