@@ -18,7 +18,7 @@ IntAct - [http://www.ebi.ac.uk/intact](http://www.ebi.ac.uk/intact) - is a freel
 
 Interactions are scored using the MI score. Benefiting from the PSI-MI controlled vocabulary, the Intact MI score provides a normalised (0 to 1) score that weights how recurrently an interaction has been reported, together with the confidence of the experimental techniques reported. Beware, a high scoring interaction can be due to high-confidence evidence, but also a social bias on studying certain proteins. Generally speaking, scores > 0.4 correspond to medium to high-confidence interactions, although some good-quality high-throughput interactions might still be scored below that threshold. More info on MI-score can be found in the [Intact documentation](https://www.ebi.ac.uk/intact/pages/faq/faq.xhtml).
 
-Interactions are grouped by interaction detection method and interaction type. As a consequence, the same pair of interactors might be split into multiple entries if individual proteins are reported to have different biological roles.&#x20;
+Interactions are grouped by interaction detection method and interaction type. As a consequence, the same pair of interactors might be split into multiple entries if individual proteins are reported to have different biological roles.
 
 For IntAct, please note:
 
@@ -27,22 +27,22 @@ For IntAct, please note:
 
 ### Reactome
 
-Reactome - [https://reactome.org/](https://reactome.org) - is an open-source, open access, manually curated and peer-reviewed pathway database.&#x20;
+Reactome - [https://reactome.org/](https://reactome.org) - is an open-source, open access, manually curated and peer-reviewed pathway database.
 
 For Reactome, please note:
 
 * Only human-human interactions are provided
 * Interactions are directional and signed, with biological roles assigned to each participant if possible
-* Protein interactions in Reactome are inferred from pathways and complexes based on Reactome internal [method](https://github.com/reactome/interaction-exporter/wiki/Methods).&#x20;
+* Protein interactions in Reactome are inferred from pathways and complexes based on Reactome internal [method](https://github.com/reactome/interaction-exporter/wiki/Methods).
 
 ### SIGNOR
 
-SIGNOR, the SIGnaling Network Open Resource - [https://signor.uniroma2.it/](https://signor.uniroma2.it) - contains signaling information published in the scientific literature, which is manually-curated and stored in a structured format.&#x20;
+SIGNOR, the SIGnaling Network Open Resource - [https://signor.uniroma2.it/](https://signor.uniroma2.it) - contains signaling information published in the scientific literature, which is manually-curated and stored in a structured format.
 
 For SIGNOR, please note:
 
 * SIGNOR only contains human data
-* Interactions are directional and signed, with biological roles assigned to each participant&#x20;
+* Interactions are directional and signed, with biological roles assigned to each participant
 * The network pulls information from the SIGNOR relations file
 
 ### STRING
@@ -67,4 +67,4 @@ Jassal B, Matthews L, Viteri G, Gong C, Lorente P, Fabregat A, Sidiropoulos K, C
 
 Licata L, Lo Surdo P, Iannuccelli M, Palma A, Micarelli E, Perfetto L, Peluso D, Calderone A, Castagnoli L, Cesareni G. **SIGNOR 2.0, the SIGnaling Network Open Resource 2.0: 2019 update**. Nucleic Acids Res. 2020 Jan 8;48(D1):D504-D510. doi: 10.1093/nar/gkz949. PMID: 31665520; PMCID: PMC7145695.
 
-Szklarczyk D, Gable AL, Lyon D, Junge A, Wyder S, Huerta-Cepas J, Simonovic M, Doncheva NT, Morris JH, Bork P, Jensen LJ, Mering CV. STRING v11: protein-protein association networks with increased coverage, supporting functional discovery in genome-wide experimental datasets. Nucleic Acids Res. 2019 Jan 8;47(D1):D607-D613. doi: 10.1093/nar/gky1131. PMID: 30476243; PMCID: PMC6323986.
+Szklarczyk D, Kirsch R, Koutrouli M, Nastou K, Mehryary F, Hachilif R, Gable AL, Fang T, Doncheva NT, Pyysalo S, Bork P, Jensen LJ, von Mering C. **The STRING database in 2023: protein-protein association networks and functional enrichment analyses for any sequenced genome of interest**. Nucleic Acids Res. 2023 Jan 6;51(D1):D638-D646. doi: 10.1093/nar/gkac1000. PMID: 36370105; PMCID: PMC9825434.

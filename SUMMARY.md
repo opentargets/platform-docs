@@ -17,7 +17,7 @@
 * [Target - disease evidence](evidence.md)
 * [Target - disease associations](associations.md)
 * [Bibliography](bibliography.md)
-* [Web interface](web-interface/README.md)
+* [Web interface](web-interface.md)
   * [Associations on the Fly (Beta)](web-interface/associations-on-the-fly-beta.md)
   * [Classic Associations view](web-interface/classic-associations-view.md)
   * [Entity profile pages](web-interface/entity-profile-pages.md)
