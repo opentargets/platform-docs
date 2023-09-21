@@ -1,5 +1,48 @@
 # Release notes
 
+## 23.09
+
+### Release date
+
+21 September 2023
+
+### Highlights
+
+**New features**
+
+* ‘Associations on the Fly’ - revamp of the current Open Targets Platform association page with new facets and additional built-in functionalities like view data directly in the associations table, control weights of contributing evidence, filter by datasource and data type (OR filters) and pin rows. Watch a detailed video [here](https://www.youtube.com/watch?v=2A9bksboAag).
+* OpenAI Literature Summarisation tool - For data features that link to publications, users can ask for a natural language summary of the target-disease evidence presented in the publication using LangChain and OpenAI’s GPT3.5 Turbo model.
+
+**Data updates**
+
+* Updated Molecular Interactions data source [STRING Database](https://string-db.org/) to version 12.0
+* Increase in Europe PMC literature evidence by 9.9% to 10,355,423
+* New data from ChEMBL, COSMIC and EVA (through ClinVar) increasing our coverage of data
+
+**Product features**
+
+* Easy access to the schema of the files available for download in the Open Targets Platform
+
+**Product enhancements and bug fixes**
+
+* Expanded the definition of a drug to include all probes as reported by [Probes & Drugs Portal (P\&D)](https://www.probes-drugs.org/home/) as chemical probes are useful from a target's doability perspective
+* Open Targets Platform user interface migration to Material UI v5
+* Refactoring of the sections in the frontend codebase - Components and sections moved into the packages/sections and packages/ui
+
+Check out the [23.09 release blog post](https://blog.opentargets.org/open-targets-platform-23-09-release/) for more information on the new features and datasets introduced in this release.
+
+### Overall data metrics
+
+* 62,733 targets
+* 25,209 diseases and phenotypes
+* 17,096 drugs and compounds
+* 16,232,046 evidence strings
+* 7,922,844 target-disease associations
+
+Visit the [Open Targets Community 23.09 release thread](https://community.opentargets.org/t/the-latest-release-22-09-is-now-live/1212) for more data metrics for this release, including a per datasource breakdown of evidence strings.
+
+
+
 ## 23.06
 
 ### Release date
