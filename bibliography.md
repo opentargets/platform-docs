@@ -38,6 +38,18 @@ By using this model, the user can query what are other entities similar to the o
 
 The Bibliography section uses this algorithm to navigate the universe of publications. As a user keeps selecting entities, the universe is narrowed to show the intersection of all the publications that mention all of the selected entities.
 
+## OpenAI literature summarisation tool
+
+For data features that link to publications, the Platform now provides the option for users to ask for a natural language summary of the target-disease evidence presented in the publication (when the full-text article is available and free to re-use).
+
+Using LangChain, we prompt OpenAI’s GPT3.5 Turbo model to summarise relevant portions of the text which we then ask it to summarise with the following prompt: “Can you provide a concise summary about the relationship between \[target] and \[disease] according to this study?“. The resulting text is presented to the user (see screenshot below).
+
+We hope this feature will help the user better understand the available bibliography evidence, and it may actually highlight cases in which the publication does not in fact provide evidence for the target-disease relationship in question.
+
+You can find details on the OpenAI [terms of use](https://openai.com/policies/terms-of-use) here.
+
+\[video]
+
 ## Publications
 
 Ferguson C, Araújo D, Faulk L, Gou Y, Hamelers A, Huang Z, Ide-Smith M, Levchenko M, Marinos N, Nambiar R, Nassar M, Parkin M, Pi X, Rahman F, Rogers F, Roochun Y, Saha S, Selim M, Shafique Z, Sharma S, Stephenson D, Talo' F, Thouvenin A, Tirunagari S, Vartak V, Venkatesan A, Yang X, McEntyre J. **Europe PMC in 2020**. Nucleic Acids Res. 2021 Jan 8;49(D1):D1507-D1514. doi: [10.1093/nar/gkaa994](https://doi.org/10.1093/nar/gkaa994). PMID: [33180112](https://pubmed.ncbi.nlm.nih.gov/33180112/); PMCID: [PMC7778976](https://europepmc.org/article/PMC/PMC7778976).

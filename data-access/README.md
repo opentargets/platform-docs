@@ -4,7 +4,7 @@ To support systematic identification and prioritisation of drug targets, we are 
 
 For queries about a **single entity or target-disease association**, we recommend that you use:
 
-* Our intuitive [web interface](../web-interface.md) with data tables and data visualisations that can be downloaded in multiple formats, including TSV and JSON
+* Our intuitive [web interface](../web-interface/) with data tables and data visualisations that can be downloaded in multiple formats, including TSV and JSON
 * Our robust [GraphQL API](graphql-api.md) with endpoints that can be accessed with the programming language of your choice and an [interactive playground](http://api.platform.opentargets.org/api/v4/graphql/browser) where you can try out sample queries
 
 For more **complex, systematic queries**, we recommend that you use:
