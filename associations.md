@@ -102,7 +102,7 @@ The **overall association score** aims to summarise all the aggregated evidence 
 
 ### Data source weights
 
-To calculate both **data type** and **overall** association scores, evidence is weighted using a factor that aims to calibrate the relevance of each data source relative to others. The default weights used in the web application can be modified by the user in the API and UI through the "Advanced Option" tab from the new [Associations on the Fly](https://platform-docs.opentargets.org/web-interface/associations-on-the-fly-beta) page, to adjust to different prioritisation strategies.
+To calculate both **data type** and **overall** association scores, evidence is weighted using a factor that aims to calibrate the relevance of each data source relative to others. The default weights used in the web application can be modified by the user to adjust to different prioritisation strategies, both in the API and in the user interface through the "Advanced Option" tab from the new [Associations on the Fly](https://platform-docs.opentargets.org/web-interface/associations-on-the-fly-beta) page.
 
 | Data source                          | Weight factor |
 | ------------------------------------ | ------------- |
