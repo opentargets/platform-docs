@@ -55,7 +55,7 @@ For all cases, the Platform defines a **data source association score** by calcu
 
 ![](.gitbook/assets/Scoring\_Harmonic\_Sum\_Visual.png)
 
-3. To ensure the result is between 0 and 1, the harmonic sum is normalised by dividing the result by the maximum theoretical harmonic sum, which is the one calculated using an infinite vector of ones. The platform derives this calculation (which approximates to 1.6) by using a vector of 1,000 ones.
+3. To ensure the result is between 0 and 1, the harmonic sum is normalised by dividing the result by the maximum theoretical harmonic sum, which is the one calculated using an infinite vector of ones. The platform derives this calculation (which approximates to 1.644) by using a vector of 1,000 ones.
 
 {% hint style="info" %}
 **Example**
@@ -79,7 +79,7 @@ harmonic sum score = 1.0/1^2 + 0.9/2^2 + 0.8/3^2
 _Step 3: Scaling_
 
 ```
-max. theoretical harmonic sum score = 1.0/1^2 + 1.0/2^2 + 1.0/3^2 + 1.0/4^2 + ...
+max. theoretical harmonic sum score = 1.0/1^2 + 1.0/2^2 + 1.0/3^2 + 1.0/4^2 + ... ~ 1.644
 normalised harmonic sum score = harmonic sum score / max. theoretical harmonic sum score
 ```
 {% endhint %}
