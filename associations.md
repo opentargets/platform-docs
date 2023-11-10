@@ -51,7 +51,7 @@ The scoring by data source aims to balance all these differences and provide a c
 For all cases, the Platform defines a **data source association score** by calculating a harmonic sum using the full vector of [evidence scores](evidence.md#evidence-data-sources) as defined for each data source using the following the next steps:
 
 1. The pieces of evidence are sorted in descending order and assigned an incremental value that indicates their position in the sorted list (the top-scoring item has a positional id of 1, the second has a positional id of 2, and so on).
-2. The harmonic sum for each data source is then calculated by summing the result of dividing each evidence score by (2^positional id).
+2. The harmonic sum for each data source is then calculated by summing the result of dividing each evidence score by (positional id^2).
 
 ![](.gitbook/assets/Scoring\_Harmonic\_Sum\_Visual.png)
 
