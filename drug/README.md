@@ -21,8 +21,9 @@ When it comes to data propagation, parent molecules retain their own distinct in
 
 ## Drug annotation data sources
 
-| Annotation data                                                                                           | Data source                                                                                                     |
-| --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| Molecule information, Indications, Mechanisms of action, Drug warnings (black box and withdrawn warnings) | [ChEMBL](https://www.ebi.ac.uk/chembl/)                                                                         |
-| [Pharmacovigilance](pharmacovigilance.md)                                                                 | [FAERS](https://www.fda.gov/drugs/surveillance/questions-and-answers-fdas-adverse-event-reporting-system-faers) |
-| [Bibliography](../bibliography.md)                                                                        | [Open Targets](../bibliography.md)                                                                              |
+| Annotation data                                                                                                                 | Data source                                                                                                     |
+| ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Molecule information, Indications, Mechanisms of action, Drug warnings (black box and withdrawn warnings)                       | [ChEMBL](https://www.ebi.ac.uk/chembl/)                                                                         |
+| [Pharmacovigilance](pharmacovigilance.md)                                                                                       | [FAERS](https://www.fda.gov/drugs/surveillance/questions-and-answers-fdas-adverse-event-reporting-system-faers) |
+| [Pharmacogenetics ](https://app.gitbook.com/o/-LC3OlEMulAutIN2QOro/s/-MU4dMxOmLaVNWfVNvpC/\~/changes/445/drug/pharmacogenetics) | [PharmGKB](https://www.pharmgkb.org/)                                                                           |
+| [Bibliography](../bibliography.md)                                                                                              | [Open Targets](../bibliography.md)                                                                              |

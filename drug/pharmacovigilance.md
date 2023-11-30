@@ -1,3 +1,7 @@
+---
+description: Data describing pharmacovigilance annotation for the drug
+---
+
 # Pharmacovigilance
 
 ## Overview
