@@ -1,3 +1,7 @@
+---
+description: Learn about the new target prioritisation view released in 23.12
+---
+
 # Target Prioritisation view
 
 The new target prioritisation page can be accessed by clicking onto the **Target prioritisation factors** tab from the target-disease Associations on the Fly page when searching for targets associated with a disease.

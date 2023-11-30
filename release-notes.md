@@ -1,5 +1,47 @@
 # Release notes
 
+## 23.12
+
+### Release date
+
+30 November 2023
+
+### Highlights
+
+**New features**
+
+* 'Target Prioritisation' view: A new view for assessment of the target features considered when prioritising (or deprioritising) targets for drug discovery. Watch a detailed video [here](https://www.youtube.com/watch?v=WQwQn6I4jkw).
+* A new widget in the Platform adding pharmacogenetics data from PharmGKB.
+
+**Data updates**
+
+* New data available on Baseline RNA and protein expression data for targets via the API and FTP.
+* New data from Reactome and EVA (through ClinVar) increasing our coverage of data.
+
+**Product features**
+
+* Users can easily export the entire associations table and the target prioritisation table in json or tsv format.
+* Updated search bar design with search suggestions.
+
+**Product enhancements and bug fixes**
+
+* Transition to OpenSearch from Elasticsearch.
+* Bug fixes in the widgets in the Association On The Fly view and styling issues.
+
+Check out the [23.12 release blog post](https://blog.opentargets.org/open-targets-platform-23-12-release/) for more information on the new features and datasets introduced in this release.
+
+### Overall data metrics
+
+* 62,733 targets
+* 25,246 diseases and phenotypes
+* 17,095 drugs and compounds
+* 16,710,896 evidence strings
+* 7,994,180 target-disease associations
+
+Visit the [Open Targets Community 23.12 release thread](https://community.opentargets.org/t/23-12-platform-release-now-live/1294) for more data metrics for this release, including a per datasource breakdown of evidence strings.
+
+
+
 ## 23.09
 
 ### Release date
