@@ -19,6 +19,7 @@
 * [Target - disease evidence](evidence.md)
 * [Target - disease associations](associations.md)
 * [Bibliography](bibliography.md)
+* [Target Prioritisation view](target-prioritisation.md)
 * [Web interface](web-interface.md)
   * [Associations on the Fly (Beta)](web-interface/associations-on-the-fly-beta.md)
   * [Classic Associations view](web-interface/classic-associations-view.md)
