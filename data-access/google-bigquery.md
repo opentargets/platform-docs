@@ -6,7 +6,7 @@ To support more complex queries and advanced informatics workflows that use Goog
 
 Google BigQuery is a data warehouse that enables researchers to run super-fast, asynchronous SQL queries using Google's cloud infrastructure. After running your query, you can either export into various formats or copy into a Google Cloud bucket for further downstream analyses.
 
-Open Targets Platform data is publicly accessible as a [Google Cloud public dataset](https://cloud.google.com/public-datasets). Users only pay for the queries they perform on the data, and through this program, the first 1 TB per month is free.
+Open Targets Platform data is publicly accessible as a [Google Cloud public dataset](https://console.cloud.google.com/marketplace/product/bigquery-public-data/open-targets-platform?project=open-targets-genetics). Users only pay for the queries they perform on the data, and through this program, the first 1 TB per month is free.
 
 ## BigQuery access points
 
