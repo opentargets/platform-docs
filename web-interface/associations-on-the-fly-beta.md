@@ -32,6 +32,6 @@ We have designed and developed a new export functionality for the Associations O
 * Customised dataset view including custom controls changes, subset of data types (aggregations) and/or data from pinned targets only
 * TSV and JSON formats
 
+### Walkthrough of the new Associations on the Fly view
+
 {% embed url="https://www.youtube.com/watch?v=2A9bksboAag" %}
-Walkthrough of the new Associations on the Fly view
-{% endembed %}
