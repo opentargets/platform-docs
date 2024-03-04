@@ -21,7 +21,7 @@
 * [Bibliography](bibliography.md)
 * [Target Prioritisation view](target-prioritisation.md)
 * [Web interface](web-interface.md)
-  * [Associations on the Fly (Beta)](web-interface/associations-on-the-fly-beta.md)
+  * [Associations on the Fly](web-interface/associations-on-the-fly.md)
   * [Classic Associations view](web-interface/classic-associations-view.md)
   * [Entity profile pages](web-interface/entity-profile-pages.md)
 * [Data access](data-access/README.md)

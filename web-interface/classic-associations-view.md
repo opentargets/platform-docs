@@ -8,7 +8,7 @@ description: >-
 
 In the classic association page, a target, disease or phenotype is fixed and the prioritised list of alternative entities is displayed. A more detailed explanation on associations is available in the [Target - Disease associations](../associations.md) section.
 
-Please note that this view will be replaced by the [Associations on the Fly view](associations-on-the-fly-beta.md) once the implementation is completed to meet all our users needs.
+Please note that this view will be replaced by the [Associations on the Fly view](associations-on-the-fly.md) once the implementation is completed to meet all our users needs.
 
 When listing associated diseases or phenotypes associated with a target of interest, only **direct associations** are displayed. Alternatively, **indirect associations**, as derived by the selection of evidence in the ontology, are displayed when the fixed entity is a disease or phenotype. This distinction is made to minimise the effect of the annotation sparsity, and it can be modified when querying using [our GraphQL API](../data-access/graphql-api.md).
 
