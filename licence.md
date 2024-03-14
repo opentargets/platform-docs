@@ -8,6 +8,8 @@ If you use our code and/or our data, please cite [our latest publication](citati
 
 Open Targets Platform is marked with [CC0 1.0](http://creativecommons.org/publicdomain/zero/1.0?ref=chooser-v1). This dedicates the data to the public domain, allowing downstream users to consume the data without restriction.
 
+The Platform also conforms to the EBI long-term data preservation [policies](https://www.ebi.ac.uk/long-term-data-preservation).
+
 Please contact us on [the Open Targets Community](https://community.opentargets.org/) if you have questions about our licence or using our data and codebases.
 
 ## **Codebases**
