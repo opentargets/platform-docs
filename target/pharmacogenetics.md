@@ -6,15 +6,13 @@ description: Data supporting pharmacogenetics annotation for a target
 
 ## Overview
 
-Pharmacogenetics is the study of how your genetics change your response to a specific drug. By integrating pharmacogenetics data in the Platform, we aim to inform our users on those variants that have an impact on drug response -  including annotation on variant consequence prediction, drug response category and information on the specific drug.
-
-This allows additional granularity to therapeutic hypothesis formulation, taking into account how specific genetic backgrounds can influence treatment outcomes.
+Pharmacogenetics is the study of how genetics may change your response to a specific drug. Through the integration of pharmacogenetics data into the Platform, our objective is to enhance clinical annotations available in PharmGKB by adding detailed annotations on variant consequence prediction, drug response categories, and specific drug information. This process involves applying advanced phenotype extraction techniques to offer a refined representation of phenotypes, thereby providing a more precise understanding of the genetic determinants influencing treatment outcomes.
 
 ## Data sources
 
 [PharmGKB](https://www.pharmgkb.org/) is an NIH-funded comprehensive resource that provides information about how human genetic variation affects response to medications. PharmGKB collects, curates and disseminates knowledge about clinically actionable gene-drug associations and genotype-phenotype relationships, focusing on the impact of genetic variation on drug response for clinicians and researchers.
 
-We have modelled the data on the “[Clinical Annotation](https://www.pharmgkb.org/clinicalAnnotations)” section of PharmGKB, which includes variant-gene relationship and their role in drug response. The Platform, however, only showcases records of high confidence (1A, 1B, 2A and 2B in [PharmGKB’s categorisation system](https://www.pharmgkb.org/page/clinAnnLevels)).
+We have modelled and harmonised the data from the [Clinical Annotation](https://www.pharmgkb.org/clinicalAnnotations) section of PharmGKB, which provides information about variant-drug pairs based on variant annotations.
 
 ## Publications
 
