@@ -12,7 +12,7 @@ The Platform Bibliography tool aims to provide context on the scientific backgro
 
 ## Data sources
 
-### Europe PMC
+#### Europe PMC
 
 Europe PMC — [https://europepmc.org](https://europepmc.org/About) — is an open science database that facilitates access to a comprehensive collection of life science publications, preprints, and patents. Europe PMC provides researchers with freely available data available through their website, APIs, and bulk downloads.
 
@@ -49,6 +49,10 @@ We hope this feature will help the user better understand the available bibliogr
 You can find details on the OpenAI [terms of use](https://openai.com/policies/terms-of-use) here.
 
 \[video]
+
+## Bibliography filter
+
+On our entity annotation pages, users also have the option of filtering the bibliography data to a specific timeframe.
 
 ## Publications
 

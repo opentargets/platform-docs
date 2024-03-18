@@ -8,7 +8,7 @@ description: Manually-curated safety data to support target prioritisation
 
 Throughout the drug discovery and development process, target safety assessments help with understanding the role of the drug target in normal physiology and potential unintended adverse consequences and safety liabilities when modulating the target with a chemical compound or drug (Brennan, 2017).
 
-To support target prioritisation, we have manually curated experimental data and insights from publications and other well-known sources of target safety and toxicity data, including the [ToxCast](https://www.epa.gov/chemical-research/toxicity-forecasting) and [AOPWiki](https://aopwiki.org) databases.
+To support target prioritisation, we have manually curated experimental data and insights from publications and other well-known sources of target safety and toxicity data, including the [ToxCast](https://www.epa.gov/chemical-research/toxicity-forecasting), [AOPWiki](https://aopwiki.org) and [PharmGKB](https://www.pharmgkb.org/)
 
 Safety data is available on the target profile page and can be accessed to provide a systematic view of potentially relevant target safety liabilities.
 
