@@ -12,7 +12,7 @@ Pharmacogenetics is the study of how genetics may change your response to a spec
 
 [PharmGKB](https://www.pharmgkb.org/) is an NIH-funded comprehensive resource that provides information about how human genetic variation affects response to medications. PharmGKB collects, curates and disseminates knowledge about clinically actionable gene-drug associations and genotype-phenotype relationships, focusing on the impact of genetic variation on drug response for clinicians and researchers.
 
-We have modelled and harmonised the data from the [Clinical Annotation](https://www.pharmgkb.org/clinicalAnnotations) section of PharmGKB, which provides information about variant-drug pairs based on variant annotations.
+We have modelled and harmonised the data from the [Clinical Annotation](https://www.pharmgkb.org/clinicalAnnotations) section of PharmGKB, which provides information about variant-drug pairs based on variant annotations. We have also included their star alleles, which represent key functional variants involved in drug responses.
 
 ## Publications
 
