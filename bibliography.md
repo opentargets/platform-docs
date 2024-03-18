@@ -10,6 +10,8 @@ description: >-
 
 The Platform Bibliography tool aims to provide context on the scientific background available in the literature regarding the target, disease or phenotype or drug entities of interest. The Platform aims to provide not only what publications have referenced the entities of interest, but also what other entities frequently occur in the literature in conjunction with the entities of interest. Open Targets has developed in collaboration with Europe PMC a pipeline that tries to maximise the literature information extraction by using a combination of Natural Entity Recognition, ontological normalisation and data analysis.
 
+On our entity annotation pages, users also have the option of filtering the bibliography data to a specific timeframe.
+
 ## Data sources
 
 #### Europe PMC
@@ -49,10 +51,6 @@ We hope this feature will help the user better understand the available bibliogr
 You can find details on the OpenAI [terms of use](https://openai.com/policies/terms-of-use) here.
 
 Check out our [Literature Summarisation Tool Demo](https://www.youtube.com/watch?v=RTWazZ-t5NI)!
-
-## Bibliography filter
-
-On our entity annotation pages, users also have the option of filtering the bibliography data to a specific timeframe.
 
 ## Publications
 
