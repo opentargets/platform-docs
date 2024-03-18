@@ -50,7 +50,13 @@ We hope this feature will help the user better understand the available bibliogr
 
 You can find details on the OpenAI [terms of use](https://openai.com/policies/terms-of-use) here.
 
-Check out our [Literature Summarisation Tool Demo](https://www.youtube.com/watch?v=RTWazZ-t5NI)!
+Check out our Literature Summarisation Tool Demo!
+
+{% embed url="https://www.youtube.com/watch?v=RTWazZ-t5NI" %}
+
+
+
+
 
 ## Publications
 
