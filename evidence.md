@@ -26,9 +26,15 @@ When available, L2G predictions incorporate a new column ‘QTL effect’ contai
 
 **Evidence scoring**: [Locus2Gene (L2G) score](https://genetics-docs.opentargets.org/our-approach/prioritising-causal-genes-at-gwas-loci-l2g), filtered to use scores above 0.05
 
+**Direction of Effect assessment:**
+
+<table data-full-width="false"><thead><tr><th width="331" align="center">Direction on Target (Gain of Function (GoF) / Loss of Function (LoF))</th><th align="center">Direction on Trait (Risk/Protective)</th></tr></thead><tbody><tr><td align="center">LoF and GoF from Variant Functional Consequence variants/Consequence from QTL</td><td align="center"><table data-card-size="large" data-column-title-hidden data-view="cards"><thead><tr><th>Beta values</th></tr></thead><tbody><tr><td><table><thead><tr><th>Beta values</th></tr></thead><tbody><tr><td>&#x3C; 0 = Protective</td></tr><tr><td>> 0 = Risk</td></tr></tbody></table></td></tr><tr><td><table><thead><tr><th>Odds ratios</th></tr></thead><tbody><tr><td>&#x3C; 1 = Protective</td></tr><tr><td>> 1 = Risk</td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table>
+
 **Source**: [Open Targets Genetics](https://genetics.opentargets.org)
 
 **Reference**: [Ghoussaini M, et al. 2021](http://doi.org/10.1093/nar/gkaa840)
+
+
 
 ### ClinVar
 
@@ -75,9 +81,15 @@ In Step 2, the score is modulated based on the ClinVar review status:
 | reviewed by expert panel                             | +0.07                   |
 | practice guideline                                   | +0.1                    |
 
+**Direction of Effect assessment:**
+
+<table data-full-width="false"><thead><tr><th align="center">Direction on Target (Gain of Function (GoF) / Loss of Function (LoF))</th><th align="center">Direction on Trait (Risk/Protective)</th></tr></thead><tbody><tr><td align="center">LoF variants</td><td align="center"><table data-header-hidden><thead><tr><th align="center">Beta values</th></tr></thead><tbody><tr><td align="center">Pathogenic/Likely pathogenic = Risk</td></tr><tr><td align="center">Protective = Protective</td></tr></tbody></table></td></tr></tbody></table>
+
 **Source**: [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) (via [European Variation Archive](https://www.ebi.ac.uk/eva/))
 
 **References**: [Cook, C. et al, 2016](https://doi.org/10.1093/nar/gkv1352); [Landrum, M. et al, 2017](http://doi.org/10.1093/nar/gkx1153)
+
+
 
 ### Gene Burden
 
@@ -101,9 +113,15 @@ These associations are a result of collapsing rare variants in a gene into a sin
 
 **Evidence scoring:** Scaled p-value from 0.25 (p = 1e-7) to 1 (p < 1e-17).
 
+**Direction of Effect assessment:**
+
+<table data-full-width="false"><thead><tr><th width="331" align="center">Direction on Target (Gain of Function (GoF) / Loss of Function (LoF))</th><th align="center">Direction on Trait (Risk/Protective)</th></tr></thead><tbody><tr><td align="center">Assumption of all variants LoF</td><td align="center"><table data-card-size="large" data-column-title-hidden data-view="cards"><thead><tr><th>Beta values</th></tr></thead><tbody><tr><td><table><thead><tr><th>Beta values</th></tr></thead><tbody><tr><td>&#x3C; 0 = Protective</td></tr><tr><td>> 0 = Risk</td></tr></tbody></table></td></tr><tr><td><table><thead><tr><th>Odds ratios</th></tr></thead><tbody><tr><td>&#x3C; 1 = Protective</td></tr><tr><td>> 1 = Risk</td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table>
+
 **Source:** [AstraZeneca PheWAS Portal](https://azphewas.com), [GWAS Catalog](https://www.ebi.ac.uk/gwas/), [Genebass](https://app.genebass.org)
 
 **References:** [Wang, Q. et al, 2021](https://doi.org/10.1038/s41586-021-03855-y); [Backman, J.D. et al, 2021](https://doi.org/10.1038/s41586-021-04103-z); [K.K., Karczewski et al., 2022](https://www.medrxiv.org/content/10.1101/2021.06.19.21259117v4); [Zhou X. et al, 2022](https://www.nature.com/articles/s41588-022-01148-2), [Singh et al., 2022](https://rdcu.be/cPZP3); [Epi25 Collaborative, 2019](https://www.cell.com/ajhg/fulltext/S0002-9297\(19\)30207-1); [Satterstrom et al., 2020](https://www.sciencedirect.com/science/article/pii/S0092867419313984); [Bomba et al., 2022](https://www.cell.com/ajhg/fulltext/S0002-9297\(22\)00157-4); [Akbari, P., 2022](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9399235/); [Makarious et al., 2022](https://www.medrxiv.org/content/10.1101/2022.11.08.22280168v1.full.pdf); [Riveros-McKay et al., 2020](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1008605)
+
+
 
 ### Genomics England PanelApp
 
@@ -124,6 +142,8 @@ The Open Targets Platform includes "green" and "amber" genes from version 1+ pan
 
 **References**: [Martin, A. et al, 2019](https://doi.org/10.1038/s41588-019-0528-2)
 
+
+
 ### Gene2Phenotype
 
 The data in Gene2Phenotype (G2P) is produced and curated from the literature by different sets of panels formed by consultant clinical geneticists. The G2P data is designed to facilitate the development, validation, curation, and distribution of large-scale, evidence-based datasets for use in diagnostic variant filtering. Each G2P entry associates an allelic requirement and a mutational consequence at a defined locus with a disease entity. A confidence level and evidence link are assigned to each entry. This confidence level follows the terminology described by [GenCC](https://thegencc.org/about.html) for describing gene-disease validity.
@@ -134,17 +154,23 @@ G2P evidence in the Platform is the result of any target-disease curation by any
 
 **Evidence scoring:**
 
-| **Gene2Phenotype confidence** | Evidence score |
-| ----------------------------- | -------------- |
-| Limited                       | 0.01           |
-| Moderate                      | 0.5            |
-| Strong                        | 1              |
-| Both RD and IF                | 1              |
-| Definitive                    | 1              |
+| Gene2Phenotype confidence | Evidence score |
+| ------------------------- | -------------- |
+| Limited                   | 0.01           |
+| Moderate                  | 0.5            |
+| Strong                    | 1              |
+| Both RD and IF            | 1              |
+| Definitive                | 1              |
+
+**Direction of Effect assessment:**
+
+<table data-full-width="false"><thead><tr><th>Direction on Target (Gain of Function (GoF) / Loss of Function (LoF))</th><th>Direction on Trait (Risk/Protective)</th></tr></thead><tbody><tr><td>LoF and GoF variants</td><td>Assumption of Risk</td></tr></tbody></table>
 
 **Source**: [Gene2Phenotype](https://www.ebi.ac.uk/gene2phenotype)
 
 **References**: [Thormann, A. et al, 2019](https://doi.org/10.1038/s41467-019-10016-3)
+
+
 
 ### UniProt literature
 
@@ -165,6 +191,8 @@ All publications supporting a given target disease relationship are aggregated i
 
 **References**: [The UniProt Consortium, 2021](https://academic.oup.com/nar/article/49/D1/D480/6006196)
 
+
+
 ### UniProt variants
 
 The Universal Protein Resource (Uniprot) also curate variants supported by publications that are known to alter protein function on disease. Curated mutations are predominantly protein coding or in regulatory regions clearly associated with the causal protein.
@@ -183,6 +211,8 @@ All publications supporting a given variant in connection with a disease constit
 **Source**: [UniProt](https://www.uniprot.org)
 
 **References**: [The UniProt Consortium, 2021](https://academic.oup.com/nar/article/49/D1/D480/6006196)
+
+
 
 ### ClinGen
 
@@ -208,6 +238,8 @@ All gene-disease pairs mapped to EFO constitute individual evidence in the Platf
 
 **References**: [Strande, N. et al., 2017](https://doi.org/10.1016/j.ajhg.2017.04.015)
 
+
+
 ### Orphanet
 
 Orphanet is an international network that offers a range of resources to improve the understanding of rare disorders of genetic origin. These resources include an inventory of rare disease and gene associations, classification of the gene-disease relationship, information on the kind of mutation, and supporting publication references.
@@ -221,9 +253,15 @@ Orphanet is an international network that offers a range of resources to improve
 | Not yet assessed                          | 0.5            |
 | Assessed                                  | 1              |
 
+**Direction of Effect assessment:**
+
+<table data-full-width="false"><thead><tr><th>Direction on Target (Gain of Function (GoF) / Loss of Function (LoF))</th><th>Direction on Trait (Risk/Protective)</th></tr></thead><tbody><tr><td>LoF and GoF variants</td><td>Assumption of Risk</td></tr></tbody></table>
+
 **Source**: [Orphanet Genes Associated with Rare Diseases](https://www.orpha.net/consor/cgi-bin/Disease\_Genes.php?lng=EN)
 
 **References**: [Orphanet](https://www.orpha.net); [Orphadata](http://www.orphadata.org/cgi-bin/index.php)
+
+
 
 ### ChEMBL
 
@@ -254,9 +292,15 @@ In Step 2, for those clinical trials that have stopped early, the score is down-
 | Negative               | 0.5          |
 | Safety or side effects | 0.5          |
 
+**Direction of Effect assessment:**
+
+<table data-full-width="false"><thead><tr><th align="center">Direction on Target (Gain of Function (GoF) / Loss of Function (LoF))</th><th align="center">Direction on Trait (Risk/Protective)</th></tr></thead><tbody><tr><td align="center"><table data-header-hidden><thead><tr><th align="center">Beta values</th></tr></thead><tbody><tr><td align="center">Activators = GoF</td></tr><tr><td align="center">Inhibitors = LoF</td></tr></tbody></table></td><td align="center">Assumption of Protective</td></tr></tbody></table>
+
 **Source**: [ChEMBL](https://www.ebi.ac.uk/chembl/)
 
 **References**: [Mendez, D. et al, 2019](https://academic.oup.com/nar/article/47/D1/D930/5162468)
+
+
 
 ### Reactome
 
@@ -272,6 +316,8 @@ In the Platform, any mutation or altered expression event affecting a different 
 
 **References**: [Jassal, B. et al, 2020](http://doi.org/10.1093/nar/gkz1031)
 
+
+
 ### CRISPR screens
 
 One of the most powerful approaches to uncover gene function is the experimental perturbation of genes followed by the observation of related phenotypes. The perturbation of gene function in human cells has been greatly facilitated by developments in CRISPR technology.
@@ -285,6 +331,8 @@ CRISPRbrain is a database for functional genomics screens in differentiated huma
 **Source**: [CRISPRbrain](https://crisprbrain.org/)&#x20;
 
 **Reference**: [Tian, R et al, 2021](https://www.nature.com/articles/s41593-021-00862-0)
+
+
 
 ### Project Score
 
@@ -300,6 +348,8 @@ In the Platform, any Project Score prioritised targets with scores greater than 
 
 **References**: [Behan, F. et al, 2019](https://doi.org/10.1038/s41586-019-1103-9)
 
+
+
 ### SLAPenrich
 
 SLAPenrich (Sample-population Level Analysis of Pathway enrichments) is a novel statistical framework for the identification of significantly mutated pathways, at the sample population level, in large cohorts of cancer patients. SLAPenrich is based on a Poisson binomial model that takes into account the length of blocks of exons in genes within each pathway, and the background mutation rate of the analysed cohort of patients. SLAPenrich enrichment analysis is based on EMBL-EBI Reactome pathways and mutation data from The Cancer Genome Atlas ([TCGA](https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga)) cohort.
@@ -314,6 +364,8 @@ In the Platform, each pathway significantly enriched in tumor-occurring mutation
 
 **References**: [Iorio, F. et al, 2018](https://doi.org/10.1038/s41598-018-25076-6)
 
+
+
 ### Gene signatures
 
 The Platform also provides information about key driver genes for specific diseases that have been curated from Systems Biology analysis. These publications present different disease gene signatures as potential key drivers or key regulators causing disease.
@@ -326,6 +378,8 @@ The Platform also provides information about key driver genes for specific disea
 * If there is no score a fixed value of 0.5 is used
 
 **References**: [Peters, L. A. et al, 2017](https://doi.org/10.1038/ng.3947); [Huan, T. et al, 2013](https://doi.org/10.1161/atvbaha.112.300112); [Zhang, B. et al, 2013](https://doi.org/10.1016/j.cell.2013.03.030); [Mostafavi, S. et al, 2018](https://doi.org/10.1038/s41593-018-0154-9)
+
+
 
 ### PROGENy
 
@@ -340,6 +394,8 @@ In the Platform, a PROGENy evidence is defined as any significantly regulated sa
 **Source**: [PROGENy](https://saezlab.github.io/progeny/)
 
 **References**: [Schubert, M. et al, 2018](https://doi.org/10.1038/s41467-017-02391-6)
+
+
 
 ### Expression Atlas
 
@@ -369,6 +425,8 @@ In the Platform, each contrast from independent studies capturing differentially
 
 \#All evidence has a base score of 0.5. Whereas tier 2 genes score is always 0.5, tier 1 scores can be modulated as follows
 
+
+
 ### **Cancer Gene Census**
 
 Cancer Gene Census (CGC) is part of the Wellcome Sanger Institute Catalogue of Somatic Mutations in Cancer ([COSMIC](http://cancer.sanger.ac.uk/cosmic)). CGC is an effort to catalogue genes which contain mutations that have been causally implicated in cancer. The exhaustive curation of the CGC covers individual studies as well as pan-cancer sequencing efforts, including The Cancer Genome Atlas (TCGA) and the International Cancer Genome Consortium (ICGC) among others.
@@ -389,6 +447,8 @@ In the Platform, CGC evidence is aggregated at the target - disease level to pro
 
 **References**: [Sondka, Z. et al, 2018](https://doi.org/10.1038/s41568-018-0060-1)
 
+
+
 ### **IntOGen**
 
 IntOGen provides a framework to identify potential cancer driver genes using large-scale mutational data from sequenced tumor samples. By harmonising tumor sequencing data from the ICGC/TCGA Pan-Cancer Analysis of Whole Genomes ([PCAWG](https://dcc.icgc.org/pcawg)) and other comprehensive efforts, IntOGen aims to provide a consensus assessment of cancer driver genes. Several state-of-the-art driver methodologies aiming to cover different approaches (e.g. dN/dS, Hotspots, etc.) are included to finally produce a consensus q-value for each driver gene in every tumor.
@@ -402,6 +462,8 @@ In the Platform, independent target - disease evidence are defined as any signif
 **Source**: [intOGen](http://www.intogen.org/search)
 
 **References**: [Martínez-Jiménez, F. et al, 2020](https://doi.org/10.1038/s41568-020-0290-x)
+
+
 
 ### **ClinVar (somatic)**
 
@@ -445,9 +507,15 @@ In Step 2, scored is modulated based on the ClinVar review status:
 | reviewed by expert panel                             | +0.07                   |
 | practice guideline                                   | +0.1                    |
 
+**Direction of Effect assessment:**
+
+<table data-full-width="false"><thead><tr><th align="center">Direction on Target (Gain of Function (GoF) / Loss of Function (LoF))</th><th align="center">Direction on Trait (Risk/Protective)</th></tr></thead><tbody><tr><td align="center">LoF variants</td><td align="center"><table data-header-hidden><thead><tr><th align="center">Beta values</th></tr></thead><tbody><tr><td align="center">Pathogenic/Likely pathogenic = Risk</td></tr><tr><td align="center">Protective = Protective</td></tr></tbody></table></td></tr></tbody></table>
+
 **Source**: [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) (via [European Variation Archive](https://www.ebi.ac.uk/eva/))
 
 **References**: [Cook, C. et al, 2016](https://doi.org/10.1093/nar/gkv1352); [Landrum, M. et al, 2017](http://doi.org/10.1093/nar/gkx1153)
+
+
 
 ### **Europe PMC**
 
@@ -463,6 +531,8 @@ In the Platform, a piece of Europe PMC evidence is the result of aggregating all
 
 **References**: [The Europe PMC Consortium, 2015](https://doi.org/10.1093/nar/gku1061); [Kafkas et al., 2017](https://doi.org/10.1186/s13326-017-0131-3)
 
+
+
 ### **IMPC**
 
 The genotype-phenotype associations made available by the International Mouse Phenotypes Consortium (IMPC) are used to identify models of human disease based on phenotypic similarity scores.
@@ -475,9 +545,15 @@ It uses a semantic approach to map between clinical features observed in humans 
 
 **Evidence scoring**: The evidence score indicates the degree of concordance between the mouse and disease phenotypes, as described by [Smedley et al 2013](https://europepmc.org/abstract/MED/23660285).
 
+**Direction of Effect assessment:**
+
+<table data-full-width="false"><thead><tr><th>Direction on Target (Gain of Function (GoF) / Loss of Function (LoF))</th><th>Direction on Trait (Risk/Protective)</th></tr></thead><tbody><tr><td>Assumption of all variants LoF</td><td>Assumption of Risk</td></tr></tbody></table>
+
 **Source**: [IMPC](https://www.mousephenotype.org)
 
 **References**: [Smedley, D. et al, 2013](https://doi.org/10.1093/database/bat025)
+
+
 
 ### Cancer Biomarkers
 
