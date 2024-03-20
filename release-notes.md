@@ -1,5 +1,50 @@
 # Release notes
 
+## 24.03
+
+### Release date
+
+20 March 2024
+
+### Highlights
+
+**New features**
+
+* Implementation of direction of effect assessment for eight different sources of target-disease association evidence.
+* Filtering bibliography data based on a publication date.
+
+**Data updates**
+
+* Integration of the latest dataset from Project Score.
+* Integration of the 23Q4 version of DepMap ([depmap.org](https://depmap.org)).
+* New data from Reactome, COSMIC and EVA (through ClinVar) increasing our coverage of data.
+
+**Product features**
+
+* Inclusion of star alleles from PharmGKB and a new _Direct Drug Target_ column to the pharmacogenetics widget.
+* Use of pharmacogenetics data to inform adverse drug response as an additional source of information on target safety.
+* New GraphQL API query playground for target disease association and target prioritisation.
+
+**Product enhancements and bug fixes**
+
+* Redesigned context menu with a new navigation and pinning behaviour.
+* Updated protvista-uniprot viewer library to v2.11.1
+* Bug fixes to download file schema and search issues.
+
+Check out the [24.03 release blog post](https://blog.opentargets.org/open-targets-platform-24-03-release/) for more information on the new features and datasets introduced in this release.
+
+### Overall data metrics
+
+* 63,226 targets
+* 25,817 diseases and phenotypes
+* 17,111 drugs and compounds
+* 17,317,290 evidence strings
+* 7,802,260 target-disease associations
+
+Visit the [Open Targets Community 24.03 release thread](https://community.opentargets.org/t/24-03-platform-release-now-live/1374) for more data metrics for this release, including a per datasource breakdown of evidence strings.
+
+
+
 ## 23.12
 
 ### Release date
