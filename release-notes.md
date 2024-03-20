@@ -1,3 +1,7 @@
+---
+description: Summary of release highlights for the Open Targets Platform
+---
+
 # Release notes
 
 ## 24.03
@@ -23,12 +27,12 @@
 
 * Inclusion of star alleles from PharmGKB and a new _Direct Drug Target_ column to the pharmacogenetics widget.
 * Use of pharmacogenetics data to inform adverse drug response as an additional source of information on target safety.
-* New GraphQL API query playground for target disease association and target prioritisation.
+* New dedicated GraphQL API query playground for Associations-on-the-Fly and target prioritisation view.
 
 **Product enhancements and bug fixes**
 
 * Redesigned context menu with a new navigation and pinning behaviour.
-* Updated protvista-uniprot viewer library to v2.11.1
+* Updated protvista-uniprot viewer library to v2.11.1.
 * Bug fixes to download file schema and search issues.
 
 Check out the [24.03 release blog post](https://blog.opentargets.org/open-targets-platform-24-03-release/) for more information on the new features and datasets introduced in this release.
