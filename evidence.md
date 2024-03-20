@@ -336,9 +336,9 @@ CRISPRbrain is a database for functional genomics screens in differentiated huma
 
 ### Project Score
 
-Project Score is a Wellcome Sanger Institute resource that aims to combine gene fitness effects derived from CRISPR-Cas9 synthetic-lethality screenings, with tractability data and genomic biomarkers for a systematic prioritisation of targets. The resulting inferences are then mapped from the cancer cell lines in which the experiment is performed to their corresponding tumors.
+Project Score is a Wellcome Sanger Institute resource that aims to identify dependencies in cancer cell lines to guide precision medicine. The project combines gene fitness effects derived from whole-genome CRISPR-Cas9 synthetic-lethality screenings with tractability data, genomic biomarkers and various target annotation enabling a systematic prioritisation of potential targets. The resulting inferences are then mapped from the cancer cell lines in which the experiment is performed to their corresponding tumors.&#x20;
 
-In the Platform, any Project Score prioritised targets with scores greater than 41.5 are included as independent evidence.
+In the Platform, any Project Score prioritised target with priority score reaching 36.0 is included as independent evidence; however, pan-cancer dependecies are excluded from the integration.
 
 **Data type**: Pathways & systems biology
 
@@ -346,7 +346,7 @@ In the Platform, any Project Score prioritised targets with scores greater than 
 
 **Source**: CRISPR (via[ Project Score](https://score.depmap.sanger.ac.uk))
 
-**References**: [Behan, F. et al, 2019](https://doi.org/10.1038/s41586-019-1103-9)
+**References**: [Pacini et al, 2024](https://pubmed.ncbi.nlm.nih.gov/38215750/)
 
 
 
