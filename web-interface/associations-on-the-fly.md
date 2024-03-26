@@ -2,9 +2,9 @@
 description: Learn about the new associations view released in 23.09.
 ---
 
-# Associations on the Fly (Beta)
+# Associations on the Fly
 
-“Associations on the fly” is a revamp the Open Targets Platform association page with new facets and additional built-in functionalities. This view will replace the [classic associations page](classic-associations-view.md) once the implementation is completed to meet all our users needs.
+“[Associations on the fly](https://platform.opentargets.org/disease/EFO\_0005774/associations)” is a revamp the Open Targets Platform association page with new facets and additional built-in functionalities. This view will replace the [classic associations page](classic-associations-view.md) once the implementation is completed to meet all our users needs.
 
 ### Key features
 
