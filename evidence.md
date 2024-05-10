@@ -95,8 +95,8 @@ In Step 2, the score is modulated based on the ClinVar review status:
 
 Gene burden data comprises gene–phenotype relationships observed in gene-level association tests using rare variant collapsing analyses. The Platform integrates burden tests carried out by several sources:
 
-* **REGENERON** (Wang et al., 2021), a whole-exome sequencing analysis of individuals from the UK Biobank.
-* **AstraZeneca PheWAS Portal** (Backman et al., 2021), a whole-exome sequencing analysis of individuals from the UK Biobank.
+* **REGENERON** (Backman et al., 2021), a whole-exome sequencing analysis of individuals from the UK Biobank.
+* **AstraZeneca PheWAS Portal** (Wang et al., 2021), a whole-exome sequencing analysis of individuals from the UK Biobank.
 * **Genebass** (Karczewski et al., 2022): Gene-based Association Summary Statistics (Genebass),  a whole-exome sequencing analysis of individuals from the UK Biobank.
 * The results of whole-exome and whole-genome sequencing analysis based on the **SPARK cohort** bring evidence of novel targets implicated in **autism spectrum disorder** (Zhou et al., 2022).
 * **The SCHEMA consortium** (Singh et al., 2022), a whole-exome sequencing analysis of individuals with schizophrenia.
