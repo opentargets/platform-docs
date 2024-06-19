@@ -4,6 +4,53 @@ description: Summary of release highlights for the Open Targets Platform
 
 # Release notes
 
+## 24.06
+
+### Release date
+
+19 June 2024
+
+### Highlights
+
+**New features**
+
+* Uploading a custom list of targets or diseases to obtain a tailored associations view allowing users to view selected target-disease evidence for the specific entities.
+
+**Data updates**
+
+* Integration of ChEMBL 34 which now contains data from the European Medicines Agency (EMA) increasing drug-indication coverage.
+* Updates to the clinical trials and tractability data.
+* Updating the gene burden results from AstraZeneca’s PheWAS portal [version 5](https://azphewas.com/about).
+* New gene burden evidence for schizophrenia from the SCHEMA consortium and ancestry-specific evidence for prostate cancer.
+* A new Gene2Phenotype panel with musculo-skeletal implications.
+* New data from Reactome, COSMIC and EVA (through ClinVar), Probes and Drugs and GEL PanelApp increasing our coverage of data.
+
+**Product features**
+
+* Ability to handle pharmacogenetic evidence involving drug combinations.
+
+**Product enhancements and bug fixes**
+
+* Exclusion of splice QTLs from the assessment for the direction of effect and selecting the beta from the evidence with the lowest p-value instead of the largest effect size.
+* Improvements in the AotF GQL Playground Component.
+* Dropping `isHumanApplicable` field from target safety.
+* Bug fixes to the ClinVar (somatic) widget loading state.
+* Resolving an error in phenotype mapping in GEL PanelApp, resolving incorrect tractability precedence and removing categorical burden tests from Genebass data based on community feedback.
+
+Check out the [24.06 release blog post](https://blog.opentargets.org/open-targets-platform-24-06-release/) for more information on the new features and datasets introduced in this release.
+
+### Overall data metrics
+
+* 63,226 targets
+* 28,198 diseases and phenotypes
+* 18,041 drugs and compounds
+* 17,703,456 evidence strings
+* 8,079,215 target-disease associations
+
+Visit the [Open Targets Community 24.06 release thread](https://community.opentargets.org/t/24-06-platform-release-now-live/1455) for more data metrics for this release, including a per datasource breakdown of evidence strings.
+
+
+
 ## 24.03
 
 ### Release date
