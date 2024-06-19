@@ -30,7 +30,11 @@ Users can now upload a custom list of targets or diseases of interest to obtain 
 
 The feature is accessible from the "upload" icon on the Associations on the Fly page. This gives users the option of uploading a file containing a custom list of targets or diseases. _The file should have one entity per row_. There are multiple allowed file formats for the uploaded file (.txt)\* , (.csv/.tsv/.xlsx)\*\* , (.json). An example format has also been provided for each file format in the feature.
 
-The Platform then suggests potential matches between the entities in uploaded list and the ones in the Platform; the matches are provided through their platform entity ids. The users also have the option to select specific results that they wish to be displayed on the final view. Clicking the 'Pin hits' tab prompts the "Associations on the Fly" page to build up a custom view with the entities from the uploaded list. You can watch a detailed video explaining the feature [here](https://www.youtube.com/watch?v=Mqvr2mwA7DM).
+The Platform then suggests potential matches between the entities in uploaded list and the ones in the Platform; the matches are provided through their platform entity ids. The users also have the option to select specific results that they wish to be displayed on the final view. Clicking the 'Pin hits' tab prompts the "Associations on the Fly" page to build up a custom view with the entities from the uploaded list.&#x20;
+
+Watch our video describing the feature:
+
+{% embed url="https://www.youtube.com/watch?v=Mqvr2mwA7DM" %}
 
 {% hint style="info" %}
 _\* For .txt file format, please create your input list using a text editor._
