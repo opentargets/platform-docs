@@ -106,6 +106,7 @@ Gene burden data comprises gene–phenotype relationships observed in gene-level
 * The results of a pan-ancestry whole-exome sequencing analysis identify relevant genes associated with **fat distribution** (Akbari et al., 2022).
 * The results of whole-exome and whole-genome sequencing analysis on **Parkinson disease** and promoted by the AMP-PD initiative, and other collaborators (Makarious et al., 2022).
 * The results of gene-based analyses of rare variants and circulating metabolic biomarkers relevant to **cardiovascular disease** (Riveros-McKay et al., 2020).
+* The results of ancestry-specific rare coding variant analyses from whole exome sequencing to identify genes significantly associated with **prostate cancer** (Soh et al., 2023)
 
 These associations are a result of collapsing rare variants in a gene into a single burden statistic and regress the phenotype on the burden statistic to test for the combined effects of all rare variants in that gene. The different collapsing methods inform about the filters used to select the set of qualifying variants, mostly based on their pathogenicity and frequency in the population.
 
