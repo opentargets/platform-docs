@@ -24,9 +24,23 @@ The new feature can be adjusted to modify the preset [Open Targets data sources 
 
 Where evidence is available for a data source, clicking on the button will reveal the **detail widget** for that data source. Evidence displayed in the widget includes **indirect evidence**, so the user can interrogate evidence annotated with descendants of the disease of interest.
 
+### Upload functionality
+
+Users can now upload a custom list of targets or diseases of interest to obtain a tailored association/target prioritisation view.
+
+The feature is accessible from the "upload" icon on the Associations on the Fly page. This gives users the option of uploading a file containing a custom list of targets or diseases. _The file should have one entity per row_. There are multiple allowed file formats for the uploaded file (.txt)\* , (.csv/.tsv/.xlsx)\*\* , (.json). An example format has also been provided for each file format in the feature.
+
+The Platform then suggests potential matches between the entities in uploaded list and the ones in the Platform; the matches are provided through their platform entity ids. The users also have the option to select specific results that they wish to be displayed on the final view. Clicking the 'Pin hits' tab prompts the "Associations on the Fly" page to build up a custom view with the entities from the uploaded list. You can watch a detailed video explaining the feature [here](https://www.youtube.com/watch?v=Mqvr2mwA7DM).
+
+{% hint style="info" %}
+_\* For .txt file format, please create your input list using a text editor._
+
+_\*\* For .csv/.tsv/.xlsx file formats, please ensure that the file has a header called_ `id`_._
+{% endhint %}
+
 ### Export functionality
 
-We have designed and developed a new export functionality for the Associations On the Fly/Target Prioritisation pages, allowing users to download:
+We have designed and developed an export functionality for the Associations On the Fly/Target Prioritisation pages, allowing users to download:
 
 * Entire dataset view (default status)
 * Customised dataset view including custom controls changes, subset of data types (aggregations) and/or data from pinned targets only
