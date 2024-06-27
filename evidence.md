@@ -325,6 +325,9 @@ One of the most powerful approaches to uncover gene function is the experimental
 
 CRISPRbrain is a database for functional genomics screens in differentiated human brain cell types. We have prioritised genome-wide [CRISPRi/a/KO screens](https://crisprbrain.org/background/) (healthy vs KO) for integration in the Platform to generate target disease evidence.
 
+We have linked cell types to diseases, meaning these diseases are often characterised with abnormal phenotypes in these cell types - hence the association.\
+If knocking out a gene causes significant perturbation in the cell type, it might indicate a potential targeting strategy in the disease.
+
 **Data Type**: Pathways & systems biology
 
 **Evidence Scoring**: The Platform uses the linearized CRISPRbrain's assessment of statistical significance to assign a score, including hits from both the upper and lower end of the distribution
