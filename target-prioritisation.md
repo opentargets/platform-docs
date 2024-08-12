@@ -134,17 +134,13 @@ Note: Here we consider mouse orthologs and display the "query percentage identit
 
 ### Genetic constraint
 
-**Definition:** Relative genetic constraint for predicted loss of function variation in natural populations from GnomAD.
+**Definition:** Genest that are important for human physiology are seen to be depleted of deleterious variants. The Genome Aggregation Database ([gnomAD](https://gnomad.broadinstitute.org/)) has developed a continuous measurement of intolerance to loss of function (LoF) variants per gene, based on observed/expected LoF variant analysis. As recommended by gnomAD and implemented in the Open Targets platform, the rank of genes regarding their loss-of-function observed/expected upper bound fraction (LOEUF) metric is used ([LOEUF score](https://gnomad.broadinstitute.org/help/constraint#loeuf)).
 
-**Source of Data:** Platform genetic constraint widget ([GnomAD](https://gnomad.broadinstitute.org/))
+**Source of Data:** Platform genetic constraint widget ([gnomAD](https://gnomad.broadinstitute.org/))
 
 **Scoring:**
 
-The data from our platform already had ranked the targets regarding their loss of function constraint. We used that rank to give a continuous score from -1 to 1 depending on the position of the target in the rank, being
-
-* \-1 = the least tolerant to LoF variation target.&#x20;
-* 1 = the most tolerant to LoF.&#x20;
-* NA = No information available.
+A score from -1 to 1 is given to genes depending on their LOEUF metric rank, being -1 the least tolerant to LoF variation and 1 the most tolerant.
 
 ### Mouse models
 
@@ -166,15 +162,25 @@ Note: Below you can find how we scored the mouse phenotype classes (-1 being the
 
 ### Gene essentiality
 
-**Definition:** Gene is defined as core essential by the DepMap portal.
+**Definition:** The second generation map of cancer dependencies ([Pacini et al., 2024](https://doi.org/10.1016/j.ccell.2023.12.016)) increased the number of cancer cell lines analysed (930 CRISPR-Cas9 genome wide knock-out screenings, targeting almost 18,000 genes), spanning to 27 cancer types and curated patient genomic data, to identify cancer-type-specific and pan-cancer gene dependencies integrated with multi-omic markers.
 
-**Source of Data:** Gene essentiality widget ([Cancer DepMap](https://depmap.org/portal/))
+Candidate anti-cancer therapeutic targets were characterised using a prioritisation criteria based on:
+
+&#x20;                 \- Fitness Score. Strength of the effect on cellular fitness upon target depletion.
+
+&#x20;                 \- Presence of dependency marker.
+
+&#x20;                 \- Evidence linking the dependency and marker.
+
+After applying a priority score based on approved drug targets, authors nominated 370 targets for 27 cancer types; 302 were cancer-type specific, while 196 where pan-cancer. This list of genes is the one used to label a target for gene essentiality.
+
+**Source of Data:** A comprehensive clinically informed map of dependencies in cancer cells and framework for target prioritization. Pacini _et al_., 2024, Cancer Cell 42, 301–316. _Supplementary Table 6._ Gene essentiality widget ([Cancer DepMap](https://depmap.org/portal/)).
 
 **Scoring:**
 
-* \-1 = Target is essential.
-* 0 = Target is not essential.&#x20;
-* NA = No information available.
+* \-1 = Target reported as essential.
+* 0 = Target not reported as essential
+* NA = No information available
 
 ### **Known safety events**
 
