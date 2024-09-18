@@ -31,5 +31,3 @@ Lamore SD, Ahlberg E, Boyer S, Lamb ML, Hortigon-Vinagre MP, Rodriguez V, Smith 
 Lynch JJ 3rd, Van Vleet TR, Mittelstadt SW, Blomme EAG. **Potential functional and pathological side effects related to off-target pharmacological activity**. J Pharmacol Toxicol Methods. 2017 Sep;87:108-126. doi: [10.1016/j.vascn.2017.02.020](https://doi.org/10.1016/j.vascn.2017.02.020). PMID: [28216264](https://pubmed.ncbi.nlm.nih.gov/28216264/).
 
 Urban L, Whitebread S, Hamon J et al. **Screening for safety-relevant off-target affinities.** In: Polypharmacology in Drug Discovery. Peters JU (Ed.). John Wiley and Sons, NJ, USA (2012). doi: [10.1002/9781118098141.ch2](https://onlinelibrary.wiley.com/doi/abs/10.1002/9781118098141.ch2).
-
-Society for Advancement of AOPs. **AOP-Wiki.** 2023. Available from http://aopwiki.org.

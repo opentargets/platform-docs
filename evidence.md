@@ -107,6 +107,7 @@ Gene burden data comprises gene–phenotype relationships observed in gene-level
 * The results of whole-exome and whole-genome sequencing analysis on **Parkinson disease** and promoted by the **AMP-PD initiative**, and other collaborators (Makarious et al., 2022).
 * The results of gene-based analyses of rare variants and circulating metabolic biomarkers relevant to **cardiovascular disease** (Riveros-McKay et al., 2020).
 * The results of rare coding variant analyses from whole exome sequencing of Black South African men to identify genes significantly associated with **prostate cancer** (Soh et al., 2023)
+* The **FinnGen (R11)** gene-based burden test results from collapsing loss of function variants, based on **genotyping** data from the Finnish population. More information can be found in their [documentation](https://finngen.gitbook.io/documentation/methods/lof-variant-burden).
 
 These associations are a result of collapsing rare variants in a gene into a single burden statistic and regress the phenotype on the burden statistic to test for the combined effects of all rare variants in that gene. The different collapsing methods inform about the filters used to select the set of qualifying variants, mostly based on their pathogenicity and frequency in the population.
 
