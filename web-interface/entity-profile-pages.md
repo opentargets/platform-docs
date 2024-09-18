@@ -7,3 +7,8 @@ At the top of each profile page, we provide a description for the entity, a seri
 Next, a list of **summary widgets** display the availability of certain category; summary widgets in grey report the lack of information for the given category.
 
 Further down the page, **detail widgets** provide the full extent of information available in the Platform about a particular summary widget. A description explains the nature of the displayed information, as well as the source of the data.
+
+
+
+<figure><img src="../.gitbook/assets/Screenshot 2024-09-18 at 09.52.33.png" alt=""><figcaption><p>Example of BRAF entity profile page</p></figcaption></figure>
+
