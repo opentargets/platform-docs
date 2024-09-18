@@ -60,6 +60,6 @@ Check out our Literature Summarisation Tool Demo!
 
 ## Publications
 
-Ferguson C, Araújo D, Faulk L, Gou Y, Hamelers A, Huang Z, Ide-Smith M, Levchenko M, Marinos N, Nambiar R, Nassar M, Parkin M, Pi X, Rahman F, Rogers F, Roochun Y, Saha S, Selim M, Shafique Z, Sharma S, Stephenson D, Talo' F, Thouvenin A, Tirunagari S, Vartak V, Venkatesan A, Yang X, McEntyre J. **Europe PMC in 2020**. Nucleic Acids Res. 2021 Jan 8;49(D1):D1507-D1514. doi: [10.1093/nar/gkaa994](https://doi.org/10.1093/nar/gkaa994). PMID: [33180112](https://pubmed.ncbi.nlm.nih.gov/33180112/); PMCID: [PMC7778976](https://europepmc.org/article/PMC/PMC7778976).
+Rosonovski S, Levchenko M, Bhatnagar R, et al. Europe PMC in 2023. Nucleic Acids Research. 2024 Jan;52(D1):D1668-D1676. DOI: 10.1093/nar/gkad1085. PMID: [37994696](https://pubmed.ncbi.nlm.nih.gov/37994696/); PMCID: [PMC10767826](https://europepmc.org/article/MED/37994696).
 
 Benjamin P. Chamberlain, Emanuele Rossi, Dan Shiebler, Suvash Sedhain, and Michael M. Bronstein. 2020. Tuning Word2vec for Large Scale Recommendation Systems. In Fourteenth ACM Conference on Recommender Systems (RecSys '20). Association for Computing Machinery, New York, NY, USA, 732–737. DOI:[https://doi.org/10.1145/3383313.3418486](https://doi.org/10.1145/3383313.3418486)

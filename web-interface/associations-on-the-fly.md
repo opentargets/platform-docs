@@ -1,5 +1,5 @@
 ---
-description: Learn about the Associations on the Fly view
+description: Learn about the new associations view released in 23.09.
 ---
 
 # Associations on the Fly

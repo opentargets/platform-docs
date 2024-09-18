@@ -87,7 +87,7 @@ In Step 2, the score is modulated based on the ClinVar review status:
 
 **Source**: [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) (via [European Variation Archive](https://www.ebi.ac.uk/eva/))
 
-**References**: [Cook, C. et al, 2016](https://doi.org/10.1093/nar/gkv1352); [Landrum, M. et al, 2017](http://doi.org/10.1093/nar/gkx1153)
+**References**: [Cezard T. et al, 2021](https://doi.org/10.1093/nar/gkab960); [Shen A. et al, 2024](https://doi.org/10.1093/bioadv/vbae018); [Landrum, M. et al, 2014](https://doi.org/10.1093/nar/gkt1113); [Landrum, M. et al, 2020](https://doi.org/10.1093/nar/gkz972)
 
 
 
@@ -518,7 +518,7 @@ In Step 2, scored is modulated based on the ClinVar review status:
 
 **Source**: [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) (via [European Variation Archive](https://www.ebi.ac.uk/eva/))
 
-**References**: [Cook, C. et al, 2016](https://doi.org/10.1093/nar/gkv1352); [Landrum, M. et al, 2017](http://doi.org/10.1093/nar/gkx1153)
+**References**: [Cezard T. et al, 2021](https://doi.org/10.1093/nar/gkab960); [Shen A. et al, 2024](https://doi.org/10.1093/bioadv/vbae018); [Landrum, M. et al, 2014](https://doi.org/10.1093/nar/gkt1113); [Landrum, M. et al, 2020](https://doi.org/10.1093/nar/gkz972)
 
 
 

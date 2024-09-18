@@ -1,5 +1,7 @@
 ---
-description: Accessing the target - disease evidence pages.
+description: >-
+  Navigate the classic Associations view in the Open Targets Platform, from
+  which you can access the Evidence pages.
 ---
 
 # Evidence pages

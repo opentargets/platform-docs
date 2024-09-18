@@ -22,7 +22,7 @@
 * [Target Prioritisation view](target-prioritisation.md)
 * [Web interface](web-interface.md)
   * [Associations on the Fly](web-interface/associations-on-the-fly.md)
-  * [Evidence pages](web-interface/classic-associations-view.md)
+  * [Evidence pages](web-interface/evidence-pages.md)
   * [Entity profile pages](web-interface/entity-profile-pages.md)
 * [Data access](data-access/README.md)
   * [Download datasets](data-access/datasets.md)
