@@ -10,5 +10,5 @@ Further down the page, **detail widgets** provide the full extent of information
 
 
 
-<figure><img src="../.gitbook/assets/Screenshot 2024-09-18 at 09.52.33.png" alt=""><figcaption><p>Example of BRAF entity profile page</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2024-09-18 at 09.52.33.png" alt=""><figcaption><p>Example of BRAF profile page</p></figcaption></figure>
 
