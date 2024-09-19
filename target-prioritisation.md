@@ -4,7 +4,7 @@ description: Learn about the new target prioritisation view released in 23.12
 
 # Target Prioritisation view
 
-The new [target prioritisation page](https://platform.opentargets.org/disease/EFO\_0005774/associations?table=prioritisations) can be accessed by clicking onto the **Target prioritisation factors** tab from the target-disease Associations on the Fly page when searching for targets associated with a disease.
+The new [target prioritisation page](https://platform.opentargets.org/disease/EFO\_0005774/associations?table=prioritisations) can be accessed by clicking onto the **Target prioritisation factors** tab from the target-disease Associations on the Fly page when searching for targets associated with a disease or phenotype.
 
 The view focuses on displaying target-specific properties in a disease agnostic way, which have been aggregated into four main sections - **Precedence, Tractability, Doability, Safety** - and individually scored by the Open Targets team.
 

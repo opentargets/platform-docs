@@ -4,6 +4,51 @@ description: Summary of release highlights for the Open Targets Platform
 
 # Release notes
 
+## 24.09
+
+### Release date
+
+18 September 2024
+
+### Highlights
+
+**New features**
+
+* Users now have the ability to apply target-specific or disease/phenotype-specific filters to the target-disease association and target prioritisation pages. Read more details about the feature in our [documentation](https://platform-docs.opentargets.org/web-interface/associations-on-the-fly#filtering-functionality).
+
+**Data updates**
+
+* New safety liabilities associated with several targets which are routinely used by pharmaceutical companies have been added, from Brennan et al. (2024).
+* New Gene Burden evidence from the LoF burden analyses in FinnGen’s latest public release (R11).
+* New data from Reactome, Europe PMC, COSMIC and EVA (through ClinVar).
+
+**Product features**
+
+* Improved visualisation for Gene essentiality data from Cancer DepMap.
+* Updated frontend table design and functionality leading to better searching/filtering and sorting functionality for most tables in the UI.
+* The classic associations view has been deprecated from the Platform..
+
+**Product enhancements and bug fixes**
+
+* OpenAI model in the literature summarisation tool was updated to GPT-4o-mini.
+* Changes to `variant` field in the cancer biomarker evidence.
+* Aggregated the granularity of the description of phenotypes inside `cohortPhenotypes` to resolve duplication in ChEMBL evidence.
+* Bug fixes: pharmacogenetics schema, molecule dataset.
+
+Check out the [24.09 release blog post](https://blog.opentargets.org/open-targets-platform-24-09-release/) for more information on the new features and datasets introduced in this release.
+
+### Overall data metrics
+
+* 63,121 targets
+* 28,327 diseases and phenotypes
+* 18,041 drugs and compounds
+* 17,853,184 evidence strings
+* 8,155,988 target-disease associations
+
+Visit the [Open Targets Community 24.09 release thread](https://community.opentargets.org/t/24-09-platform-release-now-live/1556) for more data metrics for this release, including a per datasource breakdown of evidence strings.
+
+
+
 ## 24.06
 
 ### Release date
