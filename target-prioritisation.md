@@ -214,7 +214,7 @@ We use the attribute information from the cancer hallmarks, in the target profil
 
 **Scoring:**
 
-* Below 0 to -1 are linearly scored those targets with at least one paralogue in mice harbouring at least 60% of identity with the target.
+* Below 0 to -1 are linearly scored those targets with at least one paralogue in human harbouring at least 60% of identity with the target.
 * 0 = Those targets with paralogues harbouring less than 60% of identity.
 * NA = No information available about paralogues for that target.
 
