@@ -43,6 +43,10 @@ The Platform comes with a re-designed functionality which allows filtering on th
 * When multiple filters from different categories are selected, they are applied using an **AND** operator. When multiple filters within the same category are selected, they are applied with an **OR** operator.
 {% endhint %}
 
+Check out this tutorial video to know more about this feature:
+
+[https://www.youtube.com/watch?v=-OU3ha7XPaU](https://www.youtube.com/watch?v=-OU3ha7XPaU)
+
 ### Upload functionality
 
 Users can now upload a custom list of targets or diseases or phenotype of interest to obtain a tailored association/target prioritisation view.
