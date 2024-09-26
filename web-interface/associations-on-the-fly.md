@@ -45,7 +45,7 @@ The Platform comes with a re-designed functionality which allows filtering on th
 
 Check out this tutorial video to know more about this feature:
 
-[https://www.youtube.com/watch?v=-OU3ha7XPaU](https://www.youtube.com/watch?v=-OU3ha7XPaU)
+{% embed url="https://youtu.be/-OU3ha7XPaU?si=9unxwQgGVReDUSd3" %}
 
 ### Upload functionality
 
