@@ -44,9 +44,9 @@ The Bibliography section uses this algorithm to navigate the universe of publica
 
 For data features that link to publications, the Platform now provides the option for users to ask for a natural language summary of the target-disease evidence presented in the publication (when the full-text article is available and free to re-use).
 
-Using LangChain, we prompt OpenAI’s GPT-4o mini model to summarise relevant portions of the text which we then ask it to summarise with the following prompt: “Can you provide a concise summary about the relationship between \[target] and \[disease] according to this study?“. The resulting text is presented to the user (see screenshots with example).
+Using LangChain, we ask OpenAI’s GPT-4o mini model to summarise relevant portions of the text which we then ask it to summarise with the following prompt: “Can you provide a concise summary about the relationship between \[target] and \[disease] according to this study?“. The resulting text is presented to the user (see screenshots with example).
 
-<figure><img src=".gitbook/assets/Screenshot 2024-10-13 at 18.43.05.png" alt=""><figcaption><p>Arrows annotate source of publication evidence and prompt button for the feature</p></figcaption></figure>
+<figure><img src=".gitbook/assets/Screenshot 2024-10-13 at 18.43.05.png" alt=""><figcaption><p>Arrows annotate source of publication evidence and query prompt button for the feature</p></figcaption></figure>
 
 <figure><img src=".gitbook/assets/Screenshot 2024-10-13 at 18.45.24.png" alt=""><figcaption><p>Arrow shows prompted OpenAi summary</p></figcaption></figure>
 
