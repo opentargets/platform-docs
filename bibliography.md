@@ -50,14 +50,6 @@ We hope this feature will help the user better understand the available bibliogr
 
 You can find details on the OpenAI [terms of use](https://openai.com/policies/terms-of-use) here.
 
-Check out our Literature Summarisation Tool Demo!
-
-{% embed url="https://www.youtube.com/watch?v=RTWazZ-t5NI" %}
-
-
-
-
-
 ## Publications
 
 Rosonovski S, Levchenko M, Bhatnagar R, et al. Europe PMC in 2023. Nucleic Acids Research. 2024 Jan;52(D1):D1668-D1676. DOI: 10.1093/nar/gkad1085. PMID: [37994696](https://pubmed.ncbi.nlm.nih.gov/37994696/); PMCID: [PMC10767826](https://europepmc.org/article/MED/37994696).
