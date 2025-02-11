@@ -4,7 +4,7 @@
 
 If you use the Open Targets Platform in your work, please cite our latest publication:
 
-Buniello A. et al. (2025). [Open Targets Platform: facilitating therapeutic hypotheses building in drug discovery](https://academic.oup.com/nar/article/53/D1/D1467/7917960). _Nucleic Acids Research._
+Buniello, A. et al. (2025). [Open Targets Platform: facilitating therapeutic hypotheses building in drug discovery](https://academic.oup.com/nar/article/53/D1/D1467/7917960). _Nucleic Acids Research._
 
 ## Previous publications
 
