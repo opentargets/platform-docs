@@ -2,7 +2,7 @@
 
 As one of Open Targets flagship informatics products, the team that maintains the Open Targets Platform is committed to building open source tools and supporting open access research.
 
-If you use our code and/or our data, please cite [our latest publication](citation.md#latest-publication).
+If you use our code and/or our data, please cite [our latest publication](../citation.md#latest-publication).
 
 ## **Data**
 

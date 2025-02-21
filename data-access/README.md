@@ -1,6 +1,6 @@
-# Data access
+# Data and code access
 
-To support systematic identification and prioritisation of drug targets, we are committed to making our data open and available in a variety of formats to support academic research purposes and commercial activities. For more information, see our [Licence documentation](../licence.md).
+To support systematic identification and prioritisation of drug targets, we are committed to making our data open and available in a variety of formats to support academic research purposes and commercial activities. For more information, see our [Licence documentation](../licence/).
 
 For queries about a **single entity or target-disease association**, we recommend that you use:
 

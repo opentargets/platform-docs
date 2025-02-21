@@ -20,8 +20,8 @@ The Open Targets Platform infrastructure stack is composed of multiple elements:
 
 ### Data and evidence
 
-* [evidence\_datasource\_parsers](https://github.com/opentargets/evidence\_datasource\_parsers): internal pipelines used to generate evidence
-* [json\_schema](https://github.com/opentargets/json\_schema): evidence object schema used for evidence and association scoring
+* [evidence\_datasource\_parsers](https://github.com/opentargets/evidence_datasource_parsers): internal pipelines used to generate evidence
+* [json\_schema](https://github.com/opentargets/json_schema): evidence object schema used for evidence and association scoring
 * [OnToma](https://github.com/opentargets/OnToma): Python module to map disease or phenotype terms to EFO
 
 ### Extract, transform, load (ETL)

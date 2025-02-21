@@ -39,7 +39,7 @@ To start addressing therapeutic hypotheses users can find alternative ways to in
 * [Web interface](web-interface.md) at [platform.opentargets.org](http://platform.opentargets.org). The platform web application provides a UI to answer and wide range of therapeutic hypothesis. Starting from the home page search box, users can navigate to entity pages, associations page or evidence page to answer a wide range of therapeutic hypothesis.
 * [Data access](data-access/). More complex hypothesis might require advance interfaces or programmatic access. The Platform aims to deliver a number of alternative ways to access data to support the most intensive queries.
 
-More details about the open source codebase and development can be found in the [Platform infrastructure](infrastructure.md) section.
+More details about the open source codebase and development can be found in the [Platform infrastructure](data-access/platform-infrastructure.md) section.
 
 ## Training materials
 
