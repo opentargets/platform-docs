@@ -259,7 +259,7 @@ Orphanet is an international network that offers a range of resources to improve
 
 <table data-full-width="false"><thead><tr><th>Direction on Target (Gain of Function (GoF) / Loss of Function (LoF))</th><th>Direction on Trait (Risk/Protective)</th></tr></thead><tbody><tr><td>LoF and GoF variants</td><td>Assumption of Risk</td></tr></tbody></table>
 
-**Source**: [Orphanet Genes Associated with Rare Diseases](https://www.orpha.net/consor/cgi-bin/Disease\_Genes.php?lng=EN)
+**Source**: [Orphanet Genes Associated with Rare Diseases](https://www.orpha.net/consor/cgi-bin/Disease_Genes.php?lng=EN)
 
 **References**: [Orphanet](https://www.orpha.net); [Orphadata](http://www.orphadata.org/cgi-bin/index.php)
 
@@ -388,7 +388,7 @@ The Platform also provides information about key driver genes for specific disea
 
 ### PROGENy
 
-PROGENy (Pathway RespOnsive GENes) is a linear regression model that calculates pathway activity estimates based on consensus transcriptomic gene signatures obtained from perturbation experiments. PROGENy ([Schubert et al](https://www.nature.com/articles/s41467-017-02391-6.epdf?author\_access\_token=16QkzhJ3OA3qJDqBw\_GvGdRgN0jAjWel9jnR3ZoTv0NBFLUVI-ebH2AmtFlR1ykSPIho7ETJXL7VqZFC4zGtU0BaeoZncGrwx3ZW24lfVqvbSWqsQKaUXFTi\_c-4pgcpX-1qerWYlkG6sha8rhrnMg%3D%3D)) provides a framework to systematically compare pathway activities between normal and primary samples from The Cancer Genome Atlas (TCGA).
+PROGENy (Pathway RespOnsive GENes) is a linear regression model that calculates pathway activity estimates based on consensus transcriptomic gene signatures obtained from perturbation experiments. PROGENy ([Schubert et al](https://www.nature.com/articles/s41467-017-02391-6.epdf?author_access_token=16QkzhJ3OA3qJDqBw_GvGdRgN0jAjWel9jnR3ZoTv0NBFLUVI-ebH2AmtFlR1ykSPIho7ETJXL7VqZFC4zGtU0BaeoZncGrwx3ZW24lfVqvbSWqsQKaUXFTi_c-4pgcpX-1qerWYlkG6sha8rhrnMg%3D%3D)) provides a framework to systematically compare pathway activities between normal and primary samples from The Cancer Genome Atlas (TCGA).
 
 In the Platform, a PROGENy evidence is defined as any significantly regulated sample-level pathway activities inferred from matched normal vs. tumor samples.
 
@@ -426,12 +426,6 @@ In the Platform, each contrast from independent studies capturing differentially
 
 **References**: [Papatheodorou, I. et al, 2020](https://doi.org/10.1093/nar/gkz947)
 
-
-
-\#All evidence has a base score of 0.5. Whereas tier 2 genes score is always 0.5, tier 1 scores can be modulated as follows
-
-
-
 ### **Cancer Gene Census**
 
 Cancer Gene Census (CGC) is part of the Wellcome Sanger Institute Catalogue of Somatic Mutations in Cancer ([COSMIC](http://cancer.sanger.ac.uk/cosmic)). CGC is an effort to catalogue genes which contain mutations that have been causally implicated in cancer. The exhaustive curation of the CGC covers individual studies as well as pan-cancer sequencing efforts, including The Cancer Genome Atlas (TCGA) and the International Cancer Genome Consortium (ICGC) among others.
@@ -462,7 +456,7 @@ In the Platform, independent target - disease evidence are defined as any signif
 
 **Data type**: Somatic mutations
 
-**Evidence scoring**: Scaled [combined q-values](https://intogen.readthedocs.io/en/latest/drivers\_combination.html) from 0.25 (q = 0.1) to 1 (q < 1e-10).
+**Evidence scoring**: Scaled [combined q-values](https://intogen.readthedocs.io/en/latest/drivers_combination.html) from 0.25 (q = 0.1) to 1 (q < 1e-10).
 
 **Source**: [intOGen](http://www.intogen.org/search)
 
