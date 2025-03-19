@@ -1,6 +1,6 @@
 # Google BigQuery
 
-To support more complex queries and advanced informatics workflows that use Google Cloud services, the Open Targets Platform data is also available as a Google Cloud public dataset via our Google BigQuery instance — [open-targets-prod](https://console.cloud.google.com/bigquery?p=open-targets-prod\&d=platform\_21\_06).
+To support more complex queries and advanced informatics workflows that use Google Cloud services, the Open Targets Platform data is also available as a Google Cloud public dataset via our Google BigQuery instance — [open-targets-prod](https://console.cloud.google.com/bigquery?p=open-targets-prod\&d=platform_21_06).
 
 ## What is Google BigQuery?
 
@@ -20,7 +20,7 @@ For more information on BiqQuery, please review the [BigQuery documentation](htt
 
 ## Example BigQuery SQL queries
 
-Below is a sample query that uses our `associationByOverallDirect` dataset to return a list of targets associated with psoriasis (EFO\_0000676) and the overall association score.
+Below is a sample query that uses our `association_overall_direct` dataset to return a list of targets associated with psoriasis (EFO\_0000676) and the overall association score.
 
 ```sql
 SELECT
@@ -30,13 +30,13 @@ SELECT
   diseases.name AS disease_name,
   associations.score AS overall_association_score
 FROM
-  `open-targets-prod.platform.associationByOverallDirect` AS associations
+  `open-targets-prod.platform.association_overall_direct` AS associations
 JOIN
-  `open-targets-prod.platform.diseases` AS diseases
+  `open-targets-prod.platform.disease` AS diseases
 ON
   associations.diseaseId = diseases.id
 JOIN
-  `open-targets-prod.platform.targets` AS targets
+  `open-targets-prod.platform.target` AS targets
 ON
   associations.targetId = targets.id
 WHERE
@@ -45,9 +45,9 @@ ORDER BY
   associations.score DESC
 ```
 
-[Run this query in BigQuery](https://console.cloud.google.com/bigquery?sq=352646847630:6a545cddf1c1442884e80439c97cee52)
 
-Similarly, you can use our `molecule` dataset and pass a list of drug trade names to find relevant information:
+
+Similarly, you can use our `drug_molecule` dataset and pass a list of drug trade names to find relevant information:
 
 ```sql
 DECLARE
@@ -67,13 +67,11 @@ SELECT
   blackBoxWarning AS drug_blackbox_warning,
   hasBeenWithdrawn AS drug_withdrawn,
 FROM
-  `open-targets-prod.platform.molecule`,
+  `open-targets-prod.platform.drug_molecule`,
   UNNEST (tradeNames.list) AS tradeNameList
 WHERE
   (tradeNameList.element) IN UNNEST(my_drug_list)
 ```
-
-[Run this query in BigQuery](https://console.cloud.google.com/bigquery?sq=352646847630:9813cf8f3cb443ac9103e257bf9e8b97)
 
 ## Tutorials and how-to guides
 

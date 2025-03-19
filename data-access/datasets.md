@@ -4,7 +4,7 @@ To support more complex and systematic queries, we provide all datasets as data 
 
 A list of all datasets is available in the [Platform Data Downloads](https://platform.opentargets.org/downloads) page.
 
-All Platform **datasets** are available as a distributed collection of data. This implies that for each dataset, there will be a directory with a list of partitioned files. Currently, we produce our datasets in Parquet. Both of these formats allow us to expose nested information in a machine-readable way. Next we describe how to download, access and query this information in a step-by-step guide.
+All Platform **datasets** are available as a distributed collection of data. This implies that for each dataset, there will be a directory with a list of partitioned files. Currently, we produce our datasets in Parquet. This formats allow us to expose nested information in a machine-readable way. Next we describe how to download, access and query this information in a step-by-step guide.
 
 Archive datasets, as well as input files and other secondary products are also made available in the [FTP server](http://ftp.ebi.ac.uk/pub/databases/opentargets/platform/) and [Google Cloud Platform](https://console.cloud.google.com/storage/browser/open-targets-data-releases).
 
@@ -19,7 +19,7 @@ We recommend using **lftp** with a command line client, and when using tools lik
 `rsync` is a command line tool for efficiently transferring and synchronising files between a computer and an external hard drive.
 
 ```bash
-rsync -rpltvz --delete rsync.ebi.ac.uk::pub/databases/opentargets/platform/25.03/output/etl/parquet/diseases .
+rsync -rpltvz --delete rsync.ebi.ac.uk::pub/databases/opentargets/platform/25.03/output/diseases .
 ```
 
 #### Using wget
@@ -28,7 +28,7 @@ rsync -rpltvz --delete rsync.ebi.ac.uk::pub/databases/opentargets/platform/25.03
 
 ```bash
 wget --recursive --no-parent --no-host-directories --cut-dirs 8 \
-https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/25.03/output/etl/parquet/diseases
+https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/25.03/output/diseases
 ```
 
 #### Using Google Cloud Platform (paywalled after 1TB)
@@ -36,7 +36,7 @@ https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/25.03/output/etl/parque
 Users with Google Cloud Platform account can download the datasets through the Google Cloud Console or using `gsutil` command-line tool.
 
 ```bash
-gsutil -m cp -r gs://open-targets-data-releases/25.03/output/etl/parquet/diseases .
+gsutil -m cp -r gs://open-targets-data-releases/25.03/output/diseases .
 ```
 
 #### Other ways to access data
@@ -57,7 +57,7 @@ The next scripts provide a proof-of-concept example using the ClinVar evidence p
 First of all the dataset needs to be downloaded as described in the previous section. For simplicity, only EVA evidence is downloaded, but all evidence can be downloaded at once using the same approach.
 
 ```bash
-gsutil -m cp -r gs://open-targets-data-releases/25.03/output/etl/parquet/evidence/sourceId=eva .
+gsutil -m cp -r gs://open-targets-data-releases/25.03/output/evidence/sourceId=eva .
 ```
 
 The next scripts make use of Apache Spark ([PySpark](https://spark.apache.org/docs/latest/api/python/index.html) or [Sparklyr](https://spark.rstudio.com)) to read and query the dataset using modern functional programming approaches. These packages need to be installed in their respective environments.

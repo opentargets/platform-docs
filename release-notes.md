@@ -4,6 +4,78 @@ description: Summary of release highlights for the Open Targets Platform
 
 # Release notes
 
+## 25.03
+
+### Release date
+
+19 March 2025
+
+### Highlights
+
+**New features**
+
+* Variant, study, and credible set information is now available in the Open Targets Platform. This unites the Open Targets Platform and Open Targets Genetics into a single interface for human genetic and target discovery information.
+* Interpret gene-disease evidence from both common and rare variation in one resource, and in multiple ancestries.
+* The Platform now has three additional entities:
+  * [Variant](variant.md): functional context for 6.5M rare and common variants
+    * Please note: the Platform only integrates variants associated with a disease, trait, or phenotype
+  * [Study](study.md): GWAS and molQTL studies
+  * [Credible Set](credible-set.md): 2.6 million credible sets derived from various sources
+    * Colocalisation is now based on credible set overlaps
+* A new [Locus-to-Gene (L2G)](gentropy/locus-to-gene-l2g.md) machine learning model which prioritises likely causal genes at each GWAS locus by using functional genomics features. The Platform also uses [Shapley values](credible-set.md#explaining-l2g-predictions) as part of the L2G predictions to illustrate the relative contribution of each feature.
+
+**Data updates**
+
+* A substantial increase in the literature evidences due to improvements in resolving disambiguation of entities.
+* Updated gene burden data through FinnGen R12.
+* New NHS Genomic Medicine Service panels from GEL PanelApp and a new hearing loss panel to the Gene2Phenotype evidence set.
+* Rewritten Uniprot pipeline with new associations from Uniprot variants
+* Updated data from Probes\&Drugs and DepMap.
+* New data from Reactome, ChEMBL, Europe PMC, COSMIC and EVA (through ClinVar).
+
+**Product features**
+
+* A new Scalable and reproducible genetic analyses pipeline available as a Python package for post-GWAS analysis: [Gentropy](https://opentargets.github.io/gentropy/).
+* An updated data downloads page which has a more detailed description of each file. (Temporary removal of schema which will be brought back in the subsequent release).
+* [otter](https://github.com/opentargets/otter) - **O**pen **T**argets' **T**ask **E**xecuto**R** i.e. scripts that process and prepare data for our ETL pipelines.
+* Various improvements to our web interface:
+  * Users can search the UI using variants and study id.
+  * Improved searching, filtering and sorting of entities on our associations pages. In particular, there are now separate sections for uploaded entity lists and pinned entities, and you can remove individual filters from the view.
+  * The platform and the Target Prioritisation view has a more accessible colour scheme.\
+    Option to select desired columns in the UI.
+  * A graphical Comparative Genomics view in Target Prioritisation.
+  * Preview on hover: Ability to view details of an entity without navigating to it.
+
+**Product enhancements and bug fixes**
+
+* Filtered out Phase IV clinical trial evidence that lacks regulatory approval for the specific indication from our target-disease association data.
+* The BE infrastructure has been upgraded to Scala 3
+* Improved and restructured documentation.
+
+{% hint style="info" %}
+The data downloads paths have been changed as now only parquet data format is available. Also there are minor changes to the name of the dataset (snake\_case & singulars). Details [here](https://community.opentargets.org/t/issues-with-gcp-big-query/1704/5).
+
+* Previous releases (till 24.09):
+  * `https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/24.09/output/etl/parquet/associationByOverallDirect/`
+* 25.03 release:&#x20;
+  * `https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/25.03/output/association_by_datasource_direct/`
+{% endhint %}
+
+Check out the [25.03 release blog post](https://blog.opentargets.org/open-targets-platform-25-03-release/) for more information on the new features and datasets introduced in this release.
+
+### Overall data metrics
+
+* 78,766 targets
+* 28,513 diseases and phenotypes
+* 18,081 drugs and compounds
+* 28,168,992 evidence strings
+* 10,162,821 target-disease associations
+* 6,493,882 variants
+
+Visit the [Open Targets Community 25.03 release thread](https://community.opentargets.org/t/25-03-platform-release-now-live-open-targets-genetics-data-update/1708) for more data metrics for this release, including a per datasource breakdown of evidence strings.
+
+
+
 ## 24.09
 
 ### Release date
