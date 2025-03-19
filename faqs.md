@@ -1,6 +1,6 @@
 # 🆕 FAQs
 
-**Do you have questions or comments for us? Ask on** [**Open Targets Community**](https://community.opentargets.org/c/frequently-asked-questions/6)**!**
+**Do you have questions for us? Ask on** [**Open Targets Community**](https://community.opentargets.org/c/frequently-asked-questions/6)**!**
 
 
 
