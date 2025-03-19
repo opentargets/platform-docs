@@ -7,7 +7,7 @@ A **credible set** is a set of genetic variants near a genetic association signa
 A credible set results from statistical analysis on a specific locus in a study. As a consequence, all credible sets are defined as:
 
 * **Study** in which the association is reported
-* **Lead variant.** Variant with the highest posterior probability in the credible set
+* **Lead variant -** Variant with the highest posterior probability in the credible set
 * **Fine-mapping** method and statistics
 
 The Platform contains every credible set resulting from [fine-mapping](gentropy/fine-mapping.md) all our [sources](gentropy/data-sources.md) after applying certain [exclusion criteria](credible-set.md#credible-set-exclusion-criteria).
@@ -51,9 +51,7 @@ All variants in the credible set are annotated with:
 * **LD (r^2)**. Linkage-disequilibrium information. Only available for PICS-fine-mapped credible sets.
 * **Posterior probability.** Posterior inclusion probability (PIP) of variant being causal after fine-mapping.
 * **log(BF)**. The logarithm of the Bayes factor. Only available for SuSiE credible sets.
-* **Predicted consequence**. The most severe consequence is across all overlapping canonical transcripts, as reported by Ensembl VEP.
-
-**Sources**: Open Targets, Ensembl VEP
+* **Predicted consequence**. The most severe consequence is across all overlapping canonical transcripts, as reported by the Ensembl VEP.
 
 ## Locus-to-Gene (L2G)
 
