@@ -257,13 +257,13 @@ The 17 classes are: Another Study, Business or Administrative, Negative, Study D
 
 **Evidence scoring:** ChEMBL evidence is scored in a 2-step process. In Step 1, a score is assigned to every piece of evidence based on the clinical precedence:
 
-| Clinical Precedence | Evidence score |
-| ------------------- | -------------- |
-| Phase I (Early)     | 0.05           |
-| Phase I             | 0.1            |
-| Phase II            | 0.2            |
-| Phase III           | 0.7            |
-| Phase IV            | 1              |
+| Clinical Precedence                      | Evidence score |
+| ---------------------------------------- | -------------- |
+| Phase I (Early)                          | 0.05           |
+| Phase I                                  | 0.1            |
+| Phase II                                 | 0.2            |
+| Phase III                                | 0.7            |
+| Phase IV (only for approved indications) | 1              |
 
 In Step 2, for those clinical trials that have stopped early, the score is down-weighted based on the classification of the reason to stop. In this way, less importance is attributed to evidence of studies that have been stopped due to negative outcomes or safety concerns:
 
