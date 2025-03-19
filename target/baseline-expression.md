@@ -14,15 +14,15 @@ We combine baseline expression information from three sources:
 
 ### Expression Atlas
 
-Expression Atlas - [https://www.ebi.ac.uk/gxa/home](https://www.ebi.ac.uk/gxa/home) - is a manually-curated, freely available data analysis and visualisation resource that provides information about gene and protein expression in more than 3,000 experiments.
+Expression Atlas – [https://www.ebi.ac.uk/gxa/home](https://www.ebi.ac.uk/gxa/home) – is a manually-curated, freely available data analysis and visualisation resource that provides information about gene and protein expression in more than 3,000 experiments.
 
 ### Human Protein Atlas
 
-The Human Protein Atlas - [https://www.proteinatlas.org](https://www.proteinatlas.org) - is an international collaboration that develops various open access knowledge resources that map all the human proteins in cells, tissues and organs using an integration of various 'omics technologies. The Human Protein Atlas consists of six separate parts, each focusing on a particular aspect of the genome-wide analysis of the human proteins. At the moment, we only use the [Tissue Atlas](https://www.proteinatlas.org/humanproteome/tissue), showing the distribution of the proteins across all major tissues and organs in the human body.
+The Human Protein Atlas – [https://www.proteinatlas.org](https://www.proteinatlas.org) – is an international collaboration that develops various open access knowledge resources that map all the human proteins in cells, tissues and organs using an integration of various 'omics technologies. The Human Protein Atlas consists of six separate parts, each focusing on a particular aspect of the genome-wide analysis of the human proteins. At the moment, we only use the [Tissue Atlas](https://www.proteinatlas.org/humanproteome/tissue), showing the distribution of the proteins across all major tissues and organs in the human body.
 
 ### Genotype-Tissue Expression (GTEx) Portal
 
-The Genotype-Tissue Expression (GTEx) Portal - [https://gtexportal.org/home/](https://gtexportal.org/home/) - is an open access data resource that provides data on gene expression, QTLs, and histology images. The Portal is part of the GTEx consortium's ongoing effort to build a comprehensive public resource to study tissue-specific gene expression and regulation and its relationship to genetic variation.
+The Genotype-Tissue Expression (GTEx) Portal – [https://gtexportal.org/home/](https://gtexportal.org/home/) – is an open access data resource that provides data on gene expression, QTLs, and histology images. The Portal is part of the GTEx consortium's ongoing effort to build a comprehensive public resource to study tissue-specific gene expression and regulation and its relationship to genetic variation.
 
 ## Computational pipelines and datasets
 
@@ -53,7 +53,7 @@ The tissue- and cell-based samples in these experiments are processed separately
 We analyse this expression file further to compute two values for each gene:
 
 * **Binned value of expression:** The normalised expression values are divided into 10 bins of the same width. Note that this is not the same as the deciles, which all contain the same number of items in them
-* **Tissue specificity**: Z-scores are calculated for each gene and each tissue and then they are binned based on quantiles of a perfect normal distribution. We compute the tissue specificity of a target as the number of standard deviations from the mean of the log RNA expression of the target across the available tissues. A target is considered to be tissue specific if the z-score is greater than 0.674 (or the 75th percentile of a perfect normal distribution). We remove data for under-expressed targets before the z-score calculation. This allows us to extract the tissues for which a gene is specific, defined as the expression value being above the 75th z-score percentile - in practice, anything in bin 2 or above.
+* **Tissue specificity**: Z-scores are calculated for each gene and each tissue and then they are binned based on quantiles of a perfect normal distribution. We compute the tissue specificity of a target as the number of standard deviations from the mean of the log RNA expression of the target across the available tissues. A target is considered to be tissue specific if the z-score is greater than 0.674 (or the 75th percentile of a perfect normal distribution). We remove data for under-expressed targets before the z-score calculation. This allows us to extract the tissues for which a gene is specific, defined as the expression value being above the 75th z-score percentile — in practice, anything in bin 2 or above.
 
 Normalised files with binned value of expression and tissue specificity values for each target are available from [our data download page](https://platform.opentargets.org/downloads).
 

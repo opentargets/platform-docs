@@ -1,13 +1,12 @@
 ---
-description: Learn about the new target prioritisation view released in 23.12
-hidden: true
+description: Learn about the target prioritisation view
 ---
 
 # Target Prioritisation view
 
-The new [target prioritisation page](https://platform.opentargets.org/disease/EFO_0005774/associations?table=prioritisations) can be accessed by clicking onto the **Target prioritisation factors** tab from the target-disease Associations on the Fly page when searching for targets associated with a disease or phenotype.
+The new [target prioritisation page](https://platform.opentargets.org/disease/EFO_0005774/associations?table=prioritisations) can be accessed by clicking onto the **Target prioritisation factors** tab from the Associations on the Fly page when searching for targets associated with a disease or phenotype.
 
-The view focuses on displaying target-specific properties in a disease agnostic way, which have been aggregated into four main sections - **Precedence, Tractability, Doability, Safety** - and individually scored by the Open Targets team.
+The view focuses on displaying target-specific properties in a disease agnostic way, which have been aggregated into four main sections—**Precedence, Tractability, Doability, Safety—**&#x61;nd individually scored by the Open Targets team.
 
 A "traffic light" system has been designed to visually inform on target prioritisation, with the aim to facilitate target recommendations. Using a colour scale, green indicates potentially positive attributes and red indicates potentially negative attributes, providing information to help users assess the targets for further prioritisation or deprioritisation, respectively.
 

@@ -30,7 +30,7 @@ A machine learning model trained using BioBERT and a combination of curated data
 
 In order to ground the tagged text to the Platform entities, a dictionary-based approach is applied to the tagged entities by applying a series of standard Natural Language Processing tools (e.g. stemming, stop-words, etc.). As a result, a fraction of the tagged sentences are grounded to the Platform entities and annotated with their respective identifier.
 
-The result of the normalisation is used in parallel to build the Platform Literature evidence covered in a different [section](evidence.md#europe-pmc).
+The result of the normalisation is used in parallel to build the Platform Literature evidence covered [in a different section](evidence.md#europe-pmc).
 
 #### Literature-based similar entities
 

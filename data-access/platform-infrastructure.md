@@ -4,45 +4,39 @@ description: >-
   Platform
 ---
 
-# Platform infrastructure
+# 🆕 Platform infrastructure
 
 ## Introduction
 
-The Open Targets Platform infrastructure stack is composed of multiple elements:
+The Open Targets Platform infrastructure stack is composed of three layers, data, backend and frontend.
 
-1. Data and evidence generation pipelines
-2. Evidence processing and scoring ETL pipelines
-3. Globally-distributed GraphQL API
-4. Terraform deployment
-5. Robust, optimised front-end user interface
+1. Data layer
+   1. Opensearch — Contains the bulk of the data
+   2. Clickhouse — Contains data related to associations view
+2. Backend layer
+   1. API — The main backend application, providing the GraphQL engine
+   2. OpenAI-API — The summarizing engine for literature section
+3. Frontend layer
+   1. Web — A React SPA web application
+
+<figure><img src="../.gitbook/assets/infra.drawio.svg" alt="" width="563"><figcaption></figcaption></figure>
+
+Currently this infrastructure is hosted on Google Cloud, using a load-balanced, globally distributed and highly scalable deployment based on Terraform.
 
 ## GitHub repositories
 
-### Data and evidence
+### Backend
 
-* [evidence\_datasource\_parsers](https://github.com/opentargets/evidence_datasource_parsers): internal pipelines used to generate evidence
-* [json\_schema](https://github.com/opentargets/json_schema): evidence object schema used for evidence and association scoring
-* [OnToma](https://github.com/opentargets/OnToma): Python module to map disease or phenotype terms to EFO
+* [platform-api](https://github.com/opentargets/platform-api) — GraphQL API
+* [ot-ai-api](https://github.com/opentargets/ot-ai-api) — OpenAI API router
 
-### Extract, transform, load (ETL)
+### Frontend
 
-* [platform-input-support](https://github.com/opentargets/platform-input-support): scripts that process and prepare data for our ETL pipelines
-* [platform-etl-backend](https://github.com/opentargets/platform-etl-backend): ETL pipelines to generate associations, evidence, and entity indices
-* [platform-etl-openfda-faers](https://github.com/opentargets/platform-etl-openfda-faers): ETL pipeline to process Open FDA adverse events data
-* [platform-etl-literature](https://github.com/opentargets/platform-etl-literature): ETL pipeline to generate similar entities and publications
-* [platform-output-support](https://github.com/opentargets/platform-output-support): scripts for infrastructure tasks and generating a Platform release
-
-### API
-
-* [platform-api](https://github.com/opentargets/platform-api): GraphQL API
+* [ot-ui-apps](https://github.com/opentargets/ot-ui-apps) — Open Targets web applications
 
 ### Deployment
 
-* [terraform-google-opentargets-platform](https://github.com/opentargets/terraform-google-opentargets-platform): scripts to deploy the public version of the Platform
-
-### Front-end
-
-* [platform-app](https://github.com/opentargets/platform-app): front-end web interface
+* [terraform-google-opentargets](https://github.com/opentargets/terraform-google-opentargets-platform) — Open Targets Infrastructure definition, scripts in charge of setting up the data layer with the relevant disk images and spinning up the rest of the infrastructure.
 
 ## Open source contributions
 

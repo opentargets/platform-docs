@@ -26,6 +26,12 @@ You can then access relevant data from the following endpoints:
 
 **/drug:** contains annotation information for compounds and drugs including mechanisms of action, indications, and pharmacovigilance data
 
+**/variant:** contains annotation information for variants including population allele frequencies, variant effect, transcript consequences, and credible sets associated with complex traits containing the variant.
+
+**/studies:** contains annotation information for studies including trait or phenotype, publication, cohort information and list of credible sets associated with the study.
+
+**/credibleSet:** contains annotation information for credible sets including the complete sets of variants in the credible set, gene assignment based on our L2G predictions and colocalisation metrics.
+
 **/search**: contains index of all entities contained within the Platform
 
 ## Example GraphQL query

@@ -1,6 +1,6 @@
-# Target - disease associations
+# Target–disease associations
 
-Each unique target-disease pair in the Open Targets Platform is defined as an **association**. For example, while there might be several pieces of evidence referring to CFTR and Cystic fibrosis from multiple sources, one single association contextualises all this information within the Platform. Also, since multiple pieces of evidence might refer to the same or similar associations, the Platform undertakes a series of steps to quantify their relative strength for a given association.
+Each unique target–disease pair in the Open Targets Platform is defined as an **association**. For example, while there might be several pieces of evidence referring to CFTR and Cystic fibrosis from multiple sources, one single association contextualises all this information within the Platform. Also, since multiple pieces of evidence might refer to the same or similar associations, the Platform undertakes a series of steps to quantify their relative strength for a given association.
 
 ## Ontological selection of evidence
 
@@ -17,9 +17,9 @@ To approach this problem systematically, the Platform makes use of the propertie
 
 An association page for diseases associated with a target (e.g. [NOD2 associations page](https://platform.opentargets.org/target/ENSG00000167207/associations)) includes **direct evidence only**.
 
-An association page for targets associated with a disease (e.g. [Inflammatory Bowel Disease associations page](https://platform.opentargets.org/disease/EFO\_0003767/associations)) includes **both direct and indirect evidence**.&#x20;
+An association page for targets associated with a disease (e.g. [Inflammatory Bowel Disease associations page](https://platform.opentargets.org/disease/EFO_0003767/associations)) includes **both direct and indirect evidence**.&#x20;
 
-An evidence page (e.g. [NOD2 and inflammatory bowel disease](https://platform.opentargets.org/evidence/ENSG00000167207/EFO\_0003767)) displays **both direct and indirect evidence**. &#x20;
+An evidence page (e.g. [NOD2 and inflammatory bowel disease](https://platform.opentargets.org/evidence/ENSG00000167207/EFO_0003767)) displays **both direct and indirect evidence**. &#x20;
 {% endhint %}
 
 \
@@ -53,7 +53,7 @@ For all cases, the Platform defines a **data source association score** by calcu
 1. The pieces of evidence are sorted in descending order and assigned an incremental value that indicates their position in the sorted list (the top-scoring item has a positional id of 1, the second has a positional id of 2, and so on).
 2. The harmonic sum for each data source is then calculated by summing the result of dividing each evidence score by (positional id^2).
 
-![](.gitbook/assets/Scoring\_Harmonic\_Sum\_Visual.png)
+![](.gitbook/assets/Scoring_Harmonic_Sum_Visual.png)
 
 3. To ensure the result is between 0 and 1, the harmonic sum is normalised by dividing the result by the maximum theoretical harmonic sum, which is the one calculated using an infinite vector of ones. The platform derives this calculation (which approximates to 1.644) by using a vector of 1,000 ones.
 
@@ -122,6 +122,6 @@ There are a few important considerations regarding association scores. As descri
 
 For example, under-studied diseases are unlikely to produce high-scoring targets due to the lack of available evidence. In such diseases, a relatively low-scoring target might still be the top-ranked target and potentially a very interesting lead from a therapeutic standpoint.
 
-Similarly, not all associations with available target-disease evidence should be considered legitimate target-disease associations. Some of our data sources rely on predictions to assess the relationship between a target and a disease. Thus, they should be considered with caution and always take their relative support into consideration.
+Similarly, not all associations with available target–disease evidence should be considered legitimate target–disease associations. Some of our data sources rely on predictions to assess the relationship between a target and a disease. Thus, they should be considered with caution and always take their relative support into consideration.
 
 ![Schematic of how data source, data type, and overall associations scores are calculated in the Open Targets Platform. ](<.gitbook/assets/Association score (documentation image) — July 2023 (1).png>)

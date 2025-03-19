@@ -1,50 +1,70 @@
-# Target - disease evidence
+# Target–disease evidence
 
-## Target - disease evidence
+## Target–disease evidence
 
-Every event or set of events pinpointing a target as a potential causal gene or protein for a disease, represents the unit of information, most often referred as **evidence**. Within Open Targets, a series of pipelines ensure information is retrieved from their sources and standardised in a way that can be immediately applied to answer drug development queries.
+Every event or set of events pinpointing a target as a potential causal gene or protein for a disease represents the unit of information, most often referred to as **evidence**. Within the Open Targets Platform, a series of pipelines ensure information is retrieved from its sources and standardised in a way that can be immediately applied to answer drug development queries.
 
 All evidence is mapped to the reference target entity identifier (Ensembl gene) and disease or phenotype identifier (experimental factor ontology, EFO), as well as other reference controlled vocabularies and ontologies when appropriate. Evidence is also reviewed to minimise the presence of duplicates within the same data source.
 
-Data sources are also grouped into bigger categories abstracting the type of evidence they predominantly capture. These categories are usually referred to in the platform as **data types** as opposed to the individual resource data referred to as **data sources**.
+Data sources are also grouped into bigger categories abstracting the type of evidence they predominantly capture. In the platform, these categories are usually referred to as data types, as opposed to the individual resource data referred to as **data sources**.
 
-In order to contextualise the relative importance of each piece of evidence, the Open Targets Platform provides a scoring framework for each data source. This score will take more relevance when understanding the association scoring in later sections.
+The Open Targets Platform provides a scoring framework for each data source to contextualise the relative importance of each piece of evidence. This score will be more relevant when understanding the association scoring in later sections.
 
 ## Evidence data sources
 
-### Open Targets Genetics
+### GWAS associations
 
-Open Targets Genetics focuses on the identification of trait-causal genes from significant loci in genome-wide association studies (GWAS).
+The GWAS associations data source aggregates target-disease relationships supported by significant genome-wide associations (GWAS) in the context of other functional genomics data.
 
-Whereas GWAS identifies significantly-associated alleles (lead variants), these variants might not necessarily be the causal (or the only causal) ones. Moreover, the causal genes are not necessarily the closest to the lead variant. Due to these reasons, identifying target-disease associations based on GWAS data is extremely challenging. Open Targets Genetics tackles this and other challenges by applying cutting-edge statistical genetics methodologies into large-scale human genetics data. Moreover, Open Targets Genetics uses a machine learning method to identify the most likely causal genes by integrating and summarising the effect of tag variants based on genetic and functional genomic data. This method is referred to as the [Locus2Gene model](https://genetics-docs.opentargets.org/our-approach/prioritising-causal-genes-at-gwas-loci-l2g).
+The evidence in this data source results from a comprehensive statistical genetics analysis described in [GWAS and functional genomics](gentropy/) section. The aim of this analysis is to identify GWAS-significant signals across an [extensive set](gentropy/data-sources.md) of GWAS studies covering binary and quantitative traits. To address linkage disequilibrium, all significant signals are [fine-mapped](gentropy/fine-mapping.md) and the resulting credible sets [colocalised](credible-set.md#colocalisation) against molQTL studies. All GWAS and functional genomic features are leveraged by the [Locus-to-Gene](gentropy/locus-to-gene-l2g.md) machine-learning method aimed to prioritise likely causal genes in the region.
 
-A Genetics portal evidence in the Platform is defined as any GWAS-significant lead variant (p-value < 1e-8) identified in a study with a predicted causal gene for the given trait with a Locus2Gene (L2G) score greater than 0.05.
-
-When available, L2G predictions incorporate a new column ‘QTL effect’ containing a Sequence Ontology term representing whether the observed allele is expected to cause an increased/decreased abundance of the gene product. In cases in which multiple variants with opposite effects are available only the strongest effect is considered.
+The GWAS association evidence is defined as any credible set in a GWAS trait associated with a gene with a Locus2Gene (L2G) > 0.05. The feature contributions for the L2G predictions are also [explained](credible-set.md#explaining-l2g-predictions) by SHAP analysis helping with the interpretation of the observed features. All credible sets can also be futher interrogated in their own [credible set](credible-set.md) page, including an interpretation of the directionality in the context of colocalising molQTL studies.
 
 **Datatype**: Genetic associations
 
-**Evidence scoring**: [Locus2Gene (L2G) score](https://genetics-docs.opentargets.org/our-approach/prioritising-causal-genes-at-gwas-loci-l2g), filtered to use scores above 0.05
+**Evidence scoring**: [Locus-to-Gene score](gentropy/locus-to-gene-l2g.md), filtered to use scores above 0.05
+
+### Gene Burden
+
+Gene burden data comprises gene–phenotype relationships observed in gene-level association tests using rare variant collapsing analyses. The Platform integrates burden tests carried out by several sources:
+
+* **REGENERON** (Backman et al., 2021), a whole-exome sequencing analysis of individuals from the UK Biobank.
+* **AstraZeneca PheWAS Portal** (Wang et al., 2021), a whole-exome sequencing analysis of individuals from the UK Biobank.
+* **Genebass** (Karczewski et al., 2022): Gene-based Association Summary Statistics (Genebass),  a whole-exome sequencing analysis of individuals from the UK Biobank.
+* The results of whole-exome and whole-genome sequencing analysis based on the **SPARK cohort** bring evidence of novel targets implicated in **autism spectrum disorder** (Zhou et al., 2022).
+* **The SCHEMA consortium** (Singh et al., 2022), a whole-exome sequencing analysis of individuals with **schizophrenia**.
+* **The Epi25 collaborative** (Epi25 Collaborative, 2019), a whole-exome sequencing analysis of individuals with **epilepsy**.
+* **The Autism Sequencing Consortium** (Satterstrom et al., 2020), a whole-exome sequencing analysis of individuals with **autism spectrum disorder.**
+* The results of an **Open Targets project** (Bomba et al., 2022), a whole-exome sequencing analysis of individuals from the INTERVAL cohort testing for associations between rare coding variants and **blood metabolites**.
+* The results of a pan-ancestry whole-exome sequencing analysis identify relevant genes associated with **fat distribution** (Akbari et al., 2022).
+* The results of whole-exome and whole-genome sequencing analysis on **Parkinson disease** and promoted by the **AMP-PD initiative**, and other collaborators (Makarious et al., 2022).
+* The results of gene-based analyses of rare variants and circulating metabolic biomarkers relevant to **cardiovascular disease** (Riveros-McKay et al., 2020).
+* The results of rare coding variant analyses from whole exome sequencing of Black South African men to identify genes significantly associated with **prostate cancer** (Soh et al., 2023)
+* The **FinnGen (R12)** gene-based burden test results from collapsing loss of function variants, based on **genotyping** data from the Finnish population. [Find out more in their documentation](https://finngen.gitbook.io/documentation/methods/lof-variant-burden).
+
+These associations are a result of collapsing rare variants in a gene into a single burden statistic and regress the phenotype on the burden statistic to test for the combined effects of all rare variants in that gene. The different collapsing methods inform about the filters used to select the set of qualifying variants, mostly based on their pathogenicity and frequency in the population.
+
+**Datatype**: Genetic associations
+
+**Evidence scoring:** Scaled p-value from 0.25 (p = 1e-7) to 1 (p < 1e-17).
 
 **Direction of Effect assessment:**
 
-<table data-full-width="false"><thead><tr><th width="331" align="center">Direction on Target (Gain of Function (GoF) / Loss of Function (LoF))</th><th align="center">Direction on Trait (Risk/Protective)</th></tr></thead><tbody><tr><td align="center">LoF and GoF from Variant Functional Consequence variants/Consequence from QTL</td><td align="center"><table data-card-size="large" data-column-title-hidden data-view="cards"><thead><tr><th>Beta values</th></tr></thead><tbody><tr><td><table><thead><tr><th>Beta values</th></tr></thead><tbody><tr><td>&#x3C; 0 = Protective</td></tr><tr><td>> 0 = Risk</td></tr></tbody></table></td></tr><tr><td><table><thead><tr><th>Odds ratios</th></tr></thead><tbody><tr><td>&#x3C; 1 = Protective</td></tr><tr><td>> 1 = Risk</td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="331" align="center">Direction on Target (Gain of Function (GoF) / Loss of Function (LoF))</th><th align="center">Direction on Trait (Risk/Protective)</th></tr></thead><tbody><tr><td align="center">Assumption of all variants LoF</td><td align="center"><table data-card-size="large" data-column-title-hidden data-view="cards"><thead><tr><th>Beta values</th></tr></thead><tbody><tr><td><table><thead><tr><th>Beta values</th></tr></thead><tbody><tr><td>&#x3C; 0 = Protective</td></tr><tr><td>> 0 = Risk</td></tr></tbody></table></td></tr><tr><td><table><thead><tr><th>Odds ratios</th></tr></thead><tbody><tr><td>&#x3C; 1 = Protective</td></tr><tr><td>> 1 = Risk</td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table>
 
-**Source**: [Open Targets Genetics](https://genetics.opentargets.org)
+**Source:** [AstraZeneca PheWAS Portal](https://azphewas.com), [Genebass](https://app.genebass.org)
 
-**Reference**: [Ghoussaini M, et al. 2021](http://doi.org/10.1093/nar/gkaa840)
-
-
+**References:** [Wang, Q. et al, 2021](https://doi.org/10.1038/s41586-021-03855-y); [Backman, J.D. et al, 2021](https://doi.org/10.1038/s41586-021-04103-z); [K.K., Karczewski et al., 2022](https://www.medrxiv.org/content/10.1101/2021.06.19.21259117v4); [Zhou X. et al, 2022](https://www.nature.com/articles/s41588-022-01148-2), [Singh et al., 2022](https://rdcu.be/cPZP3); [Epi25 Collaborative, 2019](https://www.cell.com/ajhg/fulltext/S0002-9297\(19\)30207-1); [Satterstrom et al., 2020](https://www.sciencedirect.com/science/article/pii/S0092867419313984); [Bomba et al., 2022](https://www.cell.com/ajhg/fulltext/S0002-9297\(22\)00157-4); [Akbari, P., 2022](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9399235/); [Makarious et al., 2022](https://www.medrxiv.org/content/10.1101/2022.11.08.22280168v1.full.pdf); [Riveros-McKay et al., 2020](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1008605); [Soh et al., 2023](https://doi.org/10.1038/s41467-023-43726-w)
 
 ### ClinVar
 
-ClinVar is a NIH public archive of reports of the relationships among human variations and phenotypes, with supporting evidence. The ClinVar data source in the Open Targets Platform captures the subset of ClinVar that refers to germline variants (as opposed to somatic variants). Each evidence in the platform aims to capture an individual RCV record in ClinVar.
+ClinVar is an NIH public archive of reports of the relationships among human variations and phenotypes, with supporting evidence. The ClinVar data source in the Open Targets Platform captures the subset of ClinVar that refers to germline variants (as opposed to somatic variants). Each evidence in the platform aims to capture an individual RCV record in ClinVar.
 
 Information on variants is covered extensively for both single point and structural variants. When available, genomic coordinates are reported with RS numbers, or by following the CHROM\_POS\_REF\_ALT and HGVS notations.
 
 **Datatype**: Genetic associations
 
-**Evidence scoring**: ClinVar evidence is scored in a 2-step process. In step 1, a score is assigned to every piece of evidence based on the clinical significance:
+**Evidence scoring**: ClinVar evidence is scored in a 2-step process. In Step 1, a score is assigned to every piece of evidence based on the clinical significance:
 
 | Clinical significance                        | Evidence score |
 | -------------------------------------------- | -------------- |
@@ -89,47 +109,11 @@ In Step 2, the score is modulated based on the ClinVar review status:
 
 **References**: [Cezard T. et al, 2021](https://doi.org/10.1093/nar/gkab960); [Shen A. et al, 2024](https://doi.org/10.1093/bioadv/vbae018); [Landrum, M. et al, 2014](https://doi.org/10.1093/nar/gkt1113); [Landrum, M. et al, 2020](https://doi.org/10.1093/nar/gkz972)
 
+### Genomics England (GEL) PanelApp
 
+The Genomics England PanelApp is a knowledge base that combines crowdsourced expertise with curation to provide gene–disease relationships. Virtual gene panels related to human disorders are reviewed by experts within the clinical and scientific community to support the interpretation of genomes within the 100,000 Genomes Project. Within a panel, genes are rated based on the level of evidence supporting the association with the phenotypes identified by the panel. Genes are then classified according to a traffic light system with red/stop, amber/pause, and green/go classifications. To receive a green rating (diagnostic-grade) on a version 1+ panel, the gene requires "evidence from 3 or more unrelated families or from 2-3 unrelated families where there is strong additional functional data" and "genes that do not meet these criteria are rated as Amber (borderline) or Red (low level of evidence)."
 
-### Gene Burden
-
-Gene burden data comprises gene–phenotype relationships observed in gene-level association tests using rare variant collapsing analyses. The Platform integrates burden tests carried out by several sources:
-
-* **REGENERON** (Backman et al., 2021), a whole-exome sequencing analysis of individuals from the UK Biobank.
-* **AstraZeneca PheWAS Portal** (Wang et al., 2021), a whole-exome sequencing analysis of individuals from the UK Biobank.
-* **Genebass** (Karczewski et al., 2022): Gene-based Association Summary Statistics (Genebass),  a whole-exome sequencing analysis of individuals from the UK Biobank.
-* The results of whole-exome and whole-genome sequencing analysis based on the **SPARK cohort** bring evidence of novel targets implicated in **autism spectrum disorder** (Zhou et al., 2022).
-* **The SCHEMA consortium** (Singh et al., 2022), a whole-exome sequencing analysis of individuals with **schizophrenia**.
-* **The Epi25 collaborative** (Epi25 Collaborative, 2019), a whole-exome sequencing analysis of individuals with **epilepsy**.
-* **The Autism Sequencing Consortium** (Satterstrom et al., 2020), a whole-exome sequencing analysis of individuals with **autism spectrum disorder.**
-* The results of an **Open Targets project** (Bomba et al., 2022), a whole-exome sequencing analysis of individuals from the INTERVAL cohort testing for associations between rare coding variants and **blood metabolites**.
-* The results of a pan-ancestry whole-exome sequencing analysis identify relevant genes associated with **fat distribution** (Akbari et al., 2022).
-* The results of whole-exome and whole-genome sequencing analysis on **Parkinson disease** and promoted by the **AMP-PD initiative**, and other collaborators (Makarious et al., 2022).
-* The results of gene-based analyses of rare variants and circulating metabolic biomarkers relevant to **cardiovascular disease** (Riveros-McKay et al., 2020).
-* The results of rare coding variant analyses from whole exome sequencing of Black South African men to identify genes significantly associated with **prostate cancer** (Soh et al., 2023)
-* The **FinnGen (R11)** gene-based burden test results from collapsing loss of function variants, based on **genotyping** data from the Finnish population. More information can be found in their [documentation](https://finngen.gitbook.io/documentation/methods/lof-variant-burden).
-
-These associations are a result of collapsing rare variants in a gene into a single burden statistic and regress the phenotype on the burden statistic to test for the combined effects of all rare variants in that gene. The different collapsing methods inform about the filters used to select the set of qualifying variants, mostly based on their pathogenicity and frequency in the population.
-
-**Datatype**: Genetic associations
-
-**Evidence scoring:** Scaled p-value from 0.25 (p = 1e-7) to 1 (p < 1e-17).
-
-**Direction of Effect assessment:**
-
-<table data-full-width="false"><thead><tr><th width="331" align="center">Direction on Target (Gain of Function (GoF) / Loss of Function (LoF))</th><th align="center">Direction on Trait (Risk/Protective)</th></tr></thead><tbody><tr><td align="center">Assumption of all variants LoF</td><td align="center"><table data-card-size="large" data-column-title-hidden data-view="cards"><thead><tr><th>Beta values</th></tr></thead><tbody><tr><td><table><thead><tr><th>Beta values</th></tr></thead><tbody><tr><td>&#x3C; 0 = Protective</td></tr><tr><td>> 0 = Risk</td></tr></tbody></table></td></tr><tr><td><table><thead><tr><th>Odds ratios</th></tr></thead><tbody><tr><td>&#x3C; 1 = Protective</td></tr><tr><td>> 1 = Risk</td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table>
-
-**Source:** [AstraZeneca PheWAS Portal](https://azphewas.com), [Genebass](https://app.genebass.org)
-
-**References:** [Wang, Q. et al, 2021](https://doi.org/10.1038/s41586-021-03855-y); [Backman, J.D. et al, 2021](https://doi.org/10.1038/s41586-021-04103-z); [K.K., Karczewski et al., 2022](https://www.medrxiv.org/content/10.1101/2021.06.19.21259117v4); [Zhou X. et al, 2022](https://www.nature.com/articles/s41588-022-01148-2), [Singh et al., 2022](https://rdcu.be/cPZP3); [Epi25 Collaborative, 2019](https://www.cell.com/ajhg/fulltext/S0002-9297\(19\)30207-1); [Satterstrom et al., 2020](https://www.sciencedirect.com/science/article/pii/S0092867419313984); [Bomba et al., 2022](https://www.cell.com/ajhg/fulltext/S0002-9297\(22\)00157-4); [Akbari, P., 2022](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9399235/); [Makarious et al., 2022](https://www.medrxiv.org/content/10.1101/2022.11.08.22280168v1.full.pdf); [Riveros-McKay et al., 2020](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1008605); [Soh et al., 2023](https://doi.org/10.1038/s41467-023-43726-w)
-
-
-
-### Genomics England PanelApp
-
-The Genomics England PanelApp is a knowledge base that combines crowdsourced expertise with curation to provide gene-disease relationships. Virtual gene panels related to human disorders are reviewed by experts within the clinical and scientific community to support the interpretation of genomes within the 100,000 Genomes Project. Within a panel, genes are rated based on the level of evidence supporting the association with the phenotypes identified by the panel. Genes are then classified according to a traffic light system with red/stop, amber/pause, and green/go classifications. To receive a green rating (diagnostic-grade) on a version 1+ panel, the gene requires "evidence from 3 or more unrelated families or from 2 - 3 unrelated families where there is strong additional functional data" and "genes that do not meet these criteria are rated as Amber (borderline) or Red (low level of evidence)."
-
-The Open Targets Platform includes "green" and "amber" genes from version 1+ panels along with their phenotypes, providing the latter can be mapped to a disease or phenotype ontology. As we standardise our evidence to the EFO ontology, some of the phenotypes cannot be mapped and included in our platform - please visit the [Genomics England PanelApp website](https://panelapp.genomicsengland.co.uk) for the full set.
+The Open Targets Platform includes "green" and "amber" genes from version 1+ panels along with their phenotypes, providing the latter can be mapped to a disease or phenotype ontology. As we standardise our evidence to EFO, some of the phenotypes cannot be mapped and included in the Platform; please visit the [Genomics England PanelApp website](https://panelapp.genomicsengland.co.uk) for the full set.
 
 **Data type**: Genetic associations
 
@@ -148,7 +132,7 @@ The Open Targets Platform includes "green" and "amber" genes from version 1+ pan
 
 ### Gene2Phenotype
 
-The data in Gene2Phenotype (G2P) is produced and curated from the literature by different sets of panels formed by consultant clinical geneticists. The G2P data is designed to facilitate the development, validation, curation, and distribution of large-scale, evidence-based datasets for use in diagnostic variant filtering. Each G2P entry associates an allelic requirement and a mutational consequence at a defined locus with a disease entity. A confidence level and evidence link are assigned to each entry. This confidence level follows the terminology described by [GenCC](https://thegencc.org/about.html) for describing gene-disease validity.
+The data in Gene2Phenotype (G2P) is produced and curated from the literature by different sets of panels formed by consultant clinical geneticists. The G2P data is designed to facilitate the development, validation, curation, and distribution of large-scale, evidence-based datasets for use in diagnostic variant filtering. Each G2P entry associates an allelic requirement and a mutational consequence at a defined locus with a disease entity. A confidence level and evidence link are assigned to each entry. This confidence level follows the terminology described by [GenCC](https://thegencc.org/about.html) for describing gene–disease validity.
 
 G2P evidence in the Platform is the result of any target-disease curation by any of the expert panels.
 
@@ -176,7 +160,7 @@ G2P evidence in the Platform is the result of any target-disease curation by any
 
 ### UniProt literature
 
-The Universal Protein Resource (UniProt) provides a large-compendium of sequence and functional information at the protein level. As part of their functional annotation effort, UniProt curators also annotate proteins with publications supporting their involvement on pathogenic processes.
+The Universal Protein Resource (UniProt) provides a large compendium of sequence and functional information at the protein level. As part of their functional annotation effort, UniProt curators also annotate proteins with publications supporting their involvement on pathogenic processes.
 
 All publications supporting a given target disease relationship are aggregated into one single Platform evidence.
 
@@ -197,7 +181,7 @@ All publications supporting a given target disease relationship are aggregated i
 
 ### UniProt variants
 
-The Universal Protein Resource (Uniprot) also curate variants supported by publications that are known to alter protein function on disease. Curated mutations are predominantly protein coding or in regulatory regions clearly associated with the causal protein.
+The Universal Protein Resource (UniProt) also curate variants supported by publications that are known to alter protein function on disease. Curated mutations are predominantly protein coding or in regulatory regions clearly associated with the causal protein.
 
 All publications supporting a given variant in connection with a disease constitute individual evidence. All supporting publications are aggregated within the same evidence.
 
@@ -214,13 +198,32 @@ All publications supporting a given variant in connection with a disease constit
 
 **References**: [The UniProt Consortium, 2021](https://academic.oup.com/nar/article/49/D1/D480/6006196)
 
+### Orphanet
 
+Orphanet is an international network that offers a range of resources to improve the understanding of rare disorders of genetic origin. These resources include an inventory of rare disease and gene associations, classification of the gene–disease relationship, information on the kind of mutation, and supporting publication references.
+
+**Data type**: Genetic associations
+
+**Evidence scoring:**
+
+| Orphanet Disorder Gene Association Status | Evidence score |
+| ----------------------------------------- | -------------- |
+| Not yet assessed                          | 0.5            |
+| Assessed                                  | 1              |
+
+**Direction of Effect assessment:**
+
+<table data-full-width="false"><thead><tr><th>Direction on Target (Gain of Function (GoF) / Loss of Function (LoF))</th><th>Direction on Trait (Risk/Protective)</th></tr></thead><tbody><tr><td>LoF and GoF variants</td><td>Assumption of Risk</td></tr></tbody></table>
+
+**Source**: [Orphanet Genes Associated with Rare Diseases](https://www.orpha.net/consor/cgi-bin/Disease_Genes.php?lng=EN)
+
+**References**: [Orphanet](https://www.orpha.net); [Orphadata](http://www.orphadata.org/cgi-bin/index.php)
 
 ### ClinGen
 
-The Clinical Genome Resource (ClinGen) Gene-Disease Validity Curation aims to evaluate the strength of evidence supporting or refuting a claim that variation in a particular gene causes a particular disease. ClinGen provides a framework of guidelines to assess clinical validity in a semi-quantitative manner allowing curators to classify the validity of given gene-disease pair.
+The Clinical Genome Resource (ClinGen) Gene–Disease Validity Curation aims to evaluate the strength of evidence supporting or refuting a claim that variation in a particular gene causes a particular disease. ClinGen provides a framework of guidelines to assess clinical validity in a semi-quantitative manner allowing curators to classify the validity of given gene–disease pair.
 
-All gene-disease pairs mapped to EFO constitute individual evidence in the Platform.
+All gene–disease pairs mapped to EFO constitute individual evidence in the Platform.
 
 **Data type**: Genetic associations
 
@@ -240,44 +243,19 @@ All gene-disease pairs mapped to EFO constitute individual evidence in the Platf
 
 **References**: [Strande, N. et al., 2017](https://doi.org/10.1016/j.ajhg.2017.04.015)
 
-
-
-### Orphanet
-
-Orphanet is an international network that offers a range of resources to improve the understanding of rare disorders of genetic origin. These resources include an inventory of rare disease and gene associations, classification of the gene-disease relationship, information on the kind of mutation, and supporting publication references.
-
-**Data type**: Genetic associations
-
-**Evidence scoring:**
-
-| Orphanet Disorder Gene Association Status | Evidence score |
-| ----------------------------------------- | -------------- |
-| Not yet assessed                          | 0.5            |
-| Assessed                                  | 1              |
-
-**Direction of Effect assessment:**
-
-<table data-full-width="false"><thead><tr><th>Direction on Target (Gain of Function (GoF) / Loss of Function (LoF))</th><th>Direction on Trait (Risk/Protective)</th></tr></thead><tbody><tr><td>LoF and GoF variants</td><td>Assumption of Risk</td></tr></tbody></table>
-
-**Source**: [Orphanet Genes Associated with Rare Diseases](https://www.orpha.net/consor/cgi-bin/Disease_Genes.php?lng=EN)
-
-**References**: [Orphanet](https://www.orpha.net); [Orphadata](http://www.orphadata.org/cgi-bin/index.php)
-
-
-
 ### ChEMBL
 
-The EMBL-EBI ChEMBL is a manually curated database of bioactive molecules with drug-like properties, either approved for marketing by the U.S Food and Drug Administration (FDA), or clinical candidates. ChEMBL also captures information regarding the drug molecule indications, as well as their curated pharmacological target.
+EMBL-EBI's ChEMBL is a manually curated database of bioactive molecules with drug-like properties, either approved for marketing by the U.S Food and Drug Administration (FDA), or clinical candidates. ChEMBL also captures information regarding the drug molecule indications, as well as their curated pharmacological target.
 
-In the Platform, ChEMBL evidence represents any target-disease relationship that can be explained by an approved or clinical candidate drug, targeting the gene product and indicated for the disease. Independent studies are treated as individual evidence.
+In the Platform, ChEMBL evidence represents any target–disease relationship that can be explained by an approved or clinical candidate drug, targeting the gene product and indicated for the disease. Independent studies are treated as individual evidence.
 
 To provide additional context, we integrate a machine learning-based analysis of the reasons why a clinical trial has ended earlier than scheduled. This sorts the stop reasons into a set of 17 classes which include negative, neutral, and positive reasons. This information is available when hovering on the tooltip of the Source column.
 
-The 17 classes are: Another Study, Business or Administrative, Negative, Study Design, Invalid Reason, Ethical Reason, Insufficient Data, Insufficient Enrolment, Study Staff Moved, Endpoint Met, Regulatory, Logistics or Resources, Safety and Side Effects, No Context, Success, Interim Analysis and Covid 19.&#x20;
+The 17 classes are: Another Study, Business or Administrative, Negative, Study Design, Invalid Reason, Ethical Reason, Insufficient Data, Insufficient Enrolment, Study Staff Moved, Endpoint Met, Regulatory, Logistics or Resources, Safety and Side Effects, No Context, Success, Interim Analysis, and Covid 19.&#x20;
 
 **Data type**: Drugs
 
-**Evidence scoring:** ChEMBL evidence is scored in a 2-step process. In step 1, a score is assigned to every piece of evidence based on the clinical precedence:
+**Evidence scoring:** ChEMBL evidence is scored in a 2-step process. In Step 1, a score is assigned to every piece of evidence based on the clinical precedence:
 
 | Clinical Precedence | Evidence score |
 | ------------------- | -------------- |
@@ -306,9 +284,9 @@ In Step 2, for those clinical trials that have stopped early, the score is down-
 
 ### Reactome
 
-The Reactome database manually curates and identifies reaction pathways that are affected by a disease. Reactome annotation includes information regarding the causal target - disease link either being a protein coding mutation or an altered expression.
+The Reactome database manually curates and identifies reaction pathways that are affected by a disease. Reactome annotation includes information regarding the causal target–disease link either being a protein coding mutation or an altered expression.
 
-In the Platform, any mutation or altered expression event affecting a different reaction is captured in a different target - disease evidence.
+In the Platform, any mutation or altered expression event affecting a different reaction is captured in a different target–disease evidence.
 
 **Data type**: Pathways & systems biology
 
@@ -324,14 +302,14 @@ In the Platform, any mutation or altered expression event affecting a different 
 
 One of the most powerful approaches to uncover gene function is the experimental perturbation of genes followed by the observation of related phenotypes. The perturbation of gene function in human cells has been greatly facilitated by developments in CRISPR technology.
 
-CRISPRbrain is a database for functional genomics screens in differentiated human brain cell types. We have prioritised genome-wide [CRISPRi/a/KO screens](https://crisprbrain.org/background/) (healthy vs KO) for integration in the Platform to generate target disease evidence.
+CRISPRbrain is a database for functional genomics screens in differentiated human brain cell types. We have prioritised genome-wide [CRISPRi/a/KO screens](https://crisprbrain.org/background/) (healthy vs KO) for integration in the Platform to generate target–disease evidence.
 
-We have linked cell types to diseases, meaning these diseases are often characterised with abnormal phenotypes in these cell types - hence the association.\
+We have linked cell types to diseases, meaning these diseases are often characterised with abnormal phenotypes in these cell types — hence the association.\
 If knocking out a gene causes significant perturbation in the cell type, it might indicate a potential targeting strategy in the disease.
 
 **Data Type**: Pathways & systems biology
 
-**Evidence Scoring**: The Platform uses the linearized CRISPRbrain's assessment of statistical significance to assign a score, including hits from both the upper and lower end of the distribution
+**Evidence Scoring**: The Platform uses the linearised CRISPRbrain's assessment of statistical significance to assign a score, including hits from both the upper and lower end of the distribution
 
 **Source**: [CRISPRbrain](https://crisprbrain.org/)&#x20;
 
@@ -341,13 +319,13 @@ If knocking out a gene causes significant perturbation in the cell type, it migh
 
 ### Project Score
 
-Project Score is a Wellcome Sanger Institute resource that aims to identify dependencies in cancer cell lines to guide precision medicine. The project combines gene fitness effects derived from whole-genome CRISPR-Cas9 synthetic-lethality screenings with tractability data, genomic biomarkers and various target annotation enabling a systematic prioritisation of potential targets. The resulting inferences are then mapped from the cancer cell lines in which the experiment is performed to their corresponding tumors.&#x20;
+Project Score is a Wellcome Sanger Institute resource that aims to identify dependencies in cancer cell lines to guide precision medicine. The project combines gene fitness effects derived from whole-genome CRISPR-Cas9 synthetic lethality screenings with tractability data, genomic biomarkers and various target annotation enabling a systematic prioritisation of potential targets. The resulting inferences are then mapped from the cancer cell lines in which the experiment is performed to their corresponding tumours.&#x20;
 
-In the Platform, any Project Score prioritised target with priority score reaching 36.0 is included as independent evidence; however, pan-cancer dependecies are excluded from the integration.
+In the Platform, any Project Score prioritised target with priority score reaching 36.0 is included as independent evidence; however, pan-cancer dependencies are excluded from the integration.
 
 **Data type**: Pathways & systems biology
 
-**Evidence scoring**: Project Score priority score divided by 100.
+**Evidence scoring**: Project Score priority score divided by 100
 
 **Source**: CRISPR (via[ Project Score](https://score.depmap.sanger.ac.uk))
 
@@ -359,7 +337,7 @@ In the Platform, any Project Score prioritised target with priority score reachi
 
 SLAPenrich (Sample-population Level Analysis of Pathway enrichments) is a novel statistical framework for the identification of significantly mutated pathways, at the sample population level, in large cohorts of cancer patients. SLAPenrich is based on a Poisson binomial model that takes into account the length of blocks of exons in genes within each pathway, and the background mutation rate of the analysed cohort of patients. SLAPenrich enrichment analysis is based on EMBL-EBI Reactome pathways and mutation data from The Cancer Genome Atlas ([TCGA](https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga)) cohort.
 
-In the Platform, each pathway significantly enriched in tumor-occurring mutations constitute individual pieces of evidence.
+In the Platform, each pathway significantly enriched in tumour-occurring mutations constitutes an individual piece of evidence.
 
 **Data type**: Pathways & systems biology
 
@@ -390,7 +368,7 @@ The Platform also provides information about key driver genes for specific disea
 
 PROGENy (Pathway RespOnsive GENes) is a linear regression model that calculates pathway activity estimates based on consensus transcriptomic gene signatures obtained from perturbation experiments. PROGENy ([Schubert et al](https://www.nature.com/articles/s41467-017-02391-6.epdf?author_access_token=16QkzhJ3OA3qJDqBw_GvGdRgN0jAjWel9jnR3ZoTv0NBFLUVI-ebH2AmtFlR1ykSPIho7ETJXL7VqZFC4zGtU0BaeoZncGrwx3ZW24lfVqvbSWqsQKaUXFTi_c-4pgcpX-1qerWYlkG6sha8rhrnMg%3D%3D)) provides a framework to systematically compare pathway activities between normal and primary samples from The Cancer Genome Atlas (TCGA).
 
-In the Platform, a PROGENy evidence is defined as any significantly regulated sample-level pathway activities inferred from matched normal vs. tumor samples.
+In the Platform, a PROGENy evidence is defined as any significantly regulated sample-level pathway activities inferred from matched normal vs. tumour samples.
 
 **Data type**: Pathways & systems biology
 
@@ -430,11 +408,11 @@ In the Platform, each contrast from independent studies capturing differentially
 
 Cancer Gene Census (CGC) is part of the Wellcome Sanger Institute Catalogue of Somatic Mutations in Cancer ([COSMIC](http://cancer.sanger.ac.uk/cosmic)). CGC is an effort to catalogue genes which contain mutations that have been causally implicated in cancer. The exhaustive curation of the CGC covers individual studies as well as pan-cancer sequencing efforts, including The Cancer Genome Atlas (TCGA) and the International Cancer Genome Consortium (ICGC) among others.
 
-In the Platform, CGC evidence is aggregated at the target - disease level to provide a summary of all curated evidence supporting the involvement of a target with a particular cancer type.
+In the Platform, CGC evidence is aggregated at the target–disease level to provide a summary of all curated evidence supporting the involvement of a target with a particular cancer type.
 
 **Data type**: Somatic mutations
 
-**Evidence scoring**: Scoring is based on [Cancer Gene Census tier sys](https://cancer.sanger.ac.uk/census)tem
+**Evidence scoring**: Scoring is based on the [Cancer Gene Census tier system](https://cancer.sanger.ac.uk/census)
 
 | Modulator | Condition                                                                                         |
 | --------- | ------------------------------------------------------------------------------------------------- |
@@ -450,13 +428,13 @@ In the Platform, CGC evidence is aggregated at the target - disease level to pro
 
 ### **IntOGen**
 
-IntOGen provides a framework to identify potential cancer driver genes using large-scale mutational data from sequenced tumor samples. By harmonising tumor sequencing data from the ICGC/TCGA Pan-Cancer Analysis of Whole Genomes ([PCAWG](https://dcc.icgc.org/pcawg)) and other comprehensive efforts, IntOGen aims to provide a consensus assessment of cancer driver genes. Several state-of-the-art driver methodologies aiming to cover different approaches (e.g. dN/dS, Hotspots, etc.) are included to finally produce a consensus q-value for each driver gene in every tumor.
+IntOGen provides a framework to identify potential cancer driver genes using large-scale mutational data from sequenced tumour samples. By harmonising tumour sequencing data from the ICGC/TCGA Pan-Cancer Analysis of Whole Genomes ([PCAWG](https://dcc.icgc.org/pcawg)) and other comprehensive efforts, IntOGen aims to provide a consensus assessment of cancer driver genes. Several state-of-the-art driver methodologies aiming to cover different approaches (e.g. dN/dS, Hotspots, etc.) are included to finally produce a consensus q-value for each driver gene in every tumour.
 
-In the Platform, independent target - disease evidence are defined as any significant driver gene detected in any individual cohort. Information regarding the individual driver methods is also provided within each evidence.
+In the Platform, independent target–disease evidence are defined as any significant driver gene detected in any individual cohort. Information regarding the individual driver methods is also provided within each evidence.
 
 **Data type**: Somatic mutations
 
-**Evidence scoring**: Scaled [combined q-values](https://intogen.readthedocs.io/en/latest/drivers_combination.html) from 0.25 (q = 0.1) to 1 (q < 1e-10).
+**Evidence scoring**: Scaled [combined q-values](https://intogen.readthedocs.io/en/latest/drivers_combination.html) from 0.25 (q = 0.1) to 1 (q < 1e-10)
 
 **Source**: [intOGen](http://www.intogen.org/search)
 
@@ -466,7 +444,7 @@ In the Platform, independent target - disease evidence are defined as any signif
 
 ### **ClinVar (somatic)**
 
-ClinVar is a NIH public archive of reports of the relationships among human variations and phenotypes, with supporting evidence. The ClinVar (somatic) data source in the Open Targets Platform captures the subset of ClinVar that refers to somatic variants (as opposed to germline variants).
+ClinVar is an NIH public archive of reports of the relationships among human variations and phenotypes, with supporting evidence. The ClinVar (somatic) data source in the Open Targets Platform captures the subset of ClinVar that refers to somatic variants (as opposed to germline variants).
 
 Information on variants is covered extensively for both single point and structural variants. When available, genomic coordinates are reported with RS numbers, or by following the CHROM\_POS\_REF\_ALT and HGVS notations. &#x20;
 
@@ -474,7 +452,7 @@ Each evidence in the Platform aims to capture an individual RCV record in ClinVa
 
 **Datatype**: Somatic mutations
 
-**Evidence scoring**: ClinVar evidence is scored in a 2-step process. In step 1, a score is assigned to every piece of evidence based on the clinical significance:
+**Evidence scoring**: ClinVar evidence is scored in a 2-step process. In Step 1, a score is assigned to every piece of evidence based on the clinical significance:
 
 | Clinical significance                        | Evidence score |
 | -------------------------------------------- | -------------- |
@@ -518,7 +496,7 @@ In Step 2, scored is modulated based on the ClinVar review status:
 
 ### **Europe PMC**
 
-The EMBL-EBI Europe PubMed Central (Europe PMC) enables access to a worldwide collection of life science publications and preprints from trusted sources. The Europe PMC data source aims to identify target - disease co-occurrences in the literature and provide an assessment on the confidence of the relationship. This pipeline uses deep-learning based Named Entity Recognition (NER) to identify gene/proteins and diseases when mentioned in the text, to later normalise them to the target or disease/phenotype entities in the Platform. All co-occurrences of both types of entities in the same sentence are considered evidence.
+The EMBL-EBI's Europe PMC enables access to a worldwide collection of life science publications and preprints from trusted sources. The Europe PMC data source aims to identify target–disease co-occurrences in the literature and provide an assessment on the confidence of the relationship. This pipeline uses deep-learning based Named Entity Recognition (NER) to identify gene/proteins and diseases when mentioned in the text, to later normalise them to the target or disease/phenotype entities in the Platform. All co-occurrences of both types of entities in the same sentence are considered evidence.
 
 In the Platform, a piece of Europe PMC evidence is the result of aggregating all co-occurrences of the same target and disease within the same publication.
 
@@ -534,9 +512,9 @@ In the Platform, a piece of Europe PMC evidence is the result of aggregating all
 
 ### **IMPC**
 
-The genotype-phenotype associations made available by the International Mouse Phenotypes Consortium (IMPC) are used to identify models of human disease based on phenotypic similarity scores.
+The genotype–phenotype associations made available by the International Mouse Phenotypes Consortium (IMPC) are used to identify models of human disease based on phenotypic similarity scores.
 
-The Wellcome Sanger Institute PhenoDigm is an algorithm aimed at capturing the similiarity between a knockout mouse and the clinical manifestations (phenotype) of a human disease. The premise is that if a gene knock-out causes an equivalent phenotype in mouse, the human counterpart is likely to be related with the cause of the disease.
+The Wellcome Sanger Institute PhenoDigm is an algorithm aimed at capturing the similarity between a knockout mouse and the clinical manifestations (phenotype) of a human disease. The premise is that if a gene knock-out causes an equivalent phenotype in mouse, the human counterpart is likely to be related with the cause of the disease.
 
 It uses a semantic approach to map between clinical features observed in humans and mouse phenotype annotations. The phenotypic effects in mice are then mapped to phenotypes associated with human diseases. The matches are identified and a similarity score between a mouse model and a human disease is computed.
 
@@ -552,15 +530,13 @@ It uses a semantic approach to map between clinical features observed in humans 
 
 **References**: [Smedley, D. et al, 2013](https://doi.org/10.1093/database/bat025)
 
-
-
 ### Cancer Biomarkers
 
 One of the aims of the Cancer Genome Interpreter is to identify how variations in the tumour genome may influence its response to anti-cancer therapies. The Cancer Biomarkers database features biomarkers of drug sensitivity, resistance, and toxicity for drugs targeting specific targets in cancer, curated by clinical and scientific experts in precision oncology, and classified by cancer type.
 
 **Data type:** Pathways & systems biology
 
-**Evidence scoring:** All manually curated evidence in Cancer Biomarkers has a score of 1.
+**Evidence scoring:** All manually curated evidence in Cancer Biomarkers has a score of 1
 
 **Source:** [Cancer Genome Interpreter](https://www.cancergenomeinterpreter.org/biomarkers)
 

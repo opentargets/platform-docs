@@ -2,12 +2,14 @@
 
 ## Overview
 
-A target in the Platform is understood as any naturally-occurring molecule that can be targeted by a medicinal product. EMBL-EBI [Ensembl](https://www.ensembl.org) database is used as source for human targets in the Platform, with the Ensembl gene ID as the primary identifier. The criteria for target inclusion is the next:
+A target in the Platform is understood as any naturally-occurring molecule that can be targeted by a medicinal product. EMBL-EBI's [Ensembl](https://www.ensembl.org) database is used as source for human targets in the Platform, with the Ensembl gene ID as the primary identifier.&#x20;
+
+Criteria for target inclusion:
 
 * Genes from all biotypes encoded in canonical chromosomes
 * Genes in alternative assemblies encoding for a reviewed protein product.
 
-This definition accounts for some of the complexities of human targets. Not only protein coding genes can act as targets, as RNAs or pseudogenes are also considered. However, the current definition has some potential drawbacks. Some drug targets are the result of interactions between genes (e.g. gene fusion) or proteins (e.g. protein complexes). The current target entity does not yet consider these cases, which will be addressed in the future.
+This definition accounts for some of the complexities of human targets; targets are not only protein coding genes, RNAs or pseudogenes are also considered. However, the current definition has some potential drawbacks. Some drug targets are the result of interactions between genes (e.g. gene fusion) or proteins (e.g. protein complexes). The current target entity does not yet consider these cases, which will be addressed in the future.
 
 {% embed url="https://www.youtube.com/watch?v=iYRCGRGI5K4" %}
 

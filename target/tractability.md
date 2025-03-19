@@ -16,15 +16,15 @@ Our target tractability is based on a modified version of [Approaches to target 
 
 ## Assessments
 
-The tractability assessments displayed on the Platform's target profile pages is the result of an [open-source computational pipeline](https://github.com/melschneider/tractability\_pipeline\_v2/tree/master/ot\_tractability\_pipeline\_v2) that performs _in silico_ tractability assessments with small molecule, antibody, PROTAC, and other clinical modality workflows.
+The tractability assessments displayed on the Platform's target profile pages is the result of an [open-source computational pipeline](https://github.com/melschneider/tractability_pipeline_v2/tree/master/ot_tractability_pipeline_v2) that performs _in silico_ tractability assessments with small molecule, antibody, PROTAC, and other clinical modality workflows.
 
 Data sources used in the pipeline include UniProt, HPA, PDBe, DrugEBIlity, ChEMBL, Pfam, InterPro, Complex Portal, DrugBank, Gene Ontology, and BioModels.
 
 Assessments common to all modalities, ingested from ChEMBL, are:&#x20;
 
-* **Approved Drug**: the target has clinical precedence with Phase IV drugs;&#x20;
-* **Advanced Clinical**: the target has clinical precedence with Phase II or III drugs;
-* **Phase 1 Clinical**: the target has clinical precedence with Phase I drugs.&#x20;
+* **Approved Drug**: the target has clinical precedence with Phase IV drugs&#x20;
+* **Advanced Clinical**: the target has clinical precedence with Phase II or III drugs
+* **Phase 1 Clinical**: the target has clinical precedence with Phase I drugs.
 
 We also include additional assessments specific to each modality.
 
@@ -57,7 +57,7 @@ We also include additional assessments specific to each modality.
 
 The data is available for download as part of the target core annotation from [our data downloads page](https://platform.opentargets.org/downloads).
 
-Alternatively, you can also download the input TSV file with the per-target assessments via FTP. To access this file, visit [our FTP site](http://ftp.ebi.ac.uk/pub/databases/opentargets/platform/) and click on the release version (e.g. 21.04), followed by "input", followed by "annotation-files". You can then download the `tractability_buckets` TSV file. Descriptions of the columns found in the input file can be found on the [pipeline README.md file](https://github.com/melschneider/tractability\_pipeline\_v2/blob/master/README.md).
+Alternatively, you can also download the input TSV file with the per-target assessments via FTP. To access this file, visit [our FTP site](http://ftp.ebi.ac.uk/pub/databases/opentargets/platform/) and click on the release version (e.g. 21.04), followed by "input", followed by "annotation-files". You can then download the `tractability_buckets` TSV file. Descriptions of the columns found in the input file can be found on the [pipeline README.md file](https://github.com/melschneider/tractability_pipeline_v2/blob/master/README.md).
 
 ## Publications
 

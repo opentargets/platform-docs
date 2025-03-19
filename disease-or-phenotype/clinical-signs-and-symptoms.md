@@ -2,27 +2,27 @@
 
 ## **Overview**
 
-The Clinical Signs and Symptoms data in the Platform aims to capture other diseases or phenotypes that occur as a consequence, or in conjunction with a primary disease.&#x20;
+The Clinical Signs and Symptoms data in the Platform aims to capture other diseases or phenotypes that occur as a consequence, or in conjunction with a primary disease.
 
-Disease - phenotype relationships are not only useful to better characterise the disease phenotypic space, but also to serve as proxies for additional causal evidence that can help prioritise new or existing targets.
+Disease–phenotype relationships are not only useful to better characterise the disease phenotypic space, but also to serve as proxies for additional causal evidence that can help prioritise new or existing targets.
 
-In order to maximise the list of available disease - phenotype links, the Platform ingests data from the [Monarch Merged Disease Ontology](https://mondo.monarchinitiative.org) (MONDO) and the [Human Phenotype Ontology](https://hpo.jax.org) (HPO), the latter in a joint effort with [Orphanet](http://www.orpha.net).&#x20;
+In order to maximise the list of available disease–phenotype links, the Platform ingests data from the [Monarch Merged Disease Ontology](https://mondo.monarchinitiative.org) (MONDO) and the [Human Phenotype Ontology](https://hpo.jax.org) (HPO), the latter in a joint effort with [Orphanet](http://www.orpha.net).
 
 ## **Data sources**
 
 ### Monarch Merged Disease Ontology (MONDO)
 
-The Monarch Merged Disease Ontology (MONDO) - [https://mondo.monarchinitiative.org/](https://mondo.monarchinitiative.org) - is an open-source semi-automatically constructed ontology that integrates multiple disease resources to build a single, coherent merged ontology. Originally constructed in an entirely automatic way with IDs of source databases and ontologies, manually curated cross-ontology axioms have been added and a native Mondo ID system was developed and implemented to reduce confusion with source databases and ontologies.&#x20;
+The Monarch Merged Disease Ontology (MONDO) – [https://mondo.monarchinitiative.org/](https://mondo.monarchinitiative.org) – is an open-source semi-automatically constructed ontology that integrates multiple disease resources to build a single, coherent merged ontology. Originally constructed in an entirely automatic way with IDs of source databases and ontologies, manually curated cross-ontology axioms have been added and a native Mondo ID system was developed and implemented to reduce confusion with source databases and ontologies.
 
 ### Human Phenotype Ontology (HPO)
 
-The Human Phenotype Ontology (HPO) - [https://hpo.jax.org/app/](https://hpo.jax.org/app/) - provides a standardised vocabulary of phenotypic abnormalities encountered in human disease and contains over 13,000 terms and over 156,000 annotations to hereditary diseases. HPO has been developed using medical literature, Orphanet, DECIPHER, and OMIM.&#x20;
+The Human Phenotype Ontology (HPO) – [https://hpo.jax.org/app/](https://hpo.jax.org/app/) – provides a standardised vocabulary of phenotypic abnormalities encountered in human disease and contains over 13,000 terms and over 156,000 annotations to hereditary diseases. HPO has been developed using medical literature, Orphanet, DECIPHER, and OMIM.
 
 ## Computational pipelines and datasets
 
-The relationships described in MONDO and HPO are also enriched with  annotations such as sex, typical age of onset or frequency of disease patients presenting the phenotype. To improve the interoperability with the rest of the Platform, diseases and phenotypes are mapped to the [Experimental Factor Ontology](https://www.ebi.ac.uk/efo/) (EFO) when possible.
+The relationships described in MONDO and HPO are also enriched with annotations such as sex, typical age of onset or frequency of disease patients presenting the phenotype. To improve the interoperability with the rest of the Platform, diseases and phenotypes are mapped to the [Experimental Factor Ontology](https://www.ebi.ac.uk/efo/) (EFO) when possible.
 
-Complete disease - phenotype relationship datasets are available for download on [our data downloads page](https://platform.opentargets.org/downloads).
+Complete disease–phenotype relationship datasets are available for download on [our data downloads page](https://platform.opentargets.org/downloads).
 
 ## Publications
 

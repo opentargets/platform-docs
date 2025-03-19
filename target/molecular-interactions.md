@@ -6,17 +6,17 @@ description: Systematically capturing target - target interactions of different 
 
 ## **Overview**
 
-The Molecular Interactions data aggregates and integrates interaction evidence reported in several resources to provide a systematic view on potentially relevant drug targets. Each of the integrated resources captures relationships of different nature including physical binary interactions, enzymatic reactions or functional relationships. The information here available aims to capture not only the topology of the interaction network, but also the supporting experimental evidence reported on each of the databases.
+The Molecular Interactions data aggregates and integrates interaction evidence reported in several resources to provide a systematic view on potentially relevant drug targets. Each of the integrated resources captures relationships of different nature including physical binary interactions, enzymatic reactions, or functional relationships. The information here available aims to capture not only the topology of the interaction network, but also the supporting experimental evidence reported on each of the databases.
 
-In order to maximise coverage, the network contains all reported binary relationships between gene products (proteins and RNAs). Although the main focus are interactions between human molecules, the data also includes additional interactions between human gene products and molecules encoded in the genome of infectious pathogens - viruses and bacteria.
+In order to maximise coverage, the network contains all reported binary relationships between gene products (proteins and RNAs). Although the main focus are interactions between human molecules, the data also includes additional interactions between human gene products and molecules encoded in the genome of infectious pathogens (viruses and bacteria).
 
 ## **Data sources**
 
 ### IntAct
 
-IntAct - [http://www.ebi.ac.uk/intact](http://www.ebi.ac.uk/intact) - is a freely available, open source database for molecular interaction data. IntAct contains physical interactions derived from literature curation or direct user submissions.
+IntAct – [http://www.ebi.ac.uk/intact](http://www.ebi.ac.uk/intact) – is a freely available, open source database for molecular interaction data. IntAct contains physical interactions derived from literature curation or direct user submissions.
 
-Interactions are scored using the MI score. Benefiting from the PSI-MI controlled vocabulary, the Intact MI score provides a normalised (0 to 1) score that weights how recurrently an interaction has been reported, together with the confidence of the experimental techniques reported. Beware, a high scoring interaction can be due to high-confidence evidence, but also a social bias on studying certain proteins. Generally speaking, scores > 0.4 correspond to medium to high-confidence interactions, although some good-quality high-throughput interactions might still be scored below that threshold. More info on MI-score can be found in the [Intact documentation](https://www.ebi.ac.uk/intact/pages/faq/faq.xhtml).
+Interactions are scored using the MI score. Benefiting from the PSI-MI controlled vocabulary, the Intact MI score provides a normalised (0 to 1) score that weights how recurrently an interaction has been reported, together with the confidence of the experimental techniques reported. Note that a high scoring interaction can be due to high-confidence evidence, but also a social bias on studying certain proteins. Generally speaking, scores > 0.4 correspond to medium to high confidence interactions, although some good-quality high-throughput interactions might still be scored below that threshold. More info on MI score can be found in the [Intact documentation](https://www.ebi.ac.uk/intact/pages/faq/faq.xhtml).
 
 Interactions are grouped by interaction detection method and interaction type. As a consequence, the same pair of interactors might be split into multiple entries if individual proteins are reported to have different biological roles.
 
@@ -27,7 +27,7 @@ For IntAct, please note:
 
 ### Reactome
 
-Reactome - [https://reactome.org/](https://reactome.org) - is an open-source, open access, manually curated and peer-reviewed pathway database.
+Reactome – [https://reactome.org/](https://reactome.org) – is an open source, open access, manually curated and peer-reviewed pathway database.
 
 For Reactome, please note:
 
@@ -37,7 +37,7 @@ For Reactome, please note:
 
 ### SIGNOR
 
-SIGNOR, the SIGnaling Network Open Resource - [https://signor.uniroma2.it/](https://signor.uniroma2.it) - contains signaling information published in the scientific literature, which is manually-curated and stored in a structured format.
+SIGNOR, the SIGnaling Network Open Resource – [https://signor.uniroma2.it/](https://signor.uniroma2.it) – contains signaling information published in the scientific literature, which is manually curated and stored in a structured format.
 
 For SIGNOR, please note:
 
@@ -47,7 +47,7 @@ For SIGNOR, please note:
 
 ### STRING
 
-STRING - [https://string-db.org](https://string-db.org) - contains functionally interacting proteins. While most interactions in the other resources capture different types of physical interaction between molecules, functional interactions do not necessarily interact physically. Both, direct (physical) and indirect (functional) associations are derived from computational predictions, from knowledge-transfer between organisms, or from interactions aggregated from other (primary) databases.\
+STRING – [https://string-db.org](https://string-db.org) – contains functionally interacting proteins. While most interactions in the other resources capture different types of physical interaction between molecules, functional interactions do not necessarily interact physically. Both direct (physical) and indirect (functional) associations are derived from computational predictions, from knowledge transfer between organisms, or from interactions aggregated from other (primary) databases.\
 \
 STRING interactions provide an overall combined\_score, as well as each of the pieces of information that compose this score. More information on STRING scoring can be found on their [documentation page](https://string-db.org/cgi/info).
 
@@ -55,7 +55,7 @@ STRING interactions provide an overall combined\_score, as well as each of the p
 
 The multipartite network displayed in the Open Targets Platform is the result of post-processing the information stored in a Neo4j graph database (graphDB). The graphDB does not provide STRING information but contains ComplexPortal information on stable protein complexes as an additional data source. The information of the graphDB is then exported together with STRINGdb and mapped to the Open Targets Platform targets (Ensembl Gene IDs).
 
-The resulting dataset as well as all intermediate files can be found in the Open Targets Platform Data Access section or the [Intact FTP](ftp://ftp.ebi.ac.uk/pub/databases/intact/various/ot\_graphdb/current/).
+The resulting dataset as well as all intermediate files can be found in the Open Targets Platform Data Access section or the [Intact FTP](ftp://ftp.ebi.ac.uk/pub/databases/intact/various/ot_graphdb/current/).
 
 ## Publications
 
