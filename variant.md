@@ -41,7 +41,7 @@ Every variant is annotated with the predicted consequence for all canonical tran
 * Predicted functional consequence based on Ensembl VEP
 * Amino-acid consequence relative to the UniProt reference protein
 
-**Source**: [Ensembl VEP](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-0974-4), [TSS VEP plugin](https://gist.github.com/DSuveges/f4943083e55cb1aec0490550846439e1)
+**Source**: [Ensembl VEP](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-0974-4)
 
 ## Variant-to-phenotype
 
