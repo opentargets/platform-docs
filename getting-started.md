@@ -6,11 +6,11 @@ Identifying evidence implicating drug targets with diseases or phenotypes consti
 
 The Open Targets data model focuses on five main entities:
 
-* [Target](target/), understood as any candidate drug binding molecule
-* [Disease or Phenotype](disease-or-phenotype/), including any disease indications, phenotypes, measurements, biological processes and other relevant traits.
-* [Variant](https://app.gitbook.com/o/-LC3OlEMulAutIN2QOro/s/-MU4dMxOmLaVNWfVNvpC/~/changes/506/variant), DNA variation that has been associated with a disease, trait, or phenotype
-* [Study](https://app.gitbook.com/o/-LC3OlEMulAutIN2QOro/s/-MU4dMxOmLaVNWfVNvpC/~/changes/506/study), source of evidence linking genetic variants to traits, diseases, and molecular phenotypes.
-* [Drug](drug/) molecules that can act as medicinal products.
+* [Target](target/): understood as any candidate drug binding molecule
+* [Disease or Phenotype](disease-or-phenotype/): including any disease indications, phenotypes, measurements, biological processes and other relevant traits.
+* [Variant](variant.md): DNA variation that has been associated with a disease, trait, or phenotype
+* [Study](study.md): source of evidence linking genetic variants to traits, diseases, and molecular phenotypes.
+* [Drug](drug/): molecules that can act as medicinal products.
 
 ### Entity annotation
 
@@ -23,7 +23,7 @@ These entities are annotated with a variety of public data sources, as well as i
 * [Clinical signs and symptoms](disease-or-phenotype/clinical-signs-and-symptoms.md)
 * [Pharmacovigilance](drug/pharmacovigilance.md)
 * [Bibliography](bibliography.md)
-* [GWAS and functional genomics](https://app.gitbook.com/o/-LC3OlEMulAutIN2QOro/s/-MU4dMxOmLaVNWfVNvpC/~/changes/506/gentropy)
+* [GWAS & functional genomics](gentropy/)
 
 ### Evidence generation and association scoring
 
