@@ -10,7 +10,7 @@ Archive datasets, as well as input files and other secondary products are also m
 
 ## Download
 
-Below is a walkthrough on how to download the `diseases` dataset from the `25.03` release in Parquet format using different approaches.
+Below is a walkthrough on how to download the `disease` dataset from the `25.03` release in Parquet format using different approaches.
 
 We recommend using **lftp** with a command line client, and when using tools like _wget_, _curl_, etc., use _https://_ rather than _ftp://_
 
@@ -19,7 +19,7 @@ We recommend using **lftp** with a command line client, and when using tools lik
 `rsync` is a command line tool for efficiently transferring and synchronising files between a computer and an external hard drive.
 
 ```bash
-rsync -rpltvz --delete rsync.ebi.ac.uk::pub/databases/opentargets/platform/25.03/output/diseases .
+rsync -rpltvz --delete rsync.ebi.ac.uk::pub/databases/opentargets/platform/25.03/output/disease .
 ```
 
 #### Using wget
@@ -28,7 +28,7 @@ rsync -rpltvz --delete rsync.ebi.ac.uk::pub/databases/opentargets/platform/25.03
 
 ```bash
 wget --recursive --no-parent --no-host-directories --cut-dirs 8 \
-https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/25.03/output/diseases
+https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/25.03/output/disease
 ```
 
 #### Using Google Cloud Platform (paywalled after 1TB)
@@ -36,7 +36,7 @@ https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/25.03/output/diseases
 Users with Google Cloud Platform account can download the datasets through the Google Cloud Console or using `gsutil` command-line tool.
 
 ```bash
-gsutil -m cp -r gs://open-targets-data-releases/25.03/output/diseases .
+gsutil -m cp -r gs://open-targets-data-releases/25.03/output/disease
 ```
 
 #### Other ways to access data
@@ -57,7 +57,7 @@ The next scripts provide a proof-of-concept example using the ClinVar evidence p
 First of all the dataset needs to be downloaded as described in the previous section. For simplicity, only EVA evidence is downloaded, but all evidence can be downloaded at once using the same approach.
 
 ```bash
-gsutil -m cp -r gs://open-targets-data-releases/25.03/output/evidence/sourceId=eva .
+gsutil -m cp -r gs://open-targets-data-releases/25.03/output/evidence/sourceId=eva
 ```
 
 The next scripts make use of Apache Spark ([PySpark](https://spark.apache.org/docs/latest/api/python/index.html) or [Sparklyr](https://spark.rstudio.com)) to read and query the dataset using modern functional programming approaches. These packages need to be installed in their respective environments.
