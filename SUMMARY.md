@@ -30,7 +30,7 @@
 * [Bibliography](bibliography.md)
 * [Web interface](web-interface.md)
   * [Associations on the Fly](web-interface/associations-on-the-fly.md)
-  * [Target Prioritisation view](web-interface/target-prioritisation-view.md)
+  * [Target Prioritisation](web-interface/target-prioritisation.md)
   * [Evidence pages](web-interface/evidence-pages.md)
   * [Entity profile pages](web-interface/entity-profile-pages.md)
 * [Data and code access](data-access/README.md)
