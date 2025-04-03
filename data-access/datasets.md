@@ -4,9 +4,11 @@ To support more complex and systematic queries, we provide all datasets as data 
 
 A list of all datasets is available in the [Platform Data Downloads](https://platform.opentargets.org/downloads) page.
 
-All Platform **datasets** are available as a distributed collection of data. This implies that for each dataset, there will be a directory with a list of partitioned files. Currently, we produce our datasets in Parquet. This formats allow us to expose nested information in a machine-readable way. Next we describe how to download, access and query this information in a step-by-step guide.
+All Platform **datasets** are available as a distributed collection of data. This implies that for each dataset, there will be a directory with a list of partitioned files. Currently, we produce our datasets in Parquet. This formats allow us to expose nested information in a machine-readable way.&#x20;
 
-Archive datasets, as well as input files and other secondary products are also made available in the [FTP server](http://ftp.ebi.ac.uk/pub/databases/opentargets/platform/) and [Google Cloud Platform](https://console.cloud.google.com/storage/browser/open-targets-data-releases).
+Archive datasets, as well as input files and other secondary products, are also made available in the [FTP server](http://ftp.ebi.ac.uk/pub/databases/opentargets/platform/) and [Google Cloud Platform](https://console.cloud.google.com/storage/browser/open-targets-data-releases).
+
+Below, we describe how to download, access and query this information in a step-by-step guide.
 
 ## Download
 
@@ -177,6 +179,28 @@ evdSelect %>%
 ```
 {% endtab %}
 {% endtabs %}
+
+## File formats&#x20;
+
+The Open Targets data generation pipeline produces outputs only in **Parquet** file format. The pipeline no longer produces outputs in JSON file format. This is due to Parquet file format having favourable features like:&#x20;
+
+* built-in schema and data typing
+* size-efficiency when compressed
+* efficient reading
+* the wide availability of interfaces with most dataframe libraries
+
+If you are new to Parquet and switching over from JSON, the change should be simple and your pipeline should be faster at reading the data. There are various examples of Parquet file readers from popular data frame libraries in [R](https://www.rdocumentation.org/packages/arrow/versions/0.14.1/topics/read_parquet), [Spark](https://spark.apache.org/docs/3.5.1/sql-data-sources-parquet.html), [Polar](https://docs.pola.rs/user-guide/io/parquet/), [Pandas](https://pandas.pydata.org/docs/reference/api/pandas.read_parquet.html). Typically the reader is built on the Apache Arrow [library](https://arrow.apache.org/), which itself has APIs in many languages should you need them.
+
+If you don’t wish to read data into dataframes and instead want to read the data as JSON (newline delimited), Open Targets has its [in-house tool `p2j` (python)](https://github.com/opentargets/p2j) for converting parquet to newline delimited JSON.
+
+{% hint style="info" %}
+Post 25.03, the data downloads paths have changed as now only parquet file format is available. Also there are minor changes to the name of the dataset (snake\_case & singular). More details can be found [here](https://community.opentargets.org/t/issues-with-gcp-big-query/1704/5).
+
+* Previous releases (till 24.09):
+  * `https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/24.09/output/etl/parquet/associationByOverallDirect/`
+* 25.03 release (and therafter):&#x20;
+  * `https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/25.03/output/association_by_datasource_direct/`
+{% endhint %}
 
 ## Tutorials and how-to guides
 

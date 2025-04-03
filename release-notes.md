@@ -53,11 +53,11 @@ description: Summary of release highlights for the Open Targets Platform
 * Improved and restructured documentation.
 
 {% hint style="info" %}
-The data downloads paths have been changed as now only parquet data format is available. Also there are minor changes to the name of the dataset (snake\_case & singulars). Details [here](https://community.opentargets.org/t/issues-with-gcp-big-query/1704/5).
+Post 25.03, the data downloads paths have changed as now only parquet file format is available. Also there are minor changes to the name of the dataset (snake\_case & singular). More details can be found [here](https://community.opentargets.org/t/issues-with-gcp-big-query/1704/5).
 
 * Previous releases (till 24.09):
   * `https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/24.09/output/etl/parquet/associationByOverallDirect/`
-* 25.03 release:&#x20;
+* 25.03 release (and therafter):&#x20;
   * `https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/25.03/output/association_by_datasource_direct/`
 {% endhint %}
 
