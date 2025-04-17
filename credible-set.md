@@ -55,7 +55,7 @@ All variants in the credible set are annotated with:
 
 ## Locus-to-Gene (L2G)
 
-Machine-learning prioritisation of likely causal genes based on available features. L2G integrates multiple features to predict what's the most likely causal gene in the neighbourhood of the observed association. All predictions for protein-coding genes with a score above 0.05 are displayed. See [Locus-to-Gene](gentropy/locus-to-gene-l2g.md) section for a description of the methodology.
+Machine Learning prioritisation of likely causal genes based on available features. L2G integrates multiple features to predict what's the most likely causal gene in the neighbourhood of the observed association. All predictions for protein-coding genes with a score above 0.05 are displayed. See [Locus-to-Gene](gentropy/locus-to-gene-l2g.md) section for a description of the methodology.
 
 ### Explaining L2G predictions
 
