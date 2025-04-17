@@ -25,7 +25,7 @@ Credible sets fulfilling any of the next rules are excluded from the Platform:
 1. The lead variant is within the MHC region (chr6:25726063-33400556)
 2. The credible set is not in a [valid study](study.md#inclusion-criteria)
 3. There is another fine-mapped SuSiE credible set from the same region and study
-4. Being a GWAS catalog fine-mapped top-hit, there is a GWAS catalog fine-mapped credible set from summary statistics for the same region and study
+4. Being a GWAS Catalog fine-mapped top-hit, there is a GWAS Catalog fine-mapped credible set from summary statistics for the same region and study
 5. The lead variant is reported in an invalid chromosome (1:22, X, Y, XY, MT)
 6. The sum of PIPs in the credible is not within the \[0.95,1] range
 
