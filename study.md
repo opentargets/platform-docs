@@ -6,7 +6,7 @@ In the Open Targets Platform, a study is a qualifying genome-wide association st
 
 Studies might capture different types of associations, such as curated associations (top hits) from literature or post-processing GWAS summary statistics.
 
-For each study meeting the [inclusion criteria](study.md#inclusion-criteria), harmonisation, [fine-mapping](gentropy/fine-mapping.md), [colocalisation](gentropy/colocalisation.md), and [Locus-to-Gene](gentropy/locus-to-gene-l2g.md) analysis are performed, resulting in a list of significant credible sets and their most likely associated genes. The resulting 95% credible sets can be visualised in all study pages. Within the same study, credible sets might result from different fine-mapping pipelines but still be presented in the same study with their respective provenance and confidence.&#x20;
+For each study meeting the [inclusion criteria](study.md#study-inclusion-criteria), harmonisation, [fine-mapping](gentropy/fine-mapping.md), [colocalisation](gentropy/colocalisation.md), and [Locus-to-Gene](gentropy/locus-to-gene-l2g.md) analysis are performed, resulting in a list of significant credible sets and their most likely associated genes. The resulting 95% credible sets can be visualised in all study pages. Within the same study, credible sets might result from different fine-mapping pipelines but still be presented in the same study with their respective provenance and confidence.&#x20;
 
 {% hint style="info" %}
 **Studies without GWAS-significant associations**
