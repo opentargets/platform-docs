@@ -8,6 +8,8 @@ description: Learn about the updated associations view
 
 In the Associations on the Fly page, a target or disease/phenotype is fixed and the prioritised list of alternative entities is displayed. A more detailed explanation on associations is available in the [Target-Disease associations](../associations.md) section.
 
+Citation: Cruz-Castillo et al. (2025). [Associations on the Fly, a new feature aiming to facilitate exploration of the Open Targets Platform evidence](https://academic.oup.com/bioinformatics/article/41/4/btaf070/8010255). _Bioinformatics._
+
 ### Key features
 
 * Rapid comparison of evidence for different associations
