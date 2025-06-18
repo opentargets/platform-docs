@@ -16,7 +16,7 @@ You can also join the [Open Targets Community](https://community.opentargets.org
 
 * LinkedIn: [Open Targets](https://www.linkedin.com/company/open-targets/)
 * Bluesky: [@opentargets.org](https://bsky.app/profile/opentargets.org)
-* Twitter: [@opentargets](https://twitter.com/opentargets)
+* X: [@opentargets](https://twitter.com/opentargets)
 * YouTube: [Open Targets](https://www.youtube.com/opentargets)
 
 For additional help with the Open Targets Platform, or to report bugs, data issues, or submit a feature request, please post on the [Open Targets Community](https://community.opentargets.org/t/welcome-to-the-open-targets-community-forum/838), using the relevant categories and tags. If the request you would like to make has already been posted, please like the post to indicate you would like this to be prioritised.
