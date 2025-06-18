@@ -17,4 +17,4 @@ Open Targets Platform currently has the following entity pages:&#x20;
 5. [Study profile page](../study.md)
 6. [Credible set profile page](https://www.ebi.ac.uk/ols4/ontologies/uberon)
 
-<figure><img src="../.gitbook/assets/Profile page BRAF.png" alt=""><figcaption><p>Example of BRAF profile page</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2025-06-16 at 16.02.29.png" alt=""><figcaption><p>BRAF profile page</p></figcaption></figure>

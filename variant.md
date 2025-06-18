@@ -32,6 +32,12 @@ Variants are annotated with an integrated view of variant effects from multiple 
 
 To make the predicted variant effects comparable across different methods,  raw predictions from each methods were normalised to a unified scale ranging from likely benign to uncertain to likely deleterious.&#x20;
 
+## Molecular Structure Viewer
+
+For predicted missense variants, we have included a Molecular Structure viewer on the variant page that locates the variant in the AlphaFold structure. The feature includes the option to switch to a pathogenicity view, which shows the AlphaMissense pathogenicity for the substitution corresponding to the variant, and the average AlphaMissense pathogenicity score across all possible amino acid substitutions at other positions.
+
+**Source:** [AlphaPhold DB](https://alphafold.ebi.ac.uk/)
+
 ## Transcript consequences
 
 Every variant is annotated with the predicted consequence for all canonical transcripts in a +/-500Kb window, allowing us to understand the likely effects in the neighbouring coding or non-coding genes. For all variant-transcript pairs in the region, this information includes:

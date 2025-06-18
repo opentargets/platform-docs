@@ -16,6 +16,7 @@ In the Associations on the Fly page, a target or disease/phenotype is fixed and 
 * Searching and applying filters by various target, disease or phenotype categories
 * Ability to 'pin' a list of targets to create a customised list
 * Upload a list of interested entities and export results
+* Ability to propt a 'target interactors' subview
 
 ### Data source score weights
 
@@ -72,6 +73,21 @@ We have designed and developed an export functionality for the Associations on t
 * Entire dataset view (default status)
 * Customised dataset view including custom controls changes, subset of data types (aggregations) and/or data from pinned targets only
 * TSV and JSON formats
+
+### Target Interactors View
+
+This interactive view enables access to target interactions information within the main "Associations on the Fly" disease page.
+
+The interactors subview is prompted by one of the context menu options and will contain target molecular interactions from the current Platform data feeds:
+
+* IntAct for binary physical interactions
+* Reactome for pathway-based interactions
+* Signor for directional, causal interactions
+* String for functional interactions
+
+Users can select their favourite molecular interactions data source from a drop down list located on the interactions menu bar. The the paginated interactors list is then sorted by their individual target-disease associations score, while their interaction score is shown by the target name.&#x20;
+
+Additionally, a slider on the menu bar allows changing the default interaction score cutoff for the target interactors (please note - the default cutoff interaction score is 0.42 for IntAct and 0.75 for String. No scores reported by Reactome or Signor).
 
 ### Walkthrough of the new Associations on the Fly view
 
