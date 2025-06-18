@@ -4,6 +4,52 @@ description: Summary of release highlights for the Open Targets Platform
 
 # Release notes
 
+## 25.06
+
+### Release date
+
+18 June 2025
+
+### Highlights
+
+**New features**
+
+* A new Target Interactors view, which allows you to view association evidence target interactors directly in the disease associations page. Users can choose one of four sources of molecular interactors and view the association evidence for the top scoring interactors for that database.
+* A revamped data downloads page, making Open Targets Platform data more FAIR. The data follows the [Croissant](https://mlcommons.org/working-groups/data/croissant/) metadata standard format, based on JSON-LD, developed by ML-Commons.
+
+**Data updates**
+
+* The latest GWAS Catalog data adds 36% more credible sets, most of which are from the [VA Million Veteran Program](https://www.research.va.gov/mvp/) study.
+* Burden evidence from the [Broad CVDI Human Disease Portal](https://hugeamp.org:8000/research.html?pageid=600_traits_app_home).
+* Experimental Factor Ontology (EFO) replaced measurement terms with terms from the Ontology of Biological Attributes (OBA), and is now reflected in the Platform.
+* New data from Reactome, Europe PMC, COSMIC and EVA (through ClinVar).
+
+**Product features**
+
+* Updated version of the Molecular Structure viewer on target profile pages. We also added a new version of the viewer on missense variant pages, which indicates the location of the variant in the AlphaFold model and view AlphaMissense pathogenicity scores.
+* Pharmacogenetics widgets on the variant, target, and drug profile pages now have an additional Directionality column.
+* Strengthened search functionality with performance optimisations and additional filtering capabilities.
+
+**Product enhancements and bug fixes**
+
+* Strengthened our search functionality with performance optimisations and additional filtering capabilities.
+* Case-case studies have been removed from our GWAS data as these are difficult to map to the correct disease.
+* Method descriptions to variant effect widget and bug fixes on variant page.
+
+Check out the [25.06 release blog post](https://blog.opentargets.org/open-targets-platform-25-06-release/) for more information on the new features and datasets introduced in this release.
+
+### Overall data metrics
+
+* 78,726 targets
+* 38,959 diseases and phenotypes
+* 18,081 drugs and compounds
+* 29,602,753 evidence strings
+* 10,563,905 target-disease associations
+
+Visit the [Open Targets Community 25.06 release thread](https://community.opentargets.org/t/25-06-platform-release-now-live/1828/1) for more data metrics for this release, including a per datasource breakdown of evidence strings.
+
+
+
 ## 25.03
 
 ### Release date
