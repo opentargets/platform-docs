@@ -67,6 +67,8 @@ Each molQTL study captures the unique combination of the following annotations:
 * The cell type or tissue where the trait is measured, when available
 * The experimental conditions (e.g. interferon-stimulated macrophages)
 
+This is an example of a [QTL study page](https://platform.opentargets.org/study/sun_2018_aptamer_plasma_tnfrsf1a_2654_19_1_1) and unique ID.
+
 **Sources**: [eQTL Catalogue](https://www.ebi.ac.uk/eqtl/), [UK Biobank Pharma Proteomics Project](https://www.synapse.org/Synapse:syn51364943/wiki/622119) (UKB-PPP)
 
 ## Study inclusion criteria
