@@ -85,7 +85,7 @@ The interactors subview is prompted by one of the context menu options and will 
 * Signor for directional, causal interactions
 * String for functional interactions
 
-Users can select their favourite molecular interactions data source from a drop down list located on the interactions menu bar. The the paginated interactors list is then sorted by their individual target-disease associations score, while their interaction score is shown by the target name.&#x20;
+Users can select their favourite molecular interactions data source from a drop down list located on the interactions menu bar. The paginated interactors list is then sorted by their individual target-disease associations score, while their interaction score is shown by the target name.&#x20;
 
 Additionally, a slider on the menu bar allows changing the default interaction score cutoff for the target interactors (please note - the default cutoff interaction score is 0.42 for IntAct and 0.75 for String. No scores reported by Reactome or Signor).
 
