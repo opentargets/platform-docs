@@ -2,7 +2,7 @@
 description: Learn about the target prioritisation view
 ---
 
-# Target Prioritisation view
+# Target Prioritisation
 
 The new [target prioritisation page](https://platform.opentargets.org/disease/EFO_0005774/associations?table=prioritisations) can be accessed by clicking onto the **Target prioritisation factors** tab from the Associations on the Fly page when searching for targets associated with a disease or phenotype.
 
@@ -162,23 +162,13 @@ Note: Below you can find how we scored the mouse phenotype classes (-1 being the
 
 ### Gene essentiality
 
-**Definition:** The second generation map of cancer dependencies ([Pacini et al., 2024](https://doi.org/10.1016/j.ccell.2023.12.016)) increased the number of cancer cell lines analysed (930 CRISPR-Cas9 genome wide knock-out screenings, targeting almost 18,000 genes), spanning to 27 cancer types and curated patient genomic data, to identify cancer-type-specific and pan-cancer gene dependencies integrated with multi-omic markers.
+**Definition:** This target prioritisation feature flags common essential genes suggested by the aggregate analysis of a large number of cell lines across numerous cancer types. [DepMap](https://depmap.org/portal/) assigns common essential status to a gene by gene effect rank in the 90th percentile least dependent line. The emphasis is on the consistency rather than strength of the dependency.
 
-Candidate anti-cancer therapeutic targets were characterised using a prioritisation criteria based on:
-
-&#x20;                 \- Fitness Score. Strength of the effect on cellular fitness upon target depletion.
-
-&#x20;                 \- Presence of dependency marker.
-
-&#x20;                 \- Evidence linking the dependency and marker.
-
-After applying a priority score based on approved drug targets, authors nominated 370 targets for 27 cancer types; 302 were cancer-type specific, while 196 where pan-cancer. This list of genes is the one used to label a target for gene essentiality.
-
-**Source of Data:** A comprehensive clinically informed map of dependencies in cancer cells and framework for target prioritization. Pacini _et al_., 2024, Cancer Cell 42, 301–316. _Supplementary Table 6._ Gene essentiality widget ([Cancer DepMap](https://depmap.org/portal/)).
+**Source of Data:** Gene essentiality (`CRISPRInferredCommonEssentials.csv`) is sourced from the [DepMap Portal](https://depmap.org/portal/).&#x20;
 
 **Scoring:**
 
-* -1 = Target reported as essential.
+* -1 = Target reported as essential
 * 0 = Target not reported as essential
 * NA = No information available
 
