@@ -56,7 +56,7 @@ A molQTL study identifies genetic variation that can be significantly associated
 {% hint style="info" %}
 All molQTL studies are annotated with the gene whose expression levels are regulated, referred as the affected gene.
 
-On top of the effected gene, molQTL studies also capture the tissue/cell type in which the change in the molecular trait was measure providing further context for interpretation.
+On top of the effected gene, molQTL studies also capture the tissue/cell type in which the change in the molecular trait was measured providing further context for interpretation.
 {% endhint %}
 
 Each molQTL study captures the unique combination of the following annotations:
