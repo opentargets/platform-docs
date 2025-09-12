@@ -134,7 +134,7 @@ Note: Here we consider mouse orthologs and display the "query percentage identit
 
 ### Genetic constraint
 
-**Definition:** Genest that are important for human physiology are seen to be depleted of deleterious variants. The Genome Aggregation Database ([gnomAD](https://gnomad.broadinstitute.org/)) has developed a continuous measurement of intolerance to loss of function (LoF) variants per gene, based on observed/expected LoF variant analysis. As recommended by gnomAD and implemented in the Open Targets platform, the rank of genes regarding their loss-of-function observed/expected upper bound fraction (LOEUF) metric is used ([LOEUF score](https://gnomad.broadinstitute.org/help/constraint#loeuf)).
+**Definition:** Genes that are important for human physiology are seen to be depleted of deleterious variants. The Genome Aggregation Database ([gnomAD](https://gnomad.broadinstitute.org/)) has developed a continuous measurement of intolerance to loss of function (LoF) variants per gene, based on observed/expected LoF variant analysis. As recommended by gnomAD and implemented in the Open Targets platform, the rank of genes regarding their loss-of-function observed/expected upper bound fraction (LOEUF) metric is used ([LOEUF score](https://gnomad.broadinstitute.org/help/constraint#loeuf)).
 
 **Source of Data:** Platform genetic constraint widget ([gnomAD](https://gnomad.broadinstitute.org/))
 
