@@ -33,7 +33,7 @@ description: Summary of release highlights for the Open Targets Platform
 * This change is now reflected in the Platform.
 * Bug fixes and improvements spanning across data, back-end and front-end
 
-Check out the 25.09 release blog post for more information on the new features and datasets introduced in this release.
+Check out the [25.09 release blog](https://blog.opentargets.org/open-targets-platform-25-09-release/) post for more information on the new features and datasets introduced in this release.
 
 ### Overall data metrics
 
@@ -43,7 +43,7 @@ Check out the 25.09 release blog post for more information on the new features a
 * 30,396,274 evidence strings
 * 10,989,518 target-disease associations
 
-Visit the Open Targets Community 25.09 release thread for more data metrics for this release, including a per datasource breakdown of evidence strings.
+Visit the [Open Targets Community 25.09 release thread](https://community.opentargets.org/t/25-09-platform-release-now-live/1929) for more data metrics for this release, including a per datasource breakdown of evidence strings.
 
 
 
