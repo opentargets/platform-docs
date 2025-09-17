@@ -34,7 +34,7 @@ To make the predicted variant effects comparable across different methods,  raw 
 
 ## Molecular Structure Viewer
 
-For predicted missense variants, we have included a Molecular Structure Viewer  on the variant page, with the reference amino acid highlighted within the AlphaFold predicted model of the relevant protein.
+For predicted missense variants, we have included a Molecular Structure Viewer on the variant page, with the reference amino acid highlighted within the AlphaFold predicted model for the relevant protein.
 
 The feature includes the option to visualise:
 
