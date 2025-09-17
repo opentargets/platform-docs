@@ -4,6 +4,49 @@ description: Summary of release highlights for the Open Targets Platform
 
 # Release notes
 
+## 25.09
+
+### Release date
+
+17 September 2025
+
+### Highlights
+
+* New intervals datasets on variant page: includes over 13 million enhancer-gene regulatory interactions across 352 cell types and tissues from [Gschwind et al.’s](https://www.biorxiv.org/content/10.1101/2023.11.09.563812v1) ENCODE-rE2G model
+* Added full list of 95% molQTL credible sets on target page&#x20;
+* New version of variant page structural viewer (from new FE component) - now including additional options for users to navigate structure confidence, pathogenicity, domains, secondary structure, residue hydrophobicity&#x20;
+
+### Data updates
+
+* New GWAS Catalog update (+30,000 new credible sets)
+* Expression Atlas:  new differential expression dataset, adding around 6,000 new unique target-disease associations to the Platform
+* Gene-level synonymous, missense, and loss-of-function constraint scores have been updated from gnomAD v2 to v4
+* Updated DepMap data (25Q2) used for the essentiality widget, introducing survival results for 17876 genes for 5 new cell lines
+* Added 67 new chemical probes following up from the latest Probes\&Drugs release
+
+### Product enhancements and bug fixes
+
+* 99% of evidence now has date (evidenceDate), with 100% coverage for GWAS credible set derived evidence. This is part of a [recently preprinted](https://www.researchsquare.com/article/rs-5669559/v1) Open Targets project to help assess novelty of disease target associations
+* Deployment on new Kubernetes-based cluster infrastructure
+* Streamlined L2G pipeline&#x20;
+* PharmGKB, a source of pharmacogenetics data, has been rebranded to ClinPGx
+* This change is now reflected in the Platform.
+* Bug fixes and improvements spanning across data, back-end and front-end
+
+Check out the 25.09 release blog post for more information on the new features and datasets introduced in this release.
+
+### Overall data metrics
+
+* 78,726 targets
+* 39,530 diseases and phenotypes
+* 18,119 drugs and compounds
+* 30,396,274 evidence strings
+* 10,989,518 target-disease associations
+
+Visit the Open Targets Community 25.09 release thread for more data metrics for this release, including a per datasource breakdown of evidence strings.
+
+
+
 ## 25.06
 
 ### Release date

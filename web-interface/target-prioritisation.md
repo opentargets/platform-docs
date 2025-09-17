@@ -176,7 +176,7 @@ Note: Below you can find how we scored the mouse phenotype classes (-1 being the
 
 **Definition:** Target is associated with curated adverse events.
 
-**Source of Data:** Safety liability data from Platform safety widget ([Open Targets Safety](https://platform-docs.opentargets.org/target/safety)) and Open Targets downstream analysis of  toxicity datasets from [PharmGKB](https://www.pharmgkb.org/).
+**Source of Data:** Safety liability data from Platform safety widget ([Open Targets Safety](https://platform-docs.opentargets.org/target/safety)) and Open Targets downstream analysis of  toxicity datasets from [ClinPGx](https://www.clinpgx.org/).
 
 **Scoring:**
 

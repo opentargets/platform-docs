@@ -34,9 +34,20 @@ To make the predicted variant effects comparable across different methods,  raw 
 
 ## Molecular Structure Viewer
 
-For predicted missense variants, we have included a Molecular Structure viewer on the variant page that locates the variant in the AlphaFold structure. The feature includes the option to switch to a pathogenicity view, which shows the AlphaMissense pathogenicity for the substitution corresponding to the variant, and the average AlphaMissense pathogenicity score across all possible amino acid substitutions at other positions.
+For predicted missense variants, we have included a Molecular Structure Viewer  on the variant page, locating the variant in the AlphaFold confidence structure.&#x20;
 
-**Source:** [AlphaPhold DB](https://alphafold.ebi.ac.uk/)
+The feature includes the option to visualise:
+
+1. Protein pathogenicity - highlighting the AlphaMissense pathogenicity for the substitution corresponding to the variant, and the average AlphaMissense pathogenicity score across all possible amino acid substitutions at other positions
+2. Protein domains  (from [Uniprot](https://www.uniprot.org/))
+3. Secondary structure (from [AlphaFold](https://alphafold.ebi.ac.uk/))
+4. Residues hydrophobicity (from [here](https://www.sigmaaldrich.com/GB/en/technical-documents/technical-article/protein-biology/protein-structural-analysis/amino-acid-reference-chart#hydrophobicity))&#x20;
+
+The widget also includes a linear representation of the protein which updates alongside the structural representation.&#x20;
+
+You can take a look at this example view for variant [7\_44152420\_C\_G](https://platform.opentargets.org/variant/7_44152420_C_G) to discover more about scores and colour coding used to build the viewer.
+
+**Source:** [AlphaPhold DB](https://alphafold.ebi.ac.uk/), [UniProt](https://www.uniprot.org/)&#x20;
 
 ## Transcript consequences
 
