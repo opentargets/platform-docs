@@ -22,7 +22,7 @@ You can find all of our code repositories on GitHub at [https://github.com/opent
 
 See list below if If you are interested in knowing more about our data sources and their licensing status.
 
-Please note that sources labeled with 'commercial use for Open Targets' have agreed for their data to be used without restriction by all Open Targets users.
+Please note that all data sources listed in the table, including the ones labeled with 'commercial use for Open Targets', have agreed for their data to be used without restriction by all Open Targets users.
 
 | Data source                                                                                                     | Licence                                                                                                   |
 | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
