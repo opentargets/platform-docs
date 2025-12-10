@@ -21,13 +21,13 @@ description: Summary of release highlights for the Open Targets Platform
 3. Zoodsma M, et al. [UK Biobank human metabolite meta analysis](https://www.nature.com/articles/s41588-025-02355-3)
 
 * New update from [CHEMBL 36](https://chembl.blogspot.com/2025/09/chembl-36-is-out.html), including new  molecules, indications, and drugs warnings.&#x20;
-* New data from [Ensembl 115](https://www.ensembl.info/2025/09/02/ensembl-115-has-been-released/), Probes\&Drugs, Reactome, and EVA (through ClinVar).
+* New data from [Ensembl 115](https://www.ensembl.info/2025/09/02/ensembl-115-has-been-released/), Probes\&Drugs, Reactome, and EVA (through ClinVar)
 
 #### New product features
 
 * New COLOC-PIP colocalisation methodology in Gentropy for the colocalisation of overlapping GWAS-GWAS and GWAS-molQTL credible sets. This method was adapted from [Giambartolomei et al. , 2014](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1004383)
 * Removed all SuSiE fine-mapping credible sets for multi-ancestry GWAS
-* Our credible set pages now have a new widget showcasing Enhancer-to-Gene (E2G) predictions from the ENCODE-rE2G model ([Gschwind\*, Mualim\*, Karbalayghareh\*, Sheth\*, Dey\*, Jagoda\*, Nurtdinov\*, and Xi\* et al., bioRxiv](https://www.biorxiv.org/content/10.1101/2023.11.09.563812v1)). Please note that we have also renamed the widget “Enhancer-to-Gene” rather than “Intervals”.
+* Our credible set pages now have a new widget showcasing Enhancer-to-Gene (E2G) predictions from the ENCODE-rE2G model ([Gschwind\*, Mualim\*, Karbalayghareh\*, Sheth\*, Dey\*, Jagoda\*, Nurtdinov\*, and Xi\* et al., bioRxiv](https://www.biorxiv.org/content/10.1101/2023.11.09.563812v1)). Please note that we have also renamed the widget “Enhancer-to-Gene” rather than “Intervals”
 * Measurement traits are now filtered out by default from the target association view, with an option to include them back if needed. This new functionality aims to highlight direct links between target and diseases
 * Three sources of target-disease evidence were removed from our associations view -  PROGENy, SLAPenrich, and Gene Signatures (SysBio) - as their data has been superseded by the information contained in other sources
 * [Download files](https://platform.opentargets.org/downloads) are now split by data sources, with the aim to facilitate investigation of individual evidence
@@ -40,11 +40,17 @@ description: Summary of release highlights for the Open Targets Platform
 
 Check out the [25.12 release blog post](https://blog.opentargets.org/open-targets-platform-25-12-has-been-released/) for more information on the new features and datasets introduced in this release.
 
-#### Overall data metrics
+#### Key metrics
 
-*
+| Metric                    | Count      |
+| ------------------------- | ---------- |
+| Targets                   | 78,725     |
+| Diseases/phenotypes       | 46,960     |
+| Drugs/clinical candidates | 18,475     |
+| Evidence                  | 32,515,132 |
+| Associations              | 12,010,760 |
 
-Visit the Open Targets Community 25.12 release thread for more data metrics for this release, including a per datasource breakdown of evidence strings.
+Visit the [Open Targets Community 25.12 release thread](https://community.opentargets.org/t/25-12-release-now-live/1951) for more data metrics for this release, including a per datasource breakdown of evidence strings.
 
 ## 25.09
 
@@ -72,10 +78,10 @@ Visit the Open Targets Community 25.12 release thread for more data metrics for 
 * Deployment on new Kubernetes-based cluster infrastructure
 * Streamlined L2G pipeline&#x20;
 * PharmGKB, a source of pharmacogenetics data, has been rebranded to ClinPGx
-* This change is now reflected in the Platform.
+* This change is now reflected in the Platform
 * Bug fixes and improvements spanning across data, back-end and front-end
 
-Check out the [25.09 release blog](https://blog.opentargets.org/open-targets-platform-25-09-release/) post for more information on the new features and datasets introduced in this release.
+Check out the [25.09 release blog](https://blog.opentargets.org/open-targets-platform-25-09-release/) post for more information on the new features and datasets introduced in this release
 
 ### Overall data metrics
 
