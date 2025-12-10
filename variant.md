@@ -66,7 +66,7 @@ The list of variant sources includes:
 
 * [95% GWAS credible sets](gentropy/fine-mapping.md)
 * [95% Molecular QTL credible sets](gentropy/fine-mapping.md)
-* [Enhancer-to-gene](gentropy/enhancer-to-gene.md): Epigenetically derived genomic regions that regulate putative genes.
+* [Enhancer-to-gene](gentropy/intervals.md): Epigenetically derived genomic regions that regulate putative genes.
 * [ClinVar](evidence.md): Submitted variants at all clinical significances
 * [Uniprot](evidence.md): Literature-based curation of disease-associated variants
 * [Pharmacogenetics](target/pharmacogenetics.md): Variants corresponding to genotypes associated with drug responses

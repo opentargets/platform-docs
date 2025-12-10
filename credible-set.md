@@ -81,16 +81,16 @@ A full description of all features is available here.
 
 ## Enhancer-to-gene predictions
 
-Enhancer-to-gene widget shows the genes relevant to the credible set as determined by overlap with epigenetically derived datasources.  This widget is equivalent to the [enhancer-to-gene widget](gentropy/enhancer-to-gene.md) found on the variant page of the lead variant in the credible set.&#x20;
+Enhancer-to-gene widget shows the genes relevant to the credible set as determined by overlap with epigenetically derived datasources.  This widget is equivalent to the [enhancer-to-gene widget](gentropy/intervals.md) found on the variant page of the lead variant in the credible set.&#x20;
 
 ## Colocalisation
 
 Credible sets are compared against other credible sets to find overlapping signals. Two overlapping credible sets are those that share at least one variant in the set. The Platform contains all the overlaps between all GWAS vs all GWAS and all GWAS vs all molQTL studies.
 
-For the overlapping pairs of credible sets, estimates for two co-localisation methods are computed based on the type of credible set:
+For the overlapping pairs of credible sets, estimates for two colocalisation methods are computed:
 
-* [COLOC](gentropy/colocalisation.md#coloc-colocalisation) - for overlapping SuSiE fine-mapped credible sets
-* [eCAVIAR](gentropy/colocalisation.md#ecaviar-colocalisation) - for all overlapping credible sets&#x20;
+* [COLOC-PIP](gentropy/colocalisation.md#coloc-colocalisation)
+* [eCAVIAR](gentropy/colocalisation.md#ecaviar-colocalisation)&#x20;
 
 Source: [Open Targets](gentropy/colocalisation.md)
 
