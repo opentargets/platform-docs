@@ -4,6 +4,48 @@ description: Summary of release highlights for the Open Targets Platform
 
 # Release notes
 
+## 25.12
+
+### Release date
+
+10th December 2025
+
+### Highlights
+
+#### Data updates
+
+* The latest GWAS Catalog data adds an impressive 78% additional credible sets, most of which are from:
+
+1. UK Biobank Whole-Genome Sequencing Consortium’s [study of 490,640 UK Biobank participants](https://www.nature.com/articles/s41586-025-09272-9)&#x20;
+2. Karczewski, Gupta, and Kanai’s [Pan-UK Biobank genome-wide association analyses](https://www.nature.com/articles/s41588-025-02335-7)
+3. Zoodsma M, et al. [UK Biobank human metabolite meta analysis](https://www.nature.com/articles/s41588-025-02355-3)
+
+* New update from [CHEMBL 36](https://chembl.blogspot.com/2025/09/chembl-36-is-out.html), including new  molecules, indications, and drugs warnings.&#x20;
+* New data from [Ensembl 115](https://www.ensembl.info/2025/09/02/ensembl-115-has-been-released/), Probes\&Drugs, Reactome, and EVA (through ClinVar).
+
+#### New product features
+
+* New COLOC-PIP colocalisation methodology in Gentropy for the colocalisation of overlapping GWAS-GWAS and GWAS-molQTL credible sets. This method was adapted from [Giambartolomei et al. , 2014](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1004383)
+* Removed all SuSiE fine-mapping credible sets for multi-ancestry GWAS
+* Our credible set pages now have a new widget showcasing Enhancer-to-Gene (E2G) predictions from the ENCODE-rE2G model ([Gschwind\*, Mualim\*, Karbalayghareh\*, Sheth\*, Dey\*, Jagoda\*, Nurtdinov\*, and Xi\* et al., bioRxiv](https://www.biorxiv.org/content/10.1101/2023.11.09.563812v1)). Please note that we have also renamed the widget “Enhancer-to-Gene” rather than “Intervals”.
+* Measurement traits are now filtered out by default from the target association view, with an option to include them back if needed. This new functionality aims to highlight direct links between target and diseases
+* Three sources of target-disease evidence were removed from our associations view -  PROGENy, SLAPenrich, and Gene Signatures (SysBio) - as their data has been superseded by the information contained in other sources
+* [Download files](https://platform.opentargets.org/downloads) are now split by data sources, with the aim to facilitate investigation of individual evidence
+* Our GraphQL API schema documentation was expanded&#x20;
+
+#### Technical  enhancements&#x20;
+
+* Large-scale refactoring of the [orchestration](https://github.com/opentargets/orchestration) of Open Targets Platform pipelines
+* Following up from a rewrite in [OnToma](https://github.com/opentargets/OnToma), our Python package for ontology mapping, we have enhanced mapping of disease phenotypes for several evidence sources such as ClinGen, Gene2Phenotype, Orphanet, Genomics England PanelApp, IMPC, Gene Burden, and Pharmacogenetics
+
+Check out the 25.12 release blog post for more information on the new features and datasets introduced in this release.
+
+#### Overall data metrics
+
+*
+
+Visit the Open Targets Community 25.12 release thread for more data metrics for this release, including a per datasource breakdown of evidence strings.
+
 ## 25.09
 
 ### Release date
