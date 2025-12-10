@@ -1,0 +1,12 @@
+# Enhancer-to-gene
+
+Enhancer-to-gene scores are directly ingested from the E2G consortium, which utilises a mixture of epigenetic datasets to connect genomic regions (defined as chromosome, start, end) to putative genes. These regions are likely regulatory elements that affect the transcriptional activity of their connected genes.
+
+The input datasets are based on publicly available resources from the [ENCODE project](https://www.encodeproject.org/), these include histone modification ChIP-seq, open chromatin DNase-seq and ATAC-seq, and 3D chromatin conformation structure determined by Hi-C.  These inputs are normalised and used as features in a machine learning approach described in the [original E2G publication](https://www.biorxiv.org/content/10.1101/2023.11.09.563812v1).  The final output connects potential regulatory regions to their target genes, along with a score that ranges between 0 to 1 that indicates the confidence of a given assignment.
+
+Enhancer-to-gene scores from E2G are ingested into the Open Targets ecosystem and can currently be browsed through the variant page, where the regulatory regions overlapping a given variant of interest are displayed in the enhancer-to-gene widget.  We have implemented a stringent filter of 0.6 on the E2G dataset to reduce computational costs and redundancy.  The selection of the filter was based on an analysis performed on E2G overlaps with eQTL credible sets.
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p><strong>Effect of E2G-score filtering on gene prioritisation for eQTL credible sets.</strong><br>True positives are defined as the eQTL target gene; <strong>Sensitivity</strong> (orange) is TP recall, and <strong>FDR</strong> (blue) = 1 − precision among retained cs–gene pairs. Points are thresholds labelled by percentiles (Px) of the <strong>E2G score</strong> distribution. <strong>Moderate filtering</strong> removes significant amounts of raw E2G entries while <strong>retaining most TP assignments</strong>. <strong>FDR changes little until very aggressive cutoffs</strong>, indicating many non-TP—but potentially interesting—gene links persist.</p></figcaption></figure>
+
+The Enhancer-to-gene widget is also visible on the credible set page, which shows the overlapping E2G scores for the lead variant of the credible set.\
+Future work will involve integrating the E2G dataset to construct additional features for the Locus-to-Gene (L2G) pipeline for gene prioritisation purposes.

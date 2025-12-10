@@ -515,8 +515,7 @@ New data, in particular:
 * Probes and drugs
 * New data integrity file, in line with FAIR principles
 
-Check out the[ 22.09 release blog post](https://blog.opentargets.org/open-targets-platform-22-09-release/) for more information on the new features and datasets introduced in this release.\
-
+Check out the[ 22.09 release blog post](https://blog.opentargets.org/open-targets-platform-22-09-release/) for more information on the new features and datasets introduced in this release.<br>
 
 ### Overall data metrics
 

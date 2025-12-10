@@ -79,6 +79,10 @@ A full description of all features is available here.
 
 **Source**: [Open Targets](gentropy/locus-to-gene-l2g.md)
 
+## Enhancer-to-gene predictions
+
+Enhancer-to-gene widget shows the genes relevant to the credible set as determined by overlap with epigenetically derived datasources.  This widget is equivalent to the [enhancer-to-gene widget](gentropy/enhancer-to-gene.md) found on the variant page of the lead variant in the credible set.&#x20;
+
 ## Colocalisation
 
 Credible sets are compared against other credible sets to find overlapping signals. Two overlapping credible sets are those that share at least one variant in the set. The Platform contains all the overlaps between all GWAS vs all GWAS and all GWAS vs all molQTL studies.
