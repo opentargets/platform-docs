@@ -38,7 +38,7 @@ description: Summary of release highlights for the Open Targets Platform
 * Large-scale refactoring of the [orchestration](https://github.com/opentargets/orchestration) of Open Targets Platform pipelines
 * Following up from a rewrite in [OnToma](https://github.com/opentargets/OnToma), our Python package for ontology mapping, we have enhanced mapping of disease phenotypes for several evidence sources such as ClinGen, Gene2Phenotype, Orphanet, Genomics England PanelApp, IMPC, Gene Burden, and Pharmacogenetics
 
-Check out the 25.12 release blog post for more information on the new features and datasets introduced in this release.
+Check out the [25.12 release blog post](https://blog.opentargets.org/open-targets-platform-25-12-has-been-released/) for more information on the new features and datasets introduced in this release.
 
 #### Overall data metrics
 
