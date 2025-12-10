@@ -92,9 +92,7 @@ All other protein-coding genes in the window are classified as negatives as long
 
 The Locus-to-Gene model is trained for every data release using the training set and feature matrix following. Similarly to Mountjoy _et al._, the model is trained based on a gradient-boosting algorithm with the `scikit-learn` library, and using nested cross-validation and hyperparameter tuning.
 
-{% embed url="https://huggingface.co/opentargets/locus_to_gene" %}
-The L2G model is available on Hugging Face and in the FTP location&#x20;
-{% endembed %}
+{% embed url="https://huggingface.co/opentargets/locus_to_gene_25.12" %}
 
 {% hint style="info" %}
 The L2G model will be updated in each release to include new features and/or fixes. You should expect some variation in the prediction scores with each release.
