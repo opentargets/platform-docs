@@ -64,6 +64,7 @@ GWAS-significant study-locus are identified using a p-value threshold <=1e-8 and
 4. Study has no quality control flags
 5. The locus didn't overlap with the MHC region. We didn’t exclude X or Y chromosomes if they were presented in GWAS
 6. The number of variants in the locus after overlapping with the LD matrix was in the range \[100, 15,000]
+7. Study is not a meta analysis ( The major LD ancestry relative sample size ≥ 90%)
 
 For all eligible study loci, the SuSiE-inf method was applied without estimation of infinitesimal effects (equivalent to the classical SuSiE method) using [pan-UKBB LD matrices](data-sources.md#pan-ukbb-ld-matrices). Filtering of the resulting 95% CSs is performed based on CS log(BF)<=2, minimum R2 purity <=0.25 and lead variant p-value>=1e-5. Additionally, the pairwise r^2 between lead variants within the locus is calculated, removing the less significant of the CSs if the r2>=0.8. As the locus breaker procedure can create overlapping loci, we can obtain the redundant credible sets within the same study. Thus, if two CSs from different loci within a study had the same lead variant, we removed one of them, leaving the CS with the largest CS log(BF). All resulting credible sets from this pipeline are flagged with the label `Study locus fine-mapped without in-sample LD reference`.
 
