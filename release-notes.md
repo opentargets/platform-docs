@@ -119,7 +119,6 @@ Visit the [Open Targets Community 25.09 release thread](https://community.openta
 
 * Updated version of the Molecular Structure viewer on target profile pages. We also added a new version of the viewer on missense variant pages, which indicates the location of the variant in the AlphaFold model and view AlphaMissense pathogenicity scores.
 * Pharmacogenetics widgets on the variant, target, and drug profile pages now have an additional Directionality column.
-* Strengthened search functionality with performance optimisations and additional filtering capabilities.
 
 **Product enhancements and bug fixes**
 
