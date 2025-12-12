@@ -20,7 +20,7 @@ description: Summary of release highlights for the Open Targets Platform
 2. Karczewski, Gupta, and Kanai’s [Pan-UK Biobank genome-wide association analyses](https://www.nature.com/articles/s41588-025-02335-7)
 3. Zoodsma M, et al. [UK Biobank human metabolite meta analysis](https://www.nature.com/articles/s41588-025-02355-3)
 
-* New update from [CHEMBL 36](https://chembl.blogspot.com/2025/09/chembl-36-is-out.html), including new  molecules, indications, and drugs warnings.&#x20;
+* New update from [CHEMBL 36](https://chembl.blogspot.com/2025/09/chembl-36-is-out.html), including new  molecules, indications, and drug warnings
 * New data from [Ensembl 115](https://www.ensembl.info/2025/09/02/ensembl-115-has-been-released/), Probes\&Drugs, Reactome, and EVA (through ClinVar)
 
 #### New product features
