@@ -77,8 +77,7 @@ Visit the [Open Targets Community 25.12 release thread](https://community.openta
 * 99% of evidence now has date (evidenceDate), with 100% coverage for GWAS credible set derived evidence. This is part of a [recently preprinted](https://www.researchsquare.com/article/rs-5669559/v1) Open Targets project to help assess novelty of disease target associations
 * Deployment on new Kubernetes-based cluster infrastructure
 * Streamlined L2G pipeline&#x20;
-* PharmGKB, a source of pharmacogenetics data, has been rebranded to ClinPGx
-* This change is now reflected in the Platform
+* PharmGKB, a source of pharmacogenetics data, has been rebranded to ClinPGx. This change is now reflected in the Platform
 * Bug fixes and improvements spanning across data, back-end and front-end
 
 Check out the [25.09 release blog](https://blog.opentargets.org/open-targets-platform-25-09-release/) post for more information on the new features and datasets introduced in this release
