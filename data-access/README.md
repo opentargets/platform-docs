@@ -9,7 +9,7 @@ For queries about a **single entity or target-disease association**, we recommen
 
 For more **complex, systematic queries**, we recommend that you use:
 
-* Our comprehensive set of [data downloads](https://platform.opentargets.org/downloads) available via [FTP](https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/), [Google Cloud](https://console.cloud.google.com/marketplace/product/bigquery-public-data/open-targets-platform?project=open-targets-genetics\&inv=1\&invt=Abwwaw), [Microsoft Azure Open Datasets](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-open-targets) and AWS Open Dataset (s3://open-targets-public-data-releases).
+* Our comprehensive set of [data downloads](https://platform.opentargets.org/downloads) available via [FTP](https://ftp.ebi.ac.uk/pub/databases/opentargets/platform/), [Google Cloud](https://console.cloud.google.com/marketplace/product/bigquery-public-data/open-targets-platform?project=open-targets-genetics\&inv=1\&invt=Abwwaw), [Microsoft Azure Open Datasets](https://learn.microsoft.com/en-us/azure/open-datasets/dataset-open-targets) and [AWS Open Dataset ](s3://open-targets-public-data-releases).
 * Our [Google BigQuery](google-bigquery.md) instance that supports SQL-like queries and allows you to export data to your own Google Cloud Storage bucket. This data is available as a [BigQuery Public Dataset](https://cloud.google.com/bigquery/public-data).
 
 If you use our data in your research or commercial product, please [cite our latest publication](../citation.md).
