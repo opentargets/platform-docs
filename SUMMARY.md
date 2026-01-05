@@ -36,6 +36,7 @@
   * [Entity profile pages](web-interface/entity-profile-pages.md)
 * [Data and code access](data-access/README.md)
   * [Download datasets](data-access/datasets.md)
+  * [Release outputs on AWS](data-access/release-outputs-on-aws.md)
   * [Google BigQuery](data-access/google-bigquery.md)
   * [GraphQL API](data-access/graphql-api.md)
   * [🆕 Platform infrastructure](data-access/platform-infrastructure.md)
