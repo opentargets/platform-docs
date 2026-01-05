@@ -1,6 +1,6 @@
-# Release outputs on AWS
+# Platform datasets on AWS
 
-### Reading Open Targets Platform data hosted on AWS
+### Accessing Open Targets Platform data hosted on AWS
 
 From 2026, Open Targets Platform datasets are also made available through Amazon's [Registry of Open Data](https://registry.opendata.aws/) initiative.&#x20;
 
