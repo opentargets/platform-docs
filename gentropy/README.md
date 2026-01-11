@@ -2,7 +2,7 @@
 description: Open Targets post-GWAS analysis pipelines
 ---
 
-# 🆕 GWAS & functional genomics
+# GWAS & functional genomics
 
 The Platform is built upon a significant effort to analyse genome-wide associations studies and interpret them in the context of functional genomics studies. This effort to inform target identification and prioritisation datasets leverages [gentropy](gentropy.md) a highly-scalable python framework for post-GWAS analysis.
 

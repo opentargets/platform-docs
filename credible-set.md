@@ -1,4 +1,4 @@
-# 🆕 Credible Set
+# Credible Set
 
 ## Overview
 

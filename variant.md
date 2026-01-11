@@ -2,7 +2,7 @@
 description: Common and rare variation in Open Targets Platform
 ---
 
-# 🆕 Variant
+# Variant
 
 ## Overview
 
