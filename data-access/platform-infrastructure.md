@@ -4,7 +4,7 @@ description: >-
   Platform
 ---
 
-# 🆕 Platform infrastructure
+# Platform infrastructure
 
 ## Introduction
 
@@ -29,6 +29,7 @@ Currently this infrastructure is hosted on Google Cloud, using a load-balanced, 
 
 * [platform-api](https://github.com/opentargets/platform-api) — GraphQL API
 * [ot-ai-api](https://github.com/opentargets/ot-ai-api) — OpenAI API router
+* [open-targets-platform-mcp](https://github.com/opentargets/open-targets-platform-mcp) — MCP
 
 ### Frontend
 

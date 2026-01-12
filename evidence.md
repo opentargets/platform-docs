@@ -53,7 +53,7 @@ These associations are a result of collapsing rare variants in a gene into a sin
 
 **Direction of Effect assessment:**
 
-<table data-full-width="false"><thead><tr><th width="331" align="center">Direction on Target (Gain of Function (GoF) / Loss of Function (LoF))</th><th align="center">Direction on Trait (Risk/Protective)</th></tr></thead><tbody><tr><td align="center">Assumption of all variants LoF</td><td align="center"><table data-card-size="large" data-column-title-hidden data-view="cards"><thead><tr><th>Beta values</th></tr></thead><tbody><tr><td><table><thead><tr><th>Beta values</th></tr></thead><tbody><tr><td>&#x3C; 0 = Protective</td></tr><tr><td>> 0 = Risk</td></tr></tbody></table></td></tr><tr><td><table><thead><tr><th>Odds ratios</th></tr></thead><tbody><tr><td>&#x3C; 1 = Protective</td></tr><tr><td>> 1 = Risk</td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="331" align="center">Direction on Target (Gain of Function (GoF) / Loss of Function (LoF))</th><th align="center">Direction on Trait (Risk/Protective)</th></tr></thead><tbody><tr><td align="center">Assumption of all variants LoF</td><td align="center">2Amved8pXoFQ-Vl4kLr3A1X6R</td></tr></tbody></table>
 
 **Source:** [AstraZeneca PheWAS Portal](https://azphewas.com), [Genebass](https://app.genebass.org)
 
@@ -108,7 +108,7 @@ In Step 2, the score is modulated based on the ClinVar review status:
 
 **Direction of Effect assessment:**
 
-<table data-full-width="false"><thead><tr><th align="center">Direction on Target (Gain of Function (GoF) / Loss of Function (LoF))</th><th align="center">Direction on Trait (Risk/Protective)</th></tr></thead><tbody><tr><td align="center">LoF variants</td><td align="center"><table data-header-hidden><thead><tr><th align="center">Beta values</th></tr></thead><tbody><tr><td align="center">Pathogenic/Likely pathogenic = Risk</td></tr><tr><td align="center">Protective = Protective</td></tr></tbody></table></td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th align="center">Direction on Target (Gain of Function (GoF) / Loss of Function (LoF))</th><th align="center">Direction on Trait (Risk/Protective)</th></tr></thead><tbody><tr><td align="center">LoF variants</td><td align="center">2Amved8pXoFQ-Vl4kLr3A1X6R</td></tr></tbody></table>
 
 **Source**: [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) (via [European Variation Archive](https://www.ebi.ac.uk/eva/))
 
@@ -338,7 +338,7 @@ In Step 2, scored is modulated based on the ClinVar review status:
 
 **Direction of Effect assessment:**
 
-<table data-full-width="false"><thead><tr><th align="center">Direction on Target (Gain of Function (GoF) / Loss of Function (LoF))</th><th align="center">Direction on Trait (Risk/Protective)</th></tr></thead><tbody><tr><td align="center">LoF variants</td><td align="center"><table data-header-hidden><thead><tr><th align="center">Beta values</th></tr></thead><tbody><tr><td align="center">Pathogenic/Likely pathogenic = Risk</td></tr><tr><td align="center">Protective = Protective</td></tr></tbody></table></td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th align="center">Direction on Target (Gain of Function (GoF) / Loss of Function (LoF))</th><th align="center">Direction on Trait (Risk/Protective)</th></tr></thead><tbody><tr><td align="center">LoF variants</td><td align="center">2Amved8pXoFQ-Vl4kLr3A1X6R</td></tr></tbody></table>
 
 **Source**: [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) (via [European Variation Archive](https://www.ebi.ac.uk/eva/))
 
@@ -391,7 +391,7 @@ In Step 2, for those clinical trials that have stopped early, the score is down-
 
 **Direction of Effect assessment:**
 
-<table data-full-width="false"><thead><tr><th align="center">Direction on Target (Gain of Function (GoF) / Loss of Function (LoF))</th><th align="center">Direction on Trait (Risk/Protective)</th></tr></thead><tbody><tr><td align="center"><table data-header-hidden><thead><tr><th align="center">Beta values</th></tr></thead><tbody><tr><td align="center">Activators = GoF</td></tr><tr><td align="center">Inhibitors = LoF</td></tr></tbody></table></td><td align="center">Assumption of Protective</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th align="center">Direction on Target (Gain of Function (GoF) / Loss of Function (LoF))</th><th align="center">Direction on Trait (Risk/Protective)</th></tr></thead><tbody><tr><td align="center">2Amved8pXoFQ-Vl4kLr3A1X6R</td><td align="center">Assumption of Protective</td></tr></tbody></table>
 
 **Source**: [ChEMBL](https://www.ebi.ac.uk/chembl/)
 

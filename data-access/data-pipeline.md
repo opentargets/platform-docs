@@ -5,7 +5,7 @@ description: >-
   output.
 ---
 
-# 🆕 Data pipeline
+# Data pipeline
 
 ## Introduction
 
