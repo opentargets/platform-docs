@@ -2,7 +2,7 @@
 
 ### Accessing Open Targets Platform data hosted on AWS
 
-From 2026, Open Targets Platform datasets are also made available through Amazon's [Registry of Open Data](https://registry.opendata.aws/) initiative.&#x20;
+From 2026, Open Targets Platform datasets are also made available through Amazon's [Registry of Open Data](https://registry.opendata.aws/opentargets/) initiative.&#x20;
 
 **Dataset location:**
 
