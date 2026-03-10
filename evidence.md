@@ -24,8 +24,6 @@ The GWAS association evidence is defined as any credible set in a GWAS trait ass
 
 **Evidence scoring**: [Locus-to-Gene score](gentropy/locus-to-gene-l2g.md), filtered to use scores above 0.05
 
-
-
 ### Gene Burden
 
 Gene burden data comprises gene–phenotype relationships observed in gene-level association tests using rare variant collapsing analyses. The Platform integrates burden tests carried out by several sources:
@@ -58,8 +56,6 @@ These associations are a result of collapsing rare variants in a gene into a sin
 **Source:** [AstraZeneca PheWAS Portal](https://azphewas.com), [Genebass](https://app.genebass.org)
 
 **References:** [Wang, Q. et al, 2021](https://doi.org/10.1038/s41586-021-03855-y); [Backman, J.D. et al, 2021](https://doi.org/10.1038/s41586-021-04103-z); [K.K., Karczewski et al., 2022](https://www.medrxiv.org/content/10.1101/2021.06.19.21259117v4); [Zhou X. et al, 2022](https://www.nature.com/articles/s41588-022-01148-2), [Singh et al., 2022](https://rdcu.be/cPZP3); [Epi25 Collaborative, 2019](https://www.cell.com/ajhg/fulltext/S0002-9297\(19\)30207-1); [Satterstrom et al., 2020](https://www.sciencedirect.com/science/article/pii/S0092867419313984); [Bomba et al., 2022](https://www.cell.com/ajhg/fulltext/S0002-9297\(22\)00157-4); [Akbari, P., 2022](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9399235/); [Makarious et al., 2022](https://www.medrxiv.org/content/10.1101/2022.11.08.22280168v1.full.pdf); [Riveros-McKay et al., 2020](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1008605); [Soh et al., 2023](https://doi.org/10.1038/s41467-023-43726-w); [Jurgens et al., 2024](https://doi.org/10.1038/s41588-024-01894-5)
-
-
 
 ### ClinVar
 
@@ -114,8 +110,6 @@ In Step 2, the score is modulated based on the ClinVar review status:
 
 **References**: [Cezard T. et al, 2021](https://doi.org/10.1093/nar/gkab960); [Shen A. et al, 2024](https://doi.org/10.1093/bioadv/vbae018); [Landrum, M. et al, 2014](https://doi.org/10.1093/nar/gkt1113); [Landrum, M. et al, 2020](https://doi.org/10.1093/nar/gkz972)
 
-
-
 ### Genomics England (GEL) PanelApp
 
 The Genomics England PanelApp is a knowledge base that combines crowdsourced expertise with curation to provide gene–disease relationships. Virtual gene panels related to human disorders are reviewed by experts within the clinical and scientific community to support the interpretation of genomes within the 100,000 Genomes Project. Within a panel, genes are rated based on the level of evidence supporting the association with the phenotypes identified by the panel. Genes are then classified according to a traffic light system with red/stop, amber/pause, and green/go classifications. To receive a green rating (diagnostic-grade) on a version 1+ panel, the gene requires "evidence from 3 or more unrelated families or from 2-3 unrelated families where there is strong additional functional data" and "genes that do not meet these criteria are rated as Amber (borderline) or Red (low level of evidence)."
@@ -134,8 +128,6 @@ The Open Targets Platform includes "green" and "amber" genes from version 1+ pan
 **Source**: [Genomics England PanelApp](https://panelapp.genomicsengland.co.uk)
 
 **References**: [Martin, A. et al, 2019](https://doi.org/10.1038/s41588-019-0528-2)
-
-
 
 ### Gene2Phenotype
 
@@ -163,8 +155,6 @@ G2P evidence in the Platform is the result of any target-disease curation by any
 
 **References**: [Thormann, A. et al, 2019](https://doi.org/10.1038/s41467-019-10016-3)
 
-
-
 ### UniProt literature
 
 The Universal Protein Resource (UniProt) provides a large compendium of sequence and functional information at the protein level. As part of their functional annotation effort, UniProt curators also annotate proteins with publications supporting their involvement on pathogenic processes.
@@ -184,8 +174,6 @@ All publications supporting a given target disease relationship are aggregated i
 
 **References**: [The UniProt Consortium, 2021](https://academic.oup.com/nar/article/49/D1/D480/6006196)
 
-
-
 ### UniProt curated variants
 
 The Universal Protein Resource (UniProt) also curate variants supported by publications that are known to alter protein function on disease. Curated mutations are predominantly protein coding or in regulatory regions clearly associated with the causal protein.
@@ -204,8 +192,6 @@ All publications supporting a given variant in connection with a disease constit
 **Source**: [UniProt](https://www.uniprot.org)
 
 **References**: [The UniProt Consortium, 2021](https://academic.oup.com/nar/article/49/D1/D480/6006196)
-
-
 
 ### Orphanet
 
@@ -227,8 +213,6 @@ Orphanet is an international network that offers a range of resources to improve
 **Source**: [Orphanet Genes Associated with Rare Diseases](https://www.orpha.net/consor/cgi-bin/Disease_Genes.php?lng=EN)
 
 **References**: [Orphanet](https://www.orpha.net); [Orphadata](http://www.orphadata.org/cgi-bin/index.php)
-
-
 
 ### ClinGen
 
@@ -254,8 +238,6 @@ All gene–disease pairs mapped to EFO constitute individual evidence in the Pla
 
 **References**: [Strande, N. et al., 2017](https://doi.org/10.1016/j.ajhg.2017.04.015)
 
-
-
 ### **Cancer Gene Census**
 
 Cancer Gene Census (CGC) is part of the Wellcome Sanger Institute Catalogue of Somatic Mutations in Cancer ([COSMIC](http://cancer.sanger.ac.uk/cosmic)). CGC is an effort to catalogue genes which contain mutations that have been causally implicated in cancer. The exhaustive curation of the CGC covers individual studies as well as pan-cancer sequencing efforts, including The Cancer Genome Atlas (TCGA) and the International Cancer Genome Consortium (ICGC) among others.
@@ -276,8 +258,6 @@ In the Platform, CGC evidence is aggregated at the target–disease level to pro
 
 **References**: [Sondka, Z. et al, 2018](https://doi.org/10.1038/s41568-018-0060-1)
 
-
-
 ### **IntOGen**
 
 IntOGen provides a framework to identify potential cancer driver genes using large-scale mutational data from sequenced tumour samples. By harmonising tumour sequencing data from the ICGC/TCGA Pan-Cancer Analysis of Whole Genomes ([PCAWG](https://dcc.icgc.org/pcawg)) and other comprehensive efforts, IntOGen aims to provide a consensus assessment of cancer driver genes. Several state-of-the-art driver methodologies aiming to cover different approaches (e.g. dN/dS, Hotspots, etc.) are included to finally produce a consensus q-value for each driver gene in every tumour.
@@ -291,8 +271,6 @@ In the Platform, independent target–disease evidence are defined as any signif
 **Source**: [intOGen](http://www.intogen.org/search)
 
 **References**: [Martínez-Jiménez, F. et al, 2020](https://doi.org/10.1038/s41568-020-0290-x)
-
-
 
 ### **ClinVar (somatic)**
 
@@ -344,8 +322,6 @@ In Step 2, scored is modulated based on the ClinVar review status:
 
 **References**: [Cezard T. et al, 2021](https://doi.org/10.1093/nar/gkab960); [Shen A. et al, 2024](https://doi.org/10.1093/bioadv/vbae018); [Landrum, M. et al, 2014](https://doi.org/10.1093/nar/gkt1113); [Landrum, M. et al, 2020](https://doi.org/10.1093/nar/gkz972)
 
-
-
 ### Cancer Biomarkers
 
 One of the aims of the Cancer Genome Interpreter is to identify how variations in the tumour genome may influence its response to anti-cancer therapies. The Cancer Biomarkers database features biomarkers of drug sensitivity, resistance, and toxicity for drugs targeting specific targets in cancer, curated by clinical and scientific experts in precision oncology, and classified by cancer type.
@@ -357,8 +333,6 @@ One of the aims of the Cancer Genome Interpreter is to identify how variations i
 **Source:** [Cancer Genome Interpreter](https://www.cancergenomeinterpreter.org/biomarkers)
 
 **References:** [Tamborero, D. et al, 2018](https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-018-0531-8)
-
-
 
 ### ChEMBL
 
@@ -397,8 +371,6 @@ In Step 2, for those clinical trials that have stopped early, the score is down-
 
 **References**: [Mendez, D. et al, 2019](https://academic.oup.com/nar/article/47/D1/D930/5162468)
 
-
-
 ### CRISPR screens
 
 One of the most powerful approaches to uncover gene function is the experimental perturbation of genes followed by the observation of related phenotypes. The perturbation of gene function in human cells has been greatly facilitated by developments in CRISPR technology.
@@ -416,8 +388,6 @@ If knocking out a gene causes significant perturbation in the cell type, it migh
 
 **Reference**: [Tian, R et al, 2021](https://www.nature.com/articles/s41593-021-00862-0)
 
-
-
 ### Project Score
 
 Project Score is a Wellcome Sanger Institute resource that aims to identify dependencies in cancer cell lines to guide precision medicine. The project combines gene fitness effects derived from whole-genome CRISPR-Cas9 synthetic lethality screenings with tractability data, genomic biomarkers and various target annotation enabling a systematic prioritisation of potential targets. The resulting inferences are then mapped from the cancer cell lines in which the experiment is performed to their corresponding tumours.&#x20;
@@ -431,40 +401,6 @@ In the Platform, any Project Score prioritised target with priority score reachi
 **Source**: CRISPR (via[ Project Score](https://score.depmap.sanger.ac.uk))
 
 **References**: [Pacini et al, 2024](https://pubmed.ncbi.nlm.nih.gov/38215750/)
-
-
-
-### SLAPenrich
-
-SLAPenrich (Sample-population Level Analysis of Pathway enrichments) is a novel statistical framework for the identification of significantly mutated pathways, at the sample population level, in large cohorts of cancer patients. SLAPenrich is based on a Poisson binomial model that takes into account the length of blocks of exons in genes within each pathway, and the background mutation rate of the analysed cohort of patients. SLAPenrich enrichment analysis is based on EMBL-EBI Reactome pathways and mutation data from The Cancer Genome Atlas ([TCGA](https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga)) cohort.
-
-In the Platform, each pathway significantly enriched in tumour-occurring mutations constitutes an individual piece of evidence.
-
-**Data type**: Affected pathway
-
-**Evidence scoring**: Scaled enrichment p-value from 0.5 (p = 1e-4) to 1 (p<1e-14).
-
-**Source**: [SLAPenrich](https://saezlab.github.io/SLAPenrich/)
-
-**References**: [Iorio, F. et al, 2018](https://doi.org/10.1038/s41598-018-25076-6)
-
-
-
-### PROGENy
-
-PROGENy (Pathway RespOnsive GENes) is a linear regression model that calculates pathway activity estimates based on consensus transcriptomic gene signatures obtained from perturbation experiments. PROGENy ([Schubert et al](https://www.nature.com/articles/s41467-017-02391-6.epdf?author_access_token=16QkzhJ3OA3qJDqBw_GvGdRgN0jAjWel9jnR3ZoTv0NBFLUVI-ebH2AmtFlR1ykSPIho7ETJXL7VqZFC4zGtU0BaeoZncGrwx3ZW24lfVqvbSWqsQKaUXFTi_c-4pgcpX-1qerWYlkG6sha8rhrnMg%3D%3D)) provides a framework to systematically compare pathway activities between normal and primary samples from The Cancer Genome Atlas (TCGA).
-
-In the Platform, a PROGENy evidence is defined as any significantly regulated sample-level pathway activities inferred from matched normal vs. tumour samples.
-
-**Data type**: Affected pathway
-
-**Evidence scoring**: Scaled p-value from 0.5 (p = 1e-4) to 1 (p<1e-14).
-
-**Source**: [PROGENy](https://saezlab.github.io/progeny/)
-
-**References**: [Schubert, M. et al, 2018](https://doi.org/10.1038/s41467-017-02391-6)
-
-
 
 ### Reactome
 
@@ -480,23 +416,6 @@ In the Platform, any mutation or altered expression event affecting a different 
 
 **References**: [Jassal, B. et al, 2020](http://doi.org/10.1093/nar/gkz1031)
 
-
-
-### Gene signatures
-
-The Platform also provides information about key driver genes for specific diseases that have been curated from Systems Biology analysis. These publications present different disease gene signatures as potential key drivers or key regulators causing disease.
-
-**Data type**: Affected pathway
-
-**Evidence scoring**: Scoring depends on whether the original data contains or not a score:
-
-* p-values and rank-based scores are normalised to the 0.5 - 1 range
-* If there is no score a fixed value of 0.5 is used
-
-**References**: [Peters, L. A. et al, 2017](https://doi.org/10.1038/ng.3947); [Huan, T. et al, 2013](https://doi.org/10.1161/atvbaha.112.300112); [Zhang, B. et al, 2013](https://doi.org/10.1016/j.cell.2013.03.030); [Mostafavi, S. et al, 2018](https://doi.org/10.1038/s41593-018-0154-9)
-
-
-
 ### **Europe PMC**
 
 The EMBL-EBI's Europe PMC enables access to a worldwide collection of life science publications and preprints from trusted sources. The Europe PMC data source aims to identify target–disease co-occurrences in the literature and provide an assessment on the confidence of the relationship. This pipeline uses deep-learning based Named Entity Recognition (NER) to identify gene/proteins and diseases when mentioned in the text, to later normalise them to the target or disease/phenotype entities in the Platform. All co-occurrences of both types of entities in the same sentence are considered evidence.
@@ -510,8 +429,6 @@ In the Platform, a piece of Europe PMC evidence is the result of aggregating all
 **Source**: [Europe PMC](http://europepmc.org)
 
 **References**: [The Europe PMC Consortium, 2015](https://doi.org/10.1093/nar/gku1061); [Kafkas et al., 2017](https://doi.org/10.1186/s13326-017-0131-3)
-
-
 
 ### Expression Atlas
 
@@ -536,8 +453,6 @@ In the Platform, each contrast from independent studies capturing differentially
 **Source**: [Expression Atlas](https://www.ebi.ac.uk/gxa/home)
 
 **References**: [Papatheodorou, I. et al, 2020](https://doi.org/10.1093/nar/gkz947)
-
-
 
 ### **IMPC**
 
