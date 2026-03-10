@@ -109,10 +109,6 @@ To calculate both **data type** and **overall** association scores, evidence is 
 | Europe PMC                           | 0.2           |
 | Expression Atlas                     | 0.2           |
 | IMPC                                 | 0.2           |
-| PROGENy                              | 0.5           |
-| SLAPenrich                           | 0.5           |
-| Cancer Biomarkers                    | 0.5           |
-| SysBio                               | 0.5           |
 | OTAR Projects (partner preview only) | 0.5           |
 | Others                               | 1             |
 
