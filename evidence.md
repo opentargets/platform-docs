@@ -322,18 +322,6 @@ In Step 2, scored is modulated based on the ClinVar review status:
 
 **References**: [Cezard T. et al, 2021](https://doi.org/10.1093/nar/gkab960); [Shen A. et al, 2024](https://doi.org/10.1093/bioadv/vbae018); [Landrum, M. et al, 2014](https://doi.org/10.1093/nar/gkt1113); [Landrum, M. et al, 2020](https://doi.org/10.1093/nar/gkz972)
 
-### Cancer Biomarkers
-
-One of the aims of the Cancer Genome Interpreter is to identify how variations in the tumour genome may influence its response to anti-cancer therapies. The Cancer Biomarkers database features biomarkers of drug sensitivity, resistance, and toxicity for drugs targeting specific targets in cancer, curated by clinical and scientific experts in precision oncology, and classified by cancer type.
-
-**Data type:** Somatic mutations
-
-**Evidence scoring:** All manually curated evidence in Cancer Biomarkers has a score of 1
-
-**Source:** [Cancer Genome Interpreter](https://www.cancergenomeinterpreter.org/biomarkers)
-
-**References:** [Tamborero, D. et al, 2018](https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-018-0531-8)
-
 ### ChEMBL
 
 EMBL-EBI's ChEMBL is a manually curated database of bioactive molecules with drug-like properties, either approved for marketing by the U.S Food and Drug Administration (FDA), or clinical candidates. ChEMBL also captures information regarding the drug molecule indications, as well as their curated pharmacological target.
@@ -370,6 +358,18 @@ In Step 2, for those clinical trials that have stopped early, the score is down-
 **Source**: [ChEMBL](https://www.ebi.ac.uk/chembl/)
 
 **References**: [Mendez, D. et al, 2019](https://academic.oup.com/nar/article/47/D1/D930/5162468)
+
+### Cancer Biomarkers
+
+One of the aims of the Cancer Genome Interpreter is to identify how variations in the tumour genome may influence its response to anti-cancer therapies. The Cancer Biomarkers database features biomarkers of drug sensitivity, resistance, and toxicity for drugs targeting specific targets in cancer, curated by clinical and scientific experts in precision oncology, and classified by cancer type.
+
+**Data type:** Affected Pathway
+
+**Evidence scoring:** All manually curated evidence in Cancer Biomarkers has a score of 0.5
+
+**Source:** [Cancer Genome Interpreter](https://www.cancergenomeinterpreter.org/biomarkers)
+
+**References:** [Tamborero, D. et al, 2018](https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-018-0531-8)
 
 ### CRISPR screens
 

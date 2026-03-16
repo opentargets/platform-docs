@@ -110,6 +110,7 @@ To calculate both **data type** and **overall** association scores, evidence is 
 | Expression Atlas                     | 0.2           |
 | IMPC                                 | 0.2           |
 | OTAR Projects (partner preview only) | 0.5           |
+| Cancer Biomarkers                    | 0.5           |
 | Others                               | 1             |
 
 ### Interpreting association scores
