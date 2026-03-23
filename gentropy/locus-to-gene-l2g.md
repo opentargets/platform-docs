@@ -16,7 +16,7 @@ The L2G model included in the Platform is based on the original method published
 
 The predictive features used by the L2G algorithm are designed to capture various genetic and genomic contexts that influence the likelihood of a gene being causal at a given GWAS credible set.&#x20;
 
-Features are divided into four categories:&#x20;
+Features are divided into five categories:&#x20;
 
 {% tabs %}
 {% tab title="Distance" %}
@@ -45,6 +45,13 @@ Features are divided into four categories:&#x20;
 <table><thead><tr><th>Feature Name</th><th width="491.48046875">Description</th><th>Range</th></tr></thead><tbody><tr><td><code>geneCount500kb</code></td><td>Number of genes 250kb up- and down-stream the sentinel variant of a credible set</td><td>(0, 60000)</td></tr><tr><td><code>proteinGeneCount500kb</code></td><td>Number of protein-coding genes 250kb up- and down-stream the sentinel variant of a credible set</td><td>(0, 60000)</td></tr><tr><td><code>credibleSetConfidence</code></td><td>Degree of confidence we assign to the credible set definition based on the fine mapping methodology: 1 when fine-mapped with SuSIE using in-sample LD: 0.75 when fine-mapped with SuSIE using out-of-sample LD: 0.5, when fine-mapped with PICS and the locus is based on the analysis of summary statistics; 0.25, when fine-mapped with PICS and the locus was reported as a top hit according to the GWAS Catalog</td><td>(0, 1)</td></tr></tbody></table>
 
 
+{% endtab %}
+
+{% tab title="EnhancerToGene" %}
+| Feature Name         | Description                                                                                                                                                                     | Range |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| e2gMean              | Sum of the highest rE2G interaction score between regulatory region-gene and credible set overlap weighted by variant posterior probability and aggregated over gene and locus. | (0,1) |
+| e2gNeighbourhoodMean | Ratio between `e2gMean` for a gene and the maximum `e2gMean` for any gene in the vicinity.                                                                                      | (0,1) |
 {% endtab %}
 {% endtabs %}
 

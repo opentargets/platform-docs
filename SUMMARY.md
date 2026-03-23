@@ -27,7 +27,7 @@
 * [GWAS & functional genomics](gentropy/README.md)
   * [Data sources](gentropy/data-sources.md)
   * [Fine-mapping](gentropy/fine-mapping.md)
-  * [Enhancer-to-gene](gentropy/intervals.md)
+  * [Enhancer-to-Gene (ENCODE rE2G)](gentropy/enhancer-to-gene-encode-re2g.md)
   * [Colocalisation](gentropy/colocalisation.md)
   * [Locus-to-Gene (L2G)](gentropy/locus-to-gene-l2g.md)
   * [Gentropy](gentropy/gentropy.md)

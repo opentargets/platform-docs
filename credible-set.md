@@ -61,7 +61,9 @@ Machine Learning prioritisation of likely causal genes based on available featur
 
 Using the [SHAP](https://shap.readthedocs.io/en/latest/example_notebooks/overviews/An%20introduction%20to%20explainable%20AI%20with%20Shapley%20values.html) (SHapley Additive exPlanations) library, we have extracted feature importance values for all L2G predictions. Shapley values provide a principled approach based on game theory to explain the contribution of individual features or groups of features, revealing how each group influences the final L2G score. These contributions are approximated to be additive, meaning the sum of the Shapley values for all feature groups equals the total L2G score or reasonably close to it.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>L2G prioritisation for a <a href="https://platform.opentargets.org/credible-set/b8a67437f19eb1607f9219ea17adebe7">credible set linking to psoriasis</a>.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+<sub>L2G prioritisation for a</sub> [<sub>credible set linking to psoriasis</sub>](https://platform.opentargets.org/credible-set/b8a67437f19eb1607f9219ea17adebe7)
 
 We have aggregated the Shapley values into the main feature groups to understand their relative importance.
 
@@ -81,7 +83,7 @@ A full description of all features is available here.
 
 ## Enhancer-to-gene predictions
 
-Enhancer-to-gene widget shows the genes relevant to the credible set as determined by overlap with epigenetically derived datasources.  This widget is equivalent to the [enhancer-to-gene widget](gentropy/intervals.md) found on the variant page of the lead variant in the credible set.&#x20;
+Enhancer-to-gene widget shows the genes relevant to the credible set as determined by overlap with epigenetically derived datasources.  This widget is equivalent to the [enhancer-to-gene widget](gentropy/enhancer-to-gene-encode-re2g.md) found on the variant page of the lead variant in the credible set.&#x20;
 
 ## Colocalisation
 

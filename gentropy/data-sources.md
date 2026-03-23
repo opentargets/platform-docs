@@ -120,5 +120,11 @@ The Platform uses Ensembl as a source of gene, transcript and variant annotation
 
 The Experimental Factor Ontology, UBERON and Cell Ontology are composed as a meta-ontology to capture every tissue or cell type that could be described in a QTL study.
 
+## Enhancer-to-Gene
 
+🌍 [Website](https://www.encodeproject.org/) - 📖 [Gentropy](https://opentargets.github.io/gentropy/python_api/datasources/intervals/_intervals/)
+
+The **ENCODE Consortium** data (ENCODE rE2G **thresholded element gene links**) contains scores calculated by a **supervised classifier** that integrates molecular features of chromatin state and 3D physical interactions to predict **enhancer-gene regulatory interactions** in a given cell type.&#x20;
+
+The rE2G dataset is used as a resource to explain the interaction of credible set variants and regulatory (**enhancer** and **promoter**) regions. The interaction score is used to add the regulatory context to L2G features.
 
