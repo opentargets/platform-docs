@@ -16,7 +16,7 @@
   * [Clinical signs and symptoms](disease-or-phenotype/clinical-signs-and-symptoms.md)
 * [Variant](variant.md)
 * [Study](study.md)
-* [Drug](drug/README.md)
+* [🆕 Drug](drug/README.md)
   * [🆕 Clinical Report](drug/clinical-report.md)
   * [🆕 Indications](drug/indications.md)
   * [Pharmacovigilance](drug/pharmacovigilance.md)
