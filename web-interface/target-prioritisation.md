@@ -16,13 +16,15 @@ A "traffic light" system has been designed to visually inform on target prioriti
 
 ### Target in clinic
 
-**Definition:** Gene is targeted by available drugs in any clinical phase for any indication.
+**Definition:** Gene is targeted by available drugs in any clinical stage for any indication.
 
-**Source of Data:** Platform Known Drugs widget ([ChEMBL](https://www.ebi.ac.uk/chembl/))
+**Source of Data:** Drugs and Clinical Precedence for a Target ([Open Targets](../target/drugs.md))
 
-**Scoring:** Maximum clinical trial phase the target has been reported for, independently of the disease. Phases range from 0 to IV (corresponding to values of 0, 0.25, 0.5, 0.75 and 1 in the tool scores).
+**Scoring:** Maximum harmonised clinical stage score across all drugs acting on the target, independently of the indication. Scores follow the same scale as the [Clinical Precedence Evidence](../evidence.md#clinical-precedence) dataset, ranging from 0.01 (Preclinical or Unknown) to 1.0 (Approval, Phase IV, or Withdrawal).
 
-
+{% hint style="info" %}
+For a full description of the **clinical stage categories** and their ranking, see [Clinical stage categories](../drug/clinical-report.md#clinical-stage-categories) in the Clinical Report page.
+{% endhint %}
 
 ## Tractability section
 

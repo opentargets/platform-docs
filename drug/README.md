@@ -4,6 +4,8 @@
 
 A drug in the Platform is understood as any bioactive molecule with drug-like properties as defined in the EMBL-EBI [ChEMBL](https://www.ebi.ac.uk/chembl/) database.
 
+
+
 To further refine how we define a drug in the Platform, we subset ChEMBL's drugbase to capture molecules that meet the following criteria:
 
 * Drugs for which the indication is known
@@ -23,7 +25,8 @@ When it comes to data propagation, parent molecules retain their own distinct in
 
 | Annotation data                                                                                                                | Data source                                                                                                     |
 | ------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- |
-| Molecule information, Indications, Mechanisms of action, Drug warnings (black box and withdrawn warnings)                      | [ChEMBL](https://www.ebi.ac.uk/chembl/)                                                                         |
+| Molecule information, Mechanisms of action, Drug warnings (black box and withdrawn warnings)                                   | [ChEMBL](https://www.ebi.ac.uk/chembl/)                                                                         |
+| [Clinical Report](clinical-report.md)                                                                                          | [Open Targets](https://github.com/opentargets/clinical_mining)                                                  |
 | [Pharmacovigilance](pharmacovigilance.md)                                                                                      | [FAERS](https://www.fda.gov/drugs/surveillance/questions-and-answers-fdas-adverse-event-reporting-system-faers) |
 | [Pharmacogenetics ](https://app.gitbook.com/o/-LC3OlEMulAutIN2QOro/s/-MU4dMxOmLaVNWfVNvpC/~/changes/445/drug/pharmacogenetics) | [ClinPGx](https://www.clinpgx.org/)                                                                             |
 | [Bibliography](../bibliography.md)                                                                                             | [Open Targets](../bibliography.md)                                                                              |

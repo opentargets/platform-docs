@@ -29,3 +29,5 @@ description: Terms of use for the Open Targets Platform - updated June 2021
 ## **Privacy**
 
 Please review our updated [Privacy Notice](https://www.ebi.ac.uk/data-protection/privacy-notice/embl-ebi-public-website/).
+
+{% file src="../.gitbook/assets/Privacy notice for EMBL-EBI Public Website _ EMBL-EBI.pdf" %}

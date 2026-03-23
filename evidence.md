@@ -12,6 +12,49 @@ The Open Targets Platform provides a scoring framework for each data source to c
 
 ## Evidence data sources
 
+### Clinical Precedence
+
+Clinical evidence in this data source represents any target/disease relationship that can be explained by a drug targeting the gene product and indicated for the disease, whether approved or in clinical development. Each piece of evidence corresponds to a single clinical report: a record linking a drug to a disease with an identifiable source and development stage. The target/disease link is inferred by joining the drug/disease relationship captured in the clinical report with drug mechanism of action data.
+
+Clinical reports are drawn from multiple source families, including clinical trial registries, regulatory drug labels, curated indication references, and drug warning records.
+
+{% hint style="info" %}
+For a full description of the **source types** or **clinical stage categories**, see the [Clinical Report](drug/clinical-report.md) page.
+{% endhint %}
+
+**Data type**: Clinical
+
+**Evidence scoring:** Clinical precedence evidence is scored in a 2-step process. In Step 1, a score is assigned to every piece of evidence based on the clinical stage:
+
+| Clinical Precedence                      | Evidence score |
+| ---------------------------------------- | -------------- |
+| Unknown                                  | 0.01           |
+| Preclinical                              | 0.01           |
+| IND                                      | 0.05           |
+| Early Phase I                            | 0.05           |
+| Phase I                                  | 0.1            |
+| Phase I/II                               | 0.15           |
+| Phase II                                 | 0.2            |
+| Phase II/III                             | 0.5            |
+| Phase III                                | 0.7            |
+| Preapproval                              | 0.8            |
+| Approval                                 | 1.0            |
+| Phase IV (only for approved indications) | 1.0            |
+| Withdrawal                               | 1.0            |
+
+In Step 2, for those clinical trials that have stopped early, the score is down-weighted based on the [classification of the reason to stop](drug/clinical-report.md#reason-to-stop-categories). In this way, less importance is attributed to evidence of studies that have been stopped due to negative outcomes or safety concerns:
+
+| Reason to stop class   | Score weight |
+| ---------------------- | ------------ |
+| Negative               | 0.5          |
+| Safety or side effects | 0.5          |
+
+**Direction of Effect assessment:**
+
+<table data-full-width="false"><thead><tr><th align="center">Direction on Target (Gain of Function (GoF) / Loss of Function (LoF))</th><th align="center">Direction on Trait (Risk/Protective)</th></tr></thead><tbody><tr><td align="center"><p>Activators = GoF</p><p>Inhibitors = LoF</p></td><td align="center">Assumption of Protective</td></tr></tbody></table>
+
+**Source**: [Open Targets Clinical Mining](https://github.com/opentargets/clinical_mining)
+
 ### GWAS associations
 
 The GWAS associations data source aggregates target-disease relationships supported by significant genome-wide associations (GWAS) in the context of other functional genomics data.
@@ -321,43 +364,6 @@ In Step 2, scored is modulated based on the ClinVar review status:
 **Source**: [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) (via [European Variation Archive](https://www.ebi.ac.uk/eva/))
 
 **References**: [Cezard T. et al, 2021](https://doi.org/10.1093/nar/gkab960); [Shen A. et al, 2024](https://doi.org/10.1093/bioadv/vbae018); [Landrum, M. et al, 2014](https://doi.org/10.1093/nar/gkt1113); [Landrum, M. et al, 2020](https://doi.org/10.1093/nar/gkz972)
-
-### ChEMBL
-
-EMBL-EBI's ChEMBL is a manually curated database of bioactive molecules with drug-like properties, either approved for marketing by the U.S Food and Drug Administration (FDA), or clinical candidates. ChEMBL also captures information regarding the drug molecule indications, as well as their curated pharmacological target.
-
-In the Platform, ChEMBL evidence represents any target–disease relationship that can be explained by an approved or clinical candidate drug, targeting the gene product and indicated for the disease. Independent studies are treated as individual evidence.
-
-To provide additional context, we integrate a machine learning-based analysis of the reasons why a clinical trial has ended earlier than scheduled. This sorts the stop reasons into a set of 17 classes which include negative, neutral, and positive reasons. This information is available when hovering on the tooltip of the Source column.
-
-The 17 classes are: Another Study, Business or Administrative, Negative, Study Design, Invalid Reason, Ethical Reason, Insufficient Data, Insufficient Enrolment, Study Staff Moved, Endpoint Met, Regulatory, Logistics or Resources, Safety and Side Effects, No Context, Success, Interim Analysis, and Covid 19.&#x20;
-
-**Data type**: Known drug
-
-**Evidence scoring:** ChEMBL evidence is scored in a 2-step process. In Step 1, a score is assigned to every piece of evidence based on the clinical precedence:
-
-| Clinical Precedence                      | Evidence score |
-| ---------------------------------------- | -------------- |
-| Phase I (Early)                          | 0.05           |
-| Phase I                                  | 0.1            |
-| Phase II                                 | 0.2            |
-| Phase III                                | 0.7            |
-| Phase IV (only for approved indications) | 1              |
-
-In Step 2, for those clinical trials that have stopped early, the score is down-weighted based on the classification of the reason to stop. In this way, less importance is attributed to evidence of studies that have been stopped due to negative outcomes or safety concerns:
-
-| Reason to stop class   | Score weight |
-| ---------------------- | ------------ |
-| Negative               | 0.5          |
-| Safety or side effects | 0.5          |
-
-**Direction of Effect assessment:**
-
-<table data-full-width="false"><thead><tr><th align="center">Direction on Target (Gain of Function (GoF) / Loss of Function (LoF))</th><th align="center">Direction on Trait (Risk/Protective)</th></tr></thead><tbody><tr><td align="center"><p>Activators = GoF</p><p>Inhibitors = LoF</p></td><td align="center">Assumption of Protective</td></tr></tbody></table>
-
-**Source**: [ChEMBL](https://www.ebi.ac.uk/chembl/)
-
-**References**: [Mendez, D. et al, 2019](https://academic.oup.com/nar/article/47/D1/D930/5162468)
 
 ### Cancer Biomarkers
 

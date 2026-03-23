@@ -13,5 +13,6 @@ In order to maximise the alignment of the ontology with a clinical application, 
 | Annotation data                                                                | Data source                                                                      |
 | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------- |
 | Description; cross-references; synonyms; location; ontology and classification | [EFO](https://www.ebi.ac.uk/efo/)                                                |
+| [Drugs and Clinical Candidates](drugs.md)                                      | [Open Targets](https://github.com/opentargets/clinical_mining)                   |
 | [Clinical signs and symptoms](clinical-signs-and-symptoms.md)                  | [HPO](https://hpo.jax.org/app/) and [MONDO](https://mondo.monarchinitiative.org) |
 | [Bibliography](../bibliography.md)                                             | [Open Targets](../bibliography.md)                                               |
