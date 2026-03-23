@@ -121,4 +121,6 @@ For example, under-studied diseases are unlikely to produce high-scoring targets
 
 Similarly, not all associations with available target–disease evidence should be considered legitimate target–disease associations. Some of our data sources rely on predictions to assess the relationship between a target and a disease. Thus, they should be considered with caution and always take their relative support into consideration.
 
-![Schematic of how data source, data type, and overall associations scores are calculated in the Open Targets Platform. ](<.gitbook/assets/Association score (documentation image) — July 2023 (1).png>)
+<figure><img src=".gitbook/assets/Association score (documentation image) — March 2026.jpg" alt=""><figcaption></figcaption></figure>
+
+<sub>Schematic of how data source, data type, and overall associations scores are calculated in the Open Targets Platform.</sub>

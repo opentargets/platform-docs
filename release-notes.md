@@ -4,6 +4,65 @@ description: Summary of release highlights for the Open Targets Platform
 
 # Release notes
 
+## 26.03
+
+#### Release date
+
+23 March 2026
+
+### Highlights
+
+#### Data updates
+
+* The latest GWAS Catalog data adds 710 new studies from 97 publications, resulting in over 5,000 new credible sets
+* This update includes 780 credible sets from the biggest study for hypothyroidism ever ingested in the Platform:  ([Rand SA et al. Nat Genet, 2025](https://www.nature.com/articles/s41588-025-02410-z))
+* New data from ClinVar and ClinPGx through the European Variation Archive, as well as updates from String DB and IntAct
+
+#### New product features
+
+* Designed and implemented a new [clinical mining pipeline](https://github.com/opentargets/clinical_mining), which expands the data sources for clinical information,  integrating and annotating data from:
+* [ClinicalTrials.gov](http://clinicaltrials.gov) via AACT,
+* ChEMBL curated indications,&#x20;
+* ChEMBL drug warnings,
+* Therapeutic Target Database (TTD),
+* European Medical Agency Human Medicines (EMA),&#x20;
+* Japan’s Pharmaceuticals and Medical Devices Agency Approvals (PMDA)
+
+The outputs of the new pipeline are presented to users through our re-designed clinical-centric widgets: Indications (Drug pages), Drugs and Clinical Candidates (Target and Disease and Target Prioritisation pages) and Clinical Precedence (new evidence feed in the Associations page)
+
+See the new [clinical reports section](https://platform-docs.opentargets.org/drug/clinical-report) in Platform documentation for more details.
+
+* Added enhancer-gene regulatory predictions from the [ENCODE Project rE2G model](https://www.biorxiv.org/content/10.1101/2023.11.09.563812v1) to the Locus-to-Gene (L2G) framework, introducing new features (`e2gMean` and `e2gNeighbourhoodMean`) that incorporate probabilistic regulatory interactions to improve gene prioritisation
+* Enhanced association data with \~98% date coverage to improve novelty estimation, and integrated novelty/time-series calculations directly into the association pipeline by introducing a unified schema with an embedded `timeseries` field (capturing yearly scores, evidence and novelty) to support upcoming novelty features&#x20;
+* Resolved disease–phenotype duplications in the ontology by merging evidence for overlapping terms, removing \~300 duplicates and improving data consistency across the Platform
+* Updated LD annotation by correcting the liftover process, fixing coordinate errors that affected finemapping in <1% of credible sets
+
+#### Data access
+
+* **AWS:** Open Targets Platform data is now available on Amazon Web Services (AWS) through the Open Data Program. You can find more information on how to access the Open Targets AWS buckets [here](https://platform-docs.opentargets.org/data-access/platform-datasets-on-aws) or through the 'access data' tabs from our [download page](https://platform.opentargets.org/downloads)
+* **Open Targets MCP:** We have released an update to the MCP, with improved biological domain awareness, reducing token usage and enhancing query efficiency
+
+#### Technical  enhancements&#x20;
+
+* Implemented first version of End-to-End testing to improve the stability of the Platform. See [here](https://github.com/opentargets/ot-ui-apps/tree/main/packages/platform-test#readme) for more details
+* Migrated all non-search datasets from OpenSearch to ClickHouse, resulting in a \~2× improvement in API query performance
+* Resolved minor scoring inconsistencies between the API and web interface by aligning default settings
+* Variant page viewer component refactored for reusability
+* Fixed a number of FE bugs
+
+Check out the [26.03 release **blog post**](https://blog.opentargets.org/open-targets-platform-26-03-has-been-released) for more information on the new features and datasets introduced in this release.
+
+#### Overall data metrics
+
+* 78,691 targets
+* 47,030 diseases and phenotypes
+* 22,230 drugs and compounds
+* 34,086,838 evidence strings
+* 12,466,856 target-disease associations
+* 7,432,549 variants
+
+Visit the [**Open Targets Community 26.03** **release thread**](https://community.opentargets.org/t/26-03-release-now-live/1987) for more data metrics for this release, including a per datasource breakdown of evidence strings
+
 ## 25.12
 
 ### Release date
