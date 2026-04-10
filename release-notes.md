@@ -33,7 +33,7 @@ The outputs of the new pipeline are presented to users through our re-designed c
 See the new [clinical reports section](https://platform-docs.opentargets.org/drug/clinical-report) in Platform documentation for more details.
 
 * Added enhancer-gene regulatory predictions from the [ENCODE Project rE2G model](https://www.biorxiv.org/content/10.1101/2023.11.09.563812v1) to the Locus-to-Gene (L2G) framework, introducing new features (`e2gMean` and `e2gNeighbourhoodMean`) that incorporate probabilistic regulatory interactions to improve gene prioritisation
-* Enhanced association data with \~98% date coverage to improve novelty estimation, and integrated novelty/time-series calculations directly into the association pipeline by introducing a unified schema with an embedded `timeseries` field (capturing yearly scores, evidence and novelty) to support upcoming novelty features&#x20;
+* Enhanced association data with \~98% date coverage to improve novelty estimation, and integrated novelty/time-series calculations directly into the association pipeline by introducing a unified schema with an embedded `timeseries` field (capturing yearly scores, evidence and novelty) to support upcoming novelty features. The association dataset schema has been revised to better reflect this integration - please take a look at our [download page](https://platform.opentargets.org/downloads) for details&#x20;
 * Resolved disease–phenotype duplications in the ontology by merging evidence for overlapping terms, removing \~300 duplicates and improving data consistency across the Platform
 * Updated LD annotation by correcting the liftover process, fixing coordinate errors that affected finemapping in <1% of credible sets
 
