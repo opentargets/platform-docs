@@ -57,7 +57,7 @@ We also include additional assessments specific to each modality.
 
 The data is available for download as part of the target core annotation from [our data downloads page](https://platform.opentargets.org/downloads).
 
-Alternatively, you can also download the input TSV file with the per-target assessments via FTP. To access this file, visit [our FTP site](http://ftp.ebi.ac.uk/pub/databases/opentargets/platform/) and click on the release version (e.g. 21.04), followed by "input", followed by "annotation-files". You can then download the `tractability_buckets` TSV file. Descriptions of the columns found in the input file can be found on the [pipeline README.md file](https://github.com/melschneider/tractability_pipeline_v2/blob/master/README.md).
+Alternatively, you can also download the input TSV file with the per-target assessments via FTP. To access this file, visit [our FTP site](http://ftp.ebi.ac.uk/pub/databases/opentargets/platform/) and click on the release version (e.g. 21.04), followed by "input", "target", and "tractability". You can then download the `tractability` TSV file. Descriptions of the columns found in the input file can be found on the [pipeline README.md file](https://github.com/melschneider/tractability_pipeline_v2/blob/master/README.md).
 
 ## Publications
 
