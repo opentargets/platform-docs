@@ -4,6 +4,96 @@ description: Summary of release highlights for the Open Targets Platform
 
 # Release notes
 
+## 26.06
+
+#### **Release date**
+
+24 June 2026
+
+### Highlights
+
+#### Data updates
+
+Data updates in this release include:
+
+* New ChEMBL 37
+* New PanelApp NHSE Genomic Medicine Service panel
+* Latest IMPC data
+* Latest GWAS Catalog studies
+
+The GWAS Catalog update adds over 14,000 studies from 111 publications, including 27,689 credible sets and more than 105,000 variants.
+
+* Alignment to EFO 3.88
+
+EFO 3.88 replaces many disease identifiers with Mondo identifiers. The Platform has been updated to reflect these ontology changes.
+
+#### New product features
+
+**New baseline expression**&#x20;
+
+We have completely revamped and expanded our baseline expression dataset with:
+
+* Single-cell RNA sequencing data from [Tabula Sapiens](https://tabula-sapiens.sf.czbiohub.org/)
+* Bulk RNA sequencing data from [Genotype-Tissue Expression (GTEx)](https://gtexportal.org/home/) and the [Database of Immune Cells (DICE)](https://dice-database.org/)
+* Mass spectrometry proteomics datasets from the [PRoteomics IDEntifications Database (PRIDE)](https://www.ebi.ac.uk/pride/), which was set up as part of an Open Targets project.
+* New visualisations
+
+Users can now explore the new baseline expression data through a [redesigned widget](https://staging.platform.opentargets.org/target/ENSG00000133703), at both tissue and cell type level.
+
+**Target prioritisation using baseline expression data**
+
+* The target prioritisation view has also been updated with new expression distribution and specificity scores for tissues and cell types. Please refer to the dedicated [documentation page](https://platform-docs.opentargets.org/web-interface/target-prioritisation) for more info on the target prioritisation assessment method.
+
+**Subcellular location widget**
+
+* The subcellular location widget now displays isoform-specific localisation information from UniProt sources.
+
+**New Drug molecule representations**
+
+* Drug pages now use updated molecular structure images from ChEMBL.
+
+#### Pipeline updates
+
+**Clinical Mining**
+
+* We have improved extraction of drug-disease relationships from AACT clinical trial data using LLM-based methods, increasing accuracy and reducing false-positive association.
+* This update has added 4,742 additional clinical reports from AACT, 32,518 drug indication pairs, and 292,325 clinical precedence evidence.
+
+**Locus-to-Gene**
+
+* Two new trans-pQTL features (_transPQtlColocH4Maximum_ and  _transPQtlColocH4MaximumNeighbourhood_) have been incorporated into the L2G pipeline, improving causal gene prioritisation by leveraging molecular interaction data.
+
+**Literature**
+
+* Updates to the literature pipeline, including improved ontology mapping, entity disambiguation, and co-occurrence generation, have increased evidence coverage while reducing false positive associations.&#x20;
+* Overall, these changes add approximately 1.8 million evidence records and remove around 600,000 direct associations.
+
+#### Technical improvements
+
+**New search now supporting:**
+
+* Clinical trial NCT identifiers
+* Additional variant query formats
+* Disease/ontology identifiers using either colon or underscore notation
+
+**Associations page URL synchronisation**
+
+* URLs now preserve page state, including filters, scoring settings, pinned targets and open widgets
+
+**Infrastructure changes**&#x20;
+
+* Started creation of a public Helm Chart for deploying a whole Platform in Kubernetes
+* New revision mechanics to support data versioning and release management
+* Migration of POS to Otter 26
+* Created a knowledge base with technical docs on operations, release process
+* New POS workflow step for loading data into AWS
+
+### More info and metrics
+
+Check out the 26.06 release [blog post](https://blog.opentargets.org/open-targets-platform-26-06-has-been-released/) for more information on the new features and datasets introduced in this release.
+
+Visit the [Open Targets Community ](https://community.opentargets.org/c/news-and-announcements/5)26.06 release post for more data metrics for this release, including a per datasource breakdown of evidence strings.
+
 ## 26.03
 
 #### Release date
