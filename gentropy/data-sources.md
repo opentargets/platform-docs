@@ -60,6 +60,12 @@ GWAS summary statistics quality control (QC) is performed for all GWAS Catalog s
 3. **The genomic control (GC) lambda check**. This check estimates the additive GC lambda of the study (see [Tsepilov et al. (2013)](https://pubmed.ncbi.nlm.nih.gov/24358113/)). If the GC lambda value is outside the \[0.7,2.5] range the study fails QC and is flagged with the label `The GC lambda value is not within the expected range`.
 4. **Number of variants.** All summary statistics with fewer than 2,000,000 variants do not fail QC but are flagged with the label `The number of SNPs in the study is below the expected threshold`. These studies are not eligible for SuSiE fine-mapping.
 
+#### **GCSS** heritability estimate
+
+GWAS summary statistics which pass certain quality criteria — including a minimum effective sample size of 10,000 and a compatible ancestry and study design — will have SNP heritability estimated using LD Score Regression ([LDSC](https://www.nature.com/articles/ng.3211)). This is implemented using precomputed LD scores derived from the HapMap3 SNP panel with gnomAD v2.1.1 reference genotypes, across five ancestry groups (`AFR`, `AMR`, `EAS`, `FIN`, `NFE`). Studies are matched to the most appropriate reference panel based on their reported population structure. Heritability estimates and associated statistics (`h2`, `h2_se`, `intercept`, `intercept_se`, `mean_chisq`, `lambda_gc`) are stored in the `sumstatQCValues` array of the study index. The `lambda_gc` flag is obtained from the interception between the summary stattistics and the variants derived from the LD score panel.\
+\
+Estimates from runs where the regression is unlikely to be reliable are flagged with `runStatus = "degenerate"` and excluded from downstream use.
+
 ## FinnGen
 
 🌍 [Website](https://www.finngen.fi/en) — 📖 [Gentropy](https://opentargets.github.io/gentropy/python_api/datasources/finngen/_finngen/)
