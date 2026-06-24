@@ -210,23 +210,27 @@ We use the attribute information from the cancer hallmarks, in the target profil
 * 0 = Those targets with paralogues harbouring less than 60% of identity.
 * NA = No information available about paralogues for that target.
 
-### Tissue specificity
+### Tissue/Cell type specificity <a href="#tissue-specificity" id="tissue-specificity"></a>
 
-**Definition:** HPA assessment on tissue-specific target expression.
+**Definition:** CELLEX calculation of tissue-specific target expression.
 
-**Source of Data:** Platform baseline expression widget ([ExpressionAtlas](https://www.ebi.ac.uk/gxa/home), [HPA](https://www.proteinatlas.org/) and [GTEx](https://www.gtexportal.org/home/)). We used the assessment for every target from the RNA expression data from the public version of Human Protein Atlas (proteinAtlasTissue)
+**Source of Data:**&#x50;latform baseline expression widget ([GTEx](https://www.gtexportal.org/home/), [Tabula Sapiens](https://tabula-sapiens.sf.czbiohub.org/)). We used the assessment for every target from the RNA expression data that covered the whole body.
 
-**Scoring:**
-
-<table><thead><tr><th width="579">Tissue specificity HPA assessment</th><th>Score</th></tr></thead><tbody><tr><td>Tissue enriched  >=4 fold higher mRNA in a given tissue compared to any other</td><td>1</td></tr><tr><td>Group enriched >=4 fold higher average mRNA in 2-5 tissue compared to any other</td><td>0.75</td></tr><tr><td>Tissue enhanced >=4 fold higher mRNA level in a given tissue compared to average of all other tissues</td><td>0.5</td></tr><tr><td>Low tissue specificity</td><td>-1</td></tr><tr><td>Not detected</td><td>NA</td></tr></tbody></table>
-
-### Tissue **distribution**
-
-**Definition:** HPA assessment on any detectable baseline expression for the target across tissues.
-
-**Source of Data:** Platform baseline expression widget ([Expression Atlas](https://www.ebi.ac.uk/gxa/home), [HPA](https://www.proteinatlas.org/) and [GTEx](https://www.gtexportal.org/home/)). We used the assessment for every target from the RNA expression data from the public version of [Human Protein Atlas](https://www.proteinatlas.org/humanproteome/tissue).
+**Summary:** Tissue/Cell type specificity is scored using the CELLEX ESmu which is based on the average of four specificity metrics, detailed in [Timshel et al. 2020](https://elifesciences.org/articles/55851). We calculated ESmu on each of the aggregated \[tissues/cell types]. In the target prioritisation view, we display the maximum score across all \[GTEx and Tabula Sapiens/Tabula Sapiens] tissue/cell type ESmu values.
 
 **Scoring:**
 
-<table><thead><tr><th width="580">Tissue distribution HPA assessment</th><th>Score</th></tr></thead><tbody><tr><td>Detected in single detected in a single tissue</td><td>1</td></tr><tr><td>Detected in some detected in more than one but less than 1/3 of tissues</td><td>0.5</td></tr><tr><td>Detected in many detected in at least 1/3 but not all tissues</td><td>0</td></tr><tr><td>Detected in all</td><td>-1</td></tr><tr><td>Not detected</td><td>NA</td></tr></tbody></table>
+<table><thead><tr><th width="579">Tissue specificity HPA assessment</th><th>Score</th></tr></thead><tbody><tr><td>This target is the most specifically expressed gene in a [tissue/cell type]</td><td>1</td></tr><tr><td>This target is in the top 25% of specifically expressed genes in a [tissue/cell type]</td><td>0.5</td></tr><tr><td>This target is in the top 50% of specifically expressed genes in a [tissue/cell type]</td><td>0</td></tr><tr><td>This target is in the top 75% of specifically expressed genes in a [tissue/cell type]</td><td>-0.5</td></tr><tr><td>Not specifically expressed in any of the tissues/cell types</td><td>-1</td></tr><tr><td>Not calculated</td><td>NA</td></tr></tbody></table>
+
+### Tissue/Cell type **distribution** <a href="#tissue-distribution" id="tissue-distribution"></a>
+
+**Definition:**  Distribution of any detectable baseline expression for the target across tissue/celltype(s)
+
+**Source of Data:** Platform baseline expression widget ([GTEx](https://www.gtexportal.org/home/), [Tabula Sapiens](https://tabula-sapiens.sf.czbiohub.org/)). We used the assessment for every target from the RNA expression data that covered the whole body.
+
+**Summary:** We compute a score representing the breadth of expression within a dataset, defined as 1 minus the proportion of tissue/celltype(s) in which the target is expressed above a threshold of 0.5 (CPM/TPM) median expression. The threshold is chosen to minimise the impact of noise (e.g. from ambient RNA). For display in the target prioritisation view, a score of 0 is mapped to -1, indicating ubiquitous expression.<br>
+
+**Scoring:**
+
+<table><thead><tr><th width="580">Tissue distribution HPA assessment</th><th>Score</th></tr></thead><tbody><tr><td>This target is expressed in every single [tissue/cell type]</td><td>1</td></tr><tr><td>This target is expressed in 75% of [tissue/celltype]s</td><td>0.75</td></tr><tr><td>This target is expressed in 50% of [tissue/celltype]s</td><td>0.5</td></tr><tr><td>This target is expressed in 25% of [tissue/celltype]s</td><td>0.25</td></tr><tr><td>Not expressed in any [tissue/cell type]</td><td>-1</td></tr><tr><td>Not calculated</td><td>NA</td></tr></tbody></table>
 

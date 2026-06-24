@@ -7,7 +7,7 @@
   * [Tractability](target/tractability.md)
   * [Safety](target/safety.md)
   * [Chemical probes & TEPs](target/chemical-probes-and-teps.md)
-  * [Baseline expression](target/baseline-expression.md)
+  * [🆕 Baseline expression](target/baseline-expression.md)
   * [Molecular interactions](target/molecular-interactions.md)
   * [Core Gene Essentiality](target/core-gene-essentiality.md)
   * [Pharmacogenetics](target/pharmacogenetics.md)
