@@ -21,6 +21,18 @@ We currently integrate six source families. They are complementary: each source 
 
 <table><thead><tr><th width="249">Source</th><th>Description</th><th>Unit of evidence</th><th>Reference</th></tr></thead><tbody><tr><td>ClinicalTrials.gov via AACT</td><td>Structured registry records of clinical studies, including interventions and studied conditions.</td><td>A single trial record (one NCT ID), which may involve multiple drugs and multiple disease conditions</td><td><a href="https://aact.ctti-clinicaltrials.org/">AACT documentation</a></td></tr><tr><td>ChEMBL curated indications</td><td>Curated indication records, linked to external references (for example FDA, EMA, ATC, DailyMed, INN, USAN).</td><td>A single indication record, which may correspond to either a curated drug/indication pair (one drug, one disease) or a DailyMed medicine reference (one label, potentially covering multiple drugs and diseases)</td><td><a href="https://www.ebi.ac.uk/chembl/">ChEMBL database</a></td></tr><tr><td>ChEMBL drug warnings</td><td>Curated warning and withdrawal-oriented records linked to drugs.</td><td>A single warning record associated with a drug (either a black box warning or a withdrawal)</td><td><a href="https://www.ebi.ac.uk/chembl/">ChEMBL database</a></td></tr><tr><td>Therapeutic Target Database (TTD)</td><td>Curated drug and disease information from the Therapeutic Target Database.</td><td>A single drug/indication pair</td><td><a href="https://db.idrblab.net/ttd/">TTD</a></td></tr><tr><td>EMA Human Medicines</td><td>Regulatory evidence for authorised human medicines and therapeutic-use context in Europe.</td><td>A single medicine label, which may cover one or more active ingredients and one or more approved indications</td><td><a href="https://www.ema.europa.eu/en/medicines">EMA medicines</a></td></tr><tr><td>PMDA approvals</td><td>Public approvals information from Japan's Pharmaceuticals and Medical Devices Agency.</td><td>A single drug/indication pair</td><td><a href="https://www.pmda.go.jp/english/review-services/reviews/approved-information/drugs/0002.html">PMDA approved drugs information</a></td></tr></tbody></table>
 
+### Entity extraction for clinical trials
+
+Most clinical reports link a drug to a disease. Depending on the source, this link may already be structured and curated, as with ChEMBL indications, regulatory approvals from the EMA and PMDA, or TTD records. Alternatively, it may need to be extracted from free-text and semi-structured trial metadata, as is the case for clinical trials from AACT.
+
+ClinicalTrials.gov trial records include free-text condition and intervention fields, in the form of MeSH terms that are assigned upon submission. Previously, the pipeline used these MeSH terms directly to identify the diseases and drugs involved in each trial. While this approach works well for straightforward, single-indication trials, MeSH assignment is inconsistent for complex studies where the condition terms may describe the patient population rather than the target indication, or list comorbidities and background conditions alongside the primary disease under investigation.
+
+From release 26.06, drug and disease entities for AACT records are extracted relying on large language models. The model receives the full trial context (title, description, intervention and condition fields, and any linked literature references) and identifies the drugs being investigated and the diseases they are being studied against. The entities identified by the LLM are subsequently mapped to ChEMBL and EFO identifiers using the same normalisation steps applied to all other sources.
+
+{% hint style="info" %}
+The extraction method described here applies to **AACT (ClinicalTrials.gov)** reports only. All other source families supply structured drug and disease labels directly. Prompt template and extraction logic are documented in the pipeline repository on [GitHub](https://github.com/opentargets/clinical_mining#2-llm-extraction).
+{% endhint %}
+
 ### Clinical stage categories
 
 Each source reports development or regulatory status using its own terms. To support cross-source analysis, Open Targets harmonises source-reported values into a **shared clinical-stage framework**.
@@ -65,7 +77,6 @@ Not all clinical reports are used to derive downstream datasets. Before aggregat
 Three exclusion criteria are currently applied:
 
 * Phase IV reports with indications for which we don't have any approval
-* Reports where indications cannot be validated by a high-confidence report, i.e. a report that has been manually curated, an approved indication, or a report linking one drug to a single indication
 * Clinical trial reports in which the primary purpose of the study is not to directly measure the effect of the intervention on the target condition or its symptomatology.
 
 Flagged reports remain accessible at the clinical report level but do not contribute to clinical indications, clinical targets, or target/disease evidence.
