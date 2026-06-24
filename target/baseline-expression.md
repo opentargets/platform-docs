@@ -29,19 +29,19 @@ Data are collected from four sources:
 
 ### Tabula Sapiens
 
-[Tabula Sapiens v2](https://tabula-sapiens-portal.ds.czbiohub.org/) is a single-cell transcriptomic atlas containing over 1.1 million cells spanning multiple human organs and tissues. The atlas was generated from samples collected from 24 human donors using single-cell RNA sequencing technologies and annotated into cell types by domain experts.
+[Tabula Sapiens v2](https://tabula-sapiens-portal.ds.czbiohub.org/) is a single-cell transcriptomic atlas containing over 1.1 million cells spanning multiple human organs and tissues. The atlas was generate
 
-### Genotype-Tissue Expression (GTEx) Program
+### Genotype-Tissue Expression (GTEx)
 
-The [Genotype-Tissue Expression (GTEx) Program](https://gtexportal.org/home/) aims to build a comprehensive public resource for studying tissue-specific gene expression and its relationship to genetic variation. The GTEx v10 dataset contains bulk RNA-seq data from 54 tissues collected from 946 human donors.
+[Genotype-Tissue Expression (GTEx)](https://gtexportal.org/home/) aims to build a comprehensive public resource for studying tissue-specific gene expression and its relationship to genetic variation. The GTEx v10 dataset contains bulk RNA-seq data from 54 tissues collected from 946 human donors.
 
 ### Database of Immune Cells (DICE)
 
 The [Database of Immune Cells (DICE)](https://dice-database.org/) provides gene expression profiles from 12 flow-sorted immune cell types derived from peripheral blood samples from 91 healthy donors. Open Targets uses DICE build 2.23.2022. The data were generated using bulk RNA sequencing.
 
-### PRIDE (Proteomics Identifications Database)&#x20;
+### PRoteomics IDEntifications Database (PRIDE)
 
-[PRIDE](https://www.ebi.ac.uk/pride/archive/) is a public repository for proteomics data. As part of an Open Targets project, the PRIDE team reanalysed four human proteomics datasets to provide protein expression measurements across multiple human tissues.
+PRoteomics IDEntification Database ([PRIDE](https://www.ebi.ac.uk/pride/archive/)) is a public repository for proteomics data. As part of an Open Targets project, the PRIDE team reanalysed four human proteomics datasets to provide protein expression measurements across multiple human tissues.
 
 The following datasets were included:
 
@@ -56,19 +56,19 @@ The following datasets were included:
 
 #### Initial data processing
 
-**Single-cell RNA-sequencing (scRNA-seq) data from Tabula Sapiens**
+**Single-cell RNA sequencing (scRNA-seq) data from Tabula Sapiens**
 
-Single-cell RNA-sequencing data for tissues and cell types was downloaded from the [Tabula Sapiens portal](https://tabula-sapiens-portal.ds.czbiohub.org/) as AnnData files containing raw count matrices with the associated metadata. The data were then processed into pseudobulked expression profiles for each cell type, each tissue, and each cell type within each tissue. The pseudobulked expression profiles are generated with a dSum approach as described in [Cuomo et al. 2021](https://doi.org/10.1186/s13059-021-02407-x). In short, in order to obtain a pseudobulked sample we sum the raw counts of each gene across all cells within a donor for a given annotation (tissue, cell type or cell type within tissue). This results in one pseudobulked expression sample per donor per annotation. The summed counts are then normalised using the CPM (Counts Per Million) approach.
+Single-cell RNA sequencing data for tissues and cell types was downloaded from the [Tabula Sapiens portal](https://tabula-sapiens-portal.ds.czbiohub.org/) as AnnData files containing raw count matrices with the associated metadata. The data were then processed into pseudobulked expression profiles for each cell type, each tissue, and each cell type within each tissue. The pseudobulked expression profiles are generated with a dSum approach as described in [Cuomo et al. 2021](https://doi.org/10.1186/s13059-021-02407-x). In short, in order to obtain a pseudobulked sample we sum the raw counts of each gene across all cells within a donor for a given annotation (tissue, cell type or cell type within tissue). This results in one pseudobulked expression sample per donor per annotation. The summed counts are then normalised using the Counts Per Million (CPM) approach.
 
 The result is three pseudobulked expression datasets: cell type, tissue, and cell type within tissue.
 
-**Bulk RNA-sequencing (RNA-seq) data from GTEx and DICE**
+**Bulk RNA sequencing (RNA-seq) data from GTEx and DICE**
 
-Bulk RNA-sequencing data for tissues was downloaded in transcripts per million (TPM) units from the [GTEx portal](https://gtexportal.org/home/downloads/adult-gtex/bulk_tissue_expression) and for cell types from the [DICE portal](https://dice-database.org/downloads).
+Bulk RNA sequencing data for tissues was downloaded in transcripts per million (TPM) units from [GTEx](https://gtexportal.org/home/downloads/adult-gtex/bulk_tissue_expression) and for cell types from the [DICE portal](https://dice-database.org/downloads).
 
 **Mass spectrometry (MS)-based proteomics data from PRIDE**
 
-Baseline mass spectrometry–based proteomics data were compiled from selected public PRIDE datasets curated using SDRF proteomics metadata guidelines. Raw files in these datasets had been reanalysed centrally using the open-source tools MaxQuant (version 2.7.0.0) according to predefined dataset selection and curation guidelines, and the resulting protein-level quantification tables with associated SDRF metadata were downloaded from the [PRIDE FTP ](https://www.ebi.ac.uk/pride/archive/)resource.
+Baseline mass spectrometry–based proteomics data were compiled from selected public PRIDE datasets curated using SDRF proteomics metadata guidelines. Raw files in these datasets had been reanalysed centrally using the open source tools MaxQuant (version 2.7.0.0) according to predefined dataset selection and curation guidelines, and the resulting protein-level quantification tables with associated SDRF metadata were downloaded from the [PRIDE FTP ](https://www.ebi.ac.uk/pride/archive/)resource.
 
 #### Generating unaggregated expression profiles
 
