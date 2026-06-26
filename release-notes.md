@@ -88,11 +88,18 @@ Users can now explore the new baseline expression data through a [redesigned wid
 * Created a knowledge base with technical docs on operations, release process
 * New POS workflow step for loading data into AWS
 
-### More info and metrics
+### More info and overall metrics
+
+* 78,691 targets
+* 47,080 diseases and phenotypes
+* 22,407 drugs and compounds
+* 42,394,639 evidence strings
+* 17,199,165 target-disease associations
+* 7,538,243 variants
 
 Check out the 26.06 release [blog post](https://blog.opentargets.org/open-targets-platform-26-06-has-been-released/) for more information on the new features and datasets introduced in this release.
 
-Visit the [Open Targets Community ](https://community.opentargets.org/c/news-and-announcements/5)26.06 release post for more data metrics for this release, including a per datasource breakdown of evidence strings.
+Visit the Open Targets Community [26.06 release post](https://community.opentargets.org/t/26-06-release-now-live/2045) for more data metrics for this release, including a per datasource breakdown of evidence strings.
 
 ## 26.03
 
