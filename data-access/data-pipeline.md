@@ -23,9 +23,8 @@ The data pipeline is composed of multiple elements:
 ### Data and evidence
 
 * [curation](https://github.com/opentargets/curation) — Open Targets curation repository
-* [evidence\_datasource\_parsers](https://github.com/opentargets/evidence_datasource_parsers) — internal pipelines used to generate evidence
 * [json\_schema](https://github.com/opentargets/json_schema) — evidence object schema used for evidence and association scoring
-* [OnToma](https://github.com/opentargets/OnToma) — Python module to map disease or phenotype terms to EFO
+* [OnToma](https://github.com/opentargets/OnToma) — Python package for mapping ontology terms to the disease, target, and drug indices
 
 ### Gentropy
 
@@ -50,9 +49,7 @@ The unified pipeline uses many [static assets](https://app.gitbook.com/o/-LC3OlE
 ### Unified pipeline&#x20;
 
 * [otter](https://github.com/opentargets/otter) — **O**pen **T**argets' **T**ask **E**xecuto**R** i.e. scripts that process and prepare data for our ETL pipelines
-* [platform-etl-backend](https://github.com/opentargets/platform-etl-backend): ETL pipelines to generate associations, evidence, and entity indices
-* [platform-etl-openfda-faers](https://github.com/opentargets/platform-etl-openfda-faers): ETL pipeline to process Open FDA adverse events data
-* [platform-etl-literature](https://github.com/opentargets/platform-etl-literature): ETL pipeline to generate similar entities and publications
+* [pts](https://github.com/opentargets/pts) — **P**ipeline **T**ransformation **S**tage i.e. scripts that convert files into formats and structures used by the Open Targets data pipeline
 * [platform-output-support](https://github.com/opentargets/platform-output-support): scripts for infrastructure tasks and generating a Platform release
 
 If you have further questions, please get in touch with us on the [Open Targets Community](https://community.opentargets.org/).
