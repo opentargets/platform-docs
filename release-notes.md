@@ -148,7 +148,7 @@ sub-fields.
 - Strand encoding — `~ "+"/"-" → int 1/-1` (transcript / exons / canonicalTranscript)
   ([#4356](https://github.com/opentargets/issues/issues/4356)).
 
-**Encoding-only changes (no consumer action)** ([#4491](https://github.com/opentargets/issues/issues/4491))**.**
+**Encoding-only changes** ([#4491](https://github.com/opentargets/issues/issues/4491))**.**
 Broad `string → large_string` / `list → large_list` (Arrow large types) plus `zstd`
 compression across many datasets — a 20–45% byte-size drop at flat row counts; not a logical
 schema change.
