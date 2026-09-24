@@ -58,7 +58,7 @@ exome- and genome-sequencing studies; 26.09 relaxes them for ExWAS/WGS-flagged s
 large cohorts (e.g. UK Biobank, Genes & Health) now contribute signal. Studies carry new
 analysis-type flags (`ExWAS`, `wgsGWAS`, `Metabolite`, `GxE`, `GxG`, non-additive,
 multivariate) and QC flags, and study/credible-set pages now surface **SNP heritability**
-(LDSC h², SE, intercept, mean χ², GC λ).
+(LDSC h², SE, intercept, mean χ², GC λ) ([#4417](https://github.com/opentargets/issues/issues/4417)).
 
 **New gene-burden evidence** ([#4468](https://github.com/opentargets/issues/issues/4468)). **10,611 new records** across 543 targets / 107 diseases:
 - **BRaVa Consortium** — multi-ancestry: 9,098 records, 429 targets, 48 diseases.
