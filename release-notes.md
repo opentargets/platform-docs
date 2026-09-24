@@ -67,7 +67,7 @@ Obesity, Hypertension, Stroke).
 ### New product features
 
 - **Redesigned profile-page navigation** — target, disease and drug profile pages have
-  restructured navigation between sections and widgets.
+  restructured navigation between sections and widgets, and links can be shared pointing to individual widgets within the sections.
 - **Metrics page** ([#4328](https://github.com/opentargets/issues/issues/4328)) — a new single page showing headline release metrics (targets, diseases,
   drugs, studies, credible sets, evidence, variants, prioritised genes and colocalisations)
   plus a breakdown of the evidence by datasource.
