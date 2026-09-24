@@ -10,6 +10,16 @@ description: Summary of release highlights for the Open Targets Platform
 
 24 September 2026
 
+**Contents**
+
+- [Data updates](#data-updates)
+- [New product features](#new-product-features)
+- [Pipeline updates](#pipeline-updates)
+- [Technical improvements](#technical-improvements)
+- [Dataset & schema changes](#dataset--schema-changes)
+- [API changes](#api-changes-graphql)
+- [Public data source versions](#public-data-source-versions)
+
 ### Data updates
 
 **Functional genomics (molecular QTL).** New and upgraded molQTL data adds **~1.2M credible
