@@ -15,9 +15,9 @@ description: Summary of release highlights for the Open Targets Platform
 - [Data updates](#data-updates)
 - [New product features](#new-product-features)
 - [Pipeline and technical improvements](#pipeline-and-technical-improvements)
+- [Public data source versions](#public-data-source-versions)
 - [Dataset & schema changes](#dataset--schema-changes)
 - [API changes](#api-changes-graphql)
-- [Public data source versions](#public-data-source-versions)
 
 ### Data updates
 
@@ -93,6 +93,39 @@ Obesity, Hypertension, Stroke).
 - **Storage encoding** — Arrow large types (`large_string`/`large_list`) and `zstd`
   compression across many datasets (20–45% smaller at equal row counts).
 
+### Public data source versions
+
+Versions configured for the 26.09 release in the
+[Open Targets pipeline repository](https://github.com/opentargets/pipeline). Rolling sources
+are fetched at their current release.
+
+| Source | Version |
+|---|---|
+| AACT (ClinicalTrials.gov) | 2026-08-25 |
+| Cell Ontology | 2026-06-08 |
+| ChEMBL | 37 |
+| Clinical Mining | 2026-05-27 |
+| COSMIC | 2025-06-24 (hallmarks 27-01-2026 v103) |
+| DepMap | 2026Q1 |
+| EFO | 3.93.0 |
+| Ensembl | 116 |
+| EVA / ClinVar | 2026-07-23 |
+| Expression Atlas | 2025-07-14 |
+| FinnGen | R12 |
+| GENCODE | 50 |
+| gnomAD | 4.1.1 |
+| GTEx (baseline) | 11 |
+| HPO | 2026-06-23 |
+| IntOgen | 2024.06 |
+| MONDO | 2026-08-04 |
+| Open Targets Curation | 26.09.1 |
+| Orphanet | current (product6) |
+| Probes & Drugs | 01_2026 |
+| Reactome | v95 (2026-01-19) |
+| STRING | 12.0 |
+| Uberon | 2026-06-23 |
+| UniProt / HGNC / NCBI Gene / Gene Ontology | rolling (current release) |
+
 ### Dataset & schema changes
 
 Dataset- and field-level changes in the published data outputs (26.06 → 26.09). Diff key:
@@ -164,39 +197,6 @@ changes, wired through POS ([#4524](https://github.com/opentargets/issues/issues
 - **Serving note** — four of the new target-satellite datasets (`chemical_probe`, `homology`,
   `target_safety_event`, `target_tractability`) are currently served only via `target_view`'s
   nested fields; standalone by-`targetId` access to them is deferred.
-
-### Public data source versions
-
-Versions configured for the 26.09 release in the
-[Open Targets pipeline repository](https://github.com/opentargets/pipeline). Rolling sources
-are fetched at their current release.
-
-| Source | Version |
-|---|---|
-| AACT (ClinicalTrials.gov) | 2026-08-25 |
-| Cell Ontology | 2026-06-08 |
-| ChEMBL | 37 |
-| Clinical Mining | 2026-05-27 |
-| COSMIC | 2025-06-24 (hallmarks 27-01-2026 v103) |
-| DepMap | 2026Q1 |
-| EFO | 3.93.0 |
-| Ensembl | 116 |
-| EVA / ClinVar | 2026-07-23 |
-| Expression Atlas | 2025-07-14 |
-| FinnGen | R12 |
-| GENCODE | 50 |
-| gnomAD | 4.1.1 |
-| GTEx (baseline) | 11 |
-| HPO | 2026-06-23 |
-| IntOgen | 2024.06 |
-| MONDO | 2026-08-04 |
-| Open Targets Curation | 26.09.1 |
-| Orphanet | current (product6) |
-| Probes & Drugs | 01_2026 |
-| Reactome | v95 (2026-01-19) |
-| STRING | 12.0 |
-| Uberon | 2026-06-23 |
-| UniProt / HGNC / NCBI Gene / Gene Ontology | rolling (current release) |
 
 ## 26.06
 
