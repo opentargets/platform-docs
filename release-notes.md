@@ -10,23 +10,6 @@ description: Summary of release highlights for the Open Targets Platform
 
 24 September 2026
 
-### Highlights
-
-- **Major expansion of functional genomics (molecular QTL) data**, developed in collaboration
-  with Kaur — **GTEx v10** plus two brand-new datasets, **IBDverse** and **MAGE** — added
-  alongside the regular **GWAS Catalog** refresh. Together they add **~1.24M new credible
-  sets** (3.52M → **4.76M**).
-- **Two new gene-burden datasources** — **BRaVa** (multi-ancestry) and **Genes & Health**
-  (British-Pakistani & Bangladeshi) — broadening rare-variant evidence and ancestry diversity.
-- **Better handling of exome- and whole-genome-sequencing GWAS**, so large sequencing cohorts
-  (e.g. UK Biobank, Genes & Health) now pass QC and contribute signal.
-- **Updated genetic constraint** to **gnomAD v4.1.1** (now including chrX/chrY) plus a LOEUF
-  binning fix.
-- **Richer clinical-trial evidence** — trial sponsor on 100% of trials, dated approvals.
-- **Cleaner disease associations** via cross-ontology de-duplication.
-- **Pipeline, deployment and UI overhaul** — unified monorepo, ChEMBL feed on PostgreSQL,
-  redesigned profile-page navigation, ArgoCD deployments.
-
 ### Data updates
 
 **Functional genomics (molecular QTL).** New and upgraded molQTL data adds **~1.2M credible
