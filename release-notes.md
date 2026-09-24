@@ -91,10 +91,6 @@ Obesity, Hypertension, Stroke).
 
 ### Public data source versions
 
-Versions configured for the 26.09 release in the
-[Open Targets pipeline repository](https://github.com/opentargets/pipeline). Rolling sources
-are fetched at their current release.
-
 | Source | Version |
 |---|---|
 | AACT (ClinicalTrials.gov) | 2026-08-25 |
