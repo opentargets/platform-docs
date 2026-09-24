@@ -14,8 +14,7 @@ description: Summary of release highlights for the Open Targets Platform
 
 - [Data updates](#data-updates)
 - [New product features](#new-product-features)
-- [Pipeline updates](#pipeline-updates)
-- [Technical improvements](#technical-improvements)
+- [Pipeline and technical improvements](#pipeline-and-technical-improvements)
 - [Dataset & schema changes](#dataset--schema-changes)
 - [API changes](#api-changes-graphql)
 - [Public data source versions](#public-data-source-versions)
@@ -78,7 +77,7 @@ Obesity, Hypertension, Stroke).
   drugs, studies, credible sets, evidence, variants, prioritised genes and colocalisations)
   plus a genetics breakdown by datasource.
 
-### Pipeline updates
+### Pipeline and technical improvements
 
 - **[Pipeline unification](https://github.com/opentargets/pipeline)** — the previously separate
   pipeline components were consolidated into a single monorepo.
@@ -88,9 +87,6 @@ Obesity, Hypertension, Stroke).
 - **Target dataset refactor** ([#4457](https://github.com/opentargets/issues/issues/4457)) —
   the monolithic `target` object was split into standalone, by-`targetId` datasets (see schema
   changes).
-
-### Technical improvements
-
 - **Material UI upgrade** — the web app's component library was bumped for a more consistent,
   accessible interface.
 - **ArgoCD deployments** — infrastructure moved to GitOps-style continuous deployment.
