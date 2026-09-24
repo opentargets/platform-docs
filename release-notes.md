@@ -68,9 +68,6 @@ Obesity, Hypertension, Stroke).
 
 ### New product features
 
-- **Genetic-quality display** ([#4417](https://github.com/opentargets/issues/issues/4417)) —
-  study pages now show harmonised summary-statistics QC and SNP-heritability
-  metrics.
 - **Redesigned profile-page navigation** — target, disease and drug profile pages have
   restructured navigation between sections and widgets.
 - **Metrics page** ([#4328](https://github.com/opentargets/issues/issues/4328)) — a new single page showing headline release metrics (targets, diseases,
