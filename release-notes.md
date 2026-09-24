@@ -167,7 +167,7 @@ schema change.
 ### API changes (GraphQL)
 
 The 26.09 GraphQL API (`apiVersion` 26.9.0 / `dataVersion` 26.09) introduces the following
-changes, wired through POS ([#4524](https://github.com/opentargets/issues/issues/4524)):
+changes, wired through [POS](https://github.com/opentargets/pos) ([#4524](https://github.com/opentargets/issues/issues/4524)):
 
 - **Target** — served via `view/target_view`, so the dataset split is **transparent to API
   consumers** (`transcripts`, `chemicalProbes`, `homologues`, `tractability`,
