@@ -74,7 +74,7 @@ Obesity, Hypertension, Stroke).
 
 ### Pipeline and technical improvements
 
-- **[Pipeline unification](https://github.com/opentargets/pipeline)** — the previously separate
+- **[opentargets/pipeline](https://github.com/opentargets/pipeline)** — the previously separate
   pipeline components (PIS, PTS, orchestration and croissant) were consolidated into a single monorepo.
 - **ChEMBL feed migrated from Elasticsearch to PostgreSQL**
   ([#4485](https://github.com/opentargets/issues/issues/4485)) — makes ChEMBL-derived
