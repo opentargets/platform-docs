@@ -1,0 +1,11 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: Open Targets Platform Documentation
+  structure:
+    - type: space
+      key: space-1
+      title: Open Targets Platform Documentation
+      path: platform-docs
+      default: true
+      content:
+        directory: ./platform-docs
