@@ -181,8 +181,9 @@ changes, wired through POS ([#4524](https://github.com/opentargets/issues/issues
 
 ### Public data source versions
 
-Versions configured for the 26.09 release. Rolling sources are fetched at their current
-release.
+Versions configured for the 26.09 release in the
+[Open Targets pipeline repository](https://github.com/opentargets/pipeline). Rolling sources
+are fetched at their current release.
 
 | Source | Version |
 |---|---|
