@@ -8,7 +8,7 @@ description: Summary of release highlights for the Open Targets Platform
 
 #### **Release date**
 
-25 September 2026
+24 September 2026
 
 ### Highlights
 
