@@ -71,7 +71,9 @@ Obesity, Hypertension, Stroke).
   restructured navigation between sections and widgets.
 - **Metrics page** ([#4328](https://github.com/opentargets/issues/issues/4328)) — a new single page showing headline release metrics (targets, diseases,
   drugs, studies, credible sets, evidence, variants, prioritised genes and colocalisations)
-  plus a genetics breakdown by datasource.
+  plus a breakdown of the evidence by datasource.
+- **Web application repository renamed** — the Platform web application repository is now
+  [platform-webapp](https://github.com/opentargets/platform-webapp).
 
 ### Pipeline and technical improvements
 
