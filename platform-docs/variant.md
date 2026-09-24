@@ -1,0 +1,70 @@
+---
+description: Common and rare variation in Open Targets Platform
+---
+
+# Variant
+
+## Overview
+
+In the Open Targets Platform, a variant refers to any human variation associated with a [disease, trait or phenotype](disease-or-phenotype/) that has been reported in any of our sources. All variation is mapped to GRCh38 build and enriched with functional annotation. The Platform currently captures single nucleotide polymorphisms (SNPs) and insertions/deletions.&#x20;
+
+{% hint style="info" %}
+**Variant identifier**
+
+Variant identifiers of SNPs and small indels are created based on genomic location and alleles like: `6_160589086_A_G` where `A` is the reference allele at position `160,589,086` on chromosome `6` and the alternate allele is `G`. Being consistent with gnomAD, we are using a 1-based coordinate system.&#x20;
+
+For longer insertions (200+) and deletions, where keeping the full length of the allele in the variant identifier is impractical, the allele string is hashed to create the identifier, which, when available, might contain the chromosome and position as well. Example: `OTVAR_11_614383_9cc2ae367cc98c283cb510e8ea29c9f0`
+{% endhint %}
+
+All variants shown in the Platform are reported in at least one of our [variant-to-phenotype](variant.md#variant-to-phenotype) sources.
+
+## Population Allele Frequencies
+
+Alternate allelic frequencies from [gnomAD](https://gnomad.broadinstitute.org/) variation database are reported for all major populations when available.
+
+**Source:** [gnomAD 4.1](https://gnomad.broadinstitute.org/news/2024-04-gnomad-v4-1/)
+
+## Variant effect
+
+Variants are annotated with an integrated view of variant effects from multiple methods. Based on all predictions or annotations, we normalise the variant's likely deleteriousness to a common scale.
+
+To make the predicted variant effects comparable across different methods,  raw predictions from each methods were normalised to a unified scale ranging from likely benign to uncertain to likely deleterious.&#x20;
+
+## Molecular Structure Viewer
+
+For predicted missense variants, we have included a Molecular Structure Viewer on the variant page, with the reference amino acid highlighted within the AlphaFold predicted model for the relevant protein.
+
+The feature includes the option to visualise:
+
+1. Protein pathogenicity - highlighting the AlphaMissense pathogenicity for the substitution corresponding to the variant, and the average AlphaMissense pathogenicity score across all possible amino acid substitutions at other positions
+2. Protein domains  (from [Uniprot](https://www.uniprot.org/))
+3. Secondary structure (from [AlphaFold](https://alphafold.ebi.ac.uk/))
+4. Residues hydrophobicity (from [here](https://www.sigmaaldrich.com/GB/en/technical-documents/technical-article/protein-biology/protein-structural-analysis/amino-acid-reference-chart#hydrophobicity))&#x20;
+
+The widget also includes a linear representation of the protein which updates alongside the structural representation.&#x20;
+
+You can take a look at this example view for variant [7\_44152420\_C\_G](https://platform.opentargets.org/variant/7_44152420_C_G) to discover more about scores and colour coding used to build the viewer.
+
+**Source:** [AlphaPhold DB](https://alphafold.ebi.ac.uk/), [UniProt](https://www.uniprot.org/)&#x20;
+
+## Transcript consequences
+
+Every variant is annotated with the predicted consequence for all canonical transcripts in a +/-500Kb window, allowing us to understand the likely effects in the neighbouring coding or non-coding genes. For all variant-transcript pairs in the region, this information includes:
+
+* Distance from transcription start site (TSS)
+* Distance to footprint
+* Predicted functional consequence based on Ensembl VEP
+* Amino-acid consequence relative to the UniProt reference protein
+
+**Source**: [Ensembl VEP](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-0974-4)
+
+## Variant-to-phenotype
+
+The list of variant sources includes:
+
+* [95% GWAS credible sets](gentropy/fine-mapping.md)
+* [95% Molecular QTL credible sets](gentropy/fine-mapping.md)
+* [Enhancer-to-gene](gentropy/enhancer-to-gene-encode-re2g.md): Epigenetically derived genomic regions that regulate putative genes.
+* [ClinVar](evidence.md): Submitted variants at all clinical significances
+* [Uniprot](evidence.md): Literature-based curation of disease-associated variants
+* [Pharmacogenetics](target/pharmacogenetics.md): Variants corresponding to genotypes associated with drug responses
