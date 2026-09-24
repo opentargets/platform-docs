@@ -42,8 +42,7 @@ sets** (molQTL total → 3.24M):
 - **IBDverse** ([#4469](https://github.com/opentargets/issues/issues/4469)) — an Open Targets project: a 2.2-million-cell single-cell atlas across 421
   individuals and >50 gut cell types ([Alegbe et al., *Nature* 2026](https://www.nature.com/articles/s41586-026-10627-z)),
   contributing **single-cell eQTLs** (42 cell types/contexts, 10,740 genes). It adds
-  cell-type-resolved support to associations — e.g. **MAML2 × ulcerative colitis** in plasma
-  cells and subepithelial intestinal fibroblasts.
+  cell-type-resolved support to associations.
 - **MAGE** — eQTL/sQTL from 731 individuals across 26 populations / 5 continental groups
   ([Taylor et al., *Nature* 2024](https://www.nature.com/articles/s41586-024-07708-2)), adding
   ancestrally diverse expression data.
@@ -66,8 +65,7 @@ multivariate) and QC flags, and study/credible-set pages now surface **SNP herit
   diseases.
 
 **Genetic constraint (gnomAD v4.1.1)** ([#4494](https://github.com/opentargets/issues/issues/4494)). Canonical-transcript coverage 18,623 → 20,076, now
-including **chrX/chrY** — well-known X-linked drug targets gain constraint for the first time
-(e.g. **BTK**). A LOEUF binning bug was also fixed, shifting most genes' constraint bins.
+including **chrX/chrY** — well-known X-linked drug targets gain constraint for the first time. A LOEUF binning bug was also fixed, shifting most genes' constraint bins.
 
 **Clinical-trial evidence.** **Trial sponsor** ([#4442](https://github.com/opentargets/issues/issues/4442)) on 100% of trials; **approvals can now carry a
 date** (partial subset, ~9%, from the clinical-report year); 220,810 clinical reports with
@@ -211,21 +209,6 @@ are fetched at their current release.
 | STRING | 12.0 |
 | Uberon | 2026-06-23 |
 | UniProt / HGNC / NCBI Gene / Gene Ontology | rolling (current release) |
-
-### Overall data metrics
-
-| Metric | 26.09 |
-|---|--:|
-| Targets | 78,733 |
-| Diseases and phenotypes | 45,896 |
-| Drugs and compounds | 19,170 |
-| Evidence strings | 41,977,200 |
-| Target-disease associations | 17,459,960 |
-| Variants | 7,886,762 |
-
-More detailed and interactive metrics — including studies, credible sets, prioritised genes
-and colocalisations, with a genetics breakdown by datasource — can now be explored live on the
-Platform **metrics page**.
 
 ## 26.06
 
@@ -471,8 +454,6 @@ Check out the [25.09 release blog](https://blog.opentargets.org/open-targets-pla
 
 Visit the [Open Targets Community 25.09 release thread](https://community.opentargets.org/t/25-09-platform-release-now-live/1929) for more data metrics for this release, including a per datasource breakdown of evidence strings.
 
-
-
 ## 25.06
 
 ### Release date
@@ -515,8 +496,6 @@ Check out the [25.06 release blog post](https://blog.opentargets.org/open-target
 * 10,563,905 target-disease associations
 
 Visit the [Open Targets Community 25.06 release thread](https://community.opentargets.org/t/25-06-platform-release-now-live/1828/1) for more data metrics for this release, including a per datasource breakdown of evidence strings.
-
-
 
 ## 25.03
 
@@ -588,8 +567,6 @@ Check out the [25.03 release blog post](https://blog.opentargets.org/open-target
 
 Visit the [Open Targets Community 25.03 release thread](https://community.opentargets.org/t/25-03-platform-release-now-live-open-targets-genetics-data-update/1708) for more data metrics for this release, including a per datasource breakdown of evidence strings.
 
-
-
 ## 24.09
 
 ### Release date
@@ -632,8 +609,6 @@ Check out the [24.09 release blog post](https://blog.opentargets.org/open-target
 * 8,155,988 target-disease associations
 
 Visit the [Open Targets Community 24.09 release thread](https://community.opentargets.org/t/24-09-platform-release-now-live/1556) for more data metrics for this release, including a per datasource breakdown of evidence strings.
-
-
 
 ## 24.06
 
@@ -680,8 +655,6 @@ Check out the [24.06 release blog post](https://blog.opentargets.org/open-target
 
 Visit the [Open Targets Community 24.06 release thread](https://community.opentargets.org/t/24-06-platform-release-now-live/1455) for more data metrics for this release, including a per datasource breakdown of evidence strings.
 
-
-
 ## 24.03
 
 ### Release date
@@ -725,8 +698,6 @@ Check out the [24.03 release blog post](https://blog.opentargets.org/open-target
 
 Visit the [Open Targets Community 24.03 release thread](https://community.opentargets.org/t/24-03-platform-release-now-live/1374) for more data metrics for this release, including a per datasource breakdown of evidence strings.
 
-
-
 ## 23.12
 
 ### Release date
@@ -766,8 +737,6 @@ Check out the [23.12 release blog post](https://blog.opentargets.org/open-target
 * 7,994,180 target-disease associations
 
 Visit the [Open Targets Community 23.12 release thread](https://community.opentargets.org/t/23-12-platform-release-now-live/1294) for more data metrics for this release, including a per datasource breakdown of evidence strings.
-
-
 
 ## 23.09
 
@@ -810,8 +779,6 @@ Check out the [23.09 release blog post](https://blog.opentargets.org/open-target
 
 Visit the [Open Targets Community 23.09 release thread](https://community.opentargets.org/t/the-latest-release-22-09-is-now-live/1212) for more data metrics for this release, including a per datasource breakdown of evidence strings.
 
-
-
 ## 23.06
 
 ### Release date
@@ -851,8 +818,6 @@ Check out the [23.06 release blog post](https://blog.opentargets.org/open-target
 * 7,835,247 target-disease associations
 
 Visit the [Open Targets Community 23.06 release thread](https://community.opentargets.org/t/23-06-platform-release-now-live/1125) for more data metrics for this release, including a per datasource breakdown of evidence strings.
-
-
 
 ## 23.02
 
@@ -894,8 +859,6 @@ Check out the [23.02 release blog post](https://blog.opentargets.org/open-target
 * 6,656,559 target-disease associations
 
 Visit the [Open Targets Community 23.02 release thread](https://community.opentargets.org/t/23-02-platform-release-now-live/962) for more data metrics for this release, including a per datasource breakdown of evidence strings.
-
-
 
 ## 22.11
 
@@ -963,8 +926,6 @@ Visit the [Open Targets Community 22.09 release thread](https://community.openta
 * New data: five additional gene burden analyses from Genebass
 * New feature: new visualisation of subcellular locations of targets now available to users
 *   New ontology term: “medical procedure”&#x20;
-
-
 
 Check out the [22.06 release blog post](https://blog.opentargets.org/open-targets-platform-22-06-release/) for more information on the new features and datasets introduced in this release.&#x20;
 
