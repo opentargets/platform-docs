@@ -4,6 +4,194 @@ description: Summary of release highlights for the Open Targets Platform
 
 # Release notes
 
+## 26.09
+
+#### **Release date**
+
+24 September 2026
+
+**Contents**
+
+- [Data updates](#data-updates)
+- [New product features](#new-product-features)
+- [Pipeline and technical improvements](#pipeline-and-technical-improvements)
+- [Public data source versions](#public-data-source-versions)
+- [Dataset & schema changes](#dataset--schema-changes)
+- [API changes](#api-changes-graphql)
+
+### Data updates
+
+**Functional genomics (molecular QTL).** New and upgraded molQTL data adds **~1.2M credible
+sets** (molQTL total → 3.24M):
+
+| Dataset                        | Credible sets | Δ vs 26.06 |
+| ------------------------------ | ------------: | ---------: |
+| **GTEx v10** (upgrade from v8) |     2,226,763 | +1,070,569 |
+| **IBDverse** (new)             |        70,903 |    +70,903 |
+| **MAGE** (new)                 |        56,793 |    +56,793 |
+|                                |               |            |
+
+- **IBDverse** ([#4469](https://github.com/opentargets/issues/issues/4469)) — an Open Targets project: a 2.2-million-cell single-cell atlas across 421
+  individuals and >50 gut cell types ([Alegbe et al., *Nature* 2026](https://www.nature.com/articles/s41586-026-10627-z)),
+  contributing **single-cell eQTLs** (42 cell types/contexts, 10,740 genes). It adds
+  cell-type-resolved support to associations.
+- **MAGE** — eQTL/sQTL from 731 individuals across 26 populations / 5 continental groups
+  ([Taylor et al., *Nature* 2024](https://www.nature.com/articles/s41586-024-07708-2)), adding
+  ancestrally diverse expression data.
+
+**GWAS Catalog refresh** ([#4424](https://github.com/opentargets/issues/issues/4424)). **+14,690 studies** (→ **163,181**) and **+44,859 credible sets**,
+spanning **143 new publications**, with sync, curation, summary-statistics harmonisation and
+fine-mapping (SuSiE + PICS). Highlighted new publications include a consensus **Alzheimer's
+disease** meta-analysis and a multi-ancestry **endometriosis** GWAS.
+
+**Better handling of exome/WGS studies** ([#4416](https://github.com/opentargets/issues/issues/4416)). QC thresholds tuned for array GWAS were failing
+exome- and genome-sequencing studies; 26.09 relaxes them for ExWAS/WGS-flagged studies, so
+large cohorts (e.g. UK Biobank, Genes & Health) now contribute signal. Studies carry new
+analysis-type flags (`ExWAS`, `wgsGWAS`, `Metabolite`, `GxE`, `GxG`, non-additive,
+multivariate) and QC flags, and study/credible-set pages now surface **SNP heritability**
+(LDSC h², SE, intercept, mean χ², GC λ) ([#4417](https://github.com/opentargets/issues/issues/4417)).
+
+**New gene-burden evidence** ([#4468](https://github.com/opentargets/issues/issues/4468)). **10,611 new records** across 543 targets / 107 diseases:
+- **BRaVa Consortium** — multi-ancestry: 9,098 records, 429 targets, 48 diseases.
+- **Genes & Health** — British-Pakistani & Bangladeshi: 1,513 records, 184 targets, 73
+  diseases.
+
+**Genetic constraint (gnomAD v4.1.1)** ([#4494](https://github.com/opentargets/issues/issues/4494)). Canonical-transcript coverage 18,623 → 20,076, now
+including **chrX/chrY**. A LOEUF binning bug was also fixed, shifting most genes' constraint bins.
+
+**Clinical-trial evidence.** **Trial sponsor** ([#4442](https://github.com/opentargets/issues/issues/4442)) on 100% of trials; **approvals from PMDA and EMA now carry the approval year** (~9% of approval records); a total of **220,810 clinical reports**, with cleaner, reference-typed literature links.
+
+**Cleaner disease associations** ([#4446](https://github.com/opentargets/issues/issues/4446)). Cross-ontology de-duplication merges **1,706 duplicate
+disease terms** and consolidates **~3.16M evidence records** onto the correct term (e.g.
+Obesity, Hypertension, Stroke).
+
+### New product features
+
+- **Redesigned profile-page navigation** — target, disease and drug profile pages have
+  restructured navigation between sections and widgets.
+- **Metrics page** ([#4328](https://github.com/opentargets/issues/issues/4328)) — a new single page showing headline release metrics (targets, diseases,
+  drugs, studies, credible sets, evidence, variants, prioritised genes and colocalisations)
+  plus a breakdown of the evidence by datasource.
+
+### Pipeline and technical improvements
+
+- **[Pipeline unification](https://github.com/opentargets/pipeline)** — the previously separate
+  pipeline components were consolidated into a single monorepo.
+- **ChEMBL feed migrated from Elasticsearch to PostgreSQL**
+  ([#4485](https://github.com/opentargets/issues/issues/4485)) — makes ChEMBL-derived
+  processing reproducible by third parties.
+- **Target dataset refactor** ([#4457](https://github.com/opentargets/issues/issues/4457)) —
+  the monolithic `target` object was split into standalone, by-`targetId` datasets (see schema
+  changes).
+- **Material UI upgrade** — the web app's component library was bumped for a more consistent,
+  accessible interface.
+- **ArgoCD deployments** — infrastructure moved to GitOps-style continuous deployment.
+- **Storage encoding** — Arrow large types (`large_string`/`large_list`) and `zstd`
+  compression across many datasets (20–45% smaller at equal row counts).
+- **Web application repository renamed** — the Platform web application repository is now
+  [platform-webapp](https://github.com/opentargets/platform-webapp).
+
+### Public data source versions
+
+| Source | Version |
+|---|---|
+| AACT (ClinicalTrials.gov) | 2026-08-25 |
+| Cell Ontology | 2026-06-08 |
+| ChEMBL | 37 |
+| Clinical Mining | 2026-05-27 |
+| COSMIC | 2025-06-24 (hallmarks 27-01-2026 v103) |
+| DepMap | 2026Q1 |
+| EFO | 3.93.0 |
+| Ensembl | 116 |
+| EVA / ClinVar | 2026-07-23 |
+| Expression Atlas | 2025-07-14 |
+| FinnGen | R12 |
+| GENCODE | 50 |
+| gnomAD | 4.1.1 |
+| GTEx (baseline) | 11 |
+| HPO | 2026-06-23 |
+| IntOgen | 2024.06 |
+| MONDO | 2026-08-04 |
+| Open Targets Curation | 26.09.1 |
+| Orphanet | current (product6) |
+| Probes & Drugs | 01_2026 |
+| Reactome | v95 (2026-01-19) |
+| STRING | 12.0 |
+| Uberon | 2026-06-23 |
+| UniProt / HGNC / NCBI Gene / Gene Ontology | rolling (current release) |
+
+### Dataset & schema changes
+
+Dataset- and field-level changes in the published data outputs (26.06 → 26.09). Diff key:
+`+` added · `−` removed · `~` type/shape change. Row counts are from the 26.09 release.
+
+**New datasets (from the target refactor).** `output/target` was split; these are now
+standalone, by-`targetId` datasets:
+
+| Dataset | Rows | Notes |
+|---|--:|---|
+| `output/transcript` | 644,292 | transcriptId, biotype, strand (int), exons[], TSS, uniprot/alphafold ids, isEnsemblCanonical |
+| `output/homology` | 3,817,240 | species, homologyType, %identity, priority (from Compara) |
+| `output/target_safety_event` | 4,387 | event, eventId, effects[], biosamples[], datasource, literature |
+| `output/target_tractability` | 528,332 | modality, `category` (was `id`), value |
+| `output/chemical_probe` | 1,265 | **renamed** from `chemical_probes` |
+| `view/target_view` | 78,733 | backwards-compatible recomposition of the old nested `target` (for API/FE) |
+
+`view/target_view` is a transitional compatibility shim (not a first-class distribution): it
+deliberately **drops `tep` and `alternativeGenes`** and stubs three `transcripts[]`
+sub-fields.
+
+**Changed datasets:**
+- `output/target` — slimmed; nested blocks (transcripts, tractability, safety, homologues,
+  chemical probes) moved to the new datasets; **`tep` removed**
+  ([#4470](https://github.com/opentargets/issues/issues/4470)).
+- `output/target_essentiality` — `~ id → targetId`; `geneEssentiality` struct flattened
+  (`isEssential`, `depMapEssentiality` at root).
+- `output/target_prioritisation` — `− hasTEP`; LOEUF bins recomputed; constraint now
+  gnomAD v4.1.1.
+- `output/clinical_report` — `+ origin`, `+ provider`, `+ trialSponsor{agencyClass,name}`;
+  `~ trialLiterature: list<string> → list<{id,type}>`
+  ([#4489](https://github.com/opentargets/issues/issues/4489)); `− hasExpertReview`; `type`
+  now means `INDICATION | SAFETY` (old `type` renamed to `origin`).
+- `output/interaction` / `interaction_evidence` — `+ interactionId`; 10 A/B columns dropped
+  ([#4474](https://github.com/opentargets/issues/issues/4474)).
+- `output/chemical_probe` — `− probeMinerScore` (**breaking** for readers of this field).
+- `output/drug_mechanism_of_action` — reshaped to one row per mechanism.
+- `output/drug_warning` — `~ year: int64 → int32`.
+- Strand encoding — `~ "+"/"-" → int 1/-1` (transcript / exons / canonicalTranscript)
+  ([#4356](https://github.com/opentargets/issues/issues/4356)).
+
+**Encoding-only changes** ([#4491](https://github.com/opentargets/issues/issues/4491))**.**
+Broad `string → large_string` / `list → large_list` (Arrow large types) plus `zstd`
+compression across many datasets — a 20–45% byte-size drop at flat row counts; not a logical
+schema change.
+
+### API changes (GraphQL)
+
+The 26.09 GraphQL API (`apiVersion` 26.9.0 / `dataVersion` 26.09) introduces the following
+changes, wired through [POS](https://github.com/opentargets/pos) ([#4524](https://github.com/opentargets/issues/issues/4524)):
+
+- **Target** — served via `view/target_view`, so the dataset split is **transparent to API
+  consumers** (`transcripts`, `chemicalProbes`, `homologues`, `tractability`,
+  `safetyLiabilities`, `canonicalTranscript` still resolve). **`tep` removed**;
+  `canonicalTranscript.strand` is now a `Strand` enum.
+- **Clinical reports** — `knownDrugs` replaced by **`drugAndClinicalCandidates`** → nested
+  **`clinicalReports`** (`ClinicalReport`), with new `trialSponsor{name,agencyClass}`,
+  `origin`, `source`, `provider`, and `trialLiterature{id,type}`; `type` = `INDICATION|SAFETY`;
+  `hasExpertReview` removed.
+- **Interactions** — identifier exposed as **`interactionIdentifier`** (string) on
+  `InteractionEvidence` (the numeric join key is internal, not surfaced).
+- **Target essentiality** — `isEssential` / `depMapEssentiality` resolve on `Target`.
+- **Target prioritisation** — `hasTEP` removed.
+- **New types** — `TrialSponsor`, `TrialLiterature`, `ClinicalReport`, `Strand`.
+- **Fixes** — clinical reports returning `[]` everywhere (schema desync;
+  [#4530](https://github.com/opentargets/issues/issues/4530)) and gene-burden evidence pages
+  returning `count: 0` (null URL; [#4497](https://github.com/opentargets/issues/issues/4497))
+  are both resolved.
+- **Serving note** — four of the new target-satellite datasets (`chemical_probe`, `homology`,
+  `target_safety_event`, `target_tractability`) are currently served only via `target_view`'s
+  nested fields; standalone by-`targetId` access to them is deferred.
+
 ## 26.06
 
 #### **Release date**
@@ -248,8 +436,6 @@ Check out the [25.09 release blog](https://blog.opentargets.org/open-targets-pla
 
 Visit the [Open Targets Community 25.09 release thread](https://community.opentargets.org/t/25-09-platform-release-now-live/1929) for more data metrics for this release, including a per datasource breakdown of evidence strings.
 
-
-
 ## 25.06
 
 ### Release date
@@ -292,8 +478,6 @@ Check out the [25.06 release blog post](https://blog.opentargets.org/open-target
 * 10,563,905 target-disease associations
 
 Visit the [Open Targets Community 25.06 release thread](https://community.opentargets.org/t/25-06-platform-release-now-live/1828/1) for more data metrics for this release, including a per datasource breakdown of evidence strings.
-
-
 
 ## 25.03
 
@@ -365,8 +549,6 @@ Check out the [25.03 release blog post](https://blog.opentargets.org/open-target
 
 Visit the [Open Targets Community 25.03 release thread](https://community.opentargets.org/t/25-03-platform-release-now-live-open-targets-genetics-data-update/1708) for more data metrics for this release, including a per datasource breakdown of evidence strings.
 
-
-
 ## 24.09
 
 ### Release date
@@ -409,8 +591,6 @@ Check out the [24.09 release blog post](https://blog.opentargets.org/open-target
 * 8,155,988 target-disease associations
 
 Visit the [Open Targets Community 24.09 release thread](https://community.opentargets.org/t/24-09-platform-release-now-live/1556) for more data metrics for this release, including a per datasource breakdown of evidence strings.
-
-
 
 ## 24.06
 
@@ -457,8 +637,6 @@ Check out the [24.06 release blog post](https://blog.opentargets.org/open-target
 
 Visit the [Open Targets Community 24.06 release thread](https://community.opentargets.org/t/24-06-platform-release-now-live/1455) for more data metrics for this release, including a per datasource breakdown of evidence strings.
 
-
-
 ## 24.03
 
 ### Release date
@@ -502,8 +680,6 @@ Check out the [24.03 release blog post](https://blog.opentargets.org/open-target
 
 Visit the [Open Targets Community 24.03 release thread](https://community.opentargets.org/t/24-03-platform-release-now-live/1374) for more data metrics for this release, including a per datasource breakdown of evidence strings.
 
-
-
 ## 23.12
 
 ### Release date
@@ -543,8 +719,6 @@ Check out the [23.12 release blog post](https://blog.opentargets.org/open-target
 * 7,994,180 target-disease associations
 
 Visit the [Open Targets Community 23.12 release thread](https://community.opentargets.org/t/23-12-platform-release-now-live/1294) for more data metrics for this release, including a per datasource breakdown of evidence strings.
-
-
 
 ## 23.09
 
@@ -587,8 +761,6 @@ Check out the [23.09 release blog post](https://blog.opentargets.org/open-target
 
 Visit the [Open Targets Community 23.09 release thread](https://community.opentargets.org/t/the-latest-release-22-09-is-now-live/1212) for more data metrics for this release, including a per datasource breakdown of evidence strings.
 
-
-
 ## 23.06
 
 ### Release date
@@ -628,8 +800,6 @@ Check out the [23.06 release blog post](https://blog.opentargets.org/open-target
 * 7,835,247 target-disease associations
 
 Visit the [Open Targets Community 23.06 release thread](https://community.opentargets.org/t/23-06-platform-release-now-live/1125) for more data metrics for this release, including a per datasource breakdown of evidence strings.
-
-
 
 ## 23.02
 
@@ -671,8 +841,6 @@ Check out the [23.02 release blog post](https://blog.opentargets.org/open-target
 * 6,656,559 target-disease associations
 
 Visit the [Open Targets Community 23.02 release thread](https://community.opentargets.org/t/23-02-platform-release-now-live/962) for more data metrics for this release, including a per datasource breakdown of evidence strings.
-
-
 
 ## 22.11
 
@@ -740,8 +908,6 @@ Visit the [Open Targets Community 22.09 release thread](https://community.openta
 * New data: five additional gene burden analyses from Genebass
 * New feature: new visualisation of subcellular locations of targets now available to users
 *   New ontology term: “medical procedure”&#x20;
-
-
 
 Check out the [22.06 release blog post](https://blog.opentargets.org/open-targets-platform-22-06-release/) for more information on the new features and datasets introduced in this release.&#x20;
 
