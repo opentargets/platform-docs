@@ -41,8 +41,7 @@ sets** (molQTL total → 3.24M):
 
 **GWAS Catalog refresh** ([#4424](https://github.com/opentargets/issues/issues/4424)). **+14,690 studies** (→ **163,181**) and **+44,859 credible sets**,
 spanning **143 new publications**, with sync, curation, summary-statistics harmonisation and
-fine-mapping (SuSiE + PICS). Highlighted new publications include a consensus **Alzheimer's
-disease** meta-analysis and a multi-ancestry **endometriosis** GWAS.
+fine-mapping (SuSiE + PICS).
 
 **Better handling of exome/WGS studies** ([#4416](https://github.com/opentargets/issues/issues/4416)). QC thresholds tuned for array GWAS were failing
 exome- and genome-sequencing studies; 26.09 relaxes them for ExWAS/WGS-flagged studies, so
