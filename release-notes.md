@@ -48,7 +48,7 @@ multivariate) and QC flags, and study/credible-set pages now surface **SNP herit
   diseases.
 
 **Genetic constraint (gnomAD v4.1.1)** ([#4494](https://github.com/opentargets/issues/issues/4494)). Canonical-transcript coverage 18,623 → 20,076, now
-including **chrX/chrY** — well-known X-linked drug targets gain constraint for the first time. A LOEUF binning bug was also fixed, shifting most genes' constraint bins.
+including **chrX/chrY**. A LOEUF binning bug was also fixed, shifting most genes' constraint bins.
 
 **Clinical-trial evidence.** **Trial sponsor** ([#4442](https://github.com/opentargets/issues/issues/4442)) on 100% of trials; **approvals can now carry a
 date** (partial subset, ~9%, from the clinical-report year); 220,810 clinical reports with
