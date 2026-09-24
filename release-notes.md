@@ -72,8 +72,6 @@ Obesity, Hypertension, Stroke).
 - **Metrics page** ([#4328](https://github.com/opentargets/issues/issues/4328)) — a new single page showing headline release metrics (targets, diseases,
   drugs, studies, credible sets, evidence, variants, prioritised genes and colocalisations)
   plus a breakdown of the evidence by datasource.
-- **Web application repository renamed** — the Platform web application repository is now
-  [platform-webapp](https://github.com/opentargets/platform-webapp).
 
 ### Pipeline and technical improvements
 
@@ -90,6 +88,8 @@ Obesity, Hypertension, Stroke).
 - **ArgoCD deployments** — infrastructure moved to GitOps-style continuous deployment.
 - **Storage encoding** — Arrow large types (`large_string`/`large_list`) and `zstd`
   compression across many datasets (20–45% smaller at equal row counts).
+- **Web application repository renamed** — the Platform web application repository is now
+  [platform-webapp](https://github.com/opentargets/platform-webapp).
 
 ### Public data source versions
 
