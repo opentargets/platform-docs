@@ -6,20 +6,24 @@ description: Summary of release highlights for the Open Targets Platform
 
 ## 26.09
 
-**Release date**
+#### **Release date**
 
 24 September 2026
 
-**Contents**
+#### **Contents**
 
-* [Data updates](release-notes.md#data-updates)
-* [New product features](release-notes.md#product_features_26_09)
-* [Pipeline and technical improvements](release-notes.md#pipeline-and-technical-improvements)
-* [Public data source versions](release-notes.md#public-data-source-versions)
-* [Dataset & schema changes](release-notes.md#dataset-and-schema-changes)
-* [API changes](release-notes.md#api-changes-graphql)
+* [Data updates](release-notes.md#id-26.09-data-updates)
+* [New product features](release-notes.md#id-26.09-new-product-features)
+* [Pipeline and technical improvements](release-notes.md#id-26.09-pipeline-and-technical-improvements)
+* [Public data source versions](release-notes.md#id-26.09-public-data-source-versions)
+* [Dataset & schema changes](release-notes.md#id-26.09-dataset-and-schema-changes)
+* [API changes](release-notes.md#id-26.09-api-changes)
 
-#### Data updates
+See also the [26.09 release blog post](https://blog.opentargets.org/open-targets-platform-26-09-has-been-released/) for details and examples of the major updates.
+
+### Highlights <a href="#id-26.09-highlights" id="id-26.09-highlights"></a>
+
+#### Data updates <a href="#id-26.09-data-updates" id="id-26.09-data-updates"></a>
 
 **Functional genomics (molecular QTL).** New and upgraded molQTL data adds **\~1.2M credible sets** (molQTL total → 3.24M):
 
@@ -48,12 +52,12 @@ fine-mapping (SuSiE + PICS).
 
 **Cleaner disease associations** ([#4446](https://github.com/opentargets/issues/issues/4446)). Cross-ontology de-duplication merges **1,706 duplicate disease terms** and consolidates **\~3.16M evidence records** onto a single term (e.g. Obesity, Hypertension, Stroke).
 
-#### New product features <a href="#product_features_26_09" id="product_features_26_09"></a>
+#### New product features <a href="#id-26.09-new-product-features" id="id-26.09-new-product-features"></a>
 
 * **Redesigned profile-page navigation** — target, disease and drug profile pages have restructured navigation between sections and widgets, and links can be shared pointing to individual widgets within the sections, powered by an upgrade to **React Router v7**.
 * **Metrics page** ([#4328](https://github.com/opentargets/issues/issues/4328)) — a new single page showing headline release metrics (targets, diseases, drugs, studies, credible sets, evidence, variants, prioritised genes and colocalisations) plus a breakdown of the evidence by datasource.
 
-#### Pipeline and technical improvements
+#### Pipeline and technical improvements <a href="#id-26.09-pipeline-and-technical-improvements" id="id-26.09-pipeline-and-technical-improvements"></a>
 
 * [**opentargets/pipeline**](https://github.com/opentargets/pipeline) — the previously separate pipeline components (PIS, PTS, orchestration and croissant) were consolidated into a single monorepo.
 * **ChEMBL feed migrated from Elasticsearch to PostgreSQL**\
@@ -65,7 +69,7 @@ fine-mapping (SuSiE + PICS).
 * **Storage encoding** — Arrow large types (`large_string`/`large_list`) and `zstd` compression across many datasets (20–45% smaller at equal row counts).
 * **Web application repository renamed** — the Platform web application repository is now [platform-webapp](https://github.com/opentargets/platform-webapp).
 
-#### Public data source versions
+### Public data source versions <a href="#id-26.09-public-data-source-versions" id="id-26.09-public-data-source-versions"></a>
 
 | Source                                     | Version                                |
 | ------------------------------------------ | -------------------------------------- |
@@ -94,7 +98,7 @@ fine-mapping (SuSiE + PICS).
 | Uberon                                     | 2026-06-23                             |
 | UniProt / HGNC / NCBI Gene / Gene Ontology | rolling (current release)              |
 
-#### Dataset & schema changes
+### Dataset & schema changes <a href="#id-26.09-dataset-and-schema-changes" id="id-26.09-dataset-and-schema-changes"></a>
 
 Dataset- and field-level changes in the published data outputs compared to 26.06.
 
@@ -129,7 +133,7 @@ Dataset- and field-level changes in the published data outputs compared to 26.06
 Broad `string → large_string` / `list → large_list` (Arrow large types) plus more homogeneous partitioning and `zstd`\
 compression across many datasets — a 20–45% byte-size drop at flat row counts; not a logical schema change.
 
-#### API changes (GraphQL)
+### API changes (GraphQL) <a href="#id-26.09-api-changes" id="id-26.09-api-changes"></a>
 
 The 26.09 GraphQL API (`apiVersion` 26.9.0 / `dataVersion` 26.09) introduces the following\
 changes, wired through [POS](https://github.com/opentargets/pos) ([#4524](https://github.com/opentargets/issues/issues/4524)):
@@ -153,7 +157,7 @@ changes, wired through [POS](https://github.com/opentargets/pos) ([#4524](https:
 
 24 June 2026
 
-### Highlights
+### Highlights <a href="#id-26.06-highlights" id="id-26.06-highlights"></a>
 
 #### Data updates
 
@@ -195,7 +199,7 @@ Users can now explore the new baseline expression data through a [redesigned wid
 
 * Drug pages now use updated molecular structure images from ChEMBL.
 
-#### Pipeline updates
+#### Pipeline updates <a href="#id-26.06-pipeline-updates" id="id-26.06-pipeline-updates"></a>
 
 **Clinical Mining**
 
@@ -211,7 +215,7 @@ Users can now explore the new baseline expression data through a [redesigned wid
 * Updates to the literature pipeline, including improved ontology mapping, entity disambiguation, and co-occurrence generation, have increased evidence coverage while reducing false positive associations.&#x20;
 * Overall, these changes add approximately 1.8 million evidence records and remove around 600,000 direct associations.
 
-#### Technical improvements
+#### Technical improvements <a href="#id-26.03-technical-improvements" id="id-26.03-technical-improvements"></a>
 
 **New search now supporting:**
 
@@ -231,7 +235,7 @@ Users can now explore the new baseline expression data through a [redesigned wid
 * Created a knowledge base with technical docs on operations, release process
 * New POS workflow step for loading data into AWS
 
-### More info and overall metrics
+### More info and overall metrics <a href="#id-26.06-overall-data-metrics" id="id-26.06-overall-data-metrics"></a>
 
 * 78,691 targets
 * 47,080 diseases and phenotypes
@@ -250,7 +254,7 @@ Visit the Open Targets Community [26.06 release post](https://community.opentarg
 
 23 March 2026
 
-### Highlights
+### Highlights <a href="#id-26.03-highlights" id="id-26.03-highlights"></a>
 
 #### Data updates
 
@@ -292,7 +296,7 @@ See the new [clinical reports section](https://platform-docs.opentargets.org/dru
 
 Check out the [26.03 release **blog post**](https://blog.opentargets.org/open-targets-platform-26-03-has-been-released) for more information on the new features and datasets introduced in this release.
 
-#### Overall data metrics
+### Overall data metrics <a href="#id-26.03-overall-data-metrics" id="id-26.03-overall-data-metrics"></a>
 
 * 78,691 targets
 * 47,030 diseases and phenotypes
@@ -305,11 +309,11 @@ Visit the [**Open Targets Community 26.03** **release thread**](https://communit
 
 ## 25.12
 
-### Release date
+#### Release date
 
 10th December 2025
 
-### Highlights
+### Highlights <a href="#id-25.12-highlights" id="id-25.12-highlights"></a>
 
 #### Data updates
 
@@ -339,7 +343,7 @@ Visit the [**Open Targets Community 26.03** **release thread**](https://communit
 
 Check out the [25.12 release blog post](https://blog.opentargets.org/open-targets-platform-25-12-has-been-released/) for more information on the new features and datasets introduced in this release.
 
-#### Key metrics
+### Key metrics <a href="#id-25.12-key-metrics" id="id-25.12-key-metrics"></a>
 
 | Metric                    | Count      |
 | ------------------------- | ---------- |
@@ -353,17 +357,17 @@ Visit the [Open Targets Community 25.12 release thread](https://community.openta
 
 ## 25.09
 
-### Release date
+#### Release date
 
 17 September 2025
 
-### Highlights
+### Highlights <a href="#id-25.09-highlights" id="id-25.09-highlights"></a>
 
 * New intervals datasets on variant page: includes over 13 million enhancer-gene regulatory interactions across 352 cell types and tissues from [Gschwind et al.’s](https://www.biorxiv.org/content/10.1101/2023.11.09.563812v1) ENCODE-rE2G model
 * Added full list of 95% molQTL credible sets on target page&#x20;
 * New version of variant page structural viewer (from new FE component) - now including additional options for users to navigate structure confidence, pathogenicity, domains, secondary structure, residue hydrophobicity&#x20;
 
-### Data updates
+#### Data updates
 
 * New GWAS Catalog update (+30,000 new credible sets)
 * Expression Atlas:  new differential expression dataset, adding around 6,000 new unique target-disease associations to the Platform
@@ -371,7 +375,7 @@ Visit the [Open Targets Community 25.12 release thread](https://community.openta
 * Updated DepMap data (25Q2) used for the essentiality widget, introducing survival results for 17876 genes for 5 new cell lines
 * Added 67 new chemical probes following up from the latest Probes\&Drugs release
 
-### Product enhancements and bug fixes
+#### Product enhancements and bug fixes
 
 * 99% of evidence now has date (evidenceDate), with 100% coverage for GWAS credible set derived evidence. This is part of a [recently preprinted](https://www.researchsquare.com/article/rs-5669559/v1) Open Targets project to help assess novelty of disease target associations
 * Deployment on new Kubernetes-based cluster infrastructure
@@ -381,7 +385,7 @@ Visit the [Open Targets Community 25.12 release thread](https://community.openta
 
 Check out the [25.09 release blog](https://blog.opentargets.org/open-targets-platform-25-09-release/) post for more information on the new features and datasets introduced in this release
 
-### Overall data metrics
+### Overall data metrics <a href="#id-25.09-overall-data-metrics" id="id-25.09-overall-data-metrics"></a>
 
 * 78,726 targets
 * 39,530 diseases and phenotypes
@@ -395,30 +399,30 @@ Visit the [Open Targets Community 25.09 release thread](https://community.openta
 
 ## 25.06
 
-### Release date
+#### Release date
 
 18 June 2025
 
-### Highlights
+### Highlights <a href="#id-25.06-highlights" id="id-25.06-highlights"></a>
 
-**New features**
+#### **New features**
 
 * A new Target Interactors view, which allows you to view association evidence target interactors directly in the disease associations page. Users can choose one of four sources of molecular interactors and view the association evidence for the top scoring interactors for that database.
 * A revamped data downloads page, making Open Targets Platform data more FAIR. The data follows the [Croissant](https://mlcommons.org/working-groups/data/croissant/) metadata standard format, based on JSON-LD, developed by ML-Commons.
 
-**Data updates**
+#### **Data updates**
 
 * The latest GWAS Catalog data adds 36% more credible sets, most of which are from the [VA Million Veteran Program](https://www.research.va.gov/mvp/) study.
 * Burden evidence from the [Broad CVDI Human Disease Portal](https://hugeamp.org:8000/research.html?pageid=600_traits_app_home).
 * Experimental Factor Ontology (EFO) replaced measurement terms with terms from the Ontology of Biological Attributes (OBA), and is now reflected in the Platform.
 * New data from Reactome, Europe PMC, COSMIC and EVA (through ClinVar).
 
-**Product features**
+#### **Product features**
 
 * Updated version of the Molecular Structure viewer on target profile pages. We also added a new version of the viewer on missense variant pages, which indicates the location of the variant in the AlphaFold model and view AlphaMissense pathogenicity scores.
 * Pharmacogenetics widgets on the variant, target, and drug profile pages now have an additional Directionality column.
 
-**Product enhancements and bug fixes**
+#### **Product enhancements and bug fixes**
 
 * Strengthened our search functionality with performance optimisations and additional filtering capabilities.
 * Case-case studies have been removed from our GWAS data as these are difficult to map to the correct disease.
@@ -426,7 +430,7 @@ Visit the [Open Targets Community 25.09 release thread](https://community.openta
 
 Check out the [25.06 release blog post](https://blog.opentargets.org/open-targets-platform-25-06-release/) for more information on the new features and datasets introduced in this release.
 
-### Overall data metrics
+### Overall data metrics <a href="#id-25.06-overall-data-metrics" id="id-25.06-overall-data-metrics"></a>
 
 * 78,726 targets
 * 38,959 diseases and phenotypes
@@ -440,13 +444,13 @@ Visit the [Open Targets Community 25.06 release thread](https://community.openta
 
 ## 25.03
 
-### Release date
+#### Release date
 
 19 March 2025
 
-### Highlights
+### **Highlights** <a href="#id-25.03-highlights" id="id-25.03-highlights"></a>
 
-**New features**
+#### **New features**
 
 * Variant, study, and credible set information is now available in the Open Targets Platform. This unites the Open Targets Platform and Open Targets Genetics into a single interface for human genetic and target discovery information.
 * Interpret gene-disease evidence from both common and rare variation in one resource, and in multiple ancestries.
@@ -458,7 +462,7 @@ Visit the [Open Targets Community 25.06 release thread](https://community.openta
     * Colocalisation is now based on credible set overlaps
 * A new [Locus-to-Gene (L2G)](gentropy/locus-to-gene-l2g.md) machine learning model which prioritises likely causal genes at each GWAS locus by using functional genomics features. The Platform also uses [Shapley values](credible-set.md#explaining-l2g-predictions) as part of the L2G predictions to illustrate the relative contribution of each feature.
 
-**Data updates**
+#### **Data updates**
 
 * A substantial increase in the literature evidences due to improvements in resolving disambiguation of entities.
 * Updated gene burden data through FinnGen R12.
@@ -467,7 +471,7 @@ Visit the [Open Targets Community 25.06 release thread](https://community.openta
 * Updated data from Probes\&Drugs and DepMap.
 * New data from Reactome, ChEMBL, Europe PMC, COSMIC and EVA (through ClinVar).
 
-**Product features**
+#### **Product features**
 
 * A new Scalable and reproducible genetic analyses pipeline available as a Python package for post-GWAS analysis: [Gentropy](https://opentargets.github.io/gentropy/).
 * An updated data downloads page which has a more detailed description of each file. (Temporary removal of schema which will be brought back in the subsequent release).
@@ -480,7 +484,7 @@ Visit the [Open Targets Community 25.06 release thread](https://community.openta
   * A graphical Comparative Genomics view in Target Prioritisation.
   * Preview on hover: Ability to view details of an entity without navigating to it.
 
-**Product enhancements and bug fixes**
+#### **Product enhancements and bug fixes**
 
 * Filtered out Phase IV clinical trial evidence that lacks regulatory approval for the specific indication from our target-disease association data.
 * The BE infrastructure has been upgraded to Scala 3
@@ -497,7 +501,7 @@ Post 25.03, the data downloads paths have changed as now only parquet file forma
 
 Check out the [25.03 release blog post](https://blog.opentargets.org/open-targets-platform-25-03-release/) for more information on the new features and datasets introduced in this release.
 
-### Overall data metrics
+### Overall data metrics <a href="#id-25.03-overall-data-metrics" id="id-25.03-overall-data-metrics"></a>
 
 * 78,766 targets
 * 28,513 diseases and phenotypes
@@ -512,29 +516,29 @@ Visit the [Open Targets Community 25.03 release thread](https://community.openta
 
 ## 24.09
 
-### Release date
+#### Release date
 
 18 September 2024
 
-### Highlights
+### **Highlights** <a href="#id-24.09-highlights" id="id-24.09-highlights"></a>
 
-**New features**
+#### **New features**
 
 * Users now have the ability to apply target-specific or disease/phenotype-specific filters to the target-disease association and target prioritisation pages. Read more details about the feature in our [documentation](https://platform-docs.opentargets.org/web-interface/associations-on-the-fly#filtering-functionality).
 
-**Data updates**
+#### **Data updates**
 
 * New safety liabilities associated with several targets which are routinely used by pharmaceutical companies have been added, from Brennan et al. (2024).
 * New Gene Burden evidence from the LoF burden analyses in FinnGen’s latest public release (R11).
 * New data from Reactome, Europe PMC, COSMIC and EVA (through ClinVar).
 
-**Product features**
+#### **Product features**
 
 * Improved visualisation for Gene essentiality data from Cancer DepMap.
 * Updated frontend table design and functionality leading to better searching/filtering and sorting functionality for most tables in the UI.
 * The classic associations view has been deprecated from the Platform..
 
-**Product enhancements and bug fixes**
+#### **Product enhancements and bug fixes**
 
 * OpenAI model in the literature summarisation tool was updated to GPT-4o-mini.
 * Changes to `variant` field in the cancer biomarker evidence.
@@ -543,7 +547,7 @@ Visit the [Open Targets Community 25.03 release thread](https://community.openta
 
 Check out the [24.09 release blog post](https://blog.opentargets.org/open-targets-platform-24-09-release/) for more information on the new features and datasets introduced in this release.
 
-### Overall data metrics
+### Overall data metrics <a href="#id-24.09-overall-data-metrics" id="id-24.09-overall-data-metrics"></a>
 
 * 63,121 targets
 * 28,327 diseases and phenotypes
@@ -557,17 +561,17 @@ Visit the [Open Targets Community 24.09 release thread](https://community.openta
 
 ## 24.06
 
-### Release date
+#### Release date
 
 19 June 2024
 
-### Highlights
+### **Highlights** <a href="#id-24.06-highlights" id="id-24.06-highlights"></a>
 
-**New features**
+#### **New features**
 
 * Uploading a custom list of targets or diseases to obtain a tailored associations view allowing users to view selected target-disease evidence for the specific entities.
 
-**Data updates**
+#### **Data updates**
 
 * Integration of ChEMBL 34 which now contains data from the European Medicines Agency (EMA) increasing drug-indication coverage.
 * Updates to the clinical trials and tractability data.
@@ -576,11 +580,11 @@ Visit the [Open Targets Community 24.09 release thread](https://community.openta
 * A new Gene2Phenotype panel with musculo-skeletal implications.
 * New data from Reactome, COSMIC and EVA (through ClinVar), Probes and Drugs and GEL PanelApp increasing our coverage of data.
 
-**Product features**
+#### **Product features**
 
 * Ability to handle pharmacogenetic evidence involving drug combinations.
 
-**Product enhancements and bug fixes**
+#### **Product enhancements and bug fixes**
 
 * Exclusion of splice QTLs from the assessment for the direction of effect and selecting the beta from the evidence with the lowest p-value instead of the largest effect size.
 * Improvements in the AotF GQL Playground Component.
@@ -590,7 +594,7 @@ Visit the [Open Targets Community 24.09 release thread](https://community.openta
 
 Check out the [24.06 release blog post](https://blog.opentargets.org/open-targets-platform-24-06-release/) for more information on the new features and datasets introduced in this release.
 
-### Overall data metrics
+### Overall data metrics <a href="#id-24.06-overall-data-metrics" id="id-24.06-overall-data-metrics"></a>
 
 * 63,226 targets
 * 28,198 diseases and phenotypes
@@ -604,30 +608,30 @@ Visit the [Open Targets Community 24.06 release thread](https://community.openta
 
 ## 24.03
 
-### Release date
+#### Release date
 
 20 March 2024
 
-### Highlights
+### **Highlights** <a href="#id-24.03-highlights" id="id-24.03-highlights"></a>
 
-**New features**
+#### **New features**
 
 * Implementation of direction of effect assessment for eight different sources of target-disease association evidence.
 * Filtering bibliography data based on a publication date.
 
-**Data updates**
+#### **Data updates**
 
 * Integration of the latest dataset from Project Score.
 * Integration of the 23Q4 version of DepMap ([depmap.org](https://depmap.org)).
 * New data from Reactome, COSMIC and EVA (through ClinVar) increasing our coverage of data.
 
-**Product features**
+#### **Product features**
 
 * Inclusion of star alleles from PharmGKB and a new _Direct Drug Target_ column to the pharmacogenetics widget.
 * Use of pharmacogenetics data to inform adverse drug response as an additional source of information on target safety.
 * New dedicated GraphQL API query playground for Associations-on-the-Fly and target prioritisation view.
 
-**Product enhancements and bug fixes**
+#### **Product enhancements and bug fixes**
 
 * Redesigned context menu with a new navigation and pinning behaviour.
 * Updated protvista-uniprot viewer library to v2.11.1.
@@ -635,7 +639,7 @@ Visit the [Open Targets Community 24.06 release thread](https://community.openta
 
 Check out the [24.03 release blog post](https://blog.opentargets.org/open-targets-platform-24-03-release/) for more information on the new features and datasets introduced in this release.
 
-### Overall data metrics
+### Overall data metrics <a href="#id-24.03-overall-data-metrics" id="id-24.03-overall-data-metrics"></a>
 
 * 63,226 targets
 * 25,817 diseases and phenotypes
@@ -649,35 +653,35 @@ Visit the [Open Targets Community 24.03 release thread](https://community.openta
 
 ## 23.12
 
-### Release date
+#### Release date
 
 30 November 2023
 
-### Highlights
+### **Highlights** <a href="#id-23.12-highlights" id="id-23.12-highlights"></a>
 
-**New features**
+#### **New features**
 
 * 'Target Prioritisation' view: A new view for assessment of the target features considered when prioritising (or deprioritising) targets for drug discovery. Watch a detailed video [here](https://www.youtube.com/watch?v=WQwQn6I4jkw).
 * A new widget in the Platform adding pharmacogenetics data from PharmGKB.
 
-**Data updates**
+#### **Data updates**
 
 * New data available on Baseline RNA and protein expression data for targets via the API and FTP.
 * New data from Reactome and EVA (through ClinVar) increasing our coverage of data.
 
-**Product features**
+#### **Product features**
 
 * Users can easily export the entire associations table and the target prioritisation table in json or tsv format.
 * Updated search bar design with search suggestions.
 
-**Product enhancements and bug fixes**
+#### **Product enhancements and bug fixes**
 
 * Transition to OpenSearch from Elasticsearch.
 * Bug fixes in the widgets in the Association On The Fly view and styling issues.
 
 Check out the [23.12 release blog post](https://blog.opentargets.org/open-targets-platform-23-12-release/) for more information on the new features and datasets introduced in this release.
 
-### Overall data metrics
+### Overall data metrics <a href="#id-23.12-overall-data-metrics" id="id-23.12-overall-data-metrics"></a>
 
 * 62,733 targets
 * 25,246 diseases and phenotypes
@@ -691,28 +695,28 @@ Visit the [Open Targets Community 23.12 release thread](https://community.openta
 
 ## 23.09
 
-### Release date
+#### Release date
 
 21 September 2023
 
-### Highlights
+### **Highlights** <a href="#id-23.09-highlights" id="id-23.09-highlights"></a>
 
-**New features**
+#### **New features**
 
 * ‘Associations on the Fly’ - revamp of the current Open Targets Platform association page with new facets and additional built-in functionalities like view data directly in the associations table, control weights of contributing evidence, filter by datasource and data type (OR filters) and pin rows. Watch a detailed video [here](https://www.youtube.com/watch?v=2A9bksboAag).
 * OpenAI Literature Summarisation tool - For data features that link to publications, users can ask for a natural language summary of the target-disease evidence presented in the publication using LangChain and OpenAI’s GPT3.5 Turbo model.
 
-**Data updates**
+#### **Data updates**
 
 * Updated Molecular Interactions data source [STRING Database](https://string-db.org/) to version 12.0
 * Increase in Europe PMC literature evidence by 9.9% to 10,355,423
 * New data from ChEMBL, COSMIC and EVA (through ClinVar) increasing our coverage of data
 
-**Product features**
+#### **Product features**
 
 * Easy access to the schema of the files available for download in the Open Targets Platform
 
-**Product enhancements and bug fixes**
+#### **Product enhancements and bug fixes**
 
 * Expanded the definition of a drug to include all probes as reported by [Probes & Drugs Portal (P\&D)](https://www.probes-drugs.org/home/) as chemical probes are useful from a target's doability perspective
 * Open Targets Platform user interface migration to Material UI v5
@@ -720,7 +724,7 @@ Visit the [Open Targets Community 23.12 release thread](https://community.openta
 
 Check out the [23.09 release blog post](https://blog.opentargets.org/open-targets-platform-23-09-release/) for more information on the new features and datasets introduced in this release.
 
-### Overall data metrics
+### Overall data metrics <a href="#id-23.09-overall-data-metrics" id="id-23.09-overall-data-metrics"></a>
 
 * 62,733 targets
 * 25,209 diseases and phenotypes
@@ -734,27 +738,27 @@ Visit the [Open Targets Community 23.09 release thread](https://community.openta
 
 ## 23.06
 
-### Release date
+#### Release date
 
 26 June 2023
 
-### Highlights
+### **Highlights** <a href="#id-23.06-highlights" id="id-23.06-highlights"></a>
 
-**New features**
+#### **New features**
 
 * Addition of a CRISPR Screens widget featuring data from [CRISPRBrain](https://crisprbrain.org/)
 * Introduction of a Cancer DepMap widget showcasing gene essentiality data from the [Cancer DepMap Portal](https://depmap.org/portal/)
 
-**Data updates**
+#### **Data updates** <a href="#id-23.06-data-updates" id="id-23.06-data-updates"></a>
 
 * Updated data from ChEMBL, including adverse event drug warning data and more granular information on clinical phases
 * New data from IntoGEN, Europe PMC, and EVA (through ClinVar) increasing our coverage of data
 
-**Product features**
+#### **Product features** <a href="#id-23.06-product-features" id="id-23.06-product-features"></a>
 
 * Missense variants in the OT Genetics, UniProt variants and ClinVar widgets now link to [ProtVar](https://www.ebi.ac.uk/ProtVar/), a new tool to interpret the functional consequences of human missense variants
 
-**Product enhancements and bug fixes**
+#### **Product enhancements and bug fixes**
 
 * Fixes - homology widget, fixes to the data
 * More meaningful 404 error message
@@ -762,7 +766,7 @@ Visit the [Open Targets Community 23.09 release thread](https://community.openta
 
 Check out the [23.06 release blog post](https://blog.opentargets.org/open-targets-platform-23-06-release/) for more information on the new features and datasets introduced in this release.
 
-### Overall data metrics
+### Overall data metrics <a href="#id-23.06-overall-data-metrics" id="id-23.06-overall-data-metrics"></a>
 
 * 62,685 targets
 * 24,713 diseases and phenotypes
@@ -776,36 +780,36 @@ Visit the [Open Targets Community 23.06 release thread](https://community.openta
 
 ## 23.02
 
-### Release date
+#### Release date
 
 22 February 2023
 
-### Highlights
+### Highlights <a href="#id-23.02-highlights" id="id-23.02-highlights"></a>
 
 In addition to regular updates from our data providers, we have a number of new features in this release:
 
-**New evidence for target-disease associations**
+#### **New evidence for target-disease associations**
 
 * Additional data for metabolic biomarkers added to our Gene Burden widget
 * QTL-based direction of effect included in evidence from Open Targets Genetics
 
-**Improved target annotation data**
+#### **Improved target annotation data**
 
 * Integration of Target safety evidence from AOPWiki
 * New data from Probes and Drugs’ 04.2022 release
 
-**Literature updates**
+#### **Literature updates**
 
 * Preprints and patents now included in our bibliography
 
-**Development updates**
+#### **Development updates**
 
 * Redesigned search
 * Provenance metadata
 
 Check out the [23.02 release blog post](https://blog.opentargets.org/open-targets-platform-23-02-release/) for more information on the new features and datasets introduced in this release.
 
-### Overall data metrics
+### Overall data metrics <a href="#id-23.03-overall-data-metrics" id="id-23.03-overall-data-metrics"></a>
 
 * 62,678 targets
 * 24,713 diseases and phenotypes
@@ -819,11 +823,11 @@ Visit the [Open Targets Community 23.02 release thread](https://community.openta
 
 ## 22.11
 
-### Release date
+#### Release date
 
 24 November 2022
 
-### Highlights
+### Highlights <a href="#id-22.11-highlights" id="id-22.11-highlights"></a>
 
 In addition to continuous updates from our data providers, we have introduced the following new features:&#x20;
 
@@ -834,7 +838,7 @@ In addition to continuous updates from our data providers, we have introduced th
 
 Check out the [22.11 release blog post](https://blog.opentargets.org/open-targets-platform-22-11-release/) for more information on the new features and datasets introduced in this release.
 
-### Overall data metrics
+### Overall data metrics <a href="#id-22.11-overall-data-metrics" id="id-22.11-overall-data-metrics"></a>
 
 * 62,678 targets
 * 22,274 diseases and phenotypes
@@ -846,11 +850,11 @@ Visit the [Open Targets Community 22.11 release thread](https://community.openta
 
 ## 22.09
 
-### Release date
+#### Release date
 
 29 September 2022
 
-### Highlights
+### Highlights <a href="#id-22.09-highglights" id="id-22.09-highglights"></a>
 
 New data, in particular:
 
@@ -862,7 +866,7 @@ New data, in particular:
 
 Check out the[ 22.09 release blog post](https://blog.opentargets.org/open-targets-platform-22-09-release/) for more information on the new features and datasets introduced in this release.<br>
 
-### Overall data metrics
+### Overall data metrics <a href="#id-22.09-overall-data-metrics" id="id-22.09-overall-data-metrics"></a>
 
 * 61,888 targets
 * 20,931 diseases and phenotypes
@@ -874,11 +878,11 @@ Visit the [Open Targets Community 22.09 release thread](https://community.openta
 
 ## 22.06
 
-### Release date
+#### Release date
 
 24 June 2022
 
-### Highlights
+### Highlights <a href="#id-22.06-highlights" id="id-22.06-highlights"></a>
 
 * New data: five additional gene burden analyses from Genebass
 * New feature: new visualisation of subcellular locations of targets now available to users
@@ -888,7 +892,7 @@ Visit the [Open Targets Community 22.09 release thread](https://community.openta
 
 Check out the [22.06 release blog post](https://blog.opentargets.org/open-targets-platform-22-06-release/) for more information on the new features and datasets introduced in this release.&#x20;
 
-### Overall data metrics
+### Overall data metrics <a href="#id-22.05-overall-data-metrics" id="id-22.05-overall-data-metrics"></a>
 
 * 61,524 targets
 * 23,074 diseases and phenotypes
@@ -900,11 +904,11 @@ Visit the [Open Targets Community 22.06 release thread](https://community.openta
 
 ## 22.04
 
-### Release date
+#### Release date
 
 28 April 2022
 
-### Highlights
+### Highlights <a href="#id-22.04-highlights" id="id-22.04-highlights"></a>
 
 * New datasource: gene burden analyses from Regeneron and the AstraZeneca
 * Integration of structural variants from ClinVar
@@ -914,7 +918,7 @@ Visit the [Open Targets Community 22.06 release thread](https://community.openta
 
 Check out the[ 22.04 release blog post](https://blog.opentargets.org/open-targets-platform-22-04-release/) for more information on the new features and datasets introduced in this release.&#x20;
 
-### Overall data metrics
+### Overall data metrics <a href="#id-22.04-overall-data-metrics" id="id-22.04-overall-data-metrics"></a>
 
 * 61,524 targets
 * 18,520 diseases and phenotypes
@@ -926,18 +930,18 @@ Visit the [Open Targets Community 22.04 release thread](https://community.openta
 
 ## 22.02
 
-### Release date
+#### Release date
 
 28 February 2022
 
-### Highlights
+### Highlights <a href="#id-22.02-highlights" id="id-22.02-highlights"></a>
 
 * Gene2Phenotype terminology updated in line with the Gene Curation Coalition (GenCC)
 * Data updates from a range of providers including Open Targets Genetics and ChEMBL
 
 Check out the [22.02 release blog post](https://blog.opentargets.org/open-targets-platform-22-02-release/) for more information on the new features and datasets introduced in this release.&#x20;
 
-### Overall data metrics
+### Overall data metrics <a href="#id-22.02-overall-data-metrics" id="id-22.02-overall-data-metrics"></a>
 
 * 61,524 targets
 * 18,468 diseases and phenotypes
@@ -949,11 +953,11 @@ Visit the [Open Targets Community 22.02 release thread](https://community.openta
 
 ## 21.11
 
-### Release date
+#### Release date
 
 29 November 2021
 
-### Highlights
+### Highlights <a href="#id-21.11-highlights" id="id-21.11-highlights"></a>
 
 * New Cancer Biomarkers evidence data from the Cancer Genome Interpreter
 * Updated genetic association evidence from Open Targets Genetics
@@ -961,7 +965,7 @@ Visit the [Open Targets Community 22.02 release thread](https://community.openta
 
 Check out the [21.11 release blog post](https://blog.opentargets.org/open-targets-platform-21-11-release/) for more information on the new features and datasets introduced in this release.&#x20;
 
-### Overall data metrics
+### Overall data metrics <a href="#id-21.11-overall-data-metrics" id="id-21.11-overall-data-metrics"></a>
 
 * 60,636 targets
 * 18,706 diseases and phenotypes
@@ -973,11 +977,11 @@ Visit the[ Open Targets Community 21.11 release thread](https://community.openta
 
 ## 21.09
 
-### Release date
+#### Release date
 
 30 September 2021
 
-### Highlights
+### Highlights <a href="#id-21.09-highlights" id="id-21.09-highlights"></a>
 
 * Integration of new PROTAC tractability data from [Schneider et al. (2021)](https://doi.org/10.1038/s41573-021-00245-x)
 * Integration of Genetic Constraint data from gnomAD and new Chemical Probes data from Probes & Drugs database
@@ -986,7 +990,7 @@ Visit the[ Open Targets Community 21.11 release thread](https://community.openta
 
 Check out our [21.09 release blog post](https://blog.opentargets.org/open-targets-platform-21-09-release/) for more information on the new features and datasets introduced in this release.
 
-### Overall data metrics
+### Overall data metrics <a href="#id-21.09-overall-data-metrics" id="id-21.09-overall-data-metrics"></a>
 
 * 60,636 targets
 * 18,663 diseases and phenotypes
@@ -998,11 +1002,11 @@ Visit the [Open Targets Community 21.09 release thread](https://community.openta
 
 ## 21.06
 
-### Release date
+#### Release date
 
 30 June 2021
 
-### Highlights
+### Highlights <a href="#id-21.06-highlights" id="id-21.06-highlights"></a>
 
 * Updated Open Targets Genetics Portal evidence, which included the integration of FinnGen biobank data (R5) and new GWAS Catalog studies
 * Integration of gene-disease data from Orphanet
@@ -1011,7 +1015,7 @@ Visit the [Open Targets Community 21.09 release thread](https://community.openta
 
 Check out our [21.06 release blog post](https://blog.opentargets.org/open-targets-platform-21-06-release/) for more information on the new features and datasets introduced in this release.
 
-### Overall data metrics
+### Overall data metrics <a href="#id-21.06-overall-data-metrics" id="id-21.06-overall-data-metrics"></a>
 
 * 60,606 targets
 * 18,507 diseases and phenotypes
